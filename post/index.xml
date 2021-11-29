@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts | Senie</title><link>/post/</link><atom:link href="/post/index.xml" rel="self" type="application/rss+xml"/><description>Posts</description><generator>Wowchemy (https://wowchemy.com)</generator><language>zh</language><copyright>© 曦曦呵呵</copyright><lastBuildDate>Mon, 29 Nov 2021 18:00:30 +0800</lastBuildDate><image><url>/media/icon_huf638f59a6dd2257b0add8e0186347459_300061_512x512_fill_lanczos_center_3.png</url><title>Posts</title><link>/post/</link></image><item><title>镇站之宝</title><link>/post/happy/%E9%95%87%E7%AB%99%E4%B9%8B%E5%AE%9D/</link><pubDate>Mon, 29 Nov 2021 18:00:30 +0800</pubDate><guid>/post/happy/%E9%95%87%E7%AB%99%E4%B9%8B%E5%AE%9D/</guid><description>&lt;script src='//unpkg.com/valine/dist/Valine.min.js'>&lt;/script>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts | Senie</title><link>https://xuxihe.vercel.app/post/</link><atom:link href="https://xuxihe.vercel.app/post/index.xml" rel="self" type="application/rss+xml"/><description>Posts</description><generator>Wowchemy (https://wowchemy.com)</generator><language>zh</language><copyright>© 曦曦呵呵</copyright><lastBuildDate>Mon, 29 Nov 2021 18:00:30 +0800</lastBuildDate><image><url>https://xuxihe.vercel.app/media/icon_huf638f59a6dd2257b0add8e0186347459_300061_512x512_fill_lanczos_center_3.png</url><title>Posts</title><link>https://xuxihe.vercel.app/post/</link></image><item><title>镇站之宝</title><link>https://xuxihe.vercel.app/post/happy/%E9%95%87%E7%AB%99%E4%B9%8B%E5%AE%9D/</link><pubDate>Mon, 29 Nov 2021 18:00:30 +0800</pubDate><guid>https://xuxihe.vercel.app/post/happy/%E9%95%87%E7%AB%99%E4%B9%8B%E5%AE%9D/</guid><description>&lt;script src='//unpkg.com/valine/dist/Valine.min.js'>&lt;/script>
 &lt;div id="vcomments">&lt;/div>
 &lt;script>
 new Valine({
@@ -11,7 +11,7 @@ recordIP: true,
 serverURLs: false,
 enableQQ: true
 })
-&lt;/script></description></item><item><title>2021 11 25</title><link>/post/daily-words/2021-11-25/</link><pubDate>Thu, 25 Nov 2021 22:05:43 +0800</pubDate><guid>/post/daily-words/2021-11-25/</guid><description>&lt;table>
+&lt;/script></description></item><item><title>2021 11 25</title><link>https://xuxihe.vercel.app/post/daily-words/2021-11-25/</link><pubDate>Thu, 25 Nov 2021 22:05:43 +0800</pubDate><guid>https://xuxihe.vercel.app/post/daily-words/2021-11-25/</guid><description>&lt;table>
 &lt;thead>
 &lt;tr>
 &lt;th>生词&lt;/th>
@@ -85,7 +85,7 @@ recordIP: true,
 serverURLs: false,
 enableQQ: true
 })
-&lt;/script></description></item><item><title>2021 11 22</title><link>/post/daily-words/2021-11-22/</link><pubDate>Mon, 22 Nov 2021 20:38:46 +0800</pubDate><guid>/post/daily-words/2021-11-22/</guid><description>&lt;table>
+&lt;/script></description></item><item><title>2021 11 22</title><link>https://xuxihe.vercel.app/post/daily-words/2021-11-22/</link><pubDate>Mon, 22 Nov 2021 20:38:46 +0800</pubDate><guid>https://xuxihe.vercel.app/post/daily-words/2021-11-22/</guid><description>&lt;table>
 &lt;thead>
 &lt;tr>
 &lt;th style="text-align:left">生词&lt;/th>
@@ -149,7 +149,7 @@ recordIP: true,
 serverURLs: false,
 enableQQ: true
 })
-&lt;/script></description></item><item><title>Ubuntu安装字体</title><link>/post/tec/ubuntu%E5%AE%89%E8%A3%85%E5%AD%97%E4%BD%93/</link><pubDate>Mon, 22 Nov 2021 15:19:39 +0800</pubDate><guid>/post/tec/ubuntu%E5%AE%89%E8%A3%85%E5%AD%97%E4%BD%93/</guid><description>&lt;h2 id="引言">引言&lt;/h2>
+&lt;/script></description></item><item><title>Ubuntu安装字体</title><link>https://xuxihe.vercel.app/post/tec/ubuntu%E5%AE%89%E8%A3%85%E5%AD%97%E4%BD%93/</link><pubDate>Mon, 22 Nov 2021 15:19:39 +0800</pubDate><guid>https://xuxihe.vercel.app/post/tec/ubuntu%E5%AE%89%E8%A3%85%E5%AD%97%E4%BD%93/</guid><description>&lt;h2 id="引言">引言&lt;/h2>
 &lt;p>众所周知，&lt;code>Ubuntu&lt;/code> 是一个著名的Linux开源发行版。但是，开源……这就意味着，那些不开源的字体用不了！&lt;/p>
 &lt;p>所以，本着&lt;del>开源&lt;/del>务实的精神，我们要安装字体。（除非你想每天都被你的老师叫过去解决PPT的各种奇奇怪怪的问题）&lt;/p>
 &lt;p>而字体文件？当然是，Windows！&lt;del>虽然，有些blabla&lt;/del>&lt;/p>
@@ -188,7 +188,7 @@ recordIP: true,
 serverURLs: false,
 enableQQ: true
 })
-&lt;/script></description></item><item><title>Ubuntu关机90s</title><link>/post/tec/ubuntu%E5%85%B3%E6%9C%BA90s/</link><pubDate>Mon, 22 Nov 2021 15:15:41 +0800</pubDate><guid>/post/tec/ubuntu%E5%85%B3%E6%9C%BA90s/</guid><description>&lt;h2 id="现象">现象&lt;/h2>
+&lt;/script></description></item><item><title>Ubuntu关机90s</title><link>https://xuxihe.vercel.app/post/tec/ubuntu%E5%85%B3%E6%9C%BA90s/</link><pubDate>Mon, 22 Nov 2021 15:15:41 +0800</pubDate><guid>https://xuxihe.vercel.app/post/tec/ubuntu%E5%85%B3%E6%9C%BA90s/</guid><description>&lt;h2 id="现象">现象&lt;/h2>
 &lt;p>通常情况下，他会显示一个啥啥啥 is running，然后后面有一个括号 &lt;code>(..s/1min30s)&lt;/code> 这种。&lt;/p>
 &lt;h2 id="解决方法">解决方法&lt;/h2>
 &lt;p>虽然我们并不知道为啥，但是我们确实有一种解决的方法。&lt;/p>

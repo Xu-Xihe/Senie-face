@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Senie</title><link>/</link><atom:link href="/index.xml" rel="self" type="application/rss+xml"/><description>Senie</description><generator>Wowchemy (https://wowchemy.com)</generator><language>zh</language><copyright>© 曦曦呵呵</copyright><lastBuildDate>Mon, 29 Nov 2021 18:00:30 +0800</lastBuildDate><image><url>/media/icon_huf638f59a6dd2257b0add8e0186347459_300061_512x512_fill_lanczos_center_3.png</url><title>Senie</title><link>/</link></image><item><title>C++ STL</title><link>/notes/oiknowledge/others%E6%9D%82%E9%A1%B9/c++-stl/</link><pubDate>Mon, 18 Oct 2021 00:00:00 +0000</pubDate><guid>/notes/oiknowledge/others%E6%9D%82%E9%A1%B9/c++-stl/</guid><description>&lt;p>当你啥也不会的时候，充分利用C++ STL模板可以让你的暴力多得几分。&lt;/p></description></item><item><title>快速幂</title><link>/notes/oiknowledge/math%E6%95%B0%E8%AE%BA/%E5%BF%AB%E9%80%9F%E5%B9%82/</link><pubDate>Mon, 18 Oct 2021 00:00:00 +0000</pubDate><guid>/notes/oiknowledge/math%E6%95%B0%E8%AE%BA/%E5%BF%AB%E9%80%9F%E5%B9%82/</guid><description>&lt;h1 id="快速幂">快速幂&lt;/h1>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Senie</title><link>https://xuxihe.vercel.app/</link><atom:link href="https://xuxihe.vercel.app/index.xml" rel="self" type="application/rss+xml"/><description>Senie</description><generator>Wowchemy (https://wowchemy.com)</generator><language>zh</language><copyright>© 曦曦呵呵</copyright><lastBuildDate>Mon, 29 Nov 2021 18:00:30 +0800</lastBuildDate><image><url>https://xuxihe.vercel.app/media/icon_huf638f59a6dd2257b0add8e0186347459_300061_512x512_fill_lanczos_center_3.png</url><title>Senie</title><link>https://xuxihe.vercel.app/</link></image><item><title>C++ STL</title><link>https://xuxihe.vercel.app/notes/oiknowledge/others%E6%9D%82%E9%A1%B9/c++-stl/</link><pubDate>Mon, 18 Oct 2021 00:00:00 +0000</pubDate><guid>https://xuxihe.vercel.app/notes/oiknowledge/others%E6%9D%82%E9%A1%B9/c++-stl/</guid><description>&lt;p>当你啥也不会的时候，充分利用C++ STL模板可以让你的暴力多得几分。&lt;/p></description></item><item><title>快速幂</title><link>https://xuxihe.vercel.app/notes/oiknowledge/math%E6%95%B0%E8%AE%BA/%E5%BF%AB%E9%80%9F%E5%B9%82/</link><pubDate>Mon, 18 Oct 2021 00:00:00 +0000</pubDate><guid>https://xuxihe.vercel.app/notes/oiknowledge/math%E6%95%B0%E8%AE%BA/%E5%BF%AB%E9%80%9F%E5%B9%82/</guid><description>&lt;h1 id="快速幂">快速幂&lt;/h1>
 &lt;h2 id="幂还有快速">幂还有快速？&lt;/h2>
 &lt;p>我们首先来思考一个问题，对于 $7^6$ 如何求。&lt;/p>
 &lt;p>作为一个人类，你的求法一定是先算出 $7\times7=49$，然后接着算出 $49\times7=343$，…… ，$16807\times7=117649$。因为人类并不适合算两位数以上的乘法(一位数还勉强可以瞪眼)，所以有些时候我们的思维便会限制在这个里面。&lt;/p>
@@ -37,7 +37,7 @@ printf(&amp;quot;%d^%d mod %d=%d\n&amp;quot;, a, b, p, mi(a, b, p)); //奇奇怪
 }
 &lt;/code>&lt;/pre>
 &lt;h2 id="链接">链接&lt;/h2>
-&lt;p>其他更快的方法，参见[]、[]。&lt;/p></description></item><item><title>搜索</title><link>/notes/oiknowledge/graph%E5%9B%BE%E8%AE%BA/%E6%90%9C%E7%B4%A2/</link><pubDate>Mon, 18 Oct 2021 00:00:00 +0000</pubDate><guid>/notes/oiknowledge/graph%E5%9B%BE%E8%AE%BA/%E6%90%9C%E7%B4%A2/</guid><description>&lt;h1 id="dfs">DFS&lt;/h1>
+&lt;p>其他更快的方法，参见[]、[]。&lt;/p></description></item><item><title>搜索</title><link>https://xuxihe.vercel.app/notes/oiknowledge/graph%E5%9B%BE%E8%AE%BA/%E6%90%9C%E7%B4%A2/</link><pubDate>Mon, 18 Oct 2021 00:00:00 +0000</pubDate><guid>https://xuxihe.vercel.app/notes/oiknowledge/graph%E5%9B%BE%E8%AE%BA/%E6%90%9C%E7%B4%A2/</guid><description>&lt;h1 id="dfs">DFS&lt;/h1>
 &lt;h2 id="深度优先搜索">深度优先搜索。&lt;/h2>
 &lt;p>深度优先，即每一次均搜索一条完整的从起点到达终点的路径，然后继续搜索第二条。&lt;/p>
 &lt;p>原始支持有权图搜索。&lt;/p>
@@ -132,7 +132,7 @@ printf(&amp;quot;%d^%d mod %d=%d\n&amp;quot;, a, b, p, mi(a, b, p)); //奇奇怪
 &lt;li>状态：怎么表示？要求包括全部信息、能够标记是否已访问。&lt;/li>
 &lt;li>转移：转移后的状态计算，转移代价计算。&lt;/li>
 &lt;li>优化：剪枝（剪掉无用的搜索子树），修改搜索顺序，估价函数。&lt;/li>
-&lt;/ul></description></item><item><title>并查集</title><link>/notes/oiknowledge/data%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/%E5%B9%B6%E6%9F%A5%E9%9B%86/</link><pubDate>Sun, 17 Oct 2021 00:00:00 +0000</pubDate><guid>/notes/oiknowledge/data%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/%E5%B9%B6%E6%9F%A5%E9%9B%86/</guid><description>&lt;h1 id="普通并查集">普通并查集&lt;/h1>
+&lt;/ul></description></item><item><title>并查集</title><link>https://xuxihe.vercel.app/notes/oiknowledge/data%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/%E5%B9%B6%E6%9F%A5%E9%9B%86/</link><pubDate>Sun, 17 Oct 2021 00:00:00 +0000</pubDate><guid>https://xuxihe.vercel.app/notes/oiknowledge/data%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/%E5%B9%B6%E6%9F%A5%E9%9B%86/</guid><description>&lt;h1 id="普通并查集">普通并查集&lt;/h1>
 &lt;h2 id="引子">引子&lt;/h2>
 &lt;p>&lt;del>脑洞蛮大的一个东西，自己还改了改&lt;/del>&lt;/p>
 &lt;p>​ 江湖上散落着各式各样的大侠，有上千个之多。他们没有什么正当职业，整天背着剑在外面走来走去，碰到和自己不是一路人的，就免不了要打一架。
@@ -230,7 +230,7 @@ printf(&amp;quot;%c\n&amp;quot;, find(b) == find(c) ? 'Y' : 'N');
 return 0;
 }
 &lt;/code>&lt;/pre>
-&lt;h1 id="带权并查集">带权并查集&lt;/h1></description></item><item><title>栈</title><link>/notes/oiknowledge/data%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/%E6%A0%88/</link><pubDate>Sun, 17 Oct 2021 00:00:00 +0000</pubDate><guid>/notes/oiknowledge/data%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/%E6%A0%88/</guid><description/></item><item><title>背包问题</title><link>/notes/oiknowledge/dp%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/%E8%83%8C%E5%8C%85%E9%97%AE%E9%A2%98/</link><pubDate>Sun, 17 Oct 2021 00:00:00 +0000</pubDate><guid>/notes/oiknowledge/dp%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/%E8%83%8C%E5%8C%85%E9%97%AE%E9%A2%98/</guid><description>&lt;h1 id="背包问题">背包问题&lt;/h1>
+&lt;h1 id="带权并查集">带权并查集&lt;/h1></description></item><item><title>栈</title><link>https://xuxihe.vercel.app/notes/oiknowledge/data%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/%E6%A0%88/</link><pubDate>Sun, 17 Oct 2021 00:00:00 +0000</pubDate><guid>https://xuxihe.vercel.app/notes/oiknowledge/data%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/%E6%A0%88/</guid><description/></item><item><title>背包问题</title><link>https://xuxihe.vercel.app/notes/oiknowledge/dp%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/%E8%83%8C%E5%8C%85%E9%97%AE%E9%A2%98/</link><pubDate>Sun, 17 Oct 2021 00:00:00 +0000</pubDate><guid>https://xuxihe.vercel.app/notes/oiknowledge/dp%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/%E8%83%8C%E5%8C%85%E9%97%AE%E9%A2%98/</guid><description>&lt;h1 id="背包问题">背包问题&lt;/h1>
 &lt;h2 id="01背包">01背包&lt;/h2>
 &lt;h3 id="引题">引题：&lt;/h3>
 &lt;p>&lt;strong>原版：&lt;/strong>
@@ -453,7 +453,7 @@ $$
 &lt;p>依赖关系只有一层：把每个“主件”当做一个背包，然后将各背包合并（也是树形背包的基本思路）。&lt;/p>
 &lt;p>无循环依赖（树形背包）：&lt;a href="./%e6%a0%91%e5%bd%a2dp.md">树形DP&lt;/a>。&lt;/p>
 &lt;p>有循环依赖：&lt;a href="../graph%e5%9b%be%e8%ae%ba/%e5%bc%ba%e8%bf%9e%e9%80%9a%e5%88%86%e9%87%8f.md">Tarjan+缩点&lt;/a> + &lt;a href="./%e6%a0%91%e5%bd%a2dp.md">树形DP&lt;/a>。&lt;/p>
-&lt;p>请在相应章节查看。&lt;/p></description></item><item><title>递推和递归</title><link>/notes/oiknowledge/basic%E5%9F%BA%E6%9C%AC%E6%80%9D%E6%83%B3/%E9%80%92%E5%BD%92/</link><pubDate>Sun, 17 Oct 2021 00:00:00 +0000</pubDate><guid>/notes/oiknowledge/basic%E5%9F%BA%E6%9C%AC%E6%80%9D%E6%83%B3/%E9%80%92%E5%BD%92/</guid><description>&lt;h1 id="递推">递推&lt;/h1></description></item><item><title>拓扑排序</title><link>/notes/oiknowledge/graph%E5%9B%BE%E8%AE%BA/%E6%8B%93%E6%89%91%E6%8E%92%E5%BA%8F/</link><pubDate>Mon, 18 Oct 2021 00:00:00 +0000</pubDate><guid>/notes/oiknowledge/graph%E5%9B%BE%E8%AE%BA/%E6%8B%93%E6%89%91%E6%8E%92%E5%BA%8F/</guid><description>&lt;h1 id="拓扑排序">拓扑排序&lt;/h1>
+&lt;p>请在相应章节查看。&lt;/p></description></item><item><title>递推和递归</title><link>https://xuxihe.vercel.app/notes/oiknowledge/basic%E5%9F%BA%E6%9C%AC%E6%80%9D%E6%83%B3/%E9%80%92%E5%BD%92/</link><pubDate>Sun, 17 Oct 2021 00:00:00 +0000</pubDate><guid>https://xuxihe.vercel.app/notes/oiknowledge/basic%E5%9F%BA%E6%9C%AC%E6%80%9D%E6%83%B3/%E9%80%92%E5%BD%92/</guid><description>&lt;h1 id="递推">递推&lt;/h1></description></item><item><title>拓扑排序</title><link>https://xuxihe.vercel.app/notes/oiknowledge/graph%E5%9B%BE%E8%AE%BA/%E6%8B%93%E6%89%91%E6%8E%92%E5%BA%8F/</link><pubDate>Mon, 18 Oct 2021 00:00:00 +0000</pubDate><guid>https://xuxihe.vercel.app/notes/oiknowledge/graph%E5%9B%BE%E8%AE%BA/%E6%8B%93%E6%89%91%E6%8E%92%E5%BA%8F/</guid><description>&lt;h1 id="拓扑排序">拓扑排序&lt;/h1>
 &lt;p>&lt;a href="https://blog.csdn.net/weixin_39970166/article/details/110870115" target="_blank" rel="noopener">一篇博文&lt;/a>&lt;/p>
 &lt;h2 id="引子">引子&lt;/h2>
 &lt;p>下面让我来看一看拓扑序是什么，又有啥子用。&lt;/p>
@@ -530,7 +530,7 @@ return 0;
 &lt;h2 id="dfs款">DFS款&lt;/h2>
 &lt;p>选定一个节点，递归完成他的入度。&lt;/p>
 &lt;p>对于每个节点循环。&lt;/p>
-&lt;p>&lt;del>还是学上面那个吧&lt;/del>&lt;/p></description></item><item><title>离散化</title><link>/notes/oiknowledge/others%E6%9D%82%E9%A1%B9/%E7%A6%BB%E6%95%A3%E5%8C%96/</link><pubDate>Mon, 18 Oct 2021 00:00:00 +0000</pubDate><guid>/notes/oiknowledge/others%E6%9D%82%E9%A1%B9/%E7%A6%BB%E6%95%A3%E5%8C%96/</guid><description>&lt;h1 id="离散化">离散化&lt;/h1>
+&lt;p>&lt;del>还是学上面那个吧&lt;/del>&lt;/p></description></item><item><title>离散化</title><link>https://xuxihe.vercel.app/notes/oiknowledge/others%E6%9D%82%E9%A1%B9/%E7%A6%BB%E6%95%A3%E5%8C%96/</link><pubDate>Mon, 18 Oct 2021 00:00:00 +0000</pubDate><guid>https://xuxihe.vercel.app/notes/oiknowledge/others%E6%9D%82%E9%A1%B9/%E7%A6%BB%E6%95%A3%E5%8C%96/</guid><description>&lt;h1 id="离散化">离散化&lt;/h1>
 &lt;p>&lt;del>好高深的鸭子&lt;/del>&lt;/p>
 &lt;p>&lt;del>其实，用STL水就可以了&lt;/del>&lt;/p>
 &lt;h2 id="离散化-1">离……散化？&lt;/h2>
@@ -542,7 +542,7 @@ return 0;
 &lt;p>但是，这种非常常见的东西C++ STL里面肯定有啊。&lt;/p>
 &lt;p>所以，介绍几个：&lt;/p>
 &lt;h3 id="map">map&lt;/h3>
-&lt;h3 id="heading">&lt;/h3></description></item><item><title>质数、合数、约数</title><link>/notes/oiknowledge/math%E6%95%B0%E8%AE%BA/%E8%B4%A8%E6%95%B0%E5%90%88%E6%95%B0%E7%BA%A6%E6%95%B0%E5%80%8D%E6%95%B0/</link><pubDate>Mon, 18 Oct 2021 00:00:00 +0000</pubDate><guid>/notes/oiknowledge/math%E6%95%B0%E8%AE%BA/%E8%B4%A8%E6%95%B0%E5%90%88%E6%95%B0%E7%BA%A6%E6%95%B0%E5%80%8D%E6%95%B0/</guid><description>&lt;h1 id="质数">质数&lt;/h1>
+&lt;h3 id="heading">&lt;/h3></description></item><item><title>质数、合数、约数</title><link>https://xuxihe.vercel.app/notes/oiknowledge/math%E6%95%B0%E8%AE%BA/%E8%B4%A8%E6%95%B0%E5%90%88%E6%95%B0%E7%BA%A6%E6%95%B0%E5%80%8D%E6%95%B0/</link><pubDate>Mon, 18 Oct 2021 00:00:00 +0000</pubDate><guid>https://xuxihe.vercel.app/notes/oiknowledge/math%E6%95%B0%E8%AE%BA/%E8%B4%A8%E6%95%B0%E5%90%88%E6%95%B0%E7%BA%A6%E6%95%B0%E5%80%8D%E6%95%B0/</guid><description>&lt;h1 id="质数">质数&lt;/h1>
 &lt;p>本标题下所有数 $x\in N^*$ 。&lt;/p>
 &lt;h2 id="单个质数的判定">单个质数的判定&lt;/h2>
 &lt;h3 id="思想">思想&lt;/h3>
@@ -586,8 +586,8 @@ result.push_back(N)
 &lt;h3 id="埃氏筛">埃氏筛&lt;/h3>
 &lt;p>从 $2$ 开始，不断寻找没有被标记的，并把它的倍数全部标记，复杂度 $O(n\log\log n)$。&lt;/p>
 &lt;p>但是，我们注意到，某一些合数被标记了不止一次，因此仍有优化空间。&lt;/p>
-&lt;h3 id="欧拉筛">欧拉筛&lt;/h3></description></item><item><title>分治（二分）</title><link>/notes/oiknowledge/basic%E5%9F%BA%E6%9C%AC%E6%80%9D%E6%83%B3/%E5%88%86%E6%B2%BB/</link><pubDate>Sun, 17 Oct 2021 00:00:00 +0000</pubDate><guid>/notes/oiknowledge/basic%E5%9F%BA%E6%9C%AC%E6%80%9D%E6%83%B3/%E5%88%86%E6%B2%BB/</guid><description>&lt;h2 id="二分查找">二分查找&lt;/h2>
-&lt;h2 id="二分答案">二分答案&lt;/h2></description></item><item><title>线性dp</title><link>/notes/oiknowledge/dp%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/%E7%BA%BF%E6%80%A7dp/</link><pubDate>Sun, 17 Oct 2021 00:00:00 +0000</pubDate><guid>/notes/oiknowledge/dp%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/%E7%BA%BF%E6%80%A7dp/</guid><description>&lt;h1 id="线性dp">线性dp&lt;/h1>
+&lt;h3 id="欧拉筛">欧拉筛&lt;/h3></description></item><item><title>分治（二分）</title><link>https://xuxihe.vercel.app/notes/oiknowledge/basic%E5%9F%BA%E6%9C%AC%E6%80%9D%E6%83%B3/%E5%88%86%E6%B2%BB/</link><pubDate>Sun, 17 Oct 2021 00:00:00 +0000</pubDate><guid>https://xuxihe.vercel.app/notes/oiknowledge/basic%E5%9F%BA%E6%9C%AC%E6%80%9D%E6%83%B3/%E5%88%86%E6%B2%BB/</guid><description>&lt;h2 id="二分查找">二分查找&lt;/h2>
+&lt;h2 id="二分答案">二分答案&lt;/h2></description></item><item><title>线性dp</title><link>https://xuxihe.vercel.app/notes/oiknowledge/dp%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/%E7%BA%BF%E6%80%A7dp/</link><pubDate>Sun, 17 Oct 2021 00:00:00 +0000</pubDate><guid>https://xuxihe.vercel.app/notes/oiknowledge/dp%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/%E7%BA%BF%E6%80%A7dp/</guid><description>&lt;h1 id="线性dp">线性dp&lt;/h1>
 &lt;h2 id="最基本的dp和dp简介">最基本的dp和dp简介&lt;/h2>
 &lt;h3 id="一种优美的暴力">一种优美的暴力&lt;/h3>
 &lt;p>动态规划可以看做在&lt;strong>最优化问题&lt;/strong>和&lt;strong>计数问题&lt;/strong>中对暴力搜索的优化。&lt;/p>
@@ -640,7 +640,7 @@ dp[i] = ji == -1 ? 1 : dp[ji];
 &lt;p>通俗一点，就是换一个dp的思路。&lt;/p>
 &lt;h3 id="前后缀和优化dp">前（后）缀和优化DP&lt;/h3>
 &lt;h2 id="背包问题">背包问题&lt;/h2>
-&lt;p>&lt;a href="./%e8%83%8c%e5%8c%85%e9%97%ae%e9%a2%98.md">背包问题&lt;/a>是一类特殊的线性DP问题。其模型应用极为广泛，故单独叙述。&lt;/p></description></item><item><title>队列</title><link>/notes/oiknowledge/data%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/%E9%98%9F%E5%88%97/</link><pubDate>Sun, 17 Oct 2021 00:00:00 +0000</pubDate><guid>/notes/oiknowledge/data%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/%E9%98%9F%E5%88%97/</guid><description/></item><item><title>差分数组</title><link>/notes/oiknowledge/others%E6%9D%82%E9%A1%B9/%E5%B7%AE%E5%88%86%E6%95%B0%E7%BB%84/</link><pubDate>Mon, 18 Oct 2021 00:00:00 +0000</pubDate><guid>/notes/oiknowledge/others%E6%9D%82%E9%A1%B9/%E5%B7%AE%E5%88%86%E6%95%B0%E7%BB%84/</guid><description>&lt;h1 id="差分数组">差分数组&lt;/h1>
+&lt;p>&lt;a href="./%e8%83%8c%e5%8c%85%e9%97%ae%e9%a2%98.md">背包问题&lt;/a>是一类特殊的线性DP问题。其模型应用极为广泛，故单独叙述。&lt;/p></description></item><item><title>队列</title><link>https://xuxihe.vercel.app/notes/oiknowledge/data%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/%E9%98%9F%E5%88%97/</link><pubDate>Sun, 17 Oct 2021 00:00:00 +0000</pubDate><guid>https://xuxihe.vercel.app/notes/oiknowledge/data%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/%E9%98%9F%E5%88%97/</guid><description/></item><item><title>差分数组</title><link>https://xuxihe.vercel.app/notes/oiknowledge/others%E6%9D%82%E9%A1%B9/%E5%B7%AE%E5%88%86%E6%95%B0%E7%BB%84/</link><pubDate>Mon, 18 Oct 2021 00:00:00 +0000</pubDate><guid>https://xuxihe.vercel.app/notes/oiknowledge/others%E6%9D%82%E9%A1%B9/%E5%B7%AE%E5%88%86%E6%95%B0%E7%BB%84/</guid><description>&lt;h1 id="差分数组">差分数组&lt;/h1>
 &lt;h2 id="定义">定义&lt;/h2>
 &lt;p>对于第$i$位，记录第$i$位减第$i-1$位的差值。&lt;/p>
 &lt;p>例子：&lt;/p>
@@ -685,7 +685,7 @@ dp[i] = ji == -1 ? 1 : dp[ji];
 &lt;p>&lt;strong>注意!&lt;/strong> 只适用于可被抵消贡献的运算中，如$+/-/\and$​(加、减、异或)等。&lt;/p>
 &lt;p>若将原数组$[l,r]$区间内加$val$，则相当于将差分数组第$l$位加$val$，第$r+1$位减去$val$(将贡献抵消)。&lt;/p>
 &lt;h6 id="注意-是第r1位而不是第r位">&lt;strong>注意! 是第$r+1$位，而不是第$r$​位!!!&lt;/strong>&lt;/h6>
-&lt;p>经常和维和区间和的数据结构一起使用。(&lt;a href="../data%e6%95%b0%e6%8d%ae%e7%bb%93%e6%9e%84/%e6%a0%91%e7%8a%b6%e6%95%b0%e7%bb%84.md">树状数组&lt;/a>等)&lt;/p></description></item><item><title>最小生成树</title><link>/notes/oiknowledge/graph%E5%9B%BE%E8%AE%BA/%E6%9C%80%E5%B0%8F%E7%94%9F%E6%88%90%E6%A0%91/</link><pubDate>Mon, 18 Oct 2021 00:00:00 +0000</pubDate><guid>/notes/oiknowledge/graph%E5%9B%BE%E8%AE%BA/%E6%9C%80%E5%B0%8F%E7%94%9F%E6%88%90%E6%A0%91/</guid><description>&lt;h1 id="最小生成树">最小生成树&lt;/h1>
+&lt;p>经常和维和区间和的数据结构一起使用。(&lt;a href="../data%e6%95%b0%e6%8d%ae%e7%bb%93%e6%9e%84/%e6%a0%91%e7%8a%b6%e6%95%b0%e7%bb%84.md">树状数组&lt;/a>等)&lt;/p></description></item><item><title>最小生成树</title><link>https://xuxihe.vercel.app/notes/oiknowledge/graph%E5%9B%BE%E8%AE%BA/%E6%9C%80%E5%B0%8F%E7%94%9F%E6%88%90%E6%A0%91/</link><pubDate>Mon, 18 Oct 2021 00:00:00 +0000</pubDate><guid>https://xuxihe.vercel.app/notes/oiknowledge/graph%E5%9B%BE%E8%AE%BA/%E6%9C%80%E5%B0%8F%E7%94%9F%E6%88%90%E6%A0%91/</guid><description>&lt;h1 id="最小生成树">最小生成树&lt;/h1>
 &lt;h2 id="问题描述">问题描述&lt;/h2>
 &lt;p>给出一个有$n$个节点，$m$条边的无向图，从中选取边权之和最小(大)的$n-1$条边，使得图上任意两个顶点有且只有唯一的一条路径可以互相到达。&lt;/p>
 &lt;h2 id="例子">例子&lt;/h2>
@@ -785,7 +785,7 @@ return 0;
 &lt;p>时间复杂度： $O(m\log{m})$&lt;/p>
 &lt;p>想法比较简单、易懂。&lt;/p>
 &lt;p>将所有边&lt;strong>按权值&lt;/strong>从小到大排序，优先选取&lt;strong>权值较小&lt;/strong>的边，判断两个端点是否在&lt;strong>同一个集合&lt;/strong>中。如果在同一集合中，则&lt;strong>跳过&lt;/strong>这条边，遍历下一条；如果不再同一集合中，则将ans加上边权并将&lt;strong>两个点所在的集合合并&lt;/strong>。&lt;/p>
-&lt;p>涉及到判断两个点是否在同一集合中，需要引入&lt;a href="/oiblogs/data%e6%95%b0%e6%8d%ae%e7%bb%93%e6%9e%84/%e5%b9%b6%e6%9f%a5%e9%9b%86/">并查集&lt;/a>。&lt;/p>
+&lt;p>涉及到判断两个点是否在同一集合中，需要引入&lt;a href="https://xuxihe.vercel.app/oiblogs/data%e6%95%b0%e6%8d%ae%e7%bb%93%e6%9e%84/%e5%b9%b6%e6%9f%a5%e9%9b%86/">并查集&lt;/a>。&lt;/p>
 &lt;p>&lt;a href="https://www.luogu.com.cn/problem/P3366" target="_blank" rel="noopener">洛谷P3366&lt;/a> &lt;del>其实就是板子&lt;/del>&lt;/p>
 &lt;pre>&lt;code class="language-c++">#include &amp;lt;cstdio&amp;gt;
 #include &amp;lt;algorithm&amp;gt;
@@ -839,8 +839,8 @@ return 0;
 }
 &lt;/code>&lt;/pre>
 &lt;h2 id="总结">总结&lt;/h2>
-&lt;p>两种算法均用到&lt;a href="/oiblogs/basic%e5%9f%ba%e6%9c%ac%e6%80%9d%e6%83%b3/%e8%b4%aa%e5%bf%83/">贪心&lt;/a>的思想。&lt;/p>
-&lt;p>Prim侧重于点，适合稠密图；Kruskal侧重于边，适合稀疏图；但二者优化后差距并不大，推荐Kruskal，易理解不费手还不容易出奇奇怪怪的问题。&lt;del>(复杂度中可以看出)&lt;/del>&lt;/p></description></item><item><title>KMP</title><link>/notes/oiknowledge/dp%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/kmp/</link><pubDate>Sun, 17 Oct 2021 00:00:00 +0000</pubDate><guid>/notes/oiknowledge/dp%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/kmp/</guid><description>&lt;h1 id="kmp">KMP&lt;/h1>
+&lt;p>两种算法均用到&lt;a href="https://xuxihe.vercel.app/oiblogs/basic%e5%9f%ba%e6%9c%ac%e6%80%9d%e6%83%b3/%e8%b4%aa%e5%bf%83/">贪心&lt;/a>的思想。&lt;/p>
+&lt;p>Prim侧重于点，适合稠密图；Kruskal侧重于边，适合稀疏图；但二者优化后差距并不大，推荐Kruskal，易理解不费手还不容易出奇奇怪怪的问题。&lt;del>(复杂度中可以看出)&lt;/del>&lt;/p></description></item><item><title>KMP</title><link>https://xuxihe.vercel.app/notes/oiknowledge/dp%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/kmp/</link><pubDate>Sun, 17 Oct 2021 00:00:00 +0000</pubDate><guid>https://xuxihe.vercel.app/notes/oiknowledge/dp%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/kmp/</guid><description>&lt;h1 id="kmp">KMP&lt;/h1>
 &lt;h2 id="入门第一发">入门第一发&lt;/h2>
 &lt;p>相信，很多人入门的第一个算法(除去贪心等基本思想)，所以，先来略略领会一下dp的奥妙和人类的脑洞叭。&lt;/p>
 &lt;h3 id="字符串匹配问题">字符串匹配问题：&lt;/h3>
@@ -861,7 +861,7 @@ return 0;
 /notes/oiknowledge/dp%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/kmp/KMP_huee9227d8f766b824f535546b7eb39deb_6764_1d4e52a038b05963acd7ba2588ad6993.png 400w,
 /notes/oiknowledge/dp%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/kmp/KMP_huee9227d8f766b824f535546b7eb39deb_6764_095f616770fbd084713d6a9bf8122c8c.png 760w,
 /notes/oiknowledge/dp%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/kmp/KMP_huee9227d8f766b824f535546b7eb39deb_6764_1200x1200_fit_lanczos_3.png 1200w"
-src="/notes/oiknowledge/dp%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/kmp/KMP_huee9227d8f766b824f535546b7eb39deb_6764_1d4e52a038b05963acd7ba2588ad6993.png"
+src="https://xuxihe.vercel.app/notes/oiknowledge/dp%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/kmp/KMP_huee9227d8f766b824f535546b7eb39deb_6764_1d4e52a038b05963acd7ba2588ad6993.png"
 width="760"
 height="77"
 loading="lazy" data-zoomable />&lt;/div>
@@ -1046,7 +1046,7 @@ return 0;
 &lt;/table>
 &lt;p>我们发现，前 $k-1$ 个 $b$ 加一个 $d$ 等于后 $k-1$ 个 $b$ 加一个 $d$ 等于 LBonder！&lt;/p>
 &lt;p>所以，$b$ 的长度就是(看上表) $a$ 串的长度 - 后 $k-1$ 个 $b$ 加一个 $d$ 的长度 = $a$ 的最小循环节&lt;/p>
-&lt;p>所以，字符串最小循环节 = 字符串长度 - LBonder(尾部next数组)。&lt;/p></description></item><item><title>分块</title><link>/notes/oiknowledge/data%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/%E5%88%86%E5%9D%97/</link><pubDate>Sun, 17 Oct 2021 00:00:00 +0000</pubDate><guid>/notes/oiknowledge/data%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/%E5%88%86%E5%9D%97/</guid><description/></item><item><title>贪心</title><link>/notes/oiknowledge/basic%E5%9F%BA%E6%9C%AC%E6%80%9D%E6%83%B3/%E8%B4%AA%E5%BF%83/</link><pubDate>Sun, 17 Oct 2021 00:00:00 +0000</pubDate><guid>/notes/oiknowledge/basic%E5%9F%BA%E6%9C%AC%E6%80%9D%E6%83%B3/%E8%B4%AA%E5%BF%83/</guid><description/></item><item><title>位运算</title><link>/notes/oiknowledge/others%E6%9D%82%E9%A1%B9/%E4%BD%8D%E8%BF%90%E7%AE%97/</link><pubDate>Mon, 18 Oct 2021 00:00:00 +0000</pubDate><guid>/notes/oiknowledge/others%E6%9D%82%E9%A1%B9/%E4%BD%8D%E8%BF%90%E7%AE%97/</guid><description>&lt;h1 id="位运算">位运算&lt;/h1>
+&lt;p>所以，字符串最小循环节 = 字符串长度 - LBonder(尾部next数组)。&lt;/p></description></item><item><title>分块</title><link>https://xuxihe.vercel.app/notes/oiknowledge/data%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/%E5%88%86%E5%9D%97/</link><pubDate>Sun, 17 Oct 2021 00:00:00 +0000</pubDate><guid>https://xuxihe.vercel.app/notes/oiknowledge/data%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/%E5%88%86%E5%9D%97/</guid><description/></item><item><title>贪心</title><link>https://xuxihe.vercel.app/notes/oiknowledge/basic%E5%9F%BA%E6%9C%AC%E6%80%9D%E6%83%B3/%E8%B4%AA%E5%BF%83/</link><pubDate>Sun, 17 Oct 2021 00:00:00 +0000</pubDate><guid>https://xuxihe.vercel.app/notes/oiknowledge/basic%E5%9F%BA%E6%9C%AC%E6%80%9D%E6%83%B3/%E8%B4%AA%E5%BF%83/</guid><description/></item><item><title>位运算</title><link>https://xuxihe.vercel.app/notes/oiknowledge/others%E6%9D%82%E9%A1%B9/%E4%BD%8D%E8%BF%90%E7%AE%97/</link><pubDate>Mon, 18 Oct 2021 00:00:00 +0000</pubDate><guid>https://xuxihe.vercel.app/notes/oiknowledge/others%E6%9D%82%E9%A1%B9/%E4%BD%8D%E8%BF%90%E7%AE%97/</guid><description>&lt;h1 id="位运算">位运算&lt;/h1>
 &lt;h2 id="概述">概述&lt;/h2>
 &lt;p>现代计算机中所有的数据均以二进制的形式存储在设备中，即 $0$、$1$ 两种状态计。计算机对二进制数据进行的运算( $+$、$-$、$*$、$/$ )都是位运算，即将符号位共同参与运算的运算。由于计算机内部就是以二进制来存储数据，位运算是相当快的。&lt;/p>
 &lt;p>基本的位运算共 $6$ 种，分别为按位与、按位或、按位异或、按位取反、左移和右移。通俗叫法会去掉“按位”，即与、或、异或、取反、左移和右移。&lt;/p>
@@ -1353,7 +1353,7 @@ return 0;
 &lt;h2 id="取反">取反&lt;/h2>
 &lt;p>“取反”，顾名思义，就是 $0$ 变 $1$；&lt;/p>
 &lt;h2 id="左移">左移&lt;/h2>
-&lt;h2 id="右移">右移&lt;/h2></description></item><item><title>最短路径</title><link>/notes/oiknowledge/graph%E5%9B%BE%E8%AE%BA/%E6%9C%80%E7%9F%AD%E8%B7%AF%E5%BE%84/</link><pubDate>Mon, 18 Oct 2021 00:00:00 +0000</pubDate><guid>/notes/oiknowledge/graph%E5%9B%BE%E8%AE%BA/%E6%9C%80%E7%9F%AD%E8%B7%AF%E5%BE%84/</guid><description>&lt;h1 id="最短路径">最短路径&lt;/h1>
+&lt;h2 id="右移">右移&lt;/h2></description></item><item><title>最短路径</title><link>https://xuxihe.vercel.app/notes/oiknowledge/graph%E5%9B%BE%E8%AE%BA/%E6%9C%80%E7%9F%AD%E8%B7%AF%E5%BE%84/</link><pubDate>Mon, 18 Oct 2021 00:00:00 +0000</pubDate><guid>https://xuxihe.vercel.app/notes/oiknowledge/graph%E5%9B%BE%E8%AE%BA/%E6%9C%80%E7%9F%AD%E8%B7%AF%E5%BE%84/</guid><description>&lt;h1 id="最短路径">最短路径&lt;/h1>
 &lt;h2 id="是个啥">是个啥&lt;/h2>
 &lt;p>这种问题恰如其名，问如何走才能用最小的代价达到目的。&lt;del>(人生哲学)&lt;/del>&lt;/p>
 &lt;p>给你一张有边权的图(无权图可看做所有边边权均为1；无向图可将所有边拆分成两条有向边)，求$i$节点到$j$​节点的最短路径。&lt;/p>
@@ -1496,7 +1496,7 @@ return 0;
 &lt;/code>&lt;/pre>
 &lt;h2 id="dijkstra算法">Dijkstra算法&lt;/h2>
 &lt;p>用于求解非负权图的单源最短路径。&lt;/p>
-&lt;p>运用&lt;a href="/oiblogs/basic%e5%9f%ba%e6%9c%ac%e6%80%9d%e6%83%b3/%e8%b4%aa%e5%bf%83/">贪心&lt;/a>思想，时间复杂度 $O(n^2)$ 或优化后 $O(n\log{n})$，空间复杂度 运行空间 $O(n)$ 和存图 $O(m)$。&lt;/p>
+&lt;p>运用&lt;a href="https://xuxihe.vercel.app/oiblogs/basic%e5%9f%ba%e6%9c%ac%e6%80%9d%e6%83%b3/%e8%b4%aa%e5%bf%83/">贪心&lt;/a>思想，时间复杂度 $O(n^2)$ 或优化后 $O(n\log{n})$，空间复杂度 运行空间 $O(n)$ 和存图 $O(m)$。&lt;/p>
 &lt;p>用 $dis[i]$ 存贮从起始节点到第 $i$ 号节点的相对最短路径长度，并标记已经确定最短路径的顶点。&lt;/p>
 &lt;ol>
 &lt;li>初始化：设起始节点编号为 $k$，则 $dis[k]=0$，$i$ 与 $k$ 相连则 $dis[i]=边权$，其余的 $dis[j]=\infty$。&lt;/li>
@@ -1774,7 +1774,7 @@ return 0;
 &lt;p>多开一维记录其余(决策)信息，但是对于多种决策用处不大。&lt;/p>
 &lt;/li>
 &lt;/ol>
-&lt;p>然后，在新建立的图中跑最短路。&lt;/p></description></item><item><title>倍增</title><link>/notes/oiknowledge/basic%E5%9F%BA%E6%9C%AC%E6%80%9D%E6%83%B3/%E5%80%8D%E5%A2%9E/</link><pubDate>Sun, 17 Oct 2021 00:00:00 +0000</pubDate><guid>/notes/oiknowledge/basic%E5%9F%BA%E6%9C%AC%E6%80%9D%E6%83%B3/%E5%80%8D%E5%A2%9E/</guid><description>&lt;h1 id="倍增">倍增&lt;/h1></description></item><item><title>区间dp</title><link>/notes/oiknowledge/dp%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/%E5%8C%BA%E9%97%B4dp/</link><pubDate>Sun, 17 Oct 2021 00:00:00 +0000</pubDate><guid>/notes/oiknowledge/dp%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/%E5%8C%BA%E9%97%B4dp/</guid><description>&lt;h1 id="区间dp">区间dp&lt;/h1>
+&lt;p>然后，在新建立的图中跑最短路。&lt;/p></description></item><item><title>倍增</title><link>https://xuxihe.vercel.app/notes/oiknowledge/basic%E5%9F%BA%E6%9C%AC%E6%80%9D%E6%83%B3/%E5%80%8D%E5%A2%9E/</link><pubDate>Sun, 17 Oct 2021 00:00:00 +0000</pubDate><guid>https://xuxihe.vercel.app/notes/oiknowledge/basic%E5%9F%BA%E6%9C%AC%E6%80%9D%E6%83%B3/%E5%80%8D%E5%A2%9E/</guid><description>&lt;h1 id="倍增">倍增&lt;/h1></description></item><item><title>区间dp</title><link>https://xuxihe.vercel.app/notes/oiknowledge/dp%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/%E5%8C%BA%E9%97%B4dp/</link><pubDate>Sun, 17 Oct 2021 00:00:00 +0000</pubDate><guid>https://xuxihe.vercel.app/notes/oiknowledge/dp%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/%E5%8C%BA%E9%97%B4dp/</guid><description>&lt;h1 id="区间dp">区间dp&lt;/h1>
 &lt;p>顾名思义，就是在区间上进行dp。&lt;/p>
 &lt;p>区间DP用于解决决策涉及到&lt;strong>相邻区间合并&lt;/strong>的问题。&lt;/p>
 &lt;p>它的转移方向是由小区间向大区间转移，所以在转移的时候，要注意转移顺序。&lt;/p>
@@ -1796,7 +1796,7 @@ $dp[i][j]$ 表示以 $i$ 为起点，$j$ 为终点的区间合并成一堆所取
 &lt;p>不，聪明的人类总是有&lt;del>流氓&lt;/del>的做法。&lt;/p>
 &lt;p>其实，就是把原来的数组在结尾在拼接一个一样的，但是最长的区间长度不变即可。(注意遍历时区间起止点的坐标范围和 $+1$ 问题)&lt;/p>
 &lt;h2 id="几道题">几道题&lt;/h2>
-&lt;p>莫得办法，dp这玩意只能用题去体会。&lt;/p></description></item><item><title>堆</title><link>/notes/oiknowledge/data%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/%E5%A0%86/</link><pubDate>Sun, 17 Oct 2021 00:00:00 +0000</pubDate><guid>/notes/oiknowledge/data%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/%E5%A0%86/</guid><description/></item><item><title>SPFA-DFS负环证明</title><link>/notes/oiknowledge/graph%E5%9B%BE%E8%AE%BA/spfa-dfs%E8%B4%9F%E7%8E%AF%E8%AF%81%E6%98%8E/</link><pubDate>Mon, 18 Oct 2021 00:00:00 +0000</pubDate><guid>/notes/oiknowledge/graph%E5%9B%BE%E8%AE%BA/spfa-dfs%E8%B4%9F%E7%8E%AF%E8%AF%81%E6%98%8E/</guid><description>&lt;h1 id="spfa-dfs负环证明">SPFA-DFS负环证明&lt;/h1>
+&lt;p>莫得办法，dp这玩意只能用题去体会。&lt;/p></description></item><item><title>堆</title><link>https://xuxihe.vercel.app/notes/oiknowledge/data%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/%E5%A0%86/</link><pubDate>Sun, 17 Oct 2021 00:00:00 +0000</pubDate><guid>https://xuxihe.vercel.app/notes/oiknowledge/data%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/%E5%A0%86/</guid><description/></item><item><title>SPFA-DFS负环证明</title><link>https://xuxihe.vercel.app/notes/oiknowledge/graph%E5%9B%BE%E8%AE%BA/spfa-dfs%E8%B4%9F%E7%8E%AF%E8%AF%81%E6%98%8E/</link><pubDate>Mon, 18 Oct 2021 00:00:00 +0000</pubDate><guid>https://xuxihe.vercel.app/notes/oiknowledge/graph%E5%9B%BE%E8%AE%BA/spfa-dfs%E8%B4%9F%E7%8E%AF%E8%AF%81%E6%98%8E/</guid><description>&lt;h1 id="spfa-dfs负环证明">SPFA-DFS负环证明&lt;/h1>
 &lt;h2 id="结论">结论&lt;/h2>
 &lt;p>让我们先来看结论：&lt;/p>
 &lt;img src="graph.png" alt="spfa" style="zoom:60%;" />
@@ -1817,7 +1817,7 @@ $dp[i][j]$ 表示以 $i$ 为起点，$j$ 为终点的区间合并成一堆所取
 &lt;p>第4步&lt;img src="4.png" alt="adf" style="zoom:67%;" />&lt;/p>
 &lt;p>直到图中仅剩下两个节点和两条边，这时，一定有两边之和小于0。(因为两边之和即为环上边权之和)&lt;/p>
 &lt;p>因此，从这时负边的起点开始遍历原来的负环，保证边权依次相加为负。&lt;/p>
-&lt;p>对于任意一条负边，表示从起始节点到终止节点所包含的边依次相加为负，边权为从起点走到终点后的边权和。我们每次选择的均为负边起点。&lt;/p></description></item><item><title>三分</title><link>/notes/oiknowledge/basic%E5%9F%BA%E6%9C%AC%E6%80%9D%E6%83%B3/%E4%B8%89%E5%88%86/</link><pubDate>Sun, 17 Oct 2021 00:00:00 +0000</pubDate><guid>/notes/oiknowledge/basic%E5%9F%BA%E6%9C%AC%E6%80%9D%E6%83%B3/%E4%B8%89%E5%88%86/</guid><description/></item><item><title>左偏树（可并堆）</title><link>/notes/oiknowledge/data%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/%E5%B7%A6%E5%81%8F%E6%A0%91/</link><pubDate>Sun, 17 Oct 2021 00:00:00 +0000</pubDate><guid>/notes/oiknowledge/data%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/%E5%B7%A6%E5%81%8F%E6%A0%91/</guid><description/></item><item><title>树形dp</title><link>/notes/oiknowledge/dp%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/%E6%A0%91%E5%BD%A2dp/</link><pubDate>Sun, 17 Oct 2021 00:00:00 +0000</pubDate><guid>/notes/oiknowledge/dp%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/%E6%A0%91%E5%BD%A2dp/</guid><description>&lt;h1 id="树形dp">树形dp&lt;/h1>
+&lt;p>对于任意一条负边，表示从起始节点到终止节点所包含的边依次相加为负，边权为从起点走到终点后的边权和。我们每次选择的均为负边起点。&lt;/p></description></item><item><title>三分</title><link>https://xuxihe.vercel.app/notes/oiknowledge/basic%E5%9F%BA%E6%9C%AC%E6%80%9D%E6%83%B3/%E4%B8%89%E5%88%86/</link><pubDate>Sun, 17 Oct 2021 00:00:00 +0000</pubDate><guid>https://xuxihe.vercel.app/notes/oiknowledge/basic%E5%9F%BA%E6%9C%AC%E6%80%9D%E6%83%B3/%E4%B8%89%E5%88%86/</guid><description/></item><item><title>左偏树（可并堆）</title><link>https://xuxihe.vercel.app/notes/oiknowledge/data%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/%E5%B7%A6%E5%81%8F%E6%A0%91/</link><pubDate>Sun, 17 Oct 2021 00:00:00 +0000</pubDate><guid>https://xuxihe.vercel.app/notes/oiknowledge/data%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/%E5%B7%A6%E5%81%8F%E6%A0%91/</guid><description/></item><item><title>树形dp</title><link>https://xuxihe.vercel.app/notes/oiknowledge/dp%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/%E6%A0%91%E5%BD%A2dp/</link><pubDate>Sun, 17 Oct 2021 00:00:00 +0000</pubDate><guid>https://xuxihe.vercel.app/notes/oiknowledge/dp%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/%E6%A0%91%E5%BD%A2dp/</guid><description>&lt;h1 id="树形dp">树形dp&lt;/h1>
 &lt;h2 id="树上最大独立集问题">树上最大独立集问题&lt;/h2>
 &lt;p>树形dp最经典的问题。&lt;/p>
 &lt;h3 id="问题详情">问题详情&lt;/h3>
@@ -1849,7 +1849,7 @@ $son[i][a]$ 记录节点 $i$ 的儿子。&lt;/p>
 &lt;p>如果节点 $i$ 在独立集中，则 $i$ 的任何儿子一定不在独立集中。因此，我们只需要把以 $i$ 的儿子们为根且根节点不在独立集中的最大独立集求和再加上节点 $i$ 的点权，就得到正确的解。&lt;/p>
 &lt;p>而如果节点 $i$ 不在独立集中，则 $i$ 的儿子在与不在均可。因此，我们要把以 $i$ 的儿子们为根的最大独立集(因此要在根节点在和不在两个中取最大值)求和即可。&lt;/p>
 &lt;p>而dp完成后，可得到 $ans=max(dp[root][0],dp[root][1])$。&lt;/p>
-&lt;p>至于如何遍历一棵树，当然是&lt;a href="/oiblogs/graph%e5%9b%be%e8%ae%ba/%e6%90%9c%e7%b4%a2.md">DFS&lt;/a>！&lt;/p>
+&lt;p>至于如何遍历一棵树，当然是&lt;a href="https://xuxihe.vercel.app/oiblogs/graph%e5%9b%be%e8%ae%ba/%e6%90%9c%e7%b4%a2.md">DFS&lt;/a>！&lt;/p>
 &lt;pre>&lt;code class="language-c++">
 &lt;/code>&lt;/pre>
 &lt;h2 id="install-apps">install APPs！&lt;/h2>
@@ -1918,7 +1918,7 @@ $$&lt;/p>
 &lt;li>
 &lt;p>&lt;strong>无向图：&lt;/strong>&lt;/p>
 &lt;ol>
-&lt;li>你飞速的撸出了一窜&lt;a href="/oiblogs/graph%e5%9b%be%e8%ae%ba/%e6%8b%93%e6%89%91%e6%8e%92%e5%ba%8f/">拓扑排序&lt;/a>的模板。&lt;/li>
+&lt;li>你飞速的撸出了一窜&lt;a href="https://xuxihe.vercel.app/oiblogs/graph%e5%9b%be%e8%ae%ba/%e6%8b%93%e6%89%91%e6%8e%92%e5%ba%8f/">拓扑排序&lt;/a>的模板。&lt;/li>
 &lt;li>接着，恭喜，环找到了。(入度 $\ge{2}$ 的点就是环上的点，和上一个被访问的点之间的边一定是环边)&lt;/li>
 &lt;/ol>
 &lt;/li>
@@ -1971,11 +1971,11 @@ $$&lt;/p>
 &lt;p>每个点都有且只有一个&lt;strong>入度&lt;/strong>，并且环内的节点方向指向环外，因此任何一个点沿着唯一入边走都会走到环上。&lt;/p>
 &lt;h3 id="内向dag">内向DAG&lt;/h3>
 &lt;p>每个点都有且只有一个&lt;strong>出度&lt;/strong>，并且环外的节点方向指向环内，因此任何一个点沿着唯一出边走都会走到环上。&lt;/p>
-&lt;h2 id="有向无环图dag上的dp拓扑序oiblogsgraph图论拓扑排序dp">有向无环图(DAG)上的dp(&lt;a href="/oiblogs/graph%e5%9b%be%e8%ae%ba/%e6%8b%93%e6%89%91%e6%8e%92%e5%ba%8f/">拓扑序&lt;/a>dp)&lt;/h2>
+&lt;h2 id="有向无环图dag上的dp拓扑序oiblogsgraph图论拓扑排序dp">有向无环图(DAG)上的dp(&lt;a href="https://xuxihe.vercel.app/oiblogs/graph%e5%9b%be%e8%ae%ba/%e6%8b%93%e6%89%91%e6%8e%92%e5%ba%8f/">拓扑序&lt;/a>dp)&lt;/h2>
 &lt;p>因为有向无环图有拓扑序，所以我们按拓扑序转移即可保证无后效性(即改变已经访问过的节点)。&lt;/p>
 &lt;p>DAG上的dp可以在 $O(n+m)$ 的时间复杂度内解决&lt;strong>DAG上最短/最长路、最短路计数&lt;/strong>等基本问题。&lt;/p>
 &lt;h2 id="其他应用一些奇怪的题的题解">其他应用(一些奇怪的题的题解)&lt;/h2>
-&lt;p>&lt;del>有时间再补&lt;/del>&lt;/p></description></item><item><title>强连通分量与缩点</title><link>/notes/oiknowledge/graph%E5%9B%BE%E8%AE%BA/%E5%BC%BA%E8%BF%9E%E9%80%9A%E5%88%86%E9%87%8F%E4%B8%8E%E7%BC%A9%E7%82%B9/</link><pubDate>Mon, 18 Oct 2021 00:00:00 +0000</pubDate><guid>/notes/oiknowledge/graph%E5%9B%BE%E8%AE%BA/%E5%BC%BA%E8%BF%9E%E9%80%9A%E5%88%86%E9%87%8F%E4%B8%8E%E7%BC%A9%E7%82%B9/</guid><description>&lt;h1 id="强连通分量与缩点">强连通分量与缩点&lt;/h1>
+&lt;p>&lt;del>有时间再补&lt;/del>&lt;/p></description></item><item><title>强连通分量与缩点</title><link>https://xuxihe.vercel.app/notes/oiknowledge/graph%E5%9B%BE%E8%AE%BA/%E5%BC%BA%E8%BF%9E%E9%80%9A%E5%88%86%E9%87%8F%E4%B8%8E%E7%BC%A9%E7%82%B9/</link><pubDate>Mon, 18 Oct 2021 00:00:00 +0000</pubDate><guid>https://xuxihe.vercel.app/notes/oiknowledge/graph%E5%9B%BE%E8%AE%BA/%E5%BC%BA%E8%BF%9E%E9%80%9A%E5%88%86%E9%87%8F%E4%B8%8E%E7%BC%A9%E7%82%B9/</guid><description>&lt;h1 id="强连通分量与缩点">强连通分量与缩点&lt;/h1>
 &lt;h2 id="又是啥玩意">又是啥玩意&lt;/h2>
 &lt;h3 id="强连通">强连通&lt;/h3>
 &lt;p>&lt;del>在&lt;strong>有向图&lt;/strong> $G$ 中，两个顶点 $u$，$v$ 间有一条从 $u$ 到 $v$ 的有向路径，同时还有一条从 $v$ 到 $u$ 的有向路径，则节点 $u$ 和 节点 $v$ 强连通。&lt;/del>&lt;/p>
@@ -1990,11 +1990,11 @@ $$&lt;/p>
 &lt;h2 id="咋求向你缓缓打出一个">咋求？&lt;del>(向你缓缓打出一个？)&lt;/del>&lt;/h2>
 &lt;h3 id="tarjan算法">Tarjan算法&lt;/h3>
 &lt;p>经典算法？&lt;/p>
-&lt;p>首先，需要知道关于&lt;a href="/oiblogs/graph%e5%9b%be%e8%ae%ba/%e6%90%9c%e7%b4%a2/%e6%90%9c%e7%b4%a2/">DFS生成树&lt;/a>的一些东西。&lt;/p>
+&lt;p>首先，需要知道关于&lt;a href="https://xuxihe.vercel.app/oiblogs/graph%e5%9b%be%e8%ae%ba/%e6%90%9c%e7%b4%a2/%e6%90%9c%e7%b4%a2/">DFS生成树&lt;/a>的一些东西。&lt;/p>
 &lt;p>观察发现，任何一个强连通分量中必须有至少一个返祖边，因此如果结点 $u$ 是某个强连通分量在搜索树中遇到的第一个结点，那么这个强连通分量的其余结点肯定是在搜索树中以 $u$ 为根的子树中。$u$ 被称为这个强连通分量的根。Tarjan便以此为基础，进行求解。&lt;/p>
 &lt;h4 id="维护变量">维护变量&lt;/h4>
 &lt;ul>
-&lt;li>$dfn[i]$：维护节点 $i$ 的&lt;a href="/oiblogs/graph%e5%9b%be%e8%ae%ba/%e6%90%9c%e7%b4%a2/%e6%90%9c%e7%b4%a2/">dfs搜索序&lt;/a>。&lt;/li>
+&lt;li>$dfn[i]$：维护节点 $i$ 的&lt;a href="https://xuxihe.vercel.app/oiblogs/graph%e5%9b%be%e8%ae%ba/%e6%90%9c%e7%b4%a2/%e6%90%9c%e7%b4%a2/">dfs搜索序&lt;/a>。&lt;/li>
 &lt;li>$low[i]$：维护节点 $i$ 的子树中和子树中通过一条不在搜索树上的边能到达的所有结点的最小dfn值。&lt;/li>
 &lt;li>$stack:run$：维护一个队列，保证上面的节点在以底下第一个 $low[i]=dfn[i]$ 的节点为根的强连通分量中。&lt;/li>
 &lt;/ul>
@@ -2131,7 +2131,7 @@ find(now);
 printf(&amp;quot;%d&amp;quot;, ans);
 return 0;
 }
-&lt;/code>&lt;/pre></description></item><item><title>平衡树</title><link>/notes/oiknowledge/data%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/%E5%B9%B3%E8%A1%A1%E6%A0%91/</link><pubDate>Sun, 17 Oct 2021 00:00:00 +0000</pubDate><guid>/notes/oiknowledge/data%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/%E5%B9%B3%E8%A1%A1%E6%A0%91/</guid><description>&lt;h1 id="平衡树">平衡树&lt;/h1>
+&lt;/code>&lt;/pre></description></item><item><title>平衡树</title><link>https://xuxihe.vercel.app/notes/oiknowledge/data%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/%E5%B9%B3%E8%A1%A1%E6%A0%91/</link><pubDate>Sun, 17 Oct 2021 00:00:00 +0000</pubDate><guid>https://xuxihe.vercel.app/notes/oiknowledge/data%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/%E5%B9%B3%E8%A1%A1%E6%A0%91/</guid><description>&lt;h1 id="平衡树">平衡树&lt;/h1>
 &lt;h2 id="二叉搜索树">二叉搜索树&lt;/h2>
 &lt;p>&lt;strong>二叉搜索树&lt;/strong>是一种二叉树形的数据结构，各节点权值按中序遍历排列单调不增(或不降)。&lt;/p>
 &lt;p>&lt;em>中序遍历：先左再中后右&lt;/em>&lt;/p>
@@ -2373,7 +2373,7 @@ recordIP: true,
 serverURLs: false,
 enableQQ: true
 })
-&lt;/script></description></item><item><title>状压dp</title><link>/notes/oiknowledge/dp%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/%E7%8A%B6%E6%80%81%E5%8E%8B%E7%BC%A9dp/</link><pubDate>Sun, 17 Oct 2021 00:00:00 +0000</pubDate><guid>/notes/oiknowledge/dp%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/%E7%8A%B6%E6%80%81%E5%8E%8B%E7%BC%A9dp/</guid><description>&lt;h1 id="状压dp">状压dp&lt;/h1>
+&lt;/script></description></item><item><title>状压dp</title><link>https://xuxihe.vercel.app/notes/oiknowledge/dp%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/%E7%8A%B6%E6%80%81%E5%8E%8B%E7%BC%A9dp/</link><pubDate>Sun, 17 Oct 2021 00:00:00 +0000</pubDate><guid>https://xuxihe.vercel.app/notes/oiknowledge/dp%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/%E7%8A%B6%E6%80%81%E5%8E%8B%E7%BC%A9dp/</guid><description>&lt;h1 id="状压dp">状压dp&lt;/h1>
 &lt;p>又是二进制的东西……&lt;del>烦躁&lt;/del>&lt;/p>
 &lt;p>这东西只是一个辅助，用来优化暴力或dp空间的。&lt;/p>
 &lt;h2 id="用武之地">用武之地&lt;/h2>
@@ -2395,9 +2395,9 @@ enableQQ: true
 &lt;p>所以很多情况下，状压dp就是将 $O(n!)$ 的暴力优化到的另一个 $O(2^n)$ 暴力的过程。&lt;/p>
 &lt;h2 id="子集枚举">子集枚举&lt;/h2>
 &lt;h2 id="合理运用小范围数据">合理运用小范围数据&lt;/h2>
-&lt;p>状压dp中 $2^n$ 的复杂度使得题目中的某些数据范围也会很小（一般在 $25$ 以下）。当遇到 $\le{25}$ 数据范围时一定要敏感。&lt;/p></description></item><item><title>树链刨分</title><link>/notes/oiknowledge/graph%E5%9B%BE%E8%AE%BA/%E6%A0%91%E9%93%BE%E5%89%96%E5%88%86/</link><pubDate>Mon, 18 Oct 2021 00:00:00 +0000</pubDate><guid>/notes/oiknowledge/graph%E5%9B%BE%E8%AE%BA/%E6%A0%91%E9%93%BE%E5%89%96%E5%88%86/</guid><description>&lt;h1 id="树链刨分">树链刨分&lt;/h1>
+&lt;p>状压dp中 $2^n$ 的复杂度使得题目中的某些数据范围也会很小（一般在 $25$ 以下）。当遇到 $\le{25}$ 数据范围时一定要敏感。&lt;/p></description></item><item><title>树链刨分</title><link>https://xuxihe.vercel.app/notes/oiknowledge/graph%E5%9B%BE%E8%AE%BA/%E6%A0%91%E9%93%BE%E5%89%96%E5%88%86/</link><pubDate>Mon, 18 Oct 2021 00:00:00 +0000</pubDate><guid>https://xuxihe.vercel.app/notes/oiknowledge/graph%E5%9B%BE%E8%AE%BA/%E6%A0%91%E9%93%BE%E5%89%96%E5%88%86/</guid><description>&lt;h1 id="树链刨分">树链刨分&lt;/h1>
 &lt;p>一种极致优化的树上算法，据说07年被某个集训队队员搞出来的。&lt;/p>
-&lt;p>关于DFN序，参见&lt;a href="/oiblogs/graph%e5%9b%be%e8%ae%ba/%e6%90%9c%e7%b4%a2/%e6%90%9c%e7%b4%a2/">搜索&lt;/a>。&lt;/p>
+&lt;p>关于DFN序，参见&lt;a href="https://xuxihe.vercel.app/oiblogs/graph%e5%9b%be%e8%ae%ba/%e6%90%9c%e7%b4%a2/%e6%90%9c%e7%b4%a2/">搜索&lt;/a>。&lt;/p>
 &lt;h2 id="一波约定">一波约定&lt;/h2>
 &lt;p>为方便起见,我们约定一棵树的某些数据如下：&lt;/p>
 &lt;ul>
@@ -2590,8 +2590,8 @@ printf(&amp;quot;%d\n&amp;quot;, lca(a, b));
 }
 return 0;
 }
-&lt;/code>&lt;/pre></description></item><item><title/><link>/notes/oiknowledge/dp%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/manacher%E7%AE%97%E6%B3%95/</link><pubDate>Sun, 17 Oct 2021 00:00:00 +0000</pubDate><guid>/notes/oiknowledge/dp%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/manacher%E7%AE%97%E6%B3%95/</guid><description/></item><item><title>树状数组</title><link>/notes/oiknowledge/data%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/%E6%A0%91%E7%8A%B6%E6%95%B0%E7%BB%84/</link><pubDate>Sun, 17 Oct 2021 00:00:00 +0000</pubDate><guid>/notes/oiknowledge/data%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/%E6%A0%91%E7%8A%B6%E6%95%B0%E7%BB%84/</guid><description>&lt;h1 id="树状数组">树状数组&lt;/h1>
-&lt;p>一种~~&lt;a href="/oiblogs/basic%e5%9f%ba%e6%9c%ac%e6%80%9d%e6%83%b3/%e5%80%8d%e5%a2%9e">&lt;strong>倍增?&lt;/strong>&lt;/a>&lt;a href="/oiblogs/basic%e5%9f%ba%e6%9c%ac%e6%80%9d%e6%83%b3/%e5%88%86%e6%b2%bb">&lt;strong>分治？&lt;/strong>&lt;/a>~~思想下的奇奇怪怪的东西…………&lt;/p>
+&lt;/code>&lt;/pre></description></item><item><title/><link>https://xuxihe.vercel.app/notes/oiknowledge/dp%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/manacher%E7%AE%97%E6%B3%95/</link><pubDate>Sun, 17 Oct 2021 00:00:00 +0000</pubDate><guid>https://xuxihe.vercel.app/notes/oiknowledge/dp%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/manacher%E7%AE%97%E6%B3%95/</guid><description/></item><item><title>树状数组</title><link>https://xuxihe.vercel.app/notes/oiknowledge/data%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/%E6%A0%91%E7%8A%B6%E6%95%B0%E7%BB%84/</link><pubDate>Sun, 17 Oct 2021 00:00:00 +0000</pubDate><guid>https://xuxihe.vercel.app/notes/oiknowledge/data%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/%E6%A0%91%E7%8A%B6%E6%95%B0%E7%BB%84/</guid><description>&lt;h1 id="树状数组">树状数组&lt;/h1>
+&lt;p>一种~~&lt;a href="https://xuxihe.vercel.app/oiblogs/basic%e5%9f%ba%e6%9c%ac%e6%80%9d%e6%83%b3/%e5%80%8d%e5%a2%9e">&lt;strong>倍增?&lt;/strong>&lt;/a>&lt;a href="https://xuxihe.vercel.app/oiblogs/basic%e5%9f%ba%e6%9c%ac%e6%80%9d%e6%83%b3/%e5%88%86%e6%b2%bb">&lt;strong>分治？&lt;/strong>&lt;/a>~~思想下的奇奇怪怪的东西…………&lt;/p>
 &lt;p>&lt;del>先放个图&lt;/del>&lt;img src="%E6%A0%91%E7%8A%B6%E6%95%B0%E7%BB%84.png" alt="树状数组" style="zoom: 50%;" />&lt;/p>
 &lt;h2 id="用的地方">用的地方&lt;/h2>
 &lt;ol>
@@ -2606,17 +2606,17 @@ return 0;
 &lt;p>&lt;strong>优点：&lt;/strong>&lt;/p>
 &lt;ol>
 &lt;li>
-&lt;p>单次操作时间复杂度为$O(\log{n})$且常数很小，实际运行效率远优于&lt;a href="/oiblogs/data%e6%95%b0%e6%8d%ae%e7%bb%93%e6%9e%84/%e7%ba%bf%e6%ae%b5%e6%a0%91/">线段树&lt;/a>&lt;del>(虽然理论上时间复杂度相同)&lt;/del>&lt;/p>
+&lt;p>单次操作时间复杂度为$O(\log{n})$且常数很小，实际运行效率远优于&lt;a href="https://xuxihe.vercel.app/oiblogs/data%e6%95%b0%e6%8d%ae%e7%bb%93%e6%9e%84/%e7%ba%bf%e6%ae%b5%e6%a0%91/">线段树&lt;/a>&lt;del>(虽然理论上时间复杂度相同)&lt;/del>&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>空间复杂度$O(n)$，在某些场景下较&lt;a href="/oiblogs/data%e6%95%b0%e6%8d%ae%e7%bb%93%e6%9e%84/%e7%ba%bf%e6%ae%b5%e6%a0%91/">线段树&lt;/a>($O(4n)$)有极大优势&lt;/p>
+&lt;p>空间复杂度$O(n)$，在某些场景下较&lt;a href="https://xuxihe.vercel.app/oiblogs/data%e6%95%b0%e6%8d%ae%e7%bb%93%e6%9e%84/%e7%ba%bf%e6%ae%b5%e6%a0%91/">线段树&lt;/a>($O(4n)$)有极大优势&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>理解以后很好写(它很短，不费手，不需Debug $_{除非手残}$​ &lt;del>(不理解也很好背)&lt;/del> &lt;del>(理解是不可能理解的)&lt;/del>&lt;/p>
 &lt;/li>
 &lt;/ol>
 &lt;p>&lt;strong>缺点：&lt;/strong>&lt;/p>
-&lt;p>适用范围比&lt;a href="/oiblogs/data%e6%95%b0%e6%8d%ae%e7%bb%93%e6%9e%84/%e7%ba%bf%e6%ae%b5%e6%a0%91/">线段树&lt;/a>&lt;strong>小的多&lt;/strong>。树状数组能有的操作，线段树&lt;strong>一定有&lt;/strong>；线段树有的操作，树状数组&lt;strong>大部分没有&lt;/strong>。&lt;/p>
+&lt;p>适用范围比&lt;a href="https://xuxihe.vercel.app/oiblogs/data%e6%95%b0%e6%8d%ae%e7%bb%93%e6%9e%84/%e7%ba%bf%e6%ae%b5%e6%a0%91/">线段树&lt;/a>&lt;strong>小的多&lt;/strong>。树状数组能有的操作，线段树&lt;strong>一定有&lt;/strong>；线段树有的操作，树状数组&lt;strong>大部分没有&lt;/strong>。&lt;/p>
 &lt;h2 id="最最最奇怪的地方">最最最奇怪的地方&lt;/h2>
 &lt;img src="fenwick1.png" alt="&amp;运算" style="zoom:68%;" />
 &lt;p>&lt;del>你这玩意谁想的粗来？&lt;/del>&lt;/p>
@@ -2675,7 +2675,7 @@ return 0;
 }
 &lt;/code>&lt;/pre>
 &lt;h2 id="区间修改和单点查询">区间修改和单点查询&lt;/h2>
-&lt;p>用到一个比较神奇但是还能理解的东西&lt;a href="/oiblogs/others%e6%9d%82%e9%a1%b9/%e5%b7%ae%e5%88%86%e6%95%b0%e7%bb%84/">差分数组&lt;/a>。&lt;/p>
+&lt;p>用到一个比较神奇但是还能理解的东西&lt;a href="https://xuxihe.vercel.app/oiblogs/others%e6%9d%82%e9%a1%b9/%e5%b7%ae%e5%88%86%e6%95%b0%e7%bb%84/">差分数组&lt;/a>。&lt;/p>
 &lt;p>用树状数组维护差分数组，以达到快速区间修改和单点查询的操作。&lt;/p>
 &lt;pre>&lt;code class="language-c++">#include &amp;lt;cstdio&amp;gt;
 const int maxe = 5e5 + 9;
@@ -2798,7 +2798,7 @@ return 0;
 }
 &lt;/code>&lt;/pre>
 &lt;h2 id="树状数组上的二分">树状数组上的二分&lt;/h2>
-&lt;p>建议直接移步&lt;a href="/oiblogs/data%e6%95%b0%e6%8d%ae%e7%bb%93%e6%9e%84/%e5%b9%b3%e8%a1%a1%e6%a0%91/">平衡树&lt;/a>或者&lt;a href="/oiblogs/data%e6%95%b0%e6%8d%ae%e7%bb%93%e6%9e%84/%e7%ba%bf%e6%ae%b5%e6%a0%91/">线段树&lt;/a>。&lt;/p>
+&lt;p>建议直接移步&lt;a href="https://xuxihe.vercel.app/oiblogs/data%e6%95%b0%e6%8d%ae%e7%bb%93%e6%9e%84/%e5%b9%b3%e8%a1%a1%e6%a0%91/">平衡树&lt;/a>或者&lt;a href="https://xuxihe.vercel.app/oiblogs/data%e6%95%b0%e6%8d%ae%e7%bb%93%e6%9e%84/%e7%ba%bf%e6%ae%b5%e6%a0%91/">线段树&lt;/a>。&lt;/p>
 &lt;p>&lt;strong>摘抄如下：&lt;/strong>&lt;/p>
 &lt;p>类似于线段树上二分，树状数组上也可以进行二分。&lt;/p>
 &lt;p>使用&lt;strong>树状数组上二分&lt;/strong>（可能需要预先离散化），可以$O(log\space{n})$​查询第 $k$​ 小/大元素，实现类似&lt;strong>平衡树&lt;/strong>的效果。&lt;/p>
@@ -2811,7 +2811,7 @@ if (t &amp;lt;= n &amp;amp;&amp;amp; d[t] &amp;lt; k)k -= d[t], r = t;
 }
 return r + 1;
 }
-&lt;/code>&lt;/pre></description></item><item><title>欧拉回路</title><link>/notes/oiknowledge/graph%E5%9B%BE%E8%AE%BA/%E6%AC%A7%E6%8B%89%E5%9B%9E%E8%B7%AF/</link><pubDate>Mon, 18 Oct 2021 00:00:00 +0000</pubDate><guid>/notes/oiknowledge/graph%E5%9B%BE%E8%AE%BA/%E6%AC%A7%E6%8B%89%E5%9B%9E%E8%B7%AF/</guid><description>&lt;h1 id="欧拉回路">欧拉回路&lt;/h1>
+&lt;/code>&lt;/pre></description></item><item><title>欧拉回路</title><link>https://xuxihe.vercel.app/notes/oiknowledge/graph%E5%9B%BE%E8%AE%BA/%E6%AC%A7%E6%8B%89%E5%9B%9E%E8%B7%AF/</link><pubDate>Mon, 18 Oct 2021 00:00:00 +0000</pubDate><guid>https://xuxihe.vercel.app/notes/oiknowledge/graph%E5%9B%BE%E8%AE%BA/%E6%AC%A7%E6%8B%89%E5%9B%9E%E8%B7%AF/</guid><description>&lt;h1 id="欧拉回路">欧拉回路&lt;/h1>
 &lt;h2 id="前置知识">前置知识&lt;/h2>
 &lt;p>图 $G$ 中恰好经过所有边一次(不可重复经过)的通路称作欧拉通路，恰好经过所有边一次的回路称作欧拉回路。&lt;/p>
 &lt;p>具有欧拉回路的图称为欧拉图，具有欧拉通路但不具有欧拉回路的图称为半欧拉图。&lt;/p>
@@ -2832,7 +2832,7 @@ return r + 1;
 &lt;h2 id="dfs求解">DFS求解&lt;/h2>
 &lt;p>利用欧拉定理判断出一个图存在欧拉回路或欧拉通路后，选择一个正确的起始顶点，用DFS算法遍历所有的边(每一条边只遍历一次)，遇到走不通就回退。在搜索前进方向上将遍历过的边按顺序记录下来，这组边的排列就组成了一条欧拉通路或回路。&lt;/p>
 &lt;h2 id="fleury佛罗莱算法">Fleury(佛罗莱)算法&lt;/h2>
-&lt;p>&lt;del>以后有时间再说&lt;/del>&lt;/p></description></item><item><title>线段树</title><link>/notes/oiknowledge/data%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/%E7%BA%BF%E6%AE%B5%E6%A0%91/</link><pubDate>Sun, 17 Oct 2021 00:00:00 +0000</pubDate><guid>/notes/oiknowledge/data%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/%E7%BA%BF%E6%AE%B5%E6%A0%91/</guid><description>&lt;h1 id="线段树">线段树&lt;/h1>
+&lt;p>&lt;del>以后有时间再说&lt;/del>&lt;/p></description></item><item><title>线段树</title><link>https://xuxihe.vercel.app/notes/oiknowledge/data%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/%E7%BA%BF%E6%AE%B5%E6%A0%91/</link><pubDate>Sun, 17 Oct 2021 00:00:00 +0000</pubDate><guid>https://xuxihe.vercel.app/notes/oiknowledge/data%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/%E7%BA%BF%E6%AE%B5%E6%A0%91/</guid><description>&lt;h1 id="线段树">线段树&lt;/h1>
 &lt;h2 id="介绍一下">介绍一下&lt;/h2>
 &lt;p>又是一个&lt;a href="">倍增&lt;/a>思想下&lt;del>奇奇怪怪&lt;/del>的东西。&lt;/p>
 &lt;p>线段树是一种高效维护(在手不残的前提下)&lt;strong>区间信息&lt;/strong>的数据结构，可以在$O(\log{n})$​​​​时间复杂度内实现单点修改、区间修改、区间查询等(各种稀奇古怪的)操作。树状数组能够解决的问题&lt;strong>理论上&lt;/strong>(注意空间复杂度)都可以用线段树解决。&lt;del>就是慢了点，空间占得大了点儿&lt;/del>&lt;/p>
@@ -3039,7 +3039,7 @@ upd(pos); //更新当前节点信息
 &lt;p>这一类问题中，数据结构的维护只是最后一步，难点往往在于想出第一步的 $O(n^2)$或 $O(nm)$的暴力。&lt;/p>
 &lt;p>解决这类优化问题时，一般都是在得到暴力解法后，将&lt;strong>要实现的操作&lt;/strong>都列出来，再选择合适的数据结构维护这些操作。&lt;/p>
 &lt;p>&lt;strong>考场上遇到这类题目一定要先写出暴力，拿到尽可能多的分数！！&lt;/strong>&lt;/p>
-&lt;p>&lt;del>md要是遇到线段树的题，一首《凉凉》送给头秃的自己&lt;/del>&lt;/p></description></item><item><title>二分图匹配</title><link>/notes/oiknowledge/graph%E5%9B%BE%E8%AE%BA/%E4%BA%8C%E5%88%86%E5%9B%BE%E5%8C%B9%E9%85%8D/</link><pubDate>Mon, 18 Oct 2021 00:00:00 +0000</pubDate><guid>/notes/oiknowledge/graph%E5%9B%BE%E8%AE%BA/%E4%BA%8C%E5%88%86%E5%9B%BE%E5%8C%B9%E9%85%8D/</guid><description>&lt;h1 id="二分图匹配">二分图匹配&lt;/h1>
+&lt;p>&lt;del>md要是遇到线段树的题，一首《凉凉》送给头秃的自己&lt;/del>&lt;/p></description></item><item><title>二分图匹配</title><link>https://xuxihe.vercel.app/notes/oiknowledge/graph%E5%9B%BE%E8%AE%BA/%E4%BA%8C%E5%88%86%E5%9B%BE%E5%8C%B9%E9%85%8D/</link><pubDate>Mon, 18 Oct 2021 00:00:00 +0000</pubDate><guid>https://xuxihe.vercel.app/notes/oiknowledge/graph%E5%9B%BE%E8%AE%BA/%E4%BA%8C%E5%88%86%E5%9B%BE%E5%8C%B9%E9%85%8D/</guid><description>&lt;h1 id="二分图匹配">二分图匹配&lt;/h1>
 &lt;h2 id="前置知识二分图">前置知识——二分图&lt;/h2>
 &lt;p>首先，要明白什么是二分图(又称作二部图)。&lt;/p>
 &lt;p>形象的描述一下，现在你是某市的市长，而一条大河从你的城市中心穿流而过。所以，你为了使你的城市交通遍历，促进城市发展，你决定在这条河上建桥，以连接河两岸的路口。&lt;/p>
@@ -3156,7 +3156,7 @@ $$&lt;/p>
 &lt;p>**证明：**去掉最小点覆盖的顶点后，所有点之间不连通(因为删去最小点覆盖保证所有边均删除，因此不会出现连通)。&lt;/p>
 &lt;h3 id="最小不可重链覆盖">最小不可重链覆盖&lt;/h3>
 &lt;h3 id="有权最大匹配等">有权最大匹配等&lt;/h3>
-&lt;p>参见&lt;a href="">网络流&lt;/a>和&lt;a href="">费用流&lt;/a>。&lt;/p></description></item><item><title>ST表</title><link>/notes/oiknowledge/data%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/st%E8%A1%A8/</link><pubDate>Sun, 17 Oct 2021 00:00:00 +0000</pubDate><guid>/notes/oiknowledge/data%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/st%E8%A1%A8/</guid><description/></item><item><title>溶解性表</title><link>/courses/chemistry/%E6%BA%B6%E8%A7%A3%E6%80%A7%E8%A1%A8/</link><pubDate>Thu, 18 Nov 2021 20:52:27 +0800</pubDate><guid>/courses/chemistry/%E6%BA%B6%E8%A7%A3%E6%80%A7%E8%A1%A8/</guid><description>&lt;h2 id="表格">表格&lt;/h2>
+&lt;p>参见&lt;a href="">网络流&lt;/a>和&lt;a href="">费用流&lt;/a>。&lt;/p></description></item><item><title>ST表</title><link>https://xuxihe.vercel.app/notes/oiknowledge/data%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/st%E8%A1%A8/</link><pubDate>Sun, 17 Oct 2021 00:00:00 +0000</pubDate><guid>https://xuxihe.vercel.app/notes/oiknowledge/data%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/st%E8%A1%A8/</guid><description/></item><item><title>溶解性表</title><link>https://xuxihe.vercel.app/courses/chemistry/%E6%BA%B6%E8%A7%A3%E6%80%A7%E8%A1%A8/</link><pubDate>Thu, 18 Nov 2021 20:52:27 +0800</pubDate><guid>https://xuxihe.vercel.app/courses/chemistry/%E6%BA%B6%E8%A7%A3%E6%80%A7%E8%A1%A8/</guid><description>&lt;h2 id="表格">表格&lt;/h2>
 &lt;table>
 &lt;thead>
 &lt;tr>
@@ -3391,11 +3391,11 @@ recordIP: true,
 serverURLs: false,
 enableQQ: true
 })
-&lt;/script></description></item><item><title>test</title><link>/notes/oiknowledge/basic%E5%9F%BA%E6%9C%AC%E6%80%9D%E6%83%B3/test/</link><pubDate>Sun, 17 Oct 2021 00:00:00 +0000</pubDate><guid>/notes/oiknowledge/basic%E5%9F%BA%E6%9C%AC%E6%80%9D%E6%83%B3/test/</guid><description>&lt;p>$$
+&lt;/script></description></item><item><title>test</title><link>https://xuxihe.vercel.app/notes/oiknowledge/basic%E5%9F%BA%E6%9C%AC%E6%80%9D%E6%83%B3/test/</link><pubDate>Sun, 17 Oct 2021 00:00:00 +0000</pubDate><guid>https://xuxihe.vercel.app/notes/oiknowledge/basic%E5%9F%BA%E6%9C%AC%E6%80%9D%E6%83%B3/test/</guid><description>&lt;p>$$
 \left\{\begin{aligned}
 a=b\newline b=c \newline c=a
 \end{aligned}\right.
-$$&lt;/p></description></item><item><title>字典树</title><link>/notes/oiknowledge/data%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/%E5%AD%97%E5%85%B8%E6%A0%91/</link><pubDate>Sun, 17 Oct 2021 00:00:00 +0000</pubDate><guid>/notes/oiknowledge/data%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/%E5%AD%97%E5%85%B8%E6%A0%91/</guid><description>&lt;h1 id="字典树">字典树&lt;/h1>
+$$&lt;/p></description></item><item><title>字典树</title><link>https://xuxihe.vercel.app/notes/oiknowledge/data%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/%E5%AD%97%E5%85%B8%E6%A0%91/</link><pubDate>Sun, 17 Oct 2021 00:00:00 +0000</pubDate><guid>https://xuxihe.vercel.app/notes/oiknowledge/data%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/%E5%AD%97%E5%85%B8%E6%A0%91/</guid><description>&lt;h1 id="字典树">字典树&lt;/h1>
 &lt;h2 id="这是一棵神奇的树">这是一棵神奇的树&lt;/h2>
 &lt;p>&lt;del>字典树，顾名思义，就是一个字典。&lt;/del>&lt;/p>
 &lt;p>字典树，又称前缀树，作用是储存一些字符串……方便查询与修改。&lt;/p>
@@ -3535,7 +3535,7 @@ return 0;
 &lt;/ul>
 &lt;p>答案从高位到低位~~(说话算数的到说话不算数的)~~依次构造，正确性显然。&lt;/p>
 &lt;h2 id="板子">板子&lt;/h2>
-&lt;p>&lt;a href="http://faioj.brynhild.online/problem/30050" target="_blank" rel="noopener">FaiOJ #30050. 「一本通 2.3 例 2」The XOR Largest Pair&lt;/a>&lt;/p></description></item><item><title>差分约束</title><link>/notes/oiknowledge/graph%E5%9B%BE%E8%AE%BA/%E5%B7%AE%E5%88%86%E7%BA%A6%E6%9D%9F/</link><pubDate>Sun, 17 Oct 2021 00:00:00 +0000</pubDate><guid>/notes/oiknowledge/graph%E5%9B%BE%E8%AE%BA/%E5%B7%AE%E5%88%86%E7%BA%A6%E6%9D%9F/</guid><description>&lt;p>&lt;a href="https://blog.csdn.net/consciousman/article/details/53812818?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522162925274616780265475802%2522%252C%2522scm%2522%253A%252220140713.130102334..%2522%257D&amp;amp;request_id=162925274616780265475802&amp;amp;biz_id=0&amp;amp;utm_medium=distribute.pc_search_result.none-task-blog-2~all~top_positive~default-1-53812818.pc_search_result_control_group&amp;amp;utm_term=%E5%B7%AE%E5%88%86%E7%BA%A6%E6%9D%9F&amp;amp;spm=1018.2226.3001.4187" target="_blank" rel="noopener">难懂但是比较全的博文&lt;/a>&lt;/p>
+&lt;p>&lt;a href="http://faioj.brynhild.online/problem/30050" target="_blank" rel="noopener">FaiOJ #30050. 「一本通 2.3 例 2」The XOR Largest Pair&lt;/a>&lt;/p></description></item><item><title>差分约束</title><link>https://xuxihe.vercel.app/notes/oiknowledge/graph%E5%9B%BE%E8%AE%BA/%E5%B7%AE%E5%88%86%E7%BA%A6%E6%9D%9F/</link><pubDate>Sun, 17 Oct 2021 00:00:00 +0000</pubDate><guid>https://xuxihe.vercel.app/notes/oiknowledge/graph%E5%9B%BE%E8%AE%BA/%E5%B7%AE%E5%88%86%E7%BA%A6%E6%9D%9F/</guid><description>&lt;p>&lt;a href="https://blog.csdn.net/consciousman/article/details/53812818?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522162925274616780265475802%2522%252C%2522scm%2522%253A%252220140713.130102334..%2522%257D&amp;amp;request_id=162925274616780265475802&amp;amp;biz_id=0&amp;amp;utm_medium=distribute.pc_search_result.none-task-blog-2~all~top_positive~default-1-53812818.pc_search_result_control_group&amp;amp;utm_term=%E5%B7%AE%E5%88%86%E7%BA%A6%E6%9D%9F&amp;amp;spm=1018.2226.3001.4187" target="_blank" rel="noopener">难懂但是比较全的博文&lt;/a>&lt;/p>
 &lt;h2 id="这是啥子">这是啥子?&lt;/h2>
 &lt;p>简单来说，差分约束就是把不等式转变成图的一种思想。因为题目可能会给你很多不等式，使用数学方法很有可能无解，而且难以找到这些不等式之间的联系。但是当我们把它们转化成图之后，就可以使用图论的思想来解题。&lt;/p>
 &lt;p>通常，差分约束是用来解决求一组形如 $a-b\leq{c}$ 的不等式的可能最大/最小解。&lt;/p>
@@ -3596,7 +3596,7 @@ recordIP: true,
 serverURLs: false,
 enableQQ: true
 })
-&lt;/script></description></item><item><title>01分数规划</title><link>/notes/oiknowledge/graph%E5%9B%BE%E8%AE%BA/01%E5%88%86%E6%95%B0%E8%A7%84%E5%88%92/</link><pubDate>Mon, 18 Oct 2021 00:00:00 +0000</pubDate><guid>/notes/oiknowledge/graph%E5%9B%BE%E8%AE%BA/01%E5%88%86%E6%95%B0%E8%A7%84%E5%88%92/</guid><description>&lt;h1 id="01分数规划">01分数规划&lt;/h1>
+&lt;/script></description></item><item><title>01分数规划</title><link>https://xuxihe.vercel.app/notes/oiknowledge/graph%E5%9B%BE%E8%AE%BA/01%E5%88%86%E6%95%B0%E8%A7%84%E5%88%92/</link><pubDate>Mon, 18 Oct 2021 00:00:00 +0000</pubDate><guid>https://xuxihe.vercel.app/notes/oiknowledge/graph%E5%9B%BE%E8%AE%BA/01%E5%88%86%E6%95%B0%E8%A7%84%E5%88%92/</guid><description>&lt;h1 id="01分数规划">01分数规划&lt;/h1>
 &lt;h2 id="问题">问题&lt;/h2>
 &lt;p>使两个线性函数的比值最大或最小的问题，称作分数规划问题或双曲线问题。&lt;/p>
 &lt;p>而01分数规划和01背包问题差不多：&lt;/p>
@@ -3606,7 +3606,7 @@ $$
 \frac{\sum_{i=1}^nval_i\times{x_i}}{\sum_{i=1}^ncost_i\times{x_i}}
 $$&lt;/p>
 &lt;h2 id="二分解法">二分解法&lt;/h2>
-&lt;p>&lt;a href="/oiblogs/basic%e5%9f%ba%e6%9c%ac%e6%80%9d%e6%83%b3/%e5%88%86%e6%b2%bb/">二分在这边&lt;/a>&lt;/p>
+&lt;p>&lt;a href="https://xuxihe.vercel.app/oiblogs/basic%e5%9f%ba%e6%9c%ac%e6%80%9d%e6%83%b3/%e5%88%86%e6%b2%bb/">二分在这边&lt;/a>&lt;/p>
 &lt;p>假设答案为 $ans$
 $$
 ans=min(\frac{\sum_{i=1}^nval_i\times{x_i}}{\sum_{i=1}^ncost_i\times{x_i}})
@@ -3628,7 +3628,7 @@ $$
 &lt;div class="d-flex justify-content-center">
 &lt;div class="w-100" >&lt;img src="https://img-blog.csdnimg.cn/20210213120449912.png" alt="fa" loading="lazy" data-zoomable />&lt;/div>
 &lt;/div>&lt;/figure>
-&lt;/p></description></item><item><title>Hash表</title><link>/notes/oiknowledge/data%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/hash%E8%A1%A8/</link><pubDate>Sun, 17 Oct 2021 00:00:00 +0000</pubDate><guid>/notes/oiknowledge/data%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/hash%E8%A1%A8/</guid><description/></item><item><title>坐标距离</title><link>/notes/oiknowledge/graph%E5%9B%BE%E8%AE%BA/%E5%9D%90%E6%A0%87%E8%A1%A8%E7%A4%BA%E6%B3%95/</link><pubDate>Mon, 18 Oct 2021 00:00:00 +0000</pubDate><guid>/notes/oiknowledge/graph%E5%9B%BE%E8%AE%BA/%E5%9D%90%E6%A0%87%E8%A1%A8%E7%A4%BA%E6%B3%95/</guid><description>&lt;h1 id="坐标之间的常用距离">坐标之间的常用距离&lt;/h1>
+&lt;/p></description></item><item><title>Hash表</title><link>https://xuxihe.vercel.app/notes/oiknowledge/data%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/hash%E8%A1%A8/</link><pubDate>Sun, 17 Oct 2021 00:00:00 +0000</pubDate><guid>https://xuxihe.vercel.app/notes/oiknowledge/data%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/hash%E8%A1%A8/</guid><description/></item><item><title>坐标距离</title><link>https://xuxihe.vercel.app/notes/oiknowledge/graph%E5%9B%BE%E8%AE%BA/%E5%9D%90%E6%A0%87%E8%A1%A8%E7%A4%BA%E6%B3%95/</link><pubDate>Mon, 18 Oct 2021 00:00:00 +0000</pubDate><guid>https://xuxihe.vercel.app/notes/oiknowledge/graph%E5%9B%BE%E8%AE%BA/%E5%9D%90%E6%A0%87%E8%A1%A8%E7%A4%BA%E6%B3%95/</guid><description>&lt;h1 id="坐标之间的常用距离">坐标之间的常用距离&lt;/h1>
 &lt;p>通常，OI中使用到的两点之间坐标(针对于维度大于一的坐标系)通常用如下三种。&lt;/p>
 &lt;h2 id="欧几里得距离">欧几里得距离&lt;/h2>
 &lt;p>定义为&lt;strong>以两点为端点的线段的长度&lt;/strong>。&lt;/p>
@@ -3661,7 +3661,7 @@ $$
 &lt;p>将每一个点 $(x,y)$ 转化为 $(\frac{x+y}{2},\frac{x−y}{2})$，新坐标系下的曼哈顿距离即为原坐标系下的切比雪夫距离。&lt;/p>
 &lt;/li>
 &lt;/ul>
-&lt;p>&lt;del>这一段背住得了，&lt;a href="https://zhuanlan.zhihu.com/p/32878257" target="_blank" rel="noopener">证明&lt;/a>不看也罢。&lt;/del>&lt;/p></description></item><item><title>电解质</title><link>/courses/chemistry/%E7%94%B5%E8%A7%A3%E8%B4%A8/</link><pubDate>Thu, 18 Nov 2021 20:57:24 +0800</pubDate><guid>/courses/chemistry/%E7%94%B5%E8%A7%A3%E8%B4%A8/</guid><description>&lt;h2 id="酸">酸&lt;/h2>
+&lt;p>&lt;del>这一段背住得了，&lt;a href="https://zhuanlan.zhihu.com/p/32878257" target="_blank" rel="noopener">证明&lt;/a>不看也罢。&lt;/del>&lt;/p></description></item><item><title>电解质</title><link>https://xuxihe.vercel.app/courses/chemistry/%E7%94%B5%E8%A7%A3%E8%B4%A8/</link><pubDate>Thu, 18 Nov 2021 20:57:24 +0800</pubDate><guid>https://xuxihe.vercel.app/courses/chemistry/%E7%94%B5%E8%A7%A3%E8%B4%A8/</guid><description>&lt;h2 id="酸">酸&lt;/h2>
 &lt;h3 id="强酸">强酸&lt;/h3>
 &lt;p>$\ce{HCl}$ 、$\ce{H2SO4}$ 、$\ce{HNO3}$ 、$\ce{HClO4}$(高氯酸) 、$\ce{HI}$(氢碘酸) 、$\ce{HBr}$(氢溴酸)&lt;/p>
 &lt;h3 id="中强酸">中强酸&lt;/h3>
@@ -3690,7 +3690,7 @@ recordIP: true,
 serverURLs: false,
 enableQQ: true
 })
-&lt;/script></description></item><item><title>氧化还原</title><link>/courses/chemistry/%E6%B0%A7%E5%8C%96%E8%BF%98%E5%8E%9F/</link><pubDate>Thu, 18 Nov 2021 20:59:03 +0800</pubDate><guid>/courses/chemistry/%E6%B0%A7%E5%8C%96%E8%BF%98%E5%8E%9F/</guid><description>&lt;h2 id="氧化剂">氧化剂&lt;/h2>
+&lt;/script></description></item><item><title>氧化还原</title><link>https://xuxihe.vercel.app/courses/chemistry/%E6%B0%A7%E5%8C%96%E8%BF%98%E5%8E%9F/</link><pubDate>Thu, 18 Nov 2021 20:59:03 +0800</pubDate><guid>https://xuxihe.vercel.app/courses/chemistry/%E6%B0%A7%E5%8C%96%E8%BF%98%E5%8E%9F/</guid><description>&lt;h2 id="氧化剂">氧化剂&lt;/h2>
 &lt;h3 id="常见氧化剂">常见氧化剂&lt;/h3>
 &lt;ol>
 &lt;li>活泼型较强的非金属单质：$\ce{O2}$ 、$\ce{Cl2}$ 等。&lt;/li>
@@ -3726,7 +3726,7 @@ recordIP: true,
 serverURLs: false,
 enableQQ: true
 })
-&lt;/script></description></item><item><title>焰色实验</title><link>/courses/chemistry/%E7%84%B0%E8%89%B2%E5%AE%9E%E9%AA%8C/</link><pubDate>Thu, 18 Nov 2021 21:06:12 +0800</pubDate><guid>/courses/chemistry/%E7%84%B0%E8%89%B2%E5%AE%9E%E9%AA%8C/</guid><description>&lt;p>
+&lt;/script></description></item><item><title>焰色实验</title><link>https://xuxihe.vercel.app/courses/chemistry/%E7%84%B0%E8%89%B2%E5%AE%9E%E9%AA%8C/</link><pubDate>Thu, 18 Nov 2021 21:06:12 +0800</pubDate><guid>https://xuxihe.vercel.app/courses/chemistry/%E7%84%B0%E8%89%B2%E5%AE%9E%E9%AA%8C/</guid><description>&lt;p>
 &lt;figure >
 &lt;div class="d-flex justify-content-center">
 &lt;div class="w-100" >&lt;img src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fpic2.zhimg.com%2F50%2Fv2-672b019eb1f9fbaae8a0b4d5bfb1823d_hd.jpg&amp;amp;refer=http%3A%2F%2Fpic2.zhimg.com&amp;amp;app=2002&amp;amp;size=f9999,10000&amp;amp;q=a80&amp;amp;n=0&amp;amp;g=0n&amp;amp;fmt=jpeg?sec=1638025271&amp;amp;t=162516d2b176665efc7e8131678431d2" alt="没了请自行Google啊baidu啊啥的" loading="lazy" data-zoomable />&lt;/div>
@@ -3797,7 +3797,7 @@ recordIP: true,
 serverURLs: false,
 enableQQ: true
 })
-&lt;/script></description></item><item><title>物质的量</title><link>/courses/chemistry/%E7%89%A9%E8%B4%A8%E7%9A%84%E9%87%8F/</link><pubDate>Sun, 21 Nov 2021 14:59:26 +0800</pubDate><guid>/courses/chemistry/%E7%89%A9%E8%B4%A8%E7%9A%84%E9%87%8F/</guid><description>&lt;h2 id="物质的量">物质的量&lt;/h2>
+&lt;/script></description></item><item><title>物质的量</title><link>https://xuxihe.vercel.app/courses/chemistry/%E7%89%A9%E8%B4%A8%E7%9A%84%E9%87%8F/</link><pubDate>Sun, 21 Nov 2021 14:59:26 +0800</pubDate><guid>https://xuxihe.vercel.app/courses/chemistry/%E7%89%A9%E8%B4%A8%E7%9A%84%E9%87%8F/</guid><description>&lt;h2 id="物质的量">物质的量&lt;/h2>
 &lt;p>&lt;strong>物质的量&lt;/strong>是7个基本物理量之一，用于将可称量的物质与难以称量的微观粒子之间建立联系，表示&lt;b>&lt;font color=red size=4>含有一定数目例子的集合体&lt;/font>&lt;/b>，符号为 $n$ 。&lt;/p>
 &lt;p>**注意：**物质的量是一个整体，是一个物理量的名称。&lt;/p>
 &lt;p>&lt;del>这玩意你理解的话，可以用到任何玩意上，甚至是混合物。&lt;/del>&lt;/p>
@@ -4081,7 +4081,7 @@ recordIP: true,
 serverURLs: false,
 enableQQ: true
 })
-&lt;/script></description></item><item><title>酸</title><link>/courses/chemistry/%E9%85%B8/</link><pubDate>Sat, 27 Nov 2021 16:32:17 +0800</pubDate><guid>/courses/chemistry/%E9%85%B8/</guid><description>&lt;h2 id="酸的定义">酸的定义&lt;/h2>
+&lt;/script></description></item><item><title>酸</title><link>https://xuxihe.vercel.app/courses/chemistry/%E9%85%B8/</link><pubDate>Sat, 27 Nov 2021 16:32:17 +0800</pubDate><guid>https://xuxihe.vercel.app/courses/chemistry/%E9%85%B8/</guid><description>&lt;h2 id="酸的定义">酸的定义&lt;/h2>
 &lt;p>在水中电离出的阳离子只有 $\ce{H+}$ 的化合物。&lt;/p>
 &lt;h2 id="酸的氧化性">酸的氧化性&lt;/h2>
 &lt;p>所有酸的通性。&lt;/p>
@@ -4105,7 +4105,7 @@ recordIP: true,
 serverURLs: false,
 enableQQ: true
 })
-&lt;/script></description></item><item><title>Na钠</title><link>/courses/chemistry/na/</link><pubDate>Thu, 18 Nov 2021 21:08:39 +0800</pubDate><guid>/courses/chemistry/na/</guid><description>&lt;h2 id="物理性质">物理性质&lt;/h2>
+&lt;/script></description></item><item><title>Na钠</title><link>https://xuxihe.vercel.app/courses/chemistry/na/</link><pubDate>Thu, 18 Nov 2021 21:08:39 +0800</pubDate><guid>https://xuxihe.vercel.app/courses/chemistry/na/</guid><description>&lt;h2 id="物理性质">物理性质&lt;/h2>
 &lt;ol>
 &lt;li>软&lt;/li>
 &lt;li>银白色金属光泽&lt;/li>
@@ -4197,7 +4197,7 @@ recordIP: true,
 serverURLs: false,
 enableQQ: true
 })
-&lt;/script></description></item><item><title>Cl氯</title><link>/courses/chemistry/cl/</link><pubDate>Thu, 18 Nov 2021 21:12:41 +0800</pubDate><guid>/courses/chemistry/cl/</guid><description>&lt;h2 id="物理性质">物理性质&lt;/h2>
+&lt;/script></description></item><item><title>Cl氯</title><link>https://xuxihe.vercel.app/courses/chemistry/cl/</link><pubDate>Thu, 18 Nov 2021 21:12:41 +0800</pubDate><guid>https://xuxihe.vercel.app/courses/chemistry/cl/</guid><description>&lt;h2 id="物理性质">物理性质&lt;/h2>
 &lt;ol>
 &lt;li>标准状况下为气体&lt;/li>
 &lt;li>黄绿色&lt;/li>
@@ -4485,7 +4485,7 @@ enableQQ: true
 &lt;/li>
 &lt;/ul>
 &lt;/li>
-&lt;/ol></description></item><item><title>Fe铁</title><link>/courses/chemistry/fe/</link><pubDate>Sat, 27 Nov 2021 15:26:33 +0800</pubDate><guid>/courses/chemistry/fe/</guid><description>&lt;h2 id="物理性质">物理性质&lt;/h2>
+&lt;/ol></description></item><item><title>Fe铁</title><link>https://xuxihe.vercel.app/courses/chemistry/fe/</link><pubDate>Sat, 27 Nov 2021 15:26:33 +0800</pubDate><guid>https://xuxihe.vercel.app/courses/chemistry/fe/</guid><description>&lt;h2 id="物理性质">物理性质&lt;/h2>
 &lt;ol>
 &lt;li>银白色金属光泽&lt;/li>
 &lt;li>导电导热&lt;/li>
@@ -4838,7 +4838,7 @@ recordIP: true,
 serverURLs: false,
 enableQQ: true
 })
-&lt;/script></description></item><item><title>Al铝</title><link>/courses/chemistry/al/</link><pubDate>Sun, 28 Nov 2021 15:56:41 +0800</pubDate><guid>/courses/chemistry/al/</guid><description>&lt;h2 id="物理性质">物理性质&lt;/h2>
+&lt;/script></description></item><item><title>Al铝</title><link>https://xuxihe.vercel.app/courses/chemistry/al/</link><pubDate>Sun, 28 Nov 2021 15:56:41 +0800</pubDate><guid>https://xuxihe.vercel.app/courses/chemistry/al/</guid><description>&lt;h2 id="物理性质">物理性质&lt;/h2>
 &lt;ol>
 &lt;li>银白色金属光泽&lt;/li>
 &lt;li>导电导热&lt;/li>
@@ -5054,10 +5054,10 @@ enableQQ: true
 &lt;td>吸附水中悬浊物，用于净水&lt;/td>
 &lt;/tr>
 &lt;/tbody>
-&lt;/table></description></item><item><title>数学表示</title><link>/notes/oiknowledge/math%E6%95%B0%E8%AE%BA/%E6%95%B0%E5%AD%A6%E8%A1%A8%E7%A4%BA/</link><pubDate>Mon, 18 Oct 2021 00:00:00 +0000</pubDate><guid>/notes/oiknowledge/math%E6%95%B0%E8%AE%BA/%E6%95%B0%E5%AD%A6%E8%A1%A8%E7%A4%BA/</guid><description>&lt;h1 id="数学表示">数学表示&lt;/h1>
+&lt;/table></description></item><item><title>数学表示</title><link>https://xuxihe.vercel.app/notes/oiknowledge/math%E6%95%B0%E8%AE%BA/%E6%95%B0%E5%AD%A6%E8%A1%A8%E7%A4%BA/</link><pubDate>Mon, 18 Oct 2021 00:00:00 +0000</pubDate><guid>https://xuxihe.vercel.app/notes/oiknowledge/math%E6%95%B0%E8%AE%BA/%E6%95%B0%E5%AD%A6%E8%A1%A8%E7%A4%BA/</guid><description>&lt;h1 id="数学表示">数学表示&lt;/h1>
 &lt;ol>
 &lt;li>$x|y$ ：$x$ 整除 $y$，即存在 $d\in Z$ 使得 $y=dx$&lt;/li>
-&lt;/ol></description></item><item><title>镇站之宝</title><link>/post/happy/%E9%95%87%E7%AB%99%E4%B9%8B%E5%AE%9D/</link><pubDate>Mon, 29 Nov 2021 18:00:30 +0800</pubDate><guid>/post/happy/%E9%95%87%E7%AB%99%E4%B9%8B%E5%AE%9D/</guid><description>&lt;script src='//unpkg.com/valine/dist/Valine.min.js'>&lt;/script>
+&lt;/ol></description></item><item><title>镇站之宝</title><link>https://xuxihe.vercel.app/post/happy/%E9%95%87%E7%AB%99%E4%B9%8B%E5%AE%9D/</link><pubDate>Mon, 29 Nov 2021 18:00:30 +0800</pubDate><guid>https://xuxihe.vercel.app/post/happy/%E9%95%87%E7%AB%99%E4%B9%8B%E5%AE%9D/</guid><description>&lt;script src='//unpkg.com/valine/dist/Valine.min.js'>&lt;/script>
 &lt;div id="vcomments">&lt;/div>
 &lt;script>
 new Valine({
@@ -5070,7 +5070,7 @@ recordIP: true,
 serverURLs: false,
 enableQQ: true
 })
-&lt;/script></description></item><item><title>2021 11 25</title><link>/post/daily-words/2021-11-25/</link><pubDate>Thu, 25 Nov 2021 22:05:43 +0800</pubDate><guid>/post/daily-words/2021-11-25/</guid><description>&lt;table>
+&lt;/script></description></item><item><title>2021 11 25</title><link>https://xuxihe.vercel.app/post/daily-words/2021-11-25/</link><pubDate>Thu, 25 Nov 2021 22:05:43 +0800</pubDate><guid>https://xuxihe.vercel.app/post/daily-words/2021-11-25/</guid><description>&lt;table>
 &lt;thead>
 &lt;tr>
 &lt;th>生词&lt;/th>
@@ -5144,8 +5144,8 @@ recordIP: true,
 serverURLs: false,
 enableQQ: true
 })
-&lt;/script></description></item><item><title>语文知识</title><link>/project/chinese/</link><pubDate>Tue, 23 Nov 2021 08:59:12 +0800</pubDate><guid>/project/chinese/</guid><description/></item><item><title>议论文素材</title><link>/project/argumentation/</link><pubDate>Tue, 23 Nov 2021 08:39:14 +0800</pubDate><guid>/project/argumentation/</guid><description/></item><item><title>红楼梦</title><link>/project/red-dream/</link><pubDate>Tue, 23 Nov 2021 08:30:36 +0800</pubDate><guid>/project/red-dream/</guid><description>&lt;p>因为，据说，高考要考名著阅读，其中有红楼梦！！！&lt;/p>
-&lt;p>正好，边翻译边看了一遍。对于古文翻译和名著阅读都有好处。&lt;del>(夺聪明)&lt;/del>&lt;/p></description></item><item><title>2021 11 22</title><link>/post/daily-words/2021-11-22/</link><pubDate>Mon, 22 Nov 2021 20:38:46 +0800</pubDate><guid>/post/daily-words/2021-11-22/</guid><description>&lt;table>
+&lt;/script></description></item><item><title>语文知识</title><link>https://xuxihe.vercel.app/project/chinese/</link><pubDate>Tue, 23 Nov 2021 08:59:12 +0800</pubDate><guid>https://xuxihe.vercel.app/project/chinese/</guid><description/></item><item><title>议论文素材</title><link>https://xuxihe.vercel.app/project/argumentation/</link><pubDate>Tue, 23 Nov 2021 08:39:14 +0800</pubDate><guid>https://xuxihe.vercel.app/project/argumentation/</guid><description/></item><item><title>红楼梦</title><link>https://xuxihe.vercel.app/project/red-dream/</link><pubDate>Tue, 23 Nov 2021 08:30:36 +0800</pubDate><guid>https://xuxihe.vercel.app/project/red-dream/</guid><description>&lt;p>因为，据说，高考要考名著阅读，其中有红楼梦！！！&lt;/p>
+&lt;p>正好，边翻译边看了一遍。对于古文翻译和名著阅读都有好处。&lt;del>(夺聪明)&lt;/del>&lt;/p></description></item><item><title>2021 11 22</title><link>https://xuxihe.vercel.app/post/daily-words/2021-11-22/</link><pubDate>Mon, 22 Nov 2021 20:38:46 +0800</pubDate><guid>https://xuxihe.vercel.app/post/daily-words/2021-11-22/</guid><description>&lt;table>
 &lt;thead>
 &lt;tr>
 &lt;th style="text-align:left">生词&lt;/th>
@@ -5209,7 +5209,7 @@ recordIP: true,
 serverURLs: false,
 enableQQ: true
 })
-&lt;/script></description></item><item><title>Ubuntu安装字体</title><link>/post/tec/ubuntu%E5%AE%89%E8%A3%85%E5%AD%97%E4%BD%93/</link><pubDate>Mon, 22 Nov 2021 15:19:39 +0800</pubDate><guid>/post/tec/ubuntu%E5%AE%89%E8%A3%85%E5%AD%97%E4%BD%93/</guid><description>&lt;h2 id="引言">引言&lt;/h2>
+&lt;/script></description></item><item><title>Ubuntu安装字体</title><link>https://xuxihe.vercel.app/post/tec/ubuntu%E5%AE%89%E8%A3%85%E5%AD%97%E4%BD%93/</link><pubDate>Mon, 22 Nov 2021 15:19:39 +0800</pubDate><guid>https://xuxihe.vercel.app/post/tec/ubuntu%E5%AE%89%E8%A3%85%E5%AD%97%E4%BD%93/</guid><description>&lt;h2 id="引言">引言&lt;/h2>
 &lt;p>众所周知，&lt;code>Ubuntu&lt;/code> 是一个著名的Linux开源发行版。但是，开源……这就意味着，那些不开源的字体用不了！&lt;/p>
 &lt;p>所以，本着&lt;del>开源&lt;/del>务实的精神，我们要安装字体。（除非你想每天都被你的老师叫过去解决PPT的各种奇奇怪怪的问题）&lt;/p>
 &lt;p>而字体文件？当然是，Windows！&lt;del>虽然，有些blabla&lt;/del>&lt;/p>
@@ -5248,7 +5248,7 @@ recordIP: true,
 serverURLs: false,
 enableQQ: true
 })
-&lt;/script></description></item><item><title>Ubuntu关机90s</title><link>/post/tec/ubuntu%E5%85%B3%E6%9C%BA90s/</link><pubDate>Mon, 22 Nov 2021 15:15:41 +0800</pubDate><guid>/post/tec/ubuntu%E5%85%B3%E6%9C%BA90s/</guid><description>&lt;h2 id="现象">现象&lt;/h2>
+&lt;/script></description></item><item><title>Ubuntu关机90s</title><link>https://xuxihe.vercel.app/post/tec/ubuntu%E5%85%B3%E6%9C%BA90s/</link><pubDate>Mon, 22 Nov 2021 15:15:41 +0800</pubDate><guid>https://xuxihe.vercel.app/post/tec/ubuntu%E5%85%B3%E6%9C%BA90s/</guid><description>&lt;h2 id="现象">现象&lt;/h2>
 &lt;p>通常情况下，他会显示一个啥啥啥 is running，然后后面有一个括号 &lt;code>(..s/1min30s)&lt;/code> 这种。&lt;/p>
 &lt;h2 id="解决方法">解决方法&lt;/h2>
 &lt;p>虽然我们并不知道为啥，但是我们确实有一种解决的方法。&lt;/p>
@@ -5269,7 +5269,7 @@ recordIP: true,
 serverURLs: false,
 enableQQ: true
 })
-&lt;/script></description></item><item><title>作文</title><link>/courses/chinese/%E4%BD%9C%E6%96%87/</link><pubDate>Mon, 22 Nov 2021 15:04:17 +0800</pubDate><guid>/courses/chinese/%E4%BD%9C%E6%96%87/</guid><description>&lt;h3 id="审题">审题&lt;/h3>
+&lt;/script></description></item><item><title>作文</title><link>https://xuxihe.vercel.app/courses/chinese/%E4%BD%9C%E6%96%87/</link><pubDate>Mon, 22 Nov 2021 15:04:17 +0800</pubDate><guid>https://xuxihe.vercel.app/courses/chinese/%E4%BD%9C%E6%96%87/</guid><description>&lt;h3 id="审题">审题&lt;/h3>
 &lt;ol>
 &lt;li>寓言故事&lt;/li>
 &lt;li>新闻材料&lt;/li>
@@ -5304,7 +5304,7 @@ recordIP: true,
 serverURLs: false,
 enableQQ: true
 })
-&lt;/script></description></item><item><title>语言文字运用</title><link>/courses/chinese/%E8%AF%AD%E8%A8%80%E6%96%87%E5%AD%97%E8%BF%90%E7%94%A8/</link><pubDate>Mon, 22 Nov 2021 15:03:36 +0800</pubDate><guid>/courses/chinese/%E8%AF%AD%E8%A8%80%E6%96%87%E5%AD%97%E8%BF%90%E7%94%A8/</guid><description>&lt;h2 id="题型">题型&lt;/h2>
+&lt;/script></description></item><item><title>语言文字运用</title><link>https://xuxihe.vercel.app/courses/chinese/%E8%AF%AD%E8%A8%80%E6%96%87%E5%AD%97%E8%BF%90%E7%94%A8/</link><pubDate>Mon, 22 Nov 2021 15:03:36 +0800</pubDate><guid>https://xuxihe.vercel.app/courses/chinese/%E8%AF%AD%E8%A8%80%E6%96%87%E5%AD%97%E8%BF%90%E7%94%A8/</guid><description>&lt;h2 id="题型">题型&lt;/h2>
 &lt;h3 id="选择题">选择题&lt;/h3>
 &lt;h4 id="选词">选词&lt;/h4>
 &lt;ol>
@@ -5326,7 +5326,7 @@ recordIP: true,
 serverURLs: false,
 enableQQ: true
 })
-&lt;/script></description></item><item><title>古诗文阅读</title><link>/courses/chinese/%E5%8F%A4%E8%AF%97%E6%96%87%E9%98%85%E8%AF%BB/</link><pubDate>Mon, 22 Nov 2021 15:00:53 +0800</pubDate><guid>/courses/chinese/%E5%8F%A4%E8%AF%97%E6%96%87%E9%98%85%E8%AF%BB/</guid><description>&lt;h2 id="古文">古文&lt;/h2>
+&lt;/script></description></item><item><title>古诗文阅读</title><link>https://xuxihe.vercel.app/courses/chinese/%E5%8F%A4%E8%AF%97%E6%96%87%E9%98%85%E8%AF%BB/</link><pubDate>Mon, 22 Nov 2021 15:00:53 +0800</pubDate><guid>https://xuxihe.vercel.app/courses/chinese/%E5%8F%A4%E8%AF%97%E6%96%87%E9%98%85%E8%AF%BB/</guid><description>&lt;h2 id="古文">古文&lt;/h2>
 &lt;h3 id="题型">题型&lt;/h3>
 &lt;h4 id="选择题">选择题&lt;/h4>
 &lt;p>共 $3$ 道，$3\times3=9$ 分&lt;/p>
@@ -5358,7 +5358,7 @@ recordIP: true,
 serverURLs: false,
 enableQQ: true
 })
-&lt;/script></description></item><item><title>文学类文本阅读</title><link>/courses/chinese/%E6%96%87%E5%AD%A6%E7%B1%BB%E6%96%87%E6%9C%AC%E9%98%85%E8%AF%BB/</link><pubDate>Mon, 22 Nov 2021 14:59:42 +0800</pubDate><guid>/courses/chinese/%E6%96%87%E5%AD%A6%E7%B1%BB%E6%96%87%E6%9C%AC%E9%98%85%E8%AF%BB/</guid><description/></item><item><title>非连续性文本阅读</title><link>/courses/chinese/%E9%9D%9E%E8%BF%9E%E7%BB%AD%E6%80%A7%E6%96%87%E6%9C%AC%E9%98%85%E8%AF%BB/</link><pubDate>Mon, 22 Nov 2021 14:56:05 +0800</pubDate><guid>/courses/chinese/%E9%9D%9E%E8%BF%9E%E7%BB%AD%E6%80%A7%E6%96%87%E6%9C%AC%E9%98%85%E8%AF%BB/</guid><description>&lt;h2 id="材料">材料&lt;/h2>
+&lt;/script></description></item><item><title>文学类文本阅读</title><link>https://xuxihe.vercel.app/courses/chinese/%E6%96%87%E5%AD%A6%E7%B1%BB%E6%96%87%E6%9C%AC%E9%98%85%E8%AF%BB/</link><pubDate>Mon, 22 Nov 2021 14:59:42 +0800</pubDate><guid>https://xuxihe.vercel.app/courses/chinese/%E6%96%87%E5%AD%A6%E7%B1%BB%E6%96%87%E6%9C%AC%E9%98%85%E8%AF%BB/</guid><description/></item><item><title>非连续性文本阅读</title><link>https://xuxihe.vercel.app/courses/chinese/%E9%9D%9E%E8%BF%9E%E7%BB%AD%E6%80%A7%E6%96%87%E6%9C%AC%E9%98%85%E8%AF%BB/</link><pubDate>Mon, 22 Nov 2021 14:56:05 +0800</pubDate><guid>https://xuxihe.vercel.app/courses/chinese/%E9%9D%9E%E8%BF%9E%E7%BB%AD%E6%80%A7%E6%96%87%E6%9C%AC%E9%98%85%E8%AF%BB/</guid><description>&lt;h2 id="材料">材料&lt;/h2>
 &lt;p>$2\sim4$ 个选文，以文学类知识为主&lt;/p>
 &lt;h2 id="题型">题型&lt;/h2>
 &lt;h3 id="选择题">选择题&lt;/h3>
@@ -5411,7 +5411,7 @@ recordIP: true,
 serverURLs: false,
 enableQQ: true
 })
-&lt;/script></description></item><item><title>运动学</title><link>/courses/physics/%E8%BF%90%E5%8A%A8%E5%AD%A6/</link><pubDate>Sat, 20 Nov 2021 22:55:56 +0800</pubDate><guid>/courses/physics/%E8%BF%90%E5%8A%A8%E5%AD%A6/</guid><description>&lt;h2 id="矢量">矢量&lt;/h2>
+&lt;/script></description></item><item><title>运动学</title><link>https://xuxihe.vercel.app/courses/physics/%E8%BF%90%E5%8A%A8%E5%AD%A6/</link><pubDate>Sat, 20 Nov 2021 22:55:56 +0800</pubDate><guid>https://xuxihe.vercel.app/courses/physics/%E8%BF%90%E5%8A%A8%E5%AD%A6/</guid><description>&lt;h2 id="矢量">矢量&lt;/h2>
 &lt;p>有大小，有方向。注意区分矢量大小与矢量。&lt;/p>
 &lt;h2 id="匀加速运动">匀加速运动&lt;/h2>
 &lt;p>&lt;strong>声明：&lt;/strong>$v$ 表示瞬时速度，$\overline{v}$ 表示平均速度，$v_0$ 表示初速度，$x$ 表示位移，$t$ 表示时间，$a$ 表示加速度。单位均为国际单位。&lt;/p>
@@ -5436,7 +5436,7 @@ recordIP: true,
 serverURLs: false,
 enableQQ: true
 })
-&lt;/script></description></item><item><title>每日单词</title><link>/project/dailyword/</link><pubDate>Thu, 18 Nov 2021 20:15:24 +0800</pubDate><guid>/project/dailyword/</guid><description/></item><item><title>物理知识</title><link>/project/physics/</link><pubDate>Thu, 18 Nov 2021 20:08:05 +0800</pubDate><guid>/project/physics/</guid><description/></item><item><title>化学知识</title><link>/project/chemistry/</link><pubDate>Thu, 18 Nov 2021 20:05:23 +0800</pubDate><guid>/project/chemistry/</guid><description/></item><item><title>OI题解</title><link>/project/oique/</link><pubDate>Thu, 18 Nov 2021 19:59:55 +0800</pubDate><guid>/project/oique/</guid><description>&lt;p>这里是一些题解，虽然可能一个都没有。&lt;/p></description></item><item><title>OI知识</title><link>/project/oiknowledge/</link><pubDate>Tue, 16 Nov 2021 17:32:38 +0800</pubDate><guid>/project/oiknowledge/</guid><description/></item><item><title/><link>/notes/oiknowledge/math%E6%95%B0%E8%AE%BA/%E5%90%8C%E4%BD%99%E6%96%B9%E7%A8%8B/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/notes/oiknowledge/math%E6%95%B0%E8%AE%BA/%E5%90%8C%E4%BD%99%E6%96%B9%E7%A8%8B/</guid><description/></item><item><title/><link>/notes/oiknowledge/math%E6%95%B0%E8%AE%BA/%E6%AC%A7%E6%8B%89%E5%87%BD%E6%95%B0/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/notes/oiknowledge/math%E6%95%B0%E8%AE%BA/%E6%AC%A7%E6%8B%89%E5%87%BD%E6%95%B0/</guid><description/></item><item><title/><link>/notes/oiknowledge/math%E6%95%B0%E8%AE%BA/%E7%9F%A9%E9%98%B5%E4%B9%98%E6%B3%95/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/notes/oiknowledge/math%E6%95%B0%E8%AE%BA/%E7%9F%A9%E9%98%B5%E4%B9%98%E6%B3%95/</guid><description>&lt;h1 id="矩阵乘法">矩阵乘法&lt;/h1>
+&lt;/script></description></item><item><title>每日单词</title><link>https://xuxihe.vercel.app/project/dailyword/</link><pubDate>Thu, 18 Nov 2021 20:15:24 +0800</pubDate><guid>https://xuxihe.vercel.app/project/dailyword/</guid><description/></item><item><title>物理知识</title><link>https://xuxihe.vercel.app/project/physics/</link><pubDate>Thu, 18 Nov 2021 20:08:05 +0800</pubDate><guid>https://xuxihe.vercel.app/project/physics/</guid><description/></item><item><title>化学知识</title><link>https://xuxihe.vercel.app/project/chemistry/</link><pubDate>Thu, 18 Nov 2021 20:05:23 +0800</pubDate><guid>https://xuxihe.vercel.app/project/chemistry/</guid><description/></item><item><title>OI题解</title><link>https://xuxihe.vercel.app/project/oique/</link><pubDate>Thu, 18 Nov 2021 19:59:55 +0800</pubDate><guid>https://xuxihe.vercel.app/project/oique/</guid><description>&lt;p>这里是一些题解，虽然可能一个都没有。&lt;/p></description></item><item><title>OI知识</title><link>https://xuxihe.vercel.app/project/oiknowledge/</link><pubDate>Tue, 16 Nov 2021 17:32:38 +0800</pubDate><guid>https://xuxihe.vercel.app/project/oiknowledge/</guid><description/></item><item><title/><link>https://xuxihe.vercel.app/notes/oiknowledge/math%E6%95%B0%E8%AE%BA/%E5%90%8C%E4%BD%99%E6%96%B9%E7%A8%8B/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://xuxihe.vercel.app/notes/oiknowledge/math%E6%95%B0%E8%AE%BA/%E5%90%8C%E4%BD%99%E6%96%B9%E7%A8%8B/</guid><description/></item><item><title/><link>https://xuxihe.vercel.app/notes/oiknowledge/math%E6%95%B0%E8%AE%BA/%E6%AC%A7%E6%8B%89%E5%87%BD%E6%95%B0/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://xuxihe.vercel.app/notes/oiknowledge/math%E6%95%B0%E8%AE%BA/%E6%AC%A7%E6%8B%89%E5%87%BD%E6%95%B0/</guid><description/></item><item><title/><link>https://xuxihe.vercel.app/notes/oiknowledge/math%E6%95%B0%E8%AE%BA/%E7%9F%A9%E9%98%B5%E4%B9%98%E6%B3%95/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://xuxihe.vercel.app/notes/oiknowledge/math%E6%95%B0%E8%AE%BA/%E7%9F%A9%E9%98%B5%E4%B9%98%E6%B3%95/</guid><description>&lt;h1 id="矩阵乘法">矩阵乘法&lt;/h1>
 &lt;h2 id="基本概念">基本概念&lt;/h2>
 &lt;p>$n$ 行 $m$ 列个元素有规律的排列在一起，构成一个矩阵，记作 $A=(a_{i,j})_{n\times m}\in R^{n\times m}$。&lt;/p>
 &lt;p>若 $n=m$ ，则这个矩阵为 $n$ 阶矩阵。&lt;/p>
@@ -5444,4 +5444,4 @@ enableQQ: true
 &lt;h3 id="加减法">加减法&lt;/h3>
 &lt;p>对于两个矩阵 $A=(a_{i,j})&lt;em>{a\times b}$ 和 $B=(b&lt;/em>{i,j})_{x\times y}$，当且仅当 $a=x$ 且 $b=y$ 时，$A-B$ 和 $A+B$ 有意义。&lt;/p>
 &lt;p>$A-B=$&lt;/p>
-&lt;h3 id="乘法">乘法&lt;/h3></description></item><item><title/><link>/notes/oiknowledge/math%E6%95%B0%E8%AE%BA/%E7%BB%84%E5%90%88%E6%95%B0%E5%AD%A6/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/notes/oiknowledge/math%E6%95%B0%E8%AE%BA/%E7%BB%84%E5%90%88%E6%95%B0%E5%AD%A6/</guid><description/></item><item><title/><link>/notes/oiknowledge/math%E6%95%B0%E8%AE%BA/%E9%AB%98%E6%96%AF%E6%B6%88%E5%85%83/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/notes/oiknowledge/math%E6%95%B0%E8%AE%BA/%E9%AB%98%E6%96%AF%E6%B6%88%E5%85%83/</guid><description/></item></channel></rss>
+&lt;h3 id="乘法">乘法&lt;/h3></description></item><item><title/><link>https://xuxihe.vercel.app/notes/oiknowledge/math%E6%95%B0%E8%AE%BA/%E7%BB%84%E5%90%88%E6%95%B0%E5%AD%A6/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://xuxihe.vercel.app/notes/oiknowledge/math%E6%95%B0%E8%AE%BA/%E7%BB%84%E5%90%88%E6%95%B0%E5%AD%A6/</guid><description/></item><item><title/><link>https://xuxihe.vercel.app/notes/oiknowledge/math%E6%95%B0%E8%AE%BA/%E9%AB%98%E6%96%AF%E6%B6%88%E5%85%83/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://xuxihe.vercel.app/notes/oiknowledge/math%E6%95%B0%E8%AE%BA/%E9%AB%98%E6%96%AF%E6%B6%88%E5%85%83/</guid><description/></item></channel></rss>
