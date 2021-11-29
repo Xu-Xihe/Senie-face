@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Ubuntu | Senie</title><link>/tag/ubuntu/</link><atom:link href="/tag/ubuntu/index.xml" rel="self" type="application/rss+xml"/><description>Ubuntu</description><generator>Wowchemy (https://wowchemy.com)</generator><language>zh</language><copyright>© 曦曦呵呵</copyright><lastBuildDate>Mon, 22 Nov 2021 15:19:39 +0800</lastBuildDate><image><url>/media/icon_huf638f59a6dd2257b0add8e0186347459_300061_512x512_fill_lanczos_center_3.png</url><title>Ubuntu</title><link>/tag/ubuntu/</link></image><item><title>Ubuntu安装字体</title><link>/post/tec/ubuntu%E5%AE%89%E8%A3%85%E5%AD%97%E4%BD%93/</link><pubDate>Mon, 22 Nov 2021 15:19:39 +0800</pubDate><guid>/post/tec/ubuntu%E5%AE%89%E8%A3%85%E5%AD%97%E4%BD%93/</guid><description>&lt;h2 id="引言">引言&lt;/h2>
+&lt;p>众所周知，&lt;code>Ubuntu&lt;/code> 是一个著名的Linux开源发行版。但是，开源……这就意味着，那些不开源的字体用不了！&lt;/p>
+&lt;p>所以，本着&lt;del>开源&lt;/del>务实的精神，我们要安装字体。（除非你想每天都被你的老师叫过去解决PPT的各种奇奇怪怪的问题）&lt;/p>
+&lt;p>而字体文件？当然是，Windows！&lt;del>虽然，有些blabla&lt;/del>&lt;/p>
+&lt;h2 id="复制字体">复制字体&lt;/h2>
+&lt;ol>
+&lt;li>如果你的网络不好，可以选择从一台安装有Windows系统的计算机进行拷贝。将 &lt;code>C:\Windows\Fonts&lt;/code> 目录中的&lt;b>&lt;font color=red size="5">所有&lt;/font>&lt;/b>文件拷贝到移动介质中待用。&lt;/li>
+&lt;/ol>
+&lt;blockquote>
+&lt;p>至于为什么是所有，别问我，就问那帮人为啥动不动就老用一些奇奇怪怪的字体，为了防止多次安装的惨痛后果，除非你非常清楚你需要什么，建议全部安装。(反正就500来MB，也不大)&lt;/p>
+&lt;/blockquote>
+&lt;ol start="2">
+&lt;li>如果你的网络尚可或者你身边并没有一台Windows电脑，则可以点击下面👇的链接进行下载后解压。&lt;/li>
+&lt;/ol>
+&lt;blockquote>
+&lt;p>地址1：腾讯coding &lt;a href="https://xu-xihe.coding.net/p/windows-fonts/d/fonts/git/archive/main/?download=true" target="_blank" rel="noopener">直接下载&lt;/a> &lt;a href="https://xu-xihe.coding.net/public/windows-fonts/fonts/git/files" target="_blank" rel="noopener">访问项目&lt;/a>&lt;/p>
+&lt;p>地址2：Gitee &lt;del>众所周知，这玩意下载Zip必须登录&lt;/del> &lt;a href="https://gitee.com/xu-xihe/windos-fonts.git" target="_blank" rel="noopener">访问项目&lt;/a>&lt;/p>
+&lt;/blockquote>
+&lt;h2 id="安装字体">安装字体&lt;/h2>
+&lt;ol>
+&lt;li>移动所有字体文件致 &lt;code>/usr/share/fonts/&lt;/code> 或者其子文件夹中。**注意：**如果你想要进行分类的话，可以自行新建子文件夹。&lt;/li>
+&lt;li>修改字体文件权限，使得所有用户都可以访问，请执行 &lt;code>sudo chmod -R /usr/share/fonts/{yourname} 755&lt;/code>。若不清楚是否执行成功，请跳过并继续。&lt;/li>
+&lt;li>运行 &lt;code>mkfontscale&lt;/code> 。若提示 &lt;code>mkfontscale: command not found&lt;/code>，则先执行 &lt;code>sudo apt install ttf-mscorefonts-installer&lt;/code> 后重试。&lt;/li>
+&lt;li>运行 &lt;code>mkfontdir&lt;/code> 和 &lt;code>fc-cache -fv&lt;/code>。&lt;/li>
+&lt;li>打开字体管理器，确认安装。&lt;/li>
+&lt;/ol>
+&lt;script src='//unpkg.com/valine/dist/Valine.min.js'>&lt;/script>
+&lt;div id="vcomments">&lt;/div>
+&lt;script>
+new Valine({
+el: '#vcomments',
+appId: 'mUFdj80doBeHANJjnbmU89gH-gzGzoHsz',
+appKey: 'p4p7vzJrQnIYoajXvUjpuiRy',
+placeholder: '说点什么叭~ (邮箱和网址不强制，邮箱用于Gravatar头像显示)',
+visitor: true,
+recordIP: true,
+serverURLs: false,
+enableQQ: true
+})
+&lt;/script></description></item><item><title>Ubuntu关机90s</title><link>/post/tec/ubuntu%E5%85%B3%E6%9C%BA90s/</link><pubDate>Mon, 22 Nov 2021 15:15:41 +0800</pubDate><guid>/post/tec/ubuntu%E5%85%B3%E6%9C%BA90s/</guid><description>&lt;h2 id="现象">现象&lt;/h2>
+&lt;p>通常情况下，他会显示一个啥啥啥 is running，然后后面有一个括号 &lt;code>(..s/1min30s)&lt;/code> 这种。&lt;/p>
+&lt;h2 id="解决方法">解决方法&lt;/h2>
+&lt;p>虽然我们并不知道为啥，但是我们确实有一种解决的方法。&lt;/p>
+&lt;ol>
+&lt;li>用root权限（其实就是加个 &lt;code>sudo&lt;/code>）编辑 &lt;code> /etc/systemd/system.conf&lt;/code>，找到里面有一个 &lt;code>DefaultTimeoutStopSec=90s&lt;/code>，把行首的 &lt;code>#&lt;/code> 去掉，并改成 &lt;code>DefaultTimeoutStopSec=1ms&lt;/code>，保存，退出。&lt;/li>
+&lt;li>执行 &lt;code>sudo systemctl daemon-reload&lt;/code> 更新配置文件。&lt;/li>
+&lt;/ol>
+&lt;script src='//unpkg.com/valine/dist/Valine.min.js'>&lt;/script>
+&lt;div id="vcomments">&lt;/div>
+&lt;script>
+new Valine({
+el: '#vcomments',
+appId: 'mUFdj80doBeHANJjnbmU89gH-gzGzoHsz',
+appKey: 'p4p7vzJrQnIYoajXvUjpuiRy',
+placeholder: '说点什么叭~ (邮箱和网址不强制，邮箱用于Gravatar头像显示)',
+visitor: true,
+recordIP: true,
+serverURLs: false,
+enableQQ: true
+})
+&lt;/script></description></item></channel></rss>

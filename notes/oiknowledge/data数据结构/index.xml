@@ -1,0 +1,909 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>数据结构 | Senie</title><link>/notes/oiknowledge/data%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/</link><atom:link href="/notes/oiknowledge/data%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/index.xml" rel="self" type="application/rss+xml"/><description>数据结构</description><generator>Wowchemy (https://wowchemy.com)</generator><language>zh</language><copyright>© 曦曦呵呵</copyright><lastBuildDate>Sun, 17 Oct 2021 00:00:00 +0000</lastBuildDate><image><url>/media/icon_huf638f59a6dd2257b0add8e0186347459_300061_512x512_fill_lanczos_center_3.png</url><title>数据结构</title><link>/notes/oiknowledge/data%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/</link></image><item><title>并查集</title><link>/notes/oiknowledge/data%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/%E5%B9%B6%E6%9F%A5%E9%9B%86/</link><pubDate>Sun, 17 Oct 2021 00:00:00 +0000</pubDate><guid>/notes/oiknowledge/data%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/%E5%B9%B6%E6%9F%A5%E9%9B%86/</guid><description>&lt;h1 id="普通并查集">普通并查集&lt;/h1>
+&lt;h2 id="引子">引子&lt;/h2>
+&lt;p>&lt;del>脑洞蛮大的一个东西，自己还改了改&lt;/del>&lt;/p>
+&lt;p>​ 江湖上散落着各式各样的大侠，有上千个之多。他们没有什么正当职业，整天背着剑在外面走来走去，碰到和自己不是一路人的，就免不了要打一架。
+​ 但大侠们有一个优点就是讲义气，绝对不打自己的朋友。而且他们信奉“朋友的朋友就是我的朋友”，只要是能通过朋友关系串联起来的，不管拐了多少个弯，都认为是自己人。
+​ 这样一来，江湖上就形成了一个一个的帮派，通过两两之间的朋友关系串联起来。而不在同一个帮派的人，无论如何都无法通过朋友关系连起来，于是就可以放心往死了打。
+​ 但是两个原本互不相识的人，如何判断是否属于一个朋友圈呢？&lt;/p>
+&lt;p>​ 我们可以在每个朋友圈内推举出一个比较有名望的人，作为该圈子的代表人物。这样，每个圈子就可以这样命名“周翡队”“谢允队”……两人只要互相对一下自己的队长是不是同一个人，就可以确定敌友关系了。&lt;/p>
+&lt;p>​ 但是还有问题啊，大侠们只知道自己直接的朋友是谁，很多人压根就不认识队长(抓狂!)。要判断自己的队长是谁，只能漫无目的的通过朋友的朋友关系问下去：“你是不是队长？你是不是队长？”
+​ 这样，想打一架得先问个几十年，饿都饿死了，受不了。这样一来，队长面子上也挂不住了，不仅效率太低，还有可能陷入无限死循环中。
+​ 于是队长下令，重新组队。队内所有人实行分等级制度，形成树状结构，队长就是根节点，下面分别是二级军官、三级小兵……每个人只要记住自己的上级是谁就行了。遇到判断敌友的时候，只要一层层向上问，直到最高层，就可以在短时间内确定队长是谁了。
+​ 由于我们关心的只是两个人之间是否是一个帮派的，至于他们是如何通过朋友关系相关联的，以及每个圈子内部的结构是怎样的，甚至队长是谁，都不重要了。所以我们可以放任队长随意重新组队，只要不搞错敌友关系就好了。于是，门派产生了。&lt;/p>
+&lt;p>​ 现在，我们用fa[i]数组记录编号为i的大侠上级的编号。如果fa[i]==i，则i号大侠是队长。而find函数这是用来寻找队长的。
+​ 我非常喜欢周翡与谢允，他们分别属于四十八寨和皇亲国戚，那明显就是两个阵营了。我不希望他们互相打架 &lt;del>(磕糖没够)&lt;/del> ，就对他俩说：“你们两位拉拉勾，做好(x)朋(q)友(l)吧。”
+​ 他们看在我的面子上，同意了(我脸真大)。这一同意可非同小可，整个四十八寨和皇帝的人就不能打架了。这么重大的变化，可如何实现呀，要改动多少地方？
+​ 其实非常简单，我对谢允说：“大师，麻烦你把你的上级改为周翡吧。这样一来，两派原先的所有人员的终极boss都是周翡，那还打个球啊！”谢允一听肯定火大了：“我艹，凭什么是我变成她手下呀，怎么不反过来？我抗议！”&lt;del>(大笑)(反正我们关心的只是连通性，门派内部的结构不要紧的，人家家事也不好管的。)&lt;/del>&lt;/p>
+&lt;p>​ 于是，两人相约一战，杀的是天昏地暗，风云为之变色啊。但是啊，这场战争终究会有胜负，胜者为王，弱者就被吞并了。反正谁加入谁效果是一样的，门派就由两个变成一个了。而together函数就是用来合并门派的。&lt;/p>
+&lt;p>​ 两个互不相识的大侠碰面了，想知道能不能干一场。于是赶紧打电话问自己的上级：“你是不是掌门？”上级说：“我不是呀，我的上级是谁谁谁，你问问他看看。”
+​ 一路问下去，原来两人的队长都是周翡。“哎呀呀，原来是自己人，有礼有礼，在下岐兰山盘龙洞白面葫芦娃!”“幸会幸会，在下万仙山暖香阁狗尾(yi)巴花！”两人高高兴兴地手拉手喝酒去了。“等等等等，两位大侠请留步，还有事情没完成呢！”我叫住他俩。“哦，对了，还要做路径压缩。”两人醒悟。(find)
+​ 白面葫芦娃打电话给他的上级六掌门：“组长啊，我查过了，其实偶们的掌门是周翡。不如偶们一起结拜在周翡手下吧，省得级别太低，以后查找掌门麻烦。”
+​ “唔，有道理。”白面葫芦娃接着打电话给刚才拜访过的三执事……仙子狗尾巴花也做了同样的事情。
+​ 这样一来，整个门派树的层数都会维持在比较低的水平上，便于查找。&lt;/p>
+&lt;h2 id="开始了">开始了&lt;/h2>
+&lt;p>乐呵够了，开始了…………&lt;/p>
+&lt;p>上述玄幻故事生动形象地讲述了一个&lt;del>中华武林的真实故事&lt;/del> 啊不，是&lt;strong>并查集&lt;/strong>。&lt;/p>
+&lt;p>提到了几个要点：fa数组，find函数，together函数，路径压缩 &lt;em>&lt;del>等等&lt;/del>&lt;/em>&lt;/p>
+&lt;h3 id="fa数组">fa数组&lt;/h3>
+&lt;p>fa[i]​&lt;del>生动形象地&lt;/del>记录了你的爹地是谁qwq&lt;/p>
+&lt;p>是不是很直观、生动？&lt;/p>
+&lt;p>咳咳，fa[i]表示第$i$个节点的父亲(也就是掌门人)的节点编号&lt;/p>
+&lt;h3 id="find函数">find函数&lt;/h3>
+&lt;p>你开始打电话，逐层查找你的上级、你上级的上级…………&lt;/p>
+&lt;p>实现十分简单，只要不断访问fa[i]即可，直到 $fa[i]=i$​；&lt;/p>
+&lt;h3 id="together函数">together函数&lt;/h3>
+&lt;p>两个门派经过昏天黑地的战斗后，决定合并…………&lt;del>因为人都打没了&lt;/del>&lt;/p>
+&lt;p>只要把find函数返回的值选择一个合并到另一个里即可&lt;/p>
+&lt;pre>&lt;code class="language-c++">fa[find(x)]=find(y);
+&lt;/code>&lt;/pre>
+&lt;h3 id="路径压缩">路径压缩&lt;/h3>
+&lt;p>故事最后一段&lt;/p>
+&lt;p>为了防止储存集合所生成的树过高而采用的方法&lt;/p>
+&lt;p>具体来说，就是每一次find时，将所访问到的所有节点都挂在根节点下。&lt;/p>
+&lt;h3 id="按秩合并">按秩合并&lt;/h3>
+&lt;p>&lt;em>（达到和路径压缩几乎&lt;strong>相同&lt;/strong>的结果，但是并不更优，还难以理解，&lt;del>放弃吧&lt;/del>…………）&lt;/em>&lt;/p>
+&lt;p>记录每棵树的树高(根到叶子的最大边数)depi,两棵树合并的时候将dep较小的根挂在dep较大的根下面。&lt;/p>
+&lt;p>当且仅当两棵树的dep相同时新树的树高为dep+1,否则为dep。&lt;/p>
+&lt;p>那么dep=1的树有一个结点,dep=2的树至少有两个结点,dep=3的树只能至少由两个dep=2的树合并而来,所以至少有4个结点&amp;hellip;&lt;/p>
+&lt;p>所以按秩合并保证了树高不超过$\log{n}$​,时间复杂度$O(n\log{n})$​​&lt;/p>
+&lt;p>贴份代码：&lt;/p>
+&lt;pre>&lt;code class="language-c++">int f[N], s[N]; // 取秩为集合大小
+inline void init(int n)
+{
+for (int i = 1; i &amp;lt;= n; ++i)
+f[i] = i, s[i] = 1;
+}
+int find(int x) { return x == f[x] ? x : f[x] = find(f[x]); } // 路径压缩
+inline void merge(int x, int y)
+{ // 按秩合并
+x = find(x), y = find(y);
+if (x == y)
+return;
+if (s[x] &amp;gt; s[y])
+swap(x, y);
+f[x] = y, s[y] += s[x];
+}
+&lt;/code>&lt;/pre>
+&lt;h3 id="最后代码-surprise">最后……………代码! surprise!!!&lt;/h3>
+&lt;p>&lt;a href="https://www.luogu.com.cn/problem/P3367" target="_blank" rel="noopener">洛谷P3367&lt;/a> &lt;del>就是板子&lt;/del>&lt;/p>
+&lt;pre>&lt;code class="language-c++">#include &amp;lt;cstdio&amp;gt;
+const int maxe = 10009;
+int n, m, fa[maxe];
+inline int find(int x) //find函数和路径压缩的完美结合,递归思想
+{
+return fa[x] == x ? x : fa[x] = find(fa[x]);
+}
+inline void together(int a, int b) //应该是最短的写法
+{
+fa[find(a)] = find(b);
+}
+int main()
+{
+scanf(&amp;quot;%d%d&amp;quot;, &amp;amp;n, &amp;amp;m);
+for (int i = 1; i &amp;lt;= n; i++) //初始化,最开始每个人都是一个门派
+{
+fa[i] = i;
+}
+while (m--)
+{
+int a, b, c;
+scanf(&amp;quot;%d%d%d&amp;quot;, &amp;amp;a, &amp;amp;b, &amp;amp;c);
+if (a == 1)
+together(b, c);
+else
+printf(&amp;quot;%c\n&amp;quot;, find(b) == find(c) ? 'Y' : 'N');
+}
+return 0;
+}
+&lt;/code>&lt;/pre>
+&lt;h1 id="带权并查集">带权并查集&lt;/h1></description></item><item><title>栈</title><link>/notes/oiknowledge/data%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/%E6%A0%88/</link><pubDate>Sun, 17 Oct 2021 00:00:00 +0000</pubDate><guid>/notes/oiknowledge/data%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/%E6%A0%88/</guid><description/></item><item><title>队列</title><link>/notes/oiknowledge/data%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/%E9%98%9F%E5%88%97/</link><pubDate>Sun, 17 Oct 2021 00:00:00 +0000</pubDate><guid>/notes/oiknowledge/data%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/%E9%98%9F%E5%88%97/</guid><description/></item><item><title>分块</title><link>/notes/oiknowledge/data%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/%E5%88%86%E5%9D%97/</link><pubDate>Sun, 17 Oct 2021 00:00:00 +0000</pubDate><guid>/notes/oiknowledge/data%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/%E5%88%86%E5%9D%97/</guid><description/></item><item><title>堆</title><link>/notes/oiknowledge/data%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/%E5%A0%86/</link><pubDate>Sun, 17 Oct 2021 00:00:00 +0000</pubDate><guid>/notes/oiknowledge/data%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/%E5%A0%86/</guid><description/></item><item><title>左偏树（可并堆）</title><link>/notes/oiknowledge/data%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/%E5%B7%A6%E5%81%8F%E6%A0%91/</link><pubDate>Sun, 17 Oct 2021 00:00:00 +0000</pubDate><guid>/notes/oiknowledge/data%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/%E5%B7%A6%E5%81%8F%E6%A0%91/</guid><description/></item><item><title>平衡树</title><link>/notes/oiknowledge/data%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/%E5%B9%B3%E8%A1%A1%E6%A0%91/</link><pubDate>Sun, 17 Oct 2021 00:00:00 +0000</pubDate><guid>/notes/oiknowledge/data%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/%E5%B9%B3%E8%A1%A1%E6%A0%91/</guid><description>&lt;h1 id="平衡树">平衡树&lt;/h1>
+&lt;h2 id="二叉搜索树">二叉搜索树&lt;/h2>
+&lt;p>&lt;strong>二叉搜索树&lt;/strong>是一种二叉树形的数据结构，各节点权值按中序遍历排列单调不增(或不降)。&lt;/p>
+&lt;p>&lt;em>中序遍历：先左再中后右&lt;/em>&lt;/p>
+&lt;p>二叉搜索树上的基本操作所花费的时间与树的高度成正比。对于一个有 $n$​个结点的二叉搜索树中，这些操作的最优时间复杂度为 $O(\log{n})$​，最坏为 $O(n)$​。&lt;strong>随机构造一棵二叉搜索树的期望高度为 $O(\log{n})$​​&lt;/strong>。&lt;/p>
+&lt;p>二叉搜索树其实是一个暴力版本的平衡树，平衡树在二叉搜索树上通过一些算法，将树高严格或期望维持在$\log{n}$​​，但相差不会太大，保证不会退化成一条链。&lt;/p>
+&lt;h2 id="各家的平衡树">各家的平衡树&lt;/h2>
+&lt;p>平衡树按照应用可以分为两类：&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>权值平衡树&lt;/strong>：维护一个有序可重集合(按&lt;strong>权值&lt;/strong>排序，中序遍历为已排序的集合)；&lt;/li>
+&lt;li>&lt;strong>序列平衡树&lt;/strong>：维护一个序列(按原始&lt;strong>下标&lt;/strong>排序，中序遍历即为序列)，&lt;strong>并不是所有平衡树都能够用作序列平衡树&lt;/strong>。&lt;/li>
+&lt;/ul>
+&lt;p>注意，并不是所有家的平衡树都能作为以上任意一种平衡树使用。&lt;/p>
+&lt;p>按照平衡树高度又可以分为两类：&lt;/p>
+&lt;ul>
+&lt;li>强平衡树：树高严格为$O(\log{n})$&lt;/li>
+&lt;li>弱平衡树：树高期望为$O(\log{n})$&lt;/li>
+&lt;/ul>
+&lt;p>常见的平衡树有：&lt;/p>
+&lt;ul>
+&lt;li>Splay&amp;mdash;伸展树&lt;/li>
+&lt;li>Treap&amp;mdash;树堆
+&lt;ul>
+&lt;li>旋转式Treap&lt;/li>
+&lt;li>分裂式Treap(又称fhq-treap，因为是fhq发明的)&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>AVL树&lt;/li>
+&lt;li>SgT&amp;mdash;替罪羊树(比较有意思，发现树高不为$\log{n}$​时，整个推倒重新建树，复杂度竟然也不高!?)&lt;/li>
+&lt;li>RBT&amp;mdash;红黑树(最快的，没有之一，C++ STL都是这个，yyds!)&lt;/li>
+&lt;li>…………&lt;/li>
+&lt;/ul>
+&lt;p>OI中较常用的是 Splay 和 fhq-treap(剩下的性价比不高，要就不是难写，要就不是即难写还慢)。&lt;/p>
+&lt;p>&lt;del>所以，你的推是哪个?&lt;/del>&lt;/p>
+&lt;h1 id="fhq-treap平衡树">fhq-treap平衡树&lt;/h1>
+&lt;p>这东西以一种不可思议的方式运行着。具体来说，就是一言不合，就把你劈成两半……&lt;del>怕了怕了&lt;/del>&lt;/p>
+&lt;p>treap 这个单词是由 tree 和 heap 组合而来，这表明 Treap 是一种由&lt;strong>树&lt;/strong>和&lt;strong>堆&lt;/strong>组合形成的数据结构。&lt;/p>
+&lt;h2 id="高级之处">高级之处&lt;/h2>
+&lt;ol>
+&lt;li>
+&lt;p>代码短，比线段树长不了多少。&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>思想简单易懂，导致的就是Debug时间减少。&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>两种平衡树均可使用。&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>可支持持久化。&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;h2 id="准备工作">准备工作&lt;/h2>
+&lt;h6 id="先来康康需要哪些变量">先来康康需要哪些变量：&lt;/h6>
+&lt;ol>
+&lt;li>son数组：记录每个节点的儿子节点的编号 son [i] [0] 表示 $i$​ 号节点左儿子的编号，son [i] [1] 为右儿子的编号。&lt;/li>
+&lt;li>tot：记录总结点个数，声明一个新节点时会用到。&lt;/li>
+&lt;li>root：记录根节点编号。&lt;/li>
+&lt;li>size数组：size[i]标记以 $i$ 节点为根的子树大小(包括 $i$ 号节点本身)。&lt;/li>
+&lt;li>val数组：记录每个节点的权值。&lt;/li>
+&lt;li>rnd数组：记录每个节点的随机优先级。fhq-treap 的每个结点上具有一个$priority$值 ，fhq-treap 除了要满足中序遍历有序的性质之外，还需满足父节点的 $priority$(随便一种关系，如大于、小于等于……)两个儿子的$priority$。在一般的实现中， $priority$是每个结点建立时随机生成的，因此 fhq-treap 是期望平衡的。&lt;/li>
+&lt;/ol>
+&lt;p>最基本的平衡树的空间复杂度为 $O(5n)$​，当然也可以动态优化，但并不能起到较为显著的效果(每个节点都有可能被访问)。&lt;/p>
+&lt;h6 id="宏定义">宏定义&lt;/h6>
+&lt;p>有效降低代码长度、出错概率以及Debug时间。&lt;/p>
+&lt;pre>&lt;code class="language-c++">#define Ls son[pos][0]
+#define Rs son[pos][1]
+&lt;/code>&lt;/pre>
+&lt;h6 id="build_new_node函数">build_new_node函数&lt;/h6>
+&lt;p>声明一个新的节点&lt;/p>
+&lt;pre>&lt;code class="language-c++">inline int nnd(int x) //声明一个新的节点并分配priority值
+{
+size[++tot] = 1;
+val[tot] = x; //注意，维护有序队列时，应把x替换成tot，想清楚要维护的是什么
+rnd[tot] = rand();
+return tot;
+}
+&lt;/code>&lt;/pre>
+&lt;h6 id="update函数">update函数&lt;/h6>
+&lt;p>更新当前节点的size信息&lt;/p>
+&lt;pre>&lt;code class="language-c++">inline void upd(int pos) //更新节点size大小
+{
+size[pos] = size[Rs] + size[Ls] + 1;
+}
+&lt;/code>&lt;/pre>
+&lt;h2 id="核心操作分裂与合并">核心操作——分裂与合并&lt;/h2>
+&lt;h3 id="分裂">分裂&lt;/h3>
+&lt;p>一共两种分裂方法，适用于不同场景。（作为区间平衡树时只有按节点数分裂一种）.&lt;/p>
+&lt;p>分裂基本原理为每次判断当前根节点将被分到左右哪侧，再递归分裂根节点位于另一侧的子树，将分裂结果的同侧部分接在原位。&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;strong>按权值分裂：&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>按照设定的key值为分裂条件，将小于等于key的节点挂在左边，大于key的挂在右边。&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;pre>&lt;code class="language-c++">inline void spv(int pos, int key, int &amp;amp;l, int &amp;amp;r) //按照权值分裂,pos当前节点编号,key分裂值,&amp;amp;l左侧挂载位置,&amp;amp;r右侧挂载位置
+{
+if (pos == 0) //没有叶子节点,结束递归
+{
+l = r = 0; //没有叶子节点,结束递归,并将挂载点赋值0(空)
+return;
+}
+if (val[pos] &amp;lt;= key) //如果当前节点小于等于key,则将左子树(都小于当前节点,所以都小于key值)和当前节点挂在左侧,继续分裂右子树
+{
+l = pos; //挂在上次传递的挂载点位置
+spv(Rs, key, Rs, r); //递归分裂右子树,因为右子树中所有值均大于当前节点,因此如果仍有小于key值的应挂在当前节点的右儿子的地方
+}
+else //如果当前节点大于key,则将右子树(都大于当前节点,所以都大于key值)和当前节点挂在右侧,继续分裂左子树
+{
+r = pos; //挂在上次传递的挂载点位置
+spv(Ls, key, l, Ls); //递归分裂左子树,因为左子树中所有值均小于当前节点,因此如果仍有大于key值的应挂在当前节点的左儿子的地方
+}
+upd(pos); //更新节点size大小(因为分裂开后,子树大小有改变)
+}
+&lt;/code>&lt;/pre>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>按节点个数分裂：&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>按照设定的key值，在左侧挂key个最小的节点，其余的挂在右侧。&lt;/p>
+&lt;/li>
+&lt;li>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;pre>&lt;code>```c++
+inline void spn(int pos, int key, int &amp;amp;l, int &amp;amp;r) //按照节点个数分裂,pos当前节点编号,key分裂值,&amp;amp;l左侧挂载位置,&amp;amp;r右侧挂载位置
+{
+if (pos == 0) //没有叶子节点,结束递归,并将挂载点赋值0(空)
+{
+l = r = 0;
+return;
+}
+if (size[Ls] + 1 &amp;lt;= key) //如果左子树和当前节点个数之和小于等于key,则挂在左侧,继续在右子树中选key-size[Ls]-1个加入左侧
+{
+l = pos; //挂在上次传递的挂载点位置
+spn(Rs, key - size[Ls] - 1, Rs, r); //递归分裂右子树,因为已经在左侧又挂了size[Ls]+1个节点,所以要在右子树中再选key-size[Ls]-1个即可
+}
+else //如果左子树和当前节点个数之和大于key,不满足条件,继续在右子树查找size合适的子树
+{
+r = pos; //挂在上次传递的挂载点位置
+spn(Ls, key, l, Ls); //递归分裂左子树,因为并没有在左侧挂任何节点,因此key不改变
+}
+upd(pos); //更新节点size大小(因为分裂开后,子树大小有改变)
+}
+```
+&lt;/code>&lt;/pre>
+&lt;h3 id="合并">合并&lt;/h3>
+&lt;p>合并是分裂的逆操作，基本原理为按照优先级判断哪棵树的根将成为新树的根，之后递归地合并另一棵树与当前树的对应子树。&lt;/p>
+&lt;p>需要注意的是：fhq-treap 的合并操作相当于只是简单拼接两棵树的中序遍历，&lt;strong>不会检查权值是否有序&lt;/strong>(理论上如果操作正确的话，分裂出的子树均为有序)，如果被合并的两棵树权值大小关系有误，将导致之后按权值分裂是出现不可预期的结果！&lt;/p>
+&lt;pre>&lt;code class="language-c++">inline int tog(int l, int r) //合并两棵树,l左侧树的根节点,r右侧树的根节点;递归思想
+{
+if (l == 0 || r == 0) //如果任意一个树是空的,剩余的树的根节点就是挂载点
+return l + r;
+if (rnd[l] &amp;lt; rnd[r]) //优先级定义,可以随便写
+{
+son[l][1] = tog(son[l][1], r); //右侧树挂载左侧树的右侧
+upd(l); //更新左侧树根节点的信息
+return l; //返回新树的根节点
+}
+son[r][0] = tog(l, son[r][0]); //左侧树挂载右侧树的左侧
+upd(r); //更新右侧树根节点的信息
+return r; //返回新树的根节点
+}
+&lt;/code>&lt;/pre>
+&lt;h2 id="各种操作">各种操作&lt;/h2>
+&lt;p>总之就是使用上面三种核心操作，实现的一系列qwq的实际操作。&lt;/p>
+&lt;p>&lt;del>感受fhq脑洞之大吧&lt;/del>&lt;/p>
+&lt;h6 id="inside插入">inside插入&lt;/h6>
+&lt;pre>&lt;code class="language-c++">inline void ins(int v)
+{
+spv(root, v, ll, rr); //按照v分割成根节点为ll和rr两棵子树
+root = tog(tog(ll, nnd(v)), rr); //先合并ll和新加入的节点,再和rr合并,然后更新总树的根节点
+}
+&lt;/code>&lt;/pre>
+&lt;h6 id="delete删除">delete删除&lt;/h6>
+&lt;p>若有多个相同的数，只删除一个。&lt;/p>
+&lt;pre>&lt;code class="language-c++">inline void del(int val)
+{
+spv(root, val, ll, rr); //按照v分割成根节点为ll和rr两棵子树
+spn(ll, size[ll] - 1, ll, LL); //再在左侧分割出1个节点挂在右侧
+root = tog(ll, rr); //合并新ll和rr,不合并第二次分裂的右侧1个节点,即删除,然后更新总树的根节点
+}
+&lt;/code>&lt;/pre>
+&lt;h6 id="order-value查询key值的排名">order-value查询key值的排名&lt;/h6>
+&lt;p>排名定义为比当前数小的数的个数 $+1$ 。&lt;/p>
+&lt;pre>&lt;code class="language-c++">inline int ordv(int v)
+{
+spv(root, v - 1, ll, rr); //将所有小于v的数分割
+int r = size[ll]; //记录根节点size,即所有小于v的节点的数量,后续合并时可能变化
+root = tog(ll, rr); //合并分裂开的两棵树
+return r + 1; //返回注意+1
+}
+&lt;/code>&lt;/pre>
+&lt;h6 id="order-num查询第key个数的值">order-num查询第key个数的值&lt;/h6>
+&lt;pre>&lt;code class="language-c++">inline int ordn(int k)
+{
+spn(root, k, ll, rr); //分裂出前k个节点
+spn(ll, k - 1, ll, RR); //再分裂出前k-1个节点,这样右侧就有一个排名为k的节点,其下标为RR
+root = tog(tog(ll, RR), rr); //合并分裂开的两棵树
+return val[RR]; //返回编号为RR的节点的权值
+}
+&lt;/code>&lt;/pre>
+&lt;h6 id="fir查询前驱前驱定义为小于x且最大的数">fir查询前驱(前驱定义为小于x，且最大的数)&lt;/h6>
+&lt;pre>&lt;code class="language-c++">inline int fit(int v)
+{
+spv(root, v - 1, ll, rr); //先分裂出所有小于v的节点
+spn(ll, size[ll] - 1, ll, RR); //再在小于v的节点中分裂出最大的一个,因为ll是根节点,size[ll]即为小于v的节点数量
+root = tog(tog(ll, RR), rr); //合并分裂开的ll,前缀和rr
+return val[RR]; //返回前驱的值
+}
+&lt;/code>&lt;/pre>
+&lt;h6 id="back查询后继后继定义为大于x且最小的数">back查询后继(后继定义为大于x，且最小的数)&lt;/h6>
+&lt;pre>&lt;code class="language-c++">inline int back(int v)
+{
+spv(root, v, ll, rr); //先分裂出所有小于等于v的节点
+spn(rr, 1, LL, rr); //再在大于v的节点中分裂出最小的一个
+root = tog(tog(ll, LL), rr); //合并分裂开的ll,后缀和rr
+return val[LL]; //返回后缀的值
+}
+&lt;/code>&lt;/pre>
+&lt;h2 id="懒标记">“懒”标记&lt;/h2>
+&lt;p>在某些时候，当实现一个对于区间的操作时，也可以在平衡树上使用“懒”标记以达到降低时间复杂度的目的。&lt;/p>
+&lt;p>和&lt;a href="./%e7%ba%bf%e6%ae%b5%e6%a0%91.md">线段树&lt;/a>一样，也应该注意标记的下放和优先级关系。&lt;/p>
+&lt;script src='//unpkg.com/valine/dist/Valine.min.js'>&lt;/script>
+&lt;div id="vcomments">&lt;/div>
+&lt;script>
+new Valine({
+el: '#vcomments',
+appId: 'mUFdj80doBeHANJjnbmU89gH-gzGzoHsz',
+appKey: 'p4p7vzJrQnIYoajXvUjpuiRy',
+placeholder: '说点什么叭~ (邮箱和网址不强制，邮箱用于Gravatar头像显示)',
+visitor: true,
+recordIP: true,
+serverURLs: false,
+enableQQ: true
+})
+&lt;/script></description></item><item><title>树状数组</title><link>/notes/oiknowledge/data%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/%E6%A0%91%E7%8A%B6%E6%95%B0%E7%BB%84/</link><pubDate>Sun, 17 Oct 2021 00:00:00 +0000</pubDate><guid>/notes/oiknowledge/data%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/%E6%A0%91%E7%8A%B6%E6%95%B0%E7%BB%84/</guid><description>&lt;h1 id="树状数组">树状数组&lt;/h1>
+&lt;p>一种~~&lt;a href="/oiblogs/basic%e5%9f%ba%e6%9c%ac%e6%80%9d%e6%83%b3/%e5%80%8d%e5%a2%9e">&lt;strong>倍增?&lt;/strong>&lt;/a>&lt;a href="/oiblogs/basic%e5%9f%ba%e6%9c%ac%e6%80%9d%e6%83%b3/%e5%88%86%e6%b2%bb">&lt;strong>分治？&lt;/strong>&lt;/a>~~思想下的奇奇怪怪的东西…………&lt;/p>
+&lt;p>&lt;del>先放个图&lt;/del>&lt;img src="%E6%A0%91%E7%8A%B6%E6%95%B0%E7%BB%84.png" alt="树状数组" style="zoom: 50%;" />&lt;/p>
+&lt;h2 id="用的地方">用的地方&lt;/h2>
+&lt;ol>
+&lt;li>
+&lt;p>正常数组的单点修改时间复杂度为$O(1)$，区间查询为$O(n)$;
+而树状数组的单点修改和区间查询均为$O(\log{n})$。（因为树的高度为$\log{n}$）&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>相比于某个更sb的东西：&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;p>&lt;strong>优点：&lt;/strong>&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>单次操作时间复杂度为$O(\log{n})$且常数很小，实际运行效率远优于&lt;a href="/oiblogs/data%e6%95%b0%e6%8d%ae%e7%bb%93%e6%9e%84/%e7%ba%bf%e6%ae%b5%e6%a0%91/">线段树&lt;/a>&lt;del>(虽然理论上时间复杂度相同)&lt;/del>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>空间复杂度$O(n)$，在某些场景下较&lt;a href="/oiblogs/data%e6%95%b0%e6%8d%ae%e7%bb%93%e6%9e%84/%e7%ba%bf%e6%ae%b5%e6%a0%91/">线段树&lt;/a>($O(4n)$)有极大优势&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>理解以后很好写(它很短，不费手，不需Debug $_{除非手残}$​ &lt;del>(不理解也很好背)&lt;/del> &lt;del>(理解是不可能理解的)&lt;/del>&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;p>&lt;strong>缺点：&lt;/strong>&lt;/p>
+&lt;p>适用范围比&lt;a href="/oiblogs/data%e6%95%b0%e6%8d%ae%e7%bb%93%e6%9e%84/%e7%ba%bf%e6%ae%b5%e6%a0%91/">线段树&lt;/a>&lt;strong>小的多&lt;/strong>。树状数组能有的操作，线段树&lt;strong>一定有&lt;/strong>；线段树有的操作，树状数组&lt;strong>大部分没有&lt;/strong>。&lt;/p>
+&lt;h2 id="最最最奇怪的地方">最最最奇怪的地方&lt;/h2>
+&lt;img src="fenwick1.png" alt="&amp;运算" style="zoom:68%;" />
+&lt;p>&lt;del>你这玩意谁想的粗来？&lt;/del>&lt;/p>
+&lt;h3 id="先搞一个题外话c中对于负整数是如何存储的">先搞一个题外话——C++中对于负整数是如何存储的。&lt;/h3>
+&lt;p>&lt;del>默认都知道变量会预留一个二进制位为符号位，虽然但是并没有什么关系且不知道也不影响&lt;/del>&lt;/p>
+&lt;p>对于一个负整数，存贮方法为先将这个数的&lt;strong>绝对值取反&lt;/strong>，**再$+1$**​。&lt;del>(是不是十分反人类!?)&lt;/del>&lt;/p>
+&lt;p>举个栗子(上图也有)：$1$​​ &amp;ndash;&amp;gt; $(0001)_2$​ $-1$​ &amp;ndash;&amp;gt; $(1110)_2+(0001)_2$​​ &amp;ndash;&amp;gt; $(1111)_2$&lt;/p>
+&lt;h3 id="然后我们惊喜的发现">然后，我们惊喜的发现：&lt;/h3>
+&lt;p>咦，如果我们吧原数和原数的相反数与起来好像不错……&lt;/p>
+&lt;p>$1&amp;amp;-1$ = $(0001)_2$ &lt;del>好像又回来了？&lt;/del>&lt;/p>
+&lt;p>其实是我们得到了原数的lowbit，即原数二进制表示中为$1$的最低位。&lt;/p>
+&lt;p>再观察，它好像正好转换成十进制就是它的长度…………&lt;/p>
+&lt;p>&lt;del>这个世界好神奇!!!&lt;/del>&lt;/p>
+&lt;p>&lt;del>不理解就放过自己吧，背住就好&lt;/del>&lt;/p>
+&lt;h2 id="终于进入正题">终于，进入正题&lt;/h2>
+&lt;p>&lt;del>最最最奇诡的东西过去了，剩下的就简单?了&lt;/del>&lt;/p>
+&lt;p>树状数组的第$i$位维护以第$i$位为终点，长度为$i&amp;amp;-i$的&lt;strong>区间和&lt;/strong>。&lt;/p>
+&lt;p>更新时注意要将压在上面的&lt;strong>全部&lt;/strong>更新&lt;/p>
+&lt;p>查找时只能查找从$1\sim i$的区间和；要想查找区间$[i,j]$的和，请用 $1\sim j$ 的区间和减去 $1\sim(i-1)$ 的区间和。&lt;/p>
+&lt;h6 id="注意-是-i-1-而不是-i-">&lt;strong>注意! 是 $i-1$​​ 而不是 $i$​​ ​！！！&lt;/strong>&lt;/h6>
+&lt;p>从第$i$位开始向上查找，将所跳转到的求和，直到下标为$0$​。&lt;/p>
+&lt;pre>&lt;code class="language-c++">#include &amp;lt;cstdio&amp;gt;
+const int maxe = 5e5 + 9;
+int tree[maxe], n, m;
+inline void add(int x, int val) //一直更新直到最上层
+{
+for (; x &amp;lt;= n; x += x &amp;amp; -x)
+tree[x] += val;
+}
+inline int sum(int x) //一直加到下标为0
+{
+int ans = 0; //注意赋初始值为0，防止奇奇怪怪的事情
+for (; x &amp;gt; 0; x -= x &amp;amp; -x)
+ans += tree[x];
+return ans;
+}
+int main()
+{
+scanf(&amp;quot;%d%d&amp;quot;, &amp;amp;n, &amp;amp;m);
+for (int i = 1; i &amp;lt;= n; i++)
+{
+int a;
+scanf(&amp;quot;%d&amp;quot;, &amp;amp;a);
+add(i, a);
+}
+while (m--)
+{
+int a, b, c;
+scanf(&amp;quot;%d%d%d&amp;quot;, &amp;amp;a, &amp;amp;b, &amp;amp;c);
+if (a == 1)
+add(b, c);
+else
+printf(&amp;quot;%d\n&amp;quot;, sum(c) - sum(b - 1));
+}
+return 0;
+}
+&lt;/code>&lt;/pre>
+&lt;h2 id="区间修改和单点查询">区间修改和单点查询&lt;/h2>
+&lt;p>用到一个比较神奇但是还能理解的东西&lt;a href="/oiblogs/others%e6%9d%82%e9%a1%b9/%e5%b7%ae%e5%88%86%e6%95%b0%e7%bb%84/">差分数组&lt;/a>。&lt;/p>
+&lt;p>用树状数组维护差分数组，以达到快速区间修改和单点查询的操作。&lt;/p>
+&lt;pre>&lt;code class="language-c++">#include &amp;lt;cstdio&amp;gt;
+const int maxe = 5e5 + 9;
+int tree[maxe], n, m;
+inline void add(int x, int val) //没啥不一样
+{
+for (; x &amp;lt;= n; x += x &amp;amp; -x)
+tree[x] += val;
+}
+inline int sum(int x)
+{
+int ans = 0;
+for (; x &amp;gt; 0; x -= x &amp;amp; -x)
+ans += tree[x];
+return ans;
+}
+int main()
+{
+scanf(&amp;quot;%d%d&amp;quot;, &amp;amp;n, &amp;amp;m);
+int a, last = 0;
+for (int i = 1; i &amp;lt;= n; i++)
+{
+scanf(&amp;quot;%d&amp;quot;, &amp;amp;a);
+add(i, a - last); //建立差分数组
+last = a;
+}
+while (m--)
+{
+int a, b, c, d;
+scanf(&amp;quot;%d%d&amp;quot;, &amp;amp;a, &amp;amp;b);
+if (a == 1)
+{
+scanf(&amp;quot;%d%d&amp;quot;, &amp;amp;c, &amp;amp;d);
+add(b, d); //将区间起点加val
+add(c + 1, -d); //将区间终点后一位减val,消除贡献
+}
+else
+printf(&amp;quot;%d\n&amp;quot;, sum(b));
+}
+return 0;
+}
+&lt;/code>&lt;/pre>
+&lt;h2 id="区间求和">区间求和&lt;/h2>
+&lt;p>&lt;del>奇妙&lt;/del>&lt;/p>
+&lt;p>先让我们看一个$long\space long $的式子：
+$$
+\begin{aligned}
+sum([1,r])=&amp;amp;\sum_{i=1}^{r} a_i=\sum_{i=1}^r\sum_{j=1}^i b_j\=&amp;amp;\sum_{i=1}^r b_i\times(r-i+1)\=&amp;amp;(r+1)\times \color{red}{\sum_{i=1}^r b_i}-\color{red}{\sum_{i=1}^r b_i\times i}
+\end{aligned}
+$$
+&lt;del>你感受到数学的魅力了吗？是不是每一个字符你都认识，但是就是不懂它们组合起来是啥意思&lt;/del>&lt;/p>
+&lt;p>亿点点地看，&lt;/p>
+&lt;p>$a$ 数组为原始数组(初始值)&lt;/p>
+&lt;p>$b$ 数组为树状数组维护的差分数组&lt;/p>
+&lt;p>下面把上面那段鬼话变成人话……不用数学符号就是有点长……
+$$
+\begin{aligned}
+\sum([1,r])=&amp;amp;a_1+a_2+a_3+\cdots+a_{r-1}+a_r\=&amp;amp;(b_1)+(b_1+b_2)+(b_1+b_2+b_3)+\cdots+(b_1+b_2+\cdots+b_{r-1})+(b_1+b_2+\cdots+b_{r-1}+b_r)\=&amp;amp;(b_1\times r)+(b_2\times(r-1))+(b_3\times(r-2))+\cdots+(b_{r-1}\times2)+(b_r\times1)\=&amp;amp;\sum_{i=1}^r b_i\times(r-i+1)\=&amp;amp;\color{red}{(r+1)\times\sum_{i=1}^r b_i-\sum_{i=1}^r b_i\times i}
+\end{aligned}
+$$
+推导之后，我们发现，用树状数组维护两个值($b_i$ 和 $b_i\times i$)即可。&lt;/p>
+&lt;h2 id="二维多维树状数组">二维、多维树状数组&lt;/h2>
+&lt;p>&lt;del>最简单的一种&lt;strong>树套树&lt;/strong>&lt;/del> &lt;del>直接套娃即可&lt;/del> &lt;del>这辈子也别想画出示意图&lt;/del>&lt;/p>
+&lt;p>在外层树状数组的每个节点上维护一棵树状数组&lt;/p>
+&lt;p>查询/更新时使用二重循环即可。&lt;/p>
+&lt;p>&lt;a href="https://baike.baidu.com/item/%E4%BA%8C%E7%BB%B4%E6%A0%91%E7%8A%B6%E6%95%B0%E7%BB%84" target="_blank" rel="noopener">百度百科&lt;/a> &lt;del>看懂是不可能看懂的，慎重尝试&lt;/del>&lt;/p>
+&lt;pre>&lt;code class="language-c++">#include &amp;lt;cstdio&amp;gt;
+const int maxe = 5e2 + 9;
+int n, m, q, tree[maxe][maxe];
+inline void add(int x, int y, int val) //注意不能直接调用y,双重循环
+{
+for (int i = x; i &amp;lt;= n; i += i &amp;amp; -i)
+{
+for (int j = y; j &amp;lt;= m; j += j &amp;amp; -j)
+{
+tree[i][j] += val;
+}
+}
+}
+inline int sum(int x, int y)
+{
+int ans = 0;
+for (int i = x; i &amp;gt; 0; i -= i &amp;amp; -i)
+{
+for (int j = y; j &amp;gt; 0; j -= j &amp;amp; -j)
+{
+ans += tree[i][j];
+}
+}
+return ans;
+}
+int main()
+{
+scanf(&amp;quot;%d%d%d&amp;quot;, &amp;amp;n, &amp;amp;m, &amp;amp;q);
+for (int i = 1; i &amp;lt;= n; i++)
+{
+for (int j = 1; j &amp;lt;= m; j++)
+{
+int a;
+scanf(&amp;quot;%d&amp;quot;, &amp;amp;a);
+add(i, j, a);
+}
+}
+while (q--)
+{
+char aa[100];
+int a, b, c, d;
+scanf(&amp;quot;%s%d%d%d&amp;quot;, aa, &amp;amp;a, &amp;amp;b, &amp;amp;c);
+if (aa[0] == 'A')
+add(a, b, c);
+else
+{
+scanf(&amp;quot;%d&amp;quot;, &amp;amp;d);
+printf(&amp;quot;%d\n&amp;quot;, sum(b, d) + sum(a - 1, c - 1) - sum(b, c - 1) - sum(a - 1, d));
+//二维前缀和
+//减一不搞好,亲人两行泪
+}
+}
+return 0;
+}
+&lt;/code>&lt;/pre>
+&lt;h2 id="树状数组上的二分">树状数组上的二分&lt;/h2>
+&lt;p>建议直接移步&lt;a href="/oiblogs/data%e6%95%b0%e6%8d%ae%e7%bb%93%e6%9e%84/%e5%b9%b3%e8%a1%a1%e6%a0%91/">平衡树&lt;/a>或者&lt;a href="/oiblogs/data%e6%95%b0%e6%8d%ae%e7%bb%93%e6%9e%84/%e7%ba%bf%e6%ae%b5%e6%a0%91/">线段树&lt;/a>。&lt;/p>
+&lt;p>&lt;strong>摘抄如下：&lt;/strong>&lt;/p>
+&lt;p>类似于线段树上二分，树状数组上也可以进行二分。&lt;/p>
+&lt;p>使用&lt;strong>树状数组上二分&lt;/strong>（可能需要预先离散化），可以$O(log\space{n})$​查询第 $k$​ 小/大元素，实现类似&lt;strong>平衡树&lt;/strong>的效果。&lt;/p>
+&lt;p>主要思想是：按二进制位从高到低逐渐二分出答案。&lt;/p>
+&lt;pre>&lt;code class="language-c++">int kth(int k) {
+int r = 0, t;
+for (int i = LOG_N; i&amp;gt;=0; --i) {
+t = r | 1 &amp;lt;&amp;lt; i;
+if (t &amp;lt;= n &amp;amp;&amp;amp; d[t] &amp;lt; k)k -= d[t], r = t;
+}
+return r + 1;
+}
+&lt;/code>&lt;/pre></description></item><item><title>线段树</title><link>/notes/oiknowledge/data%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/%E7%BA%BF%E6%AE%B5%E6%A0%91/</link><pubDate>Sun, 17 Oct 2021 00:00:00 +0000</pubDate><guid>/notes/oiknowledge/data%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/%E7%BA%BF%E6%AE%B5%E6%A0%91/</guid><description>&lt;h1 id="线段树">线段树&lt;/h1>
+&lt;h2 id="介绍一下">介绍一下&lt;/h2>
+&lt;p>又是一个&lt;a href="">倍增&lt;/a>思想下&lt;del>奇奇怪怪&lt;/del>的东西。&lt;/p>
+&lt;p>线段树是一种高效维护(在手不残的前提下)&lt;strong>区间信息&lt;/strong>的数据结构，可以在$O(\log{n})$​​​​时间复杂度内实现单点修改、区间修改、区间查询等(各种稀奇古怪的)操作。树状数组能够解决的问题&lt;strong>理论上&lt;/strong>(注意空间复杂度)都可以用线段树解决。&lt;del>就是慢了点，空间占得大了点儿&lt;/del>&lt;/p>
+&lt;p>线段树以树形(满二叉树，二叉搜索树)结构维护着这样一些“线段”(区间)的信息：&lt;/p>
+&lt;ul>
+&lt;li>根结点对应一条$1\sim n$​的线段。&lt;/li>
+&lt;li>任何线段$(l\sim r)$​​​长度$&amp;gt;1$​​​的结点都有恰好两个子结点，分别对应线段 $l\sim mid$​​​ 与 $mid+1\sim r$​​​，其中 $mid=\lfloor\dfrac{l+r}{2}\rfloor$​​​。&lt;/li>
+&lt;/ul>
+&lt;p>线段树上结点的深度每增大 $1$，线段长度就折半，因此线段树深度为 $\log{n}$​​，由此保证了单点修改复杂度为$O(\log{n})$​。&lt;/p>
+&lt;p>对于任意区间，都可以在线段树上找到不重叠的至多 $2\times\log{n}$​ 条线段（每种深度至多两条）将其恰好覆盖，这保证了线段树区间操作复杂度为 $O(\log{n})$​。&lt;/p>
+&lt;p>规定根结点编号为 $1$​​​​​​，编号为 $i$​​​​​​ 的结点的两个子结点（若存在）编号为 $2i$​ ​​​​​与 $2i+1$ ​​​​​​。这样定义的结点编号最大不会超过 $4n$​​​​​。&lt;/p>
+&lt;p>一棵维护最小值的线段树大概长这样：&lt;img src="src=http%253A%252F%252Fimg-blog.csdnimg.cn%252Fimg_convert%252F1809e9bc319190c55e869070f02a058f.png&amp;refer=http%253A%252F%252Fimg-blog.csdnimg.cn&amp;app=2002&amp;size=f9999,10000&amp;q=a80&amp;n=0&amp;g=0n&amp;fmt=jpeg" alt="线段树" style="zoom: 40%;" />&lt;/p>
+&lt;h2 id="线段树所占空间的计算">线段树所占空间的计算&lt;/h2>
+&lt;p>&lt;del>这一段不看不会也罢&lt;/del>，只需要记住开 $4n$​ 个数组就行了。&lt;/p>
+&lt;p>关于线段树的空间：如果采用堆式存储(大部分)($2i$​​是 $i$​​的左儿子，$2i+1$​​是 $i$​​的右儿子)，若有 $n$​​ 个叶子结点，则 $d$​​ 数组的范围最大为 $2^{\lceil\log{n}\rceil+1}$​。
+分析：容易知道线段树的深度是 $\lceil\log{n}\rceil$​的，则在堆式储存情况下叶子节点（包括无用的叶子节点）数量为 $2^{\lceil\log{n}\rceil}$​个，又由于其为一棵完全二叉树(补齐未使用节点)，则其总节点个数 $2^{\lceil\log{n}\rceil+1}-1$​。当然如果你懒得计算的话可以直接把数组长度设为 $4n$​，因为 $\dfrac{2^{\lceil\log{n}\rceil+1}-1}{n}$​的最大值在 $n=2^x+1(x\in N_+)$​时取到，此时节点数为 $2^{\lceil\log{n}\rceil+1}-1=2^{x+2}-1=4n-5$​。&lt;/p>
+&lt;h2 id="正题来了">正题来了&lt;/h2>
+&lt;p>其实，没啥好说的，很好理解，很不好背……&lt;/p>
+&lt;p>下面这4个函数，构建了最最最简单的线段树，效果大概可树状数组一样。&lt;/p>
+&lt;p>ps：变量名尽量统一，好处多多。&lt;/p>
+&lt;h6 id="宏定义">宏定义&lt;/h6>
+&lt;p>有效降低代码长度、出错概率以及Debug时间。&lt;/p>
+&lt;p>如果你很猛，请跳过这一段……&lt;/p>
+&lt;p>&lt;del>使用位运算是因为本来线段树就很慢，所以要用快一点的位运算&lt;/del>&lt;/p>
+&lt;pre>&lt;code class="language-c++">#define Mid ((l + r) &amp;gt;&amp;gt; 1) //位运算,相当于(l + r)/2
+#define Len (r - l + 1) //区间长度,注意+1
+#define Root 1, 1, n //根节点调用
+#define Lpos pos &amp;lt;&amp;lt; 1 //左儿子节点编号,相当于pos*2
+#define Rpos Lpos | 1 //右儿子节点编号,相当于Lpos+1
+#define Lson Lpos, l, Mid //左儿子调用
+#define Rson Rpos, Mid + 1, r //右儿子调用
+#define This pos, l, r //当前节点调用
+&lt;/code>&lt;/pre>
+&lt;h6 id="update函数">update函数&lt;/h6>
+&lt;p>更新节点信息&lt;/p>
+&lt;p>视维护啥而定&lt;/p>
+&lt;p>&lt;em>for example:&lt;/em>&lt;/p>
+&lt;pre>&lt;code class="language-c++">inline void upd(int pos)
+{
+tree[pos] = tree[Lpos] + tree[Rpos]; //维护区间和
+tree[pos] = std::max(tree[Lpos], tree[Rpos]); //维护区间最大值
+}
+&lt;/code>&lt;/pre>
+&lt;h6 id="build函数">build函数&lt;/h6>
+&lt;p>从原数组构建线段树&lt;/p>
+&lt;pre>&lt;code class="language-c++">inline void build(int pos, int l, int r)//pos当前节点编号，l区间右端点，r区间左端点
+{
+if (l == r)//区间长度为1则赋值原数组
+tree[pos] = in[l];//注意是l而不是pos，是区间在原数组中维护的位置而不是节点编号
+else
+{
+build(Lson);//递归建树
+build(Rson);
+upd(pos);//更新当前节点信息
+}
+}
+&lt;/code>&lt;/pre>
+&lt;h6 id="change_point函数">change_point函数&lt;/h6>
+&lt;p>单点修改线段树上某一位的值&lt;/p>
+&lt;pre>&lt;code class="language-c++">void cpit(int pos, int l, int r, int point, int val) //pos当前节点编号，l右端点，r左端点，point修改目标编号，val修改值
+{
+if (l == r) //区间长度为1，进行修改，结束递归
+{
+tree[pos] = val; //根据题意自行更改
+return;
+}
+if (point &amp;lt;= Mid) //如果区间包含左儿子，递归更改
+cpit(Lson, point, val);
+else //如果区间包含右儿子，递归更改
+cpit(Rson, point, val);
+upd(pos); //更新当前节点信息
+}
+&lt;/code>&lt;/pre>
+&lt;h6 id="check_block函数">check_block函数&lt;/h6>
+&lt;p>区间(和、最大值等)查询&lt;/p>
+&lt;pre>&lt;code class="language-c++">inline int fblk(int pos, int l, int r, int L, int R) //pos当前节点编号，l右端点，r左端点，L查询区间左端点，R查询区间右端点
+{
+if (L &amp;lt;= l &amp;amp;&amp;amp; R &amp;gt;= r) //当前线段树上的线段被查询区间完全包含，返回当前线段维护的信息
+{
+return tree[pos];
+}
+stg(This); //下放当前线段的标记
+if (R &amp;lt;= Mid) //只包含左儿子，递归查找左儿子，直到被查询线段全部被包含
+return fblk(Lson, L, R);
+if (L &amp;gt; Mid) //只包含右儿子，递归查找右儿子，直到被查询线段全部被包含
+return fblk(Rson, L, R);
+return fblk(Lson, L, R) + fblk(Rson, L, R); //左右儿子均含有被查询区间，则同时查找两个儿子
+}
+&lt;/code>&lt;/pre>
+&lt;h3 id="懒标记">“懒”标记&lt;/h3>
+&lt;p>区间 $[l,r]$时，如果修改所有与 $[l,r]$相关的线段，那么时间复杂度将退化为 $O(n)$​。&lt;del>那还不如不写&lt;/del>&lt;/p>
+&lt;p>线段树通过引入&lt;strong>懒标记&lt;/strong>把对整条线段的修改操作&lt;strong>暂存&lt;/strong>在结点上，当需要访问子节点时&lt;strong>再&lt;/strong>把修改操作应用到子结点上。&lt;/p>
+&lt;p>&lt;del>真理：人类因懒而进步&lt;/del>&lt;/p>
+&lt;p>针对于每个节点开一个(可能不止)标记位，注意数组长度仍为 $4n$。&lt;/p>
+&lt;ul>
+&lt;li>维护多个标记时注意&lt;strong>下放的顺序&lt;/strong>，保证先下放的标记不影响后下放的标记。&lt;/li>
+&lt;/ul>
+&lt;p>​ **例：**同时维护加法标记和乘法标记时，应先下放乘法标记，再下放加法标记。&lt;/p>
+&lt;ul>
+&lt;li>标记累加时注意其&lt;strong>正确性&lt;/strong>，包括是否要改变&lt;strong>其他标记&lt;/strong>。&lt;/li>
+&lt;/ul>
+&lt;p>​ **例：**乘法标记叠加时，加法标记也应乘相应修改值。&lt;/p>
+&lt;h6 id="get_tag函数">get_tag函数&lt;/h6>
+&lt;p>打标签&lt;/p>
+&lt;pre>&lt;code class="language-c++">inline void gtg(int pos, int l, int r, int val) //pos当前节点编号，l右端点，r左端点，val增加量
+{
+tag[pos] += val; //标签累加
+tree[pos] += Len * val; //维护区间和，总增加量=单点增加量*区间长度
+}
+&lt;/code>&lt;/pre>
+&lt;h6 id="send_tag函数">send_tag函数&lt;/h6>
+&lt;p>将标签下方给两个儿子&lt;/p>
+&lt;pre>&lt;code class="language-c++">inline void stg(int pos, int l, int r) //pos当前节点编号，l右端点，r左端点
+{
+gtg(Lson, tag[pos]); //把标签下放给左儿子
+gtg(Rson, tag[pos]); //把标签下放给右儿子
+tag[pos] = 0; //将pos位标签置0(标签以下放给儿子)
+}
+&lt;/code>&lt;/pre>
+&lt;h6 id="change_block函数">change_block函数&lt;/h6>
+&lt;p>区间修改&lt;/p>
+&lt;pre>&lt;code class="language-c++">inline void cblk(int pos, int l, int r, int L, int R, int val) //pos当前节点编号，l右端点，r左端点，L修改区间左端点，R右端点，val修改值
+{
+if (L &amp;lt;= l &amp;amp;&amp;amp; R &amp;gt;= r) //当前线段树上的线段被查询区间完全包含，打标记
+{
+gtg(This, val);
+return;
+}
+stg(This); //若两个儿子只有一个被包含，则下方当前线段标记，更新包含修改区间的儿子
+if (L &amp;lt;= Mid) //只包含左儿子，递归查找左儿子，直到被修改线段全部被包含
+cblk(Lson, L, R, val);
+if (R &amp;gt; Mid) //只包含右儿子，递归查找右儿子，直到被修改线段全部被包含
+cblk(Rson, L, R, val);
+upd(pos); //更新当前节点信息
+}
+&lt;/code>&lt;/pre>
+&lt;h2 id="维护一些奇奇怪怪的东西">维护一些奇奇怪怪的东西&lt;/h2>
+&lt;p>单表一些你想也想不到的烂七八糟的用线段树维护的东西。&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>区间最大子段和&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>最大子段&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>最大前缀&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>最大后缀&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="http://faioj.brynhild.online/problem/21002" target="_blank" rel="noopener">序列操作&lt;/a>&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>归零标记&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>取反标记&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>区间和&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>连续前缀0或1个数&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>连续后缀0或1个数&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;/li>
+&lt;li>
+&lt;p>………………………………&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;p>&lt;del>怎么样，意想不到吧&lt;/del>&lt;/p>
+&lt;p>为了方便，毕竟谁也不想写 $5、6$ 个update函数去逐一维护。&lt;/p>
+&lt;p>所以，C++的&lt;del>高级&lt;/del>语法 &lt;em>bulingbuling&lt;/em> 的出现了。&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;-&amp;gt; struck结构体 + operator运算符重载&lt;/p>
+&lt;p>使用结构体记录所有需要维护的信息并通过 &lt;code>operator +&lt;/code> 实现合并能够有效降低代码难度：&lt;/p>
+&lt;pre>&lt;code class="language-c++">
+&lt;/code>&lt;/pre>
+&lt;h2 id="空间的一点儿优化动态开点线段树">空间的一点儿优化——动态开点线段树&lt;/h2>
+&lt;h6 id="引子">引子&lt;/h6>
+&lt;p>还是先搞一个非常形象的小&lt;del>故事&lt;/del>吧。&lt;/p>
+&lt;p>​ 首先，你想象自己是一位古代的帝王；你精力旺盛，辛勤耕耘20余年，终于在后宫三千佳丽的帮助下，成功为人类的繁衍生息做出了巨大的贡献。&lt;/p>
+&lt;p>​ 那么，问题来了。你的儿子女儿加在一起已经快赶上一个师~~(手动狗头)~~的规模了，而恰好你现在手里没有钱(你并不被允许使用那么多内存)，不可能让你的所有子女都住上气派辉煌的宫殿，其中大部分不受宠的就只能住在一些破旧的偏殿里(你在自己的机器中能申请到内存)。&lt;/p>
+&lt;p>​ 现在，另一个国家的元首(评测机)来你国访问，你开始炫耀起你对人类所做出的贡献。这时候，正是展现国家经济军事实力、皇帝大臣精神面貌的时候，你当然不能让来访的外国人知道你手里没钱，连自己子女的房子都四处漏风，否则对方就会认为你好欺负，来攻打你(评测机返回MLE，把你的分数打掉)。&lt;/p>
+&lt;p>​ 所以，你想到了一个损招：当且仅当你要展示第 $i$ 个儿子时，才把他的房子装修一下，搞好一点，装装样子。至于那些对方看不见的，就爱咋咋地。因为对方时间有限，并不会跟着你看很多的子女(然而仅有的几个住在好地方的又不够展现帝国雄风)，走访的并不会太多，因此并不需要改造太多，国家这点钱还是出得起的(你并没有MLE，骗过了评测机，评测机认为你并不好惹，给了你AC)。&lt;/p>
+&lt;h6 id="该正经了">该正经了&lt;/h6>
+&lt;p>当需要维护的区间很长(如 $n=10^9$)但操作次数有限(如 $m=10^5$​)时，如果建立出完整的线段树，空间复杂度为 $O(n)$，无法接受。&lt;/p>
+&lt;p>但可以发现每次操作涉及到的线段数为 $O(\log{n})$级别，完成所有操作涉及到的区间个数级别为 $O(m\space\log{n})$，这是可以接受的空间开销。&lt;/p>
+&lt;p>于是我们放弃之前用数组存储线段树上所有结点的做法，而是在访问到未创建结点时为其分配存储位置，这样的线段树叫做&lt;strong>动态开点线段树&lt;/strong>。&lt;/p>
+&lt;pre>&lt;code class="language-c++">
+&lt;/code>&lt;/pre>
+&lt;h2 id="线段树上二分">线段树上二分&lt;/h2>
+&lt;p>~~与树状数组上二分类似，~~线段树上也可以进行二分。概括地说，线段树上二分的实质是利用线段树上当前结点及其两个子节点维护的信息快速判断要查找的位置在左右哪个区间中。由于线段树的深度为 $\log{n}$，所以线段树上二分的复杂度为 $O(\log{n})$。&lt;/p>
+&lt;h2 id="权值线段树">权值线段树&lt;/h2>
+&lt;p>与树状数组维护可重集合的 &lt;code>count&lt;/code> 数组类似，线段树也可以用来维护可重集合的 &lt;code>count&lt;/code> 数组，这样的线段树常被称作&lt;strong>权值线段树&lt;/strong>。在使用动态开点线段树实现权值线段树时可以放松对权值值域的限制（权值甚至可以取为负数！），这与处理较大权值时需要事先离散化的树状数组相比具有巨大的优势。&lt;/p>
+&lt;h2 id="线段树优化建图">线段树优化建图&lt;/h2>
+&lt;h2 id="总结">总结&lt;/h2>
+&lt;p>在更多更灵活的题目中，线段树等数据结构往往被用来&lt;strong>快速&lt;/strong>维护一些区间信息，即一种&lt;strong>优化暴力的手段&lt;/strong>。&lt;/p>
+&lt;p>这一类问题中，数据结构的维护只是最后一步，难点往往在于想出第一步的 $O(n^2)$或 $O(nm)$的暴力。&lt;/p>
+&lt;p>解决这类优化问题时，一般都是在得到暴力解法后，将&lt;strong>要实现的操作&lt;/strong>都列出来，再选择合适的数据结构维护这些操作。&lt;/p>
+&lt;p>&lt;strong>考场上遇到这类题目一定要先写出暴力，拿到尽可能多的分数！！&lt;/strong>&lt;/p>
+&lt;p>&lt;del>md要是遇到线段树的题，一首《凉凉》送给头秃的自己&lt;/del>&lt;/p></description></item><item><title>ST表</title><link>/notes/oiknowledge/data%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/st%E8%A1%A8/</link><pubDate>Sun, 17 Oct 2021 00:00:00 +0000</pubDate><guid>/notes/oiknowledge/data%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/st%E8%A1%A8/</guid><description/></item><item><title>字典树</title><link>/notes/oiknowledge/data%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/%E5%AD%97%E5%85%B8%E6%A0%91/</link><pubDate>Sun, 17 Oct 2021 00:00:00 +0000</pubDate><guid>/notes/oiknowledge/data%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/%E5%AD%97%E5%85%B8%E6%A0%91/</guid><description>&lt;h1 id="字典树">字典树&lt;/h1>
+&lt;h2 id="这是一棵神奇的树">这是一棵神奇的树&lt;/h2>
+&lt;p>&lt;del>字典树，顾名思义，就是一个字典。&lt;/del>&lt;/p>
+&lt;p>字典树，又称前缀树，作用是储存一些字符串……方便查询与修改。&lt;/p>
+&lt;p>具体来说，就是将每一个字符串变成树上的一条链，从 $root$ 到每个叶子节点就是我们要储存的一个字符串。&lt;/p>
+&lt;p>举个栗子，我们要储存 $ababa$ 、$badab$ 、$adace$ 、$abace$ 、$cdeab$ 、$abcab$ 、$ccc$ ，就是下图：&lt;/p>
+&lt;img src="%E5%AD%97%E5%85%B8%E6%A0%91.png" alt="fa" style="zoom:80%;" />
+&lt;p>当然，我们也可以在边上存储字符，具体操作可按照个人喜好来搞，均可以实现字典树的种种操作。&lt;/p>
+&lt;p>对于字符串 $aba$ 改如何储存呢？很简单，在其结尾打一个 $tag$ 即可。&lt;/p>
+&lt;h2 id="基本操作">基本操作&lt;/h2>
+&lt;p>注意，我们下面讨论的都是节点存储字符的情况，而并非字符存储在边上。&lt;del>其实都差不多，就是如何理解的问题。&lt;/del>&lt;/p>
+&lt;h3 id="结构">结构&lt;/h3>
+&lt;pre>&lt;code class="language-c++">int tot; //记录总节点个数，用于分配新的节点
+struct node //每个节点储存节点编号、节点上的字符和是否是结尾
+{
+int id;
+char val;
+bool tag;
+};
+std::vector&amp;lt;node&amp;gt; next[maxe]; //储存每个节点的儿子,便于查找
+&lt;/code>&lt;/pre>
+&lt;h3 id="插入">插入&lt;/h3>
+&lt;pre>&lt;code class="language-c++">inline void ins(char *in) //本来应该是dfs的,只不过优化为循环了
+{
+int now = 0, len = strlen(in); //标记当前节点的编号,字符串的长度
+for (int i = 0; i &amp;lt; len; i++)
+{
+int ci = next[now].size(); //遍历子节点
+bool is = 0; //记录是否找到可以用的链
+for (int j = 0; j &amp;lt; ci; j++)
+{
+if (next[now][j].val == in[i])
+{
+if (i == len - 1) //如果是字符串结尾就打tag
+next[now][j].tag = 1;
+is = 1;
+now = next[now][j].id; //跳转到这个儿子，继续ins
+break;
+}
+}
+if (!is) //如果没有匹配的节点,就要新建一个
+{
+next[now].push_back(node{++tot, in[i], i == len - 1 ? true : false});
+now = tot; //跳转到新建的节点
+}
+}
+}
+&lt;/code>&lt;/pre>
+&lt;h3 id="查找">查找&lt;/h3>
+&lt;pre>&lt;code class="language-c++">inline bool find(char *in) //本来应该是dfs的,只不过优化为循环了
+{
+int now = 0, len = strlen(in); //标记当前节点的编号,字符串的长度
+for (int i = 0; i &amp;lt; len; i++)
+{
+int ci = next[now].size(); //遍历子节点
+bool is = 0; //记录是否找到可以用的链
+for (int j = 0; j &amp;lt; ci; j++)
+{
+if (next[now][j].val == in[i])
+{
+is = 1; //标记找到了
+if (i == len - 1) //如果是结尾,则判断是否有tag(若没有,就是字典中某个字符串的前缀)
+is = next[now][j].tag;
+now = next[now][j].id;
+break;
+}
+}
+if (!is) //如果没找到合适的子节点,说明树中没有这个字符串
+return false;
+if (i == len - 1) //如果全部匹配,则字典中有所查询的字符串
+return true;
+}
+}
+&lt;/code>&lt;/pre>
+&lt;h3 id="另一种">另一种&lt;/h3>
+&lt;p>我们还可以按照边来储存字符，并且我们可以在一定程度上用时间换空间(其实只是减小了常数)。&lt;/p>
+&lt;p>直接对于每个节点开出字符范围大小的数组，对应位置储存对应字符的儿子节点(如果有的话)，这样就省去了查找子节点是啥子的时间，但是同时要在空间上做出一定的牺牲，适用于字符范围较小的字典。&lt;/p>
+&lt;p>&lt;a href="http://faioj.brynhild.online/problem/30034" target="_blank" rel="noopener">FaiOJ #30034. 「一本通 2.1 例 2」图书管理&lt;/a> &lt;del>就是板子&lt;/del>&lt;/p>
+&lt;pre>&lt;code class="language-c++">#include &amp;lt;cstdio&amp;gt;
+struct node
+{
+int next[60];//我们直接开出全部字符范围,然后按照下标存储
+bool tag; //0~29 30~59
+} nodes[3000000];
+int root = 1, tot = 1;
+inline void ins(char *in)
+{
+int pos = root, val;//val就是让你省一点代码
+for (; *in; ++in) //这玩意和 for(int i = 0;i &amp;lt; len;i++)一个意思
+{
+val = (*in) &amp;gt;= 'A' &amp;amp;&amp;amp; (*in) &amp;lt;= 'Z' ? (*in) - 'A' : (*in) - 'a' + 30;//找到相对应的下标
+if (!nodes[pos].next[val])//没有这个节点
+nodes[pos].next[val] = ++tot;
+pos = nodes[pos].next[val];//跳转到下一个,继续插入
+}
+nodes[pos].tag = true;//结尾打tag
+}
+inline bool find(char *in)
+{
+int pos = root, val;
+for (; *in; ++in)
+{
+val = (*in) &amp;gt;= 'A' &amp;amp;&amp;amp; (*in) &amp;lt;= 'Z' ? (*in) - 'A' : (*in) - 'a' + 30;
+if (!nodes[pos].next[val])
+return false;
+pos = nodes[pos].next[val];
+}
+return nodes[pos].tag&amp;gt;0?true:false;
+}
+int len;
+char ord[10], name[500];
+int main()
+{
+scanf(&amp;quot;%d&amp;quot;, &amp;amp;len);
+while (len--)
+{
+scanf(&amp;quot;%s %[^\n]&amp;quot;, ord, name);
+if (ord[2] == 'd')
+ins(name);
+else
+printf(&amp;quot;%s\n&amp;quot;, find(name) ? &amp;quot;yes&amp;quot; : &amp;quot;no&amp;quot;);
+}
+return 0;
+}
+&lt;/code>&lt;/pre>
+&lt;h2 id="这玩意能干啥">这玩意能干啥&lt;/h2>
+&lt;p>字典树因为其特有的结构，在大量字符串的查找、修改、比较中有较大的优势。&lt;/p>
+&lt;p>还可以进行转化，用于比较二进制($k$进制)下的数字大小等。亦可以用于关于前缀的若干问题。&lt;/p>
+&lt;p>但是，还是那句话，数据结构都是用来在暴力的情况下进行优化的……&lt;/p>
+&lt;h1 id="01-trie">$01$​-Trie&lt;/h1>
+&lt;h2 id="没错这个东西用来搞二进制的">没错，这个东西用来搞二进制的&lt;/h2>
+&lt;p>&lt;strong>01-trie&lt;/strong>是将整数的二进制表示（位数固定，补前导零）看做一个字符串，按二进制位&lt;strong>从高到低&lt;/strong>的顺序插入构建出的字符集为 ${0,1}$ 的字典树。&lt;/p>
+&lt;p>事实上，与平衡树类似，01-trie也可以用于维护一个有序集合，支持插入、删除、数查排名、排名查数等操作。但由于空间开销大等原因，很少见到这样使用01-trie的OI选手。&lt;del>(我会&lt;a href="./%e5%b9%b3%e8%a1%a1%e6%a0%91.md">平衡树&lt;/a>，还要这玩意干屁)&lt;/del>&lt;/p>
+&lt;p>01-trie 最常见的应用是快速计算数 $x$ 与字典树中所有数异或结果的&lt;strong>最大值&lt;/strong>或最小值。以最大值为例，具体的做法是从树根开始（即按二进制位从高到低）贪心：&lt;/p>
+&lt;ul>
+&lt;li>若存在与 $x$ 当前位上的值相反的边，则走这条边，使这一位的异或结果成为 $1$；&lt;/li>
+&lt;li>若不存在，则走相同的边，使这一位的异或结果为 $0$。&lt;/li>
+&lt;/ul>
+&lt;p>答案从高位到低位~~(说话算数的到说话不算数的)~~依次构造，正确性显然。&lt;/p>
+&lt;h2 id="板子">板子&lt;/h2>
+&lt;p>&lt;a href="http://faioj.brynhild.online/problem/30050" target="_blank" rel="noopener">FaiOJ #30050. 「一本通 2.3 例 2」The XOR Largest Pair&lt;/a>&lt;/p></description></item><item><title>Hash表</title><link>/notes/oiknowledge/data%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/hash%E8%A1%A8/</link><pubDate>Sun, 17 Oct 2021 00:00:00 +0000</pubDate><guid>/notes/oiknowledge/data%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/hash%E8%A1%A8/</guid><description/></item></channel></rss>

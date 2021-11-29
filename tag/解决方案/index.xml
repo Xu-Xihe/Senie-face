@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>解决方案 | Senie</title><link>/tag/%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/</link><atom:link href="/tag/%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/index.xml" rel="self" type="application/rss+xml"/><description>解决方案</description><generator>Wowchemy (https://wowchemy.com)</generator><language>zh</language><copyright>© 曦曦呵呵</copyright><lastBuildDate>Mon, 22 Nov 2021 15:15:41 +0800</lastBuildDate><image><url>/media/icon_huf638f59a6dd2257b0add8e0186347459_300061_512x512_fill_lanczos_center_3.png</url><title>解决方案</title><link>/tag/%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/</link></image><item><title>Ubuntu关机90s</title><link>/post/tec/ubuntu%E5%85%B3%E6%9C%BA90s/</link><pubDate>Mon, 22 Nov 2021 15:15:41 +0800</pubDate><guid>/post/tec/ubuntu%E5%85%B3%E6%9C%BA90s/</guid><description>&lt;h2 id="现象">现象&lt;/h2>
+&lt;p>通常情况下，他会显示一个啥啥啥 is running，然后后面有一个括号 &lt;code>(..s/1min30s)&lt;/code> 这种。&lt;/p>
+&lt;h2 id="解决方法">解决方法&lt;/h2>
+&lt;p>虽然我们并不知道为啥，但是我们确实有一种解决的方法。&lt;/p>
+&lt;ol>
+&lt;li>用root权限（其实就是加个 &lt;code>sudo&lt;/code>）编辑 &lt;code> /etc/systemd/system.conf&lt;/code>，找到里面有一个 &lt;code>DefaultTimeoutStopSec=90s&lt;/code>，把行首的 &lt;code>#&lt;/code> 去掉，并改成 &lt;code>DefaultTimeoutStopSec=1ms&lt;/code>，保存，退出。&lt;/li>
+&lt;li>执行 &lt;code>sudo systemctl daemon-reload&lt;/code> 更新配置文件。&lt;/li>
+&lt;/ol>
+&lt;script src='//unpkg.com/valine/dist/Valine.min.js'>&lt;/script>
+&lt;div id="vcomments">&lt;/div>
+&lt;script>
+new Valine({
+el: '#vcomments',
+appId: 'mUFdj80doBeHANJjnbmU89gH-gzGzoHsz',
+appKey: 'p4p7vzJrQnIYoajXvUjpuiRy',
+placeholder: '说点什么叭~ (邮箱和网址不强制，邮箱用于Gravatar头像显示)',
+visitor: true,
+recordIP: true,
+serverURLs: false,
+enableQQ: true
+})
+&lt;/script></description></item></channel></rss>

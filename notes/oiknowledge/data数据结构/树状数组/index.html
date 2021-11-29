@@ -1,0 +1,486 @@
+<!doctype html><html lang=zh>
+<head>
+<meta charset=utf-8>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<meta http-equiv=x-ua-compatible content="IE=edge">
+<meta name=generator content="Wowchemy 5.3.0 for Hugo">
+<link rel=preconnect href=https://fonts.gstatic.com crossorigin>
+<link rel=preload as=style href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap">
+<link rel=stylesheet href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap" media=print onload="this.media='all'">
+<meta name=author content="曦曦呵呵">
+<meta name=description content="树状数组 一种~~倍增?分治？~~思想下的奇奇怪怪的东西………">
+<link rel=alternate hreflang=zh href=/notes/oiknowledge/data%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/%E6%A0%91%E7%8A%B6%E6%95%B0%E7%BB%84/>
+<meta name=theme-color content="#8a2be2">
+<script src=/js/mathjax-config.js></script>
+<link rel=stylesheet href=/css/vendor-bundle.min.f1ecf783c14edc00c9320c205831ad8e.css media=print onload="this.media='all'">
+<link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/styles/github.min.css crossorigin=anonymous title=hl-light media=print onload="this.media='all'">
+<link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/styles/dracula.min.css crossorigin=anonymous title=hl-dark media=print onload="this.media='all'" disabled>
+<link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.min.css integrity="sha512-1xoFisiGdy9nvho8EgXuXvnpR5GAMSjFwp40gSRE3NwdUdIMIKuPa7bqoUhLD0O/5tPNhteAsE5XyyMi5reQVA==" crossorigin=anonymous media=print onload="this.media='all'">
+<script src=https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js integrity crossorigin=anonymous async></script>
+<link rel=stylesheet href=/css/wowchemy.36d7c79ef70cfd4ede320d3031e72a79.css>
+<link rel=manifest href=/manifest.webmanifest>
+<link rel=icon type=image/png href=/media/icon_huf638f59a6dd2257b0add8e0186347459_300061_32x32_fill_lanczos_center_3.png>
+<link rel=apple-touch-icon type=image/png href=/media/icon_huf638f59a6dd2257b0add8e0186347459_300061_180x180_fill_lanczos_center_3.png>
+<link rel=canonical href=/notes/oiknowledge/data%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/%E6%A0%91%E7%8A%B6%E6%95%B0%E7%BB%84/>
+<meta property="twitter:card" content="summary">
+<meta property="og:site_name" content="Senie">
+<meta property="og:url" content="/notes/oiknowledge/data%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/%E6%A0%91%E7%8A%B6%E6%95%B0%E7%BB%84/">
+<meta property="og:title" content="树状数组 | Senie">
+<meta property="og:description" content="树状数组 一种~~倍增?分治？~~思想下的奇奇怪怪的东西………"><meta property="og:image" content="/media/icon_huf638f59a6dd2257b0add8e0186347459_300061_512x512_fill_lanczos_center_3.png">
+<meta property="twitter:image" content="/media/icon_huf638f59a6dd2257b0add8e0186347459_300061_512x512_fill_lanczos_center_3.png"><meta property="og:locale" content="zh">
+<meta property="article:published_time" content="2021-10-17T00:00:00+00:00">
+<meta property="article:modified_time" content="2021-10-17T00:00:00+00:00">
+<title>树状数组 | Senie</title>
+</head>
+<body id=top data-spy=scroll data-offset=70 data-target=#TableOfContents class=page-wrapper data-wc-page-id=0df47a6819c1f5c8bb5b357443a4ef65>
+<script src=/js/wowchemy-init.min.2da3b1fa37e894630bf6de39b1b694b3.js></script>
+<aside class=search-modal id=search>
+<div class=container>
+<section class=search-header>
+<div class="row no-gutters justify-content-between mb-3">
+<div class=col-6>
+<h1>搜索</h1>
+</div>
+<div class="col-6 col-search-close">
+<a class=js-search href=# aria-label=Close><i class="fas fa-times-circle text-muted" aria-hidden=true></i></a>
+</div>
+</div>
+<div id=search-box>
+<input name=q id=search-query placeholder=搜索... autocapitalize=off autocomplete=off autocorrect=off spellcheck=false type=search class=form-control aria-label=搜索...>
+</div>
+</section>
+<section class=section-search-results>
+<div id=search-hits>
+</div>
+</section>
+</div>
+</aside>
+<div class=page-header>
+<nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id=navbar-main>
+<div class=container-xl>
+<div class="d-none d-lg-inline-flex">
+<a class=navbar-brand href=/>Senie</a>
+</div>
+<button type=button class=navbar-toggler data-toggle=collapse data-target=#navbar-content aria-controls=navbar-content aria-expanded=false aria-label=切换导航>
+<span><i class="fas fa-bars"></i></span>
+</button>
+<div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+<a class=navbar-brand href=/>Senie</a>
+</div>
+<div class="navbar-collapse main-menu-item collapse justify-content-start" id=navbar-content>
+<ul class="navbar-nav d-md-inline-flex">
+<li class=nav-item>
+<a class="nav-link active" href=/notes/><span>OI</span></a>
+</li>
+<li class=nav-item>
+<a class=nav-link href=/courses/><span>高中</span></a>
+</li>
+<li class="nav-item dropdown">
+<a href=# class="nav-link dropdown-toggle" data-toggle=dropdown aria-haspopup=true><span>杂七杂八</span><span class=caret></span>
+</a>
+<div class=dropdown-menu>
+<a class=dropdown-item href=/category/%e4%b9%90%e4%b9%90%e5%91%b5%e5%91%b5/><span>乐乐呵呵</span></a>
+<a class=dropdown-item href=/category/%e6%8a%80%e6%9c%afblog/><span>技术blog</span></a>
+</div>
+</li>
+</ul>
+</div>
+<ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+<li class="nav-item d-none d-lg-inline-flex">
+<a class=nav-link href=https://github.com/Xu-Xihe data-toggle=tooltip data-placement=bottom title=在Github上关注我吧！ target=_blank rel=noopener aria-label=在Github上关注我吧！>
+<i class="fab fa-github" aria-hidden=true></i>
+</a>
+</li>
+<li class=nav-item>
+<a class="nav-link js-search" href=# aria-label=搜索><i class="fas fa-search" aria-hidden=true></i></a>
+</li>
+<li class="nav-item dropdown theme-dropdown">
+<a href=# class=nav-link data-toggle=dropdown aria-haspopup=true aria-label="Display preferences">
+<i class="fas fa-moon" aria-hidden=true></i>
+</a>
+<div class=dropdown-menu>
+<a href=# class="dropdown-item js-set-theme-light">
+<span>浅色</span>
+</a>
+<a href=# class="dropdown-item js-set-theme-dark">
+<span>深色</span>
+</a>
+<a href=# class="dropdown-item js-set-theme-auto">
+<span>自动</span>
+</a>
+</div>
+</li>
+</ul>
+</div>
+</nav>
+</div>
+<div class=page-body>
+<article class=article>
+<div class="article-container pt-3">
+<h1>树状数组</h1>
+<div class=article-metadata>
+<span class=article-date>
+2021年10月17日
+</span>
+</div>
+</div>
+<div class=article-container>
+<div class=article-style>
+<h1 id=树状数组>树状数组</h1>
+<p>一种~~<a href=/oiblogs/basic%e5%9f%ba%e6%9c%ac%e6%80%9d%e6%83%b3/%e5%80%8d%e5%a2%9e><strong>倍增?</strong></a><a href=/oiblogs/basic%e5%9f%ba%e6%9c%ac%e6%80%9d%e6%83%b3/%e5%88%86%e6%b2%bb><strong>分治？</strong></a>~~思想下的奇奇怪怪的东西…………</p>
+<p><del>先放个图</del><img src=%E6%A0%91%E7%8A%B6%E6%95%B0%E7%BB%84.png alt=树状数组 style=zoom:50%></p>
+<h2 id=用的地方>用的地方</h2>
+<ol>
+<li>
+<p>正常数组的单点修改时间复杂度为$O(1)$，区间查询为$O(n)$;
+而树状数组的单点修改和区间查询均为$O(\log{n})$。（因为树的高度为$\log{n}$）</p>
+</li>
+<li>
+<p>相比于某个更sb的东西：</p>
+</li>
+</ol>
+<p><strong>优点：</strong></p>
+<ol>
+<li>
+<p>单次操作时间复杂度为$O(\log{n})$且常数很小，实际运行效率远优于<a href=/oiblogs/data%e6%95%b0%e6%8d%ae%e7%bb%93%e6%9e%84/%e7%ba%bf%e6%ae%b5%e6%a0%91/>线段树</a><del>(虽然理论上时间复杂度相同)</del></p>
+</li>
+<li>
+<p>空间复杂度$O(n)$，在某些场景下较<a href=/oiblogs/data%e6%95%b0%e6%8d%ae%e7%bb%93%e6%9e%84/%e7%ba%bf%e6%ae%b5%e6%a0%91/>线段树</a>($O(4n)$)有极大优势</p>
+</li>
+<li>
+<p>理解以后很好写(它很短，不费手，不需Debug $_{除非手残}$​ <del>(不理解也很好背)</del> <del>(理解是不可能理解的)</del></p>
+</li>
+</ol>
+<p><strong>缺点：</strong></p>
+<p>适用范围比<a href=/oiblogs/data%e6%95%b0%e6%8d%ae%e7%bb%93%e6%9e%84/%e7%ba%bf%e6%ae%b5%e6%a0%91/>线段树</a><strong>小的多</strong>。树状数组能有的操作，线段树<strong>一定有</strong>；线段树有的操作，树状数组<strong>大部分没有</strong>。</p>
+<h2 id=最最最奇怪的地方>最最最奇怪的地方</h2>
+<img src=fenwick1.png alt=&运算 style=zoom:68%>
+<p><del>你这玩意谁想的粗来？</del></p>
+<h3 id=先搞一个题外话c中对于负整数是如何存储的>先搞一个题外话——C++中对于负整数是如何存储的。</h3>
+<p><del>默认都知道变量会预留一个二进制位为符号位，虽然但是并没有什么关系且不知道也不影响</del></p>
+<p>对于一个负整数，存贮方法为先将这个数的<strong>绝对值取反</strong>，**再$+1$**​。<del>(是不是十分反人类!?)</del></p>
+<p>举个栗子(上图也有)：$1$​​ &ndash;> $(0001)_2$​ $-1$​ &ndash;> $(1110)_2+(0001)_2$​​ &ndash;> $(1111)_2$</p>
+<h3 id=然后我们惊喜的发现>然后，我们惊喜的发现：</h3>
+<p>咦，如果我们吧原数和原数的相反数与起来好像不错……</p>
+<p>$1&-1$ = $(0001)_2$ <del>好像又回来了？</del></p>
+<p>其实是我们得到了原数的lowbit，即原数二进制表示中为$1$的最低位。</p>
+<p>再观察，它好像正好转换成十进制就是它的长度…………</p>
+<p><del>这个世界好神奇!!!</del></p>
+<p><del>不理解就放过自己吧，背住就好</del></p>
+<h2 id=终于进入正题>终于，进入正题</h2>
+<p><del>最最最奇诡的东西过去了，剩下的就简单?了</del></p>
+<p>树状数组的第$i$位维护以第$i$位为终点，长度为$i&-i$的<strong>区间和</strong>。</p>
+<p>更新时注意要将压在上面的<strong>全部</strong>更新</p>
+<p>查找时只能查找从$1\sim i$的区间和；要想查找区间$[i,j]$的和，请用 $1\sim j$ 的区间和减去 $1\sim(i-1)$ 的区间和。</p>
+<h6 id=注意-是-i-1-而不是-i-><strong>注意! 是 $i-1$​​ 而不是 $i$​​ ​！！！</strong></h6>
+<p>从第$i$位开始向上查找，将所跳转到的求和，直到下标为$0$​。</p>
+<pre><code class=language-c++>#include &lt;cstdio&gt;
+const int maxe = 5e5 + 9;
+int tree[maxe], n, m;
+inline void add(int x, int val) //一直更新直到最上层
+{
+    for (; x &lt;= n; x += x &amp; -x)
+        tree[x] += val;
+}
+inline int sum(int x) //一直加到下标为0
+{
+    int ans = 0; //注意赋初始值为0，防止奇奇怪怪的事情
+    for (; x &gt; 0; x -= x &amp; -x)
+        ans += tree[x];
+    return ans;
+}
+int main()
+{
+    scanf(&quot;%d%d&quot;, &amp;n, &amp;m);
+    for (int i = 1; i &lt;= n; i++)
+    {
+        int a;
+        scanf(&quot;%d&quot;, &amp;a);
+        add(i, a);
+    }
+    while (m--)
+    {
+        int a, b, c;
+        scanf(&quot;%d%d%d&quot;, &amp;a, &amp;b, &amp;c);
+        if (a == 1)
+            add(b, c);
+        else
+            printf(&quot;%d\n&quot;, sum(c) - sum(b - 1));
+    }
+    return 0;
+}
+</code></pre>
+<h2 id=区间修改和单点查询>区间修改和单点查询</h2>
+<p>用到一个比较神奇但是还能理解的东西<a href=/oiblogs/others%e6%9d%82%e9%a1%b9/%e5%b7%ae%e5%88%86%e6%95%b0%e7%bb%84/>差分数组</a>。</p>
+<p>用树状数组维护差分数组，以达到快速区间修改和单点查询的操作。</p>
+<pre><code class=language-c++>#include &lt;cstdio&gt;
+const int maxe = 5e5 + 9;
+int tree[maxe], n, m;
+inline void add(int x, int val) //没啥不一样
+{
+    for (; x &lt;= n; x += x &amp; -x)
+        tree[x] += val;
+}
+inline int sum(int x)
+{
+    int ans = 0;
+    for (; x &gt; 0; x -= x &amp; -x)
+        ans += tree[x];
+    return ans;
+}
+int main()
+{
+    scanf(&quot;%d%d&quot;, &amp;n, &amp;m);
+    int a, last = 0;
+    for (int i = 1; i &lt;= n; i++)
+    {
+        scanf(&quot;%d&quot;, &amp;a);
+        add(i, a - last); //建立差分数组
+        last = a;
+    }
+    while (m--)
+    {
+        int a, b, c, d;
+        scanf(&quot;%d%d&quot;, &amp;a, &amp;b);
+        if (a == 1)
+        {
+            scanf(&quot;%d%d&quot;, &amp;c, &amp;d);
+            add(b, d);      //将区间起点加val
+            add(c + 1, -d); //将区间终点后一位减val,消除贡献
+        }
+        else
+            printf(&quot;%d\n&quot;, sum(b));
+    }
+    return 0;
+}
+</code></pre>
+<h2 id=区间求和>区间求和</h2>
+<p><del>奇妙</del></p>
+<p>先让我们看一个$long\space long $的式子：
+$$
+\begin{aligned}
+sum([1,r])=&\sum_{i=1}^{r} a_i=\sum_{i=1}^r\sum_{j=1}^i b_j\=&\sum_{i=1}^r b_i\times(r-i+1)\=&(r+1)\times \color{red}{\sum_{i=1}^r b_i}-\color{red}{\sum_{i=1}^r b_i\times i}
+\end{aligned}
+$$
+<del>你感受到数学的魅力了吗？是不是每一个字符你都认识，但是就是不懂它们组合起来是啥意思</del></p>
+<p>亿点点地看，</p>
+<p>$a$ 数组为原始数组(初始值)</p>
+<p>$b$ 数组为树状数组维护的差分数组</p>
+<p>下面把上面那段鬼话变成人话……不用数学符号就是有点长……
+$$
+\begin{aligned}
+\sum([1,r])=&a_1+a_2+a_3+\cdots+a_{r-1}+a_r\=&(b_1)+(b_1+b_2)+(b_1+b_2+b_3)+\cdots+(b_1+b_2+\cdots+b_{r-1})+(b_1+b_2+\cdots+b_{r-1}+b_r)\=&(b_1\times r)+(b_2\times(r-1))+(b_3\times(r-2))+\cdots+(b_{r-1}\times2)+(b_r\times1)\=&\sum_{i=1}^r b_i\times(r-i+1)\=&\color{red}{(r+1)\times\sum_{i=1}^r b_i-\sum_{i=1}^r b_i\times i}
+\end{aligned}
+$$
+推导之后，我们发现，用树状数组维护两个值($b_i$ 和 $b_i\times i$)即可。</p>
+<h2 id=二维多维树状数组>二维、多维树状数组</h2>
+<p><del>最简单的一种<strong>树套树</strong></del> <del>直接套娃即可</del> <del>这辈子也别想画出示意图</del></p>
+<p>在外层树状数组的每个节点上维护一棵树状数组</p>
+<p>查询/更新时使用二重循环即可。</p>
+<p><a href=https://baike.baidu.com/item/%E4%BA%8C%E7%BB%B4%E6%A0%91%E7%8A%B6%E6%95%B0%E7%BB%84 target=_blank rel=noopener>百度百科</a> <del>看懂是不可能看懂的，慎重尝试</del></p>
+<pre><code class=language-c++>#include &lt;cstdio&gt;
+const int maxe = 5e2 + 9;
+int n, m, q, tree[maxe][maxe];
+inline void add(int x, int y, int val) //注意不能直接调用y,双重循环
+{
+    for (int i = x; i &lt;= n; i += i &amp; -i)
+    {
+        for (int j = y; j &lt;= m; j += j &amp; -j)
+        {
+            tree[i][j] += val;
+        }
+    }
+}
+inline int sum(int x, int y)
+{
+    int ans = 0;
+    for (int i = x; i &gt; 0; i -= i &amp; -i)
+    {
+        for (int j = y; j &gt; 0; j -= j &amp; -j)
+        {
+            ans += tree[i][j];
+        }
+    }
+    return ans;
+}
+int main()
+{
+    scanf(&quot;%d%d%d&quot;, &amp;n, &amp;m, &amp;q);
+    for (int i = 1; i &lt;= n; i++)
+    {
+        for (int j = 1; j &lt;= m; j++)
+        {
+            int a;
+            scanf(&quot;%d&quot;, &amp;a);
+            add(i, j, a);
+        }
+    }
+    while (q--)
+    {
+        char aa[100];
+        int a, b, c, d;
+        scanf(&quot;%s%d%d%d&quot;, aa, &amp;a, &amp;b, &amp;c);
+        if (aa[0] == 'A')
+            add(a, b, c);
+        else
+        {
+            scanf(&quot;%d&quot;, &amp;d);
+            printf(&quot;%d\n&quot;, sum(b, d) + sum(a - 1, c - 1) - sum(b, c - 1) - sum(a - 1, d));
+            //二维前缀和
+            //减一不搞好,亲人两行泪
+        }
+    }
+    return 0;
+}
+</code></pre>
+<h2 id=树状数组上的二分>树状数组上的二分</h2>
+<p>建议直接移步<a href=/oiblogs/data%e6%95%b0%e6%8d%ae%e7%bb%93%e6%9e%84/%e5%b9%b3%e8%a1%a1%e6%a0%91/>平衡树</a>或者<a href=/oiblogs/data%e6%95%b0%e6%8d%ae%e7%bb%93%e6%9e%84/%e7%ba%bf%e6%ae%b5%e6%a0%91/>线段树</a>。</p>
+<p><strong>摘抄如下：</strong></p>
+<p>类似于线段树上二分，树状数组上也可以进行二分。</p>
+<p>使用<strong>树状数组上二分</strong>（可能需要预先离散化），可以$O(log\space{n})$​查询第 $k$​ 小/大元素，实现类似<strong>平衡树</strong>的效果。</p>
+<p>主要思想是：按二进制位从高到低逐渐二分出答案。</p>
+<pre><code class=language-c++>int kth(int k) {
+    int r = 0, t;
+    for (int i = LOG_N; i&gt;=0; --i) {
+        t = r | 1 &lt;&lt; i;     
+        if (t &lt;= n &amp;&amp; d[t] &lt; k)k -= d[t], r = t;
+    }
+    return r + 1;
+}
+</code></pre>
+</div>
+<div class=share-box>
+<ul class=share>
+<li>
+<a href="https://twitter.com/intent/tweet?url=/notes/oiknowledge/data%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/%E6%A0%91%E7%8A%B6%E6%95%B0%E7%BB%84/&text=%e6%a0%91%e7%8a%b6%e6%95%b0%e7%bb%84" target=_blank rel=noopener class=share-btn-twitter aria-label=twitter>
+<i class="fab fa-twitter"></i>
+</a>
+</li>
+<li>
+<a href="https://www.facebook.com/sharer.php?u=/notes/oiknowledge/data%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/%E6%A0%91%E7%8A%B6%E6%95%B0%E7%BB%84/&t=%e6%a0%91%e7%8a%b6%e6%95%b0%e7%bb%84" target=_blank rel=noopener class=share-btn-facebook aria-label=facebook>
+<i class="fab fa-facebook"></i>
+</a>
+</li>
+<li>
+<a href="mailto:?subject=%e6%a0%91%e7%8a%b6%e6%95%b0%e7%bb%84&body=/notes/oiknowledge/data%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/%E6%A0%91%E7%8A%B6%E6%95%B0%E7%BB%84/" target=_blank rel=noopener class=share-btn-email aria-label=envelope>
+<i class="fas fa-envelope"></i>
+</a>
+</li>
+<li>
+<a href="https://www.linkedin.com/shareArticle?url=/notes/oiknowledge/data%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/%E6%A0%91%E7%8A%B6%E6%95%B0%E7%BB%84/&title=%e6%a0%91%e7%8a%b6%e6%95%b0%e7%bb%84" target=_blank rel=noopener class=share-btn-linkedin aria-label=linkedin-in>
+<i class="fab fa-linkedin-in"></i>
+</a>
+</li>
+<li>
+<a href="whatsapp://send?text=%e6%a0%91%e7%8a%b6%e6%95%b0%e7%bb%84%20/notes/oiknowledge/data%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/%E6%A0%91%E7%8A%B6%E6%95%B0%E7%BB%84/" target=_blank rel=noopener class=share-btn-whatsapp aria-label=whatsapp>
+<i class="fab fa-whatsapp"></i>
+</a>
+</li>
+<li>
+<a href="https://service.weibo.com/share/share.php?url=/notes/oiknowledge/data%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/%E6%A0%91%E7%8A%B6%E6%95%B0%E7%BB%84/&title=%e6%a0%91%e7%8a%b6%e6%95%b0%e7%bb%84" target=_blank rel=noopener class=share-btn-weibo aria-label=weibo>
+<i class="fab fa-weibo"></i>
+</a>
+</li>
+</ul>
+</div>
+<div class="media author-card content-widget-hr">
+<a href=/><img class="avatar mr-3 avatar-circle" src=/author/%E6%9B%A6%E6%9B%A6%E5%91%B5%E5%91%B5/avatar_hudb29ded1c25f9d5e935a5b2ce5ff59ff_1255814_270x270_fill_lanczos_center_3.png alt=曦曦呵呵></a>
+<div class=media-body>
+<h5 class=card-title><a href=/>曦曦呵呵</a></h5>
+<h6 class=card-subtitle>一名卑微的OIer。</h6>
+<p class=card-text>开开心心，蹦蹦跳跳~</p>
+<ul class=network-icon aria-hidden=true>
+<li>
+<a href=/#contact>
+<i class="fas fa-envelope"></i>
+</a>
+</li>
+<li>
+<a href=https://github.com/Xu-Xihe target=_blank rel=noopener>
+<i class="fab fa-github"></i>
+</a>
+</li>
+<li>
+<a href="https://qm.qq.com/cgi-bin/qm/qr?k=Wns5qUpuYc9CC616JJSKEyC3vXqZWjrF&noverify=0" target=_blank rel=noopener>
+<i class="fab fa-qq"></i>
+</a>
+</li>
+</ul>
+</div>
+</div>
+<div class=article-widget>
+<div class=post-nav>
+<div class=post-nav-item>
+<div class=meta-nav>下一页</div>
+<a href=/notes/oiknowledge/data%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/%E5%B9%B3%E8%A1%A1%E6%A0%91/ rel=next>平衡树</a>
+</div>
+<div class=post-nav-item>
+<div class=meta-nav>上一页</div>
+<a href=/notes/oiknowledge/data%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/%E7%BA%BF%E6%AE%B5%E6%A0%91/ rel=prev>线段树</a>
+</div>
+</div>
+</div>
+</div>
+</article>
+</div>
+<div class=page-footer>
+<div class=container>
+<footer class=site-footer>
+<p class=powered-by>
+© 曦曦呵呵
+</p>
+<p class=powered-by>
+由<a href="https://wowchemy.com/?utm_campaign=poweredby" target=_blank rel=noopener>Wowchemy</a>支持发布——免费<a href=https://github.com/wowchemy/wowchemy-hugo-themes target=_blank rel=noopener>开源</a>网站，为创作者赋能。
+</p>
+</footer>
+</div>
+</div>
+<div id=modal class="modal fade" role=dialog>
+<div class=modal-dialog>
+<div class=modal-content>
+<div class=modal-header>
+<h5 class=modal-title>引用</h5>
+<button type=button class=close data-dismiss=modal aria-label=Close>
+<span aria-hidden=true>&#215;</span>
+</button>
+</div>
+<div class=modal-body>
+<pre><code class="tex hljs"></code></pre>
+</div>
+<div class=modal-footer>
+<a class="btn btn-outline-primary my-1 js-copy-cite" href=# target=_blank>
+<i class="fas fa-copy"></i> 复制
+</a>
+<a class="btn btn-outline-primary my-1 js-download-cite" href=# target=_blank>
+<i class="fas fa-download"></i> 下载
+</a>
+<div id=modal-error></div>
+</div>
+</div>
+</div>
+</div>
+<script src=/js/vendor-bundle.min.b73dfaac3b6499dc997741748a7c3fe2.js></script>
+<script src=https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin=anonymous></script>
+<script src=https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin=anonymous></script>
+<script src=https://cdnjs.cloudflare.com/ajax/libs/mermaid/8.8.4/mermaid.min.js integrity="sha512-as1BF4+iHZ3BVO6LLDQ7zrbvTXM+c/1iZ1qII/c3c4L8Rn5tHLpFUtpaEtBNS92f+xGsCzsD7b62XP3XYap6oA==" crossorigin=anonymous title=mermaid></script>
+<script src=https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/highlight.min.js integrity="sha512-TDKKr+IvoqZnPzc3l35hdjpHD0m+b2EC2SrLEgKDRWpxf2rFCxemkgvJ5kfU48ip+Y+m2XVKyOCD85ybtlZDmw==" crossorigin=anonymous></script>
+<script src=https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/languages/r.min.js crossorigin=anonymous></script>
+<script src=https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/languages/python.min.js crossorigin=anonymous></script>
+<script src=https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/languages/latex.min.js crossorigin=anonymous></script>
+<script src=https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.min.js integrity="sha512-SeiQaaDh73yrb56sTW/RgVdi/mMqNeM2oBwubFHagc5BkixSpP1fvqF47mKzPGWYSSy4RwbBunrJBQ4Co8fRWA==" crossorigin=anonymous></script>
+<script id=search-hit-fuse-template type=text/x-template>
+        <div class="search-hit" id="summary-{{key}}">
+          <div class="search-hit-content">
+            <div class="search-hit-name">
+              <a href="{{relpermalink}}">{{title}}</a>
+              <div class="article-metadata search-hit-type">{{type}}</div>
+              <p class="search-hit-description">{{snippet}}</p>
+            </div>
+          </div>
+        </div>
+      </script>
+<script src=https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin=anonymous></script>
+<script src=https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin=anonymous></script>
+<script src=/zh/js/wowchemy.min.d16321ec6884b061cbaaf961484b65c8.js></script>
+</body>
+</html>

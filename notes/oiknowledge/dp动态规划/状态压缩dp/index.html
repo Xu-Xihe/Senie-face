@@ -1,0 +1,287 @@
+<!doctype html><html lang=zh>
+<head>
+<meta charset=utf-8>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<meta http-equiv=x-ua-compatible content="IE=edge">
+<meta name=generator content="Wowchemy 5.3.0 for Hugo">
+<link rel=preconnect href=https://fonts.gstatic.com crossorigin>
+<link rel=preload as=style href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap">
+<link rel=stylesheet href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap" media=print onload="this.media='all'">
+<meta name=author content="曦曦呵呵">
+<meta name=description content="状压dp 又是二进制的东西……烦躁 这东西只是一个辅助，用来优化">
+<link rel=alternate hreflang=zh href=/notes/oiknowledge/dp%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/%E7%8A%B6%E6%80%81%E5%8E%8B%E7%BC%A9dp/>
+<meta name=theme-color content="#8a2be2">
+<script src=/js/mathjax-config.js></script>
+<link rel=stylesheet href=/css/vendor-bundle.min.f1ecf783c14edc00c9320c205831ad8e.css media=print onload="this.media='all'">
+<link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/styles/github.min.css crossorigin=anonymous title=hl-light media=print onload="this.media='all'">
+<link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/styles/dracula.min.css crossorigin=anonymous title=hl-dark media=print onload="this.media='all'" disabled>
+<link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.min.css integrity="sha512-1xoFisiGdy9nvho8EgXuXvnpR5GAMSjFwp40gSRE3NwdUdIMIKuPa7bqoUhLD0O/5tPNhteAsE5XyyMi5reQVA==" crossorigin=anonymous media=print onload="this.media='all'">
+<script src=https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js integrity crossorigin=anonymous async></script>
+<link rel=stylesheet href=/css/wowchemy.36d7c79ef70cfd4ede320d3031e72a79.css>
+<link rel=manifest href=/manifest.webmanifest>
+<link rel=icon type=image/png href=/media/icon_huf638f59a6dd2257b0add8e0186347459_300061_32x32_fill_lanczos_center_3.png>
+<link rel=apple-touch-icon type=image/png href=/media/icon_huf638f59a6dd2257b0add8e0186347459_300061_180x180_fill_lanczos_center_3.png>
+<link rel=canonical href=/notes/oiknowledge/dp%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/%E7%8A%B6%E6%80%81%E5%8E%8B%E7%BC%A9dp/>
+<meta property="twitter:card" content="summary">
+<meta property="og:site_name" content="Senie">
+<meta property="og:url" content="/notes/oiknowledge/dp%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/%E7%8A%B6%E6%80%81%E5%8E%8B%E7%BC%A9dp/">
+<meta property="og:title" content="状压dp | Senie">
+<meta property="og:description" content="状压dp 又是二进制的东西……烦躁 这东西只是一个辅助，用来优化"><meta property="og:image" content="/media/icon_huf638f59a6dd2257b0add8e0186347459_300061_512x512_fill_lanczos_center_3.png">
+<meta property="twitter:image" content="/media/icon_huf638f59a6dd2257b0add8e0186347459_300061_512x512_fill_lanczos_center_3.png"><meta property="og:locale" content="zh">
+<meta property="article:published_time" content="2021-10-17T00:00:00+00:00">
+<meta property="article:modified_time" content="2021-10-17T00:00:00+00:00">
+<title>状压dp | Senie</title>
+</head>
+<body id=top data-spy=scroll data-offset=70 data-target=#TableOfContents class=page-wrapper data-wc-page-id=367ec760db5d673b35e7f5e1aa908f67>
+<script src=/js/wowchemy-init.min.2da3b1fa37e894630bf6de39b1b694b3.js></script>
+<aside class=search-modal id=search>
+<div class=container>
+<section class=search-header>
+<div class="row no-gutters justify-content-between mb-3">
+<div class=col-6>
+<h1>搜索</h1>
+</div>
+<div class="col-6 col-search-close">
+<a class=js-search href=# aria-label=Close><i class="fas fa-times-circle text-muted" aria-hidden=true></i></a>
+</div>
+</div>
+<div id=search-box>
+<input name=q id=search-query placeholder=搜索... autocapitalize=off autocomplete=off autocorrect=off spellcheck=false type=search class=form-control aria-label=搜索...>
+</div>
+</section>
+<section class=section-search-results>
+<div id=search-hits>
+</div>
+</section>
+</div>
+</aside>
+<div class=page-header>
+<nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id=navbar-main>
+<div class=container-xl>
+<div class="d-none d-lg-inline-flex">
+<a class=navbar-brand href=/>Senie</a>
+</div>
+<button type=button class=navbar-toggler data-toggle=collapse data-target=#navbar-content aria-controls=navbar-content aria-expanded=false aria-label=切换导航>
+<span><i class="fas fa-bars"></i></span>
+</button>
+<div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+<a class=navbar-brand href=/>Senie</a>
+</div>
+<div class="navbar-collapse main-menu-item collapse justify-content-start" id=navbar-content>
+<ul class="navbar-nav d-md-inline-flex">
+<li class=nav-item>
+<a class="nav-link active" href=/notes/><span>OI</span></a>
+</li>
+<li class=nav-item>
+<a class=nav-link href=/courses/><span>高中</span></a>
+</li>
+<li class="nav-item dropdown">
+<a href=# class="nav-link dropdown-toggle" data-toggle=dropdown aria-haspopup=true><span>杂七杂八</span><span class=caret></span>
+</a>
+<div class=dropdown-menu>
+<a class=dropdown-item href=/category/%e4%b9%90%e4%b9%90%e5%91%b5%e5%91%b5/><span>乐乐呵呵</span></a>
+<a class=dropdown-item href=/category/%e6%8a%80%e6%9c%afblog/><span>技术blog</span></a>
+</div>
+</li>
+</ul>
+</div>
+<ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+<li class="nav-item d-none d-lg-inline-flex">
+<a class=nav-link href=https://github.com/Xu-Xihe data-toggle=tooltip data-placement=bottom title=在Github上关注我吧！ target=_blank rel=noopener aria-label=在Github上关注我吧！>
+<i class="fab fa-github" aria-hidden=true></i>
+</a>
+</li>
+<li class=nav-item>
+<a class="nav-link js-search" href=# aria-label=搜索><i class="fas fa-search" aria-hidden=true></i></a>
+</li>
+<li class="nav-item dropdown theme-dropdown">
+<a href=# class=nav-link data-toggle=dropdown aria-haspopup=true aria-label="Display preferences">
+<i class="fas fa-moon" aria-hidden=true></i>
+</a>
+<div class=dropdown-menu>
+<a href=# class="dropdown-item js-set-theme-light">
+<span>浅色</span>
+</a>
+<a href=# class="dropdown-item js-set-theme-dark">
+<span>深色</span>
+</a>
+<a href=# class="dropdown-item js-set-theme-auto">
+<span>自动</span>
+</a>
+</div>
+</li>
+</ul>
+</div>
+</nav>
+</div>
+<div class=page-body>
+<article class=article>
+<div class="article-container pt-3">
+<h1>状压dp</h1>
+<div class=article-metadata>
+<span class=article-date>
+2021年10月17日
+</span>
+</div>
+</div>
+<div class=article-container>
+<div class=article-style>
+<h1 id=状压dp>状压dp</h1>
+<p>又是二进制的东西……<del>烦躁</del></p>
+<p>这东西只是一个辅助，用来优化暴力或dp空间的。</p>
+<h2 id=用武之地>用武之地</h2>
+<p>当状态维数 $n$ 很多但每一维状态数 $k$ 都很少(一般是 $2$)的时候，我们可以用一个 $n$ 位 $k$ 进制整数来表示这维状态。</p>
+<p>下面，我们单表状态数为 $2$ 的情况。</p>
+<p>在学习状压dp之前，我们应该清楚所有的dp是解决<strong>多</strong>阶段<strong>决策最</strong>优化问题的一种思想方法。请注意<strong>多阶段</strong>这三个字，如何定义状态是动态规划最重要的一步。状态的定义也就决定了阶段的划分。</p>
+<p>动态规划多阶段一个<strong>重要</strong>的特性就是<strong>无后效性</strong>(值对于某个给定的阶段状态，它以前各阶段的状态无法直接影响它未来的发展，而只能通过当前的这个状态。换句话说影响当前阶段状态只可能是前一阶段的状态，而不能是后续的状态)</p>
+<p>那么可以看出如何<strong>定义状态</strong>是至关重要的，因为状态决定了阶段的划分，阶段的划分保证了无后效性。</p>
+<p>因此，我们为了保证无后效性，通常要在转移的时候带上足够的数据(很可能是一个数组)，这时的空间开销就会很大，因此我们把原数组中的每一位表示为某一个数字的某一位，这样只需要携带 $O(1)$ 的空间转移了。</p>
+<h2 id=例子>例子</h2>
+<p>我们回想<a href=./%e8%83%8c%e5%8c%85%e9%97%ae%e9%a2%98.md>01背包</a>，如果我们要让你记录一下具体是怎么装的如何？当时，我们给出了反向迭代推导的方法。</p>
+<p>但是，我们也可以在每次dp决策的时候就记录一下，并带着选择的方式转移，这样我们就不用回溯了(典型的牺牲空间换取时间的办法)。</p>
+<p>我们开了一个数组，<code>bool ji[n][k][n]</code>(虽然可以一维优化)，但是我十分不爽，这搞的空间过大了！</p>
+<p>所以，我们想起了状压dp，因此，我们现在要降成二维<code>int ji[n][k]</code>，$ji[i][j]$ 表示对应dp表第 $i$ 行第 $j$ 列的选择方式：第 $1$ 个物品对应 $ji[i][j]$ 第一位的 $0/1$，第 $2$ 个对应第二位的 $0/1\space\dots\dots$</p>
+<p>然后，我们把这个二进制数存在一个<code>int</code>里不就可了嘛，这样你就塞下了 $32$ 位的状态，真香。</p>
+<h2 id=从-on-到-o2n>从 $O(n!)$ 到 $O(2^n)$</h2>
+<p>状压dp是最接近暴力的一种dp，因为它可以完整地记录每一种状态。</p>
+<p>但它又比 $O(n!)$ 的纯暴力搜索要优一些，因为它舍弃了状态的更新顺序的记录。</p>
+<p>所以很多情况下，状压dp就是将 $O(n!)$ 的暴力优化到的另一个 $O(2^n)$ 暴力的过程。</p>
+<h2 id=子集枚举>子集枚举</h2>
+<h2 id=合理运用小范围数据>合理运用小范围数据</h2>
+<p>状压dp中 $2^n$ 的复杂度使得题目中的某些数据范围也会很小（一般在 $25$ 以下）。当遇到 $\le{25}$ 数据范围时一定要敏感。</p>
+</div>
+<div class=share-box>
+<ul class=share>
+<li>
+<a href="https://twitter.com/intent/tweet?url=/notes/oiknowledge/dp%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/%E7%8A%B6%E6%80%81%E5%8E%8B%E7%BC%A9dp/&text=%e7%8a%b6%e5%8e%8bdp" target=_blank rel=noopener class=share-btn-twitter aria-label=twitter>
+<i class="fab fa-twitter"></i>
+</a>
+</li>
+<li>
+<a href="https://www.facebook.com/sharer.php?u=/notes/oiknowledge/dp%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/%E7%8A%B6%E6%80%81%E5%8E%8B%E7%BC%A9dp/&t=%e7%8a%b6%e5%8e%8bdp" target=_blank rel=noopener class=share-btn-facebook aria-label=facebook>
+<i class="fab fa-facebook"></i>
+</a>
+</li>
+<li>
+<a href="mailto:?subject=%e7%8a%b6%e5%8e%8bdp&body=/notes/oiknowledge/dp%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/%E7%8A%B6%E6%80%81%E5%8E%8B%E7%BC%A9dp/" target=_blank rel=noopener class=share-btn-email aria-label=envelope>
+<i class="fas fa-envelope"></i>
+</a>
+</li>
+<li>
+<a href="https://www.linkedin.com/shareArticle?url=/notes/oiknowledge/dp%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/%E7%8A%B6%E6%80%81%E5%8E%8B%E7%BC%A9dp/&title=%e7%8a%b6%e5%8e%8bdp" target=_blank rel=noopener class=share-btn-linkedin aria-label=linkedin-in>
+<i class="fab fa-linkedin-in"></i>
+</a>
+</li>
+<li>
+<a href="whatsapp://send?text=%e7%8a%b6%e5%8e%8bdp%20/notes/oiknowledge/dp%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/%E7%8A%B6%E6%80%81%E5%8E%8B%E7%BC%A9dp/" target=_blank rel=noopener class=share-btn-whatsapp aria-label=whatsapp>
+<i class="fab fa-whatsapp"></i>
+</a>
+</li>
+<li>
+<a href="https://service.weibo.com/share/share.php?url=/notes/oiknowledge/dp%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/%E7%8A%B6%E6%80%81%E5%8E%8B%E7%BC%A9dp/&title=%e7%8a%b6%e5%8e%8bdp" target=_blank rel=noopener class=share-btn-weibo aria-label=weibo>
+<i class="fab fa-weibo"></i>
+</a>
+</li>
+</ul>
+</div>
+<div class="media author-card content-widget-hr">
+<a href=/><img class="avatar mr-3 avatar-circle" src=/author/%E6%9B%A6%E6%9B%A6%E5%91%B5%E5%91%B5/avatar_hudb29ded1c25f9d5e935a5b2ce5ff59ff_1255814_270x270_fill_lanczos_center_3.png alt=曦曦呵呵></a>
+<div class=media-body>
+<h5 class=card-title><a href=/>曦曦呵呵</a></h5>
+<h6 class=card-subtitle>一名卑微的OIer。</h6>
+<p class=card-text>开开心心，蹦蹦跳跳~</p>
+<ul class=network-icon aria-hidden=true>
+<li>
+<a href=/#contact>
+<i class="fas fa-envelope"></i>
+</a>
+</li>
+<li>
+<a href=https://github.com/Xu-Xihe target=_blank rel=noopener>
+<i class="fab fa-github"></i>
+</a>
+</li>
+<li>
+<a href="https://qm.qq.com/cgi-bin/qm/qr?k=Wns5qUpuYc9CC616JJSKEyC3vXqZWjrF&noverify=0" target=_blank rel=noopener>
+<i class="fab fa-qq"></i>
+</a>
+</li>
+</ul>
+</div>
+</div>
+<div class=article-widget>
+<div class=post-nav>
+<div class=post-nav-item>
+<div class=meta-nav>下一页</div>
+<a href=/notes/oiknowledge/dp%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/%E6%A0%91%E5%BD%A2dp/ rel=next>树形dp</a>
+</div>
+<div class=post-nav-item>
+<div class=meta-nav>上一页</div>
+<a href=/notes/oiknowledge/dp%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/manacher%E7%AE%97%E6%B3%95/ rel=prev></a>
+</div>
+</div>
+</div>
+</div>
+</article>
+</div>
+<div class=page-footer>
+<div class=container>
+<footer class=site-footer>
+<p class=powered-by>
+© 曦曦呵呵
+</p>
+<p class=powered-by>
+由<a href="https://wowchemy.com/?utm_campaign=poweredby" target=_blank rel=noopener>Wowchemy</a>支持发布——免费<a href=https://github.com/wowchemy/wowchemy-hugo-themes target=_blank rel=noopener>开源</a>网站，为创作者赋能。
+</p>
+</footer>
+</div>
+</div>
+<div id=modal class="modal fade" role=dialog>
+<div class=modal-dialog>
+<div class=modal-content>
+<div class=modal-header>
+<h5 class=modal-title>引用</h5>
+<button type=button class=close data-dismiss=modal aria-label=Close>
+<span aria-hidden=true>&#215;</span>
+</button>
+</div>
+<div class=modal-body>
+<pre><code class="tex hljs"></code></pre>
+</div>
+<div class=modal-footer>
+<a class="btn btn-outline-primary my-1 js-copy-cite" href=# target=_blank>
+<i class="fas fa-copy"></i> 复制
+</a>
+<a class="btn btn-outline-primary my-1 js-download-cite" href=# target=_blank>
+<i class="fas fa-download"></i> 下载
+</a>
+<div id=modal-error></div>
+</div>
+</div>
+</div>
+</div>
+<script src=/js/vendor-bundle.min.b73dfaac3b6499dc997741748a7c3fe2.js></script>
+<script src=https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin=anonymous></script>
+<script src=https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin=anonymous></script>
+<script src=https://cdnjs.cloudflare.com/ajax/libs/mermaid/8.8.4/mermaid.min.js integrity="sha512-as1BF4+iHZ3BVO6LLDQ7zrbvTXM+c/1iZ1qII/c3c4L8Rn5tHLpFUtpaEtBNS92f+xGsCzsD7b62XP3XYap6oA==" crossorigin=anonymous title=mermaid></script>
+<script src=https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/highlight.min.js integrity="sha512-TDKKr+IvoqZnPzc3l35hdjpHD0m+b2EC2SrLEgKDRWpxf2rFCxemkgvJ5kfU48ip+Y+m2XVKyOCD85ybtlZDmw==" crossorigin=anonymous></script>
+<script src=https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/languages/r.min.js crossorigin=anonymous></script>
+<script src=https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/languages/python.min.js crossorigin=anonymous></script>
+<script src=https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/languages/latex.min.js crossorigin=anonymous></script>
+<script src=https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.min.js integrity="sha512-SeiQaaDh73yrb56sTW/RgVdi/mMqNeM2oBwubFHagc5BkixSpP1fvqF47mKzPGWYSSy4RwbBunrJBQ4Co8fRWA==" crossorigin=anonymous></script>
+<script id=search-hit-fuse-template type=text/x-template>
+        <div class="search-hit" id="summary-{{key}}">
+          <div class="search-hit-content">
+            <div class="search-hit-name">
+              <a href="{{relpermalink}}">{{title}}</a>
+              <div class="article-metadata search-hit-type">{{type}}</div>
+              <p class="search-hit-description">{{snippet}}</p>
+            </div>
+          </div>
+        </div>
+      </script>
+<script src=https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin=anonymous></script>
+<script src=https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin=anonymous></script>
+<script src=/zh/js/wowchemy.min.d16321ec6884b061cbaaf961484b65c8.js></script>
+</body>
+</html>

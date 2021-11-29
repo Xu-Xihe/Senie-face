@@ -1,0 +1,1629 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>化学知识点 | Senie</title><link>/courses/chemistry/</link><atom:link href="/courses/chemistry/index.xml" rel="self" type="application/rss+xml"/><description>化学知识点</description><generator>Wowchemy (https://wowchemy.com)</generator><language>zh</language><copyright>© 曦曦呵呵</copyright><lastBuildDate>Sun, 28 Nov 2021 15:56:41 +0800</lastBuildDate><image><url>/media/icon_huf638f59a6dd2257b0add8e0186347459_300061_512x512_fill_lanczos_center_3.png</url><title>化学知识点</title><link>/courses/chemistry/</link></image><item><title>溶解性表</title><link>/courses/chemistry/%E6%BA%B6%E8%A7%A3%E6%80%A7%E8%A1%A8/</link><pubDate>Thu, 18 Nov 2021 20:52:27 +0800</pubDate><guid>/courses/chemistry/%E6%BA%B6%E8%A7%A3%E6%80%A7%E8%A1%A8/</guid><description>&lt;h2 id="表格">表格&lt;/h2>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th style="text-align:center">离子&lt;/th>
+&lt;th style="text-align:center">$\ce{OH-}$&lt;/th>
+&lt;th style="text-align:center">$\ce{NO^-3}$&lt;/th>
+&lt;th style="text-align:center">$\ce{Cl-}$&lt;/th>
+&lt;th style="text-align:center">$\ce{SO^2-_4}$&lt;/th>
+&lt;th style="text-align:center">$\ce{CO^2-_3}$&lt;/th>
+&lt;th style="text-align:center">$\ce{S^2-}$&lt;/th>
+&lt;th style="text-align:center">$\ce{SO^2-_3}$&lt;/th>
+&lt;th style="text-align:center">$\ce{SiO^2-_3}$&lt;/th>
+&lt;th style="text-align:center">$\ce{PO^3-_4}$&lt;/th>
+&lt;th style="text-align:center">$\ce{CH3COO-}(\ce{Ac-})$&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td style="text-align:center">$\ce{H+}$&lt;/td>
+&lt;td style="text-align:center">&lt;font color="blue">$\ce{H2O}$&lt;/font>&lt;/td>
+&lt;td style="text-align:center">溶、挥&lt;/td>
+&lt;td style="text-align:center">溶、挥&lt;/td>
+&lt;td style="text-align:center">溶&lt;/td>
+&lt;td style="text-align:center">溶、挥&lt;/td>
+&lt;td style="text-align:center">溶、挥&lt;/td>
+&lt;td style="text-align:center">溶、挥&lt;/td>
+&lt;td style="text-align:center">微&lt;/td>
+&lt;td style="text-align:center">溶&lt;/td>
+&lt;td style="text-align:center">溶&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:center">$\ce{NH+4}$&lt;/td>
+&lt;td style="text-align:center">溶、挥&lt;/td>
+&lt;td style="text-align:center">溶&lt;/td>
+&lt;td style="text-align:center">溶&lt;/td>
+&lt;td style="text-align:center">溶&lt;/td>
+&lt;td style="text-align:center">溶&lt;/td>
+&lt;td style="text-align:center">溶&lt;/td>
+&lt;td style="text-align:center">溶&lt;/td>
+&lt;td style="text-align:center">——&lt;/td>
+&lt;td style="text-align:center">溶&lt;/td>
+&lt;td style="text-align:center">&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:center">$\ce{K+}$&lt;/td>
+&lt;td style="text-align:center">溶&lt;/td>
+&lt;td style="text-align:center">溶&lt;/td>
+&lt;td style="text-align:center">溶&lt;/td>
+&lt;td style="text-align:center">溶&lt;/td>
+&lt;td style="text-align:center">溶&lt;/td>
+&lt;td style="text-align:center">溶&lt;/td>
+&lt;td style="text-align:center">溶&lt;/td>
+&lt;td style="text-align:center">溶&lt;/td>
+&lt;td style="text-align:center">溶&lt;/td>
+&lt;td style="text-align:center">溶&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:center">$\ce{Na+}$&lt;/td>
+&lt;td style="text-align:center">溶&lt;/td>
+&lt;td style="text-align:center">溶&lt;/td>
+&lt;td style="text-align:center">溶&lt;/td>
+&lt;td style="text-align:center">溶&lt;/td>
+&lt;td style="text-align:center">溶&lt;/td>
+&lt;td style="text-align:center">溶&lt;/td>
+&lt;td style="text-align:center">溶&lt;/td>
+&lt;td style="text-align:center">溶&lt;/td>
+&lt;td style="text-align:center">溶&lt;/td>
+&lt;td style="text-align:center">溶&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:center">$\ce{Ba^2+}$&lt;/td>
+&lt;td style="text-align:center">溶&lt;/td>
+&lt;td style="text-align:center">溶&lt;/td>
+&lt;td style="text-align:center">溶&lt;/td>
+&lt;td style="text-align:center">不&lt;/td>
+&lt;td style="text-align:center">不&lt;/td>
+&lt;td style="text-align:center">——&lt;/td>
+&lt;td style="text-align:center">不&lt;/td>
+&lt;td style="text-align:center">不&lt;/td>
+&lt;td style="text-align:center">不&lt;/td>
+&lt;td style="text-align:center">&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:center">$\ce{Ca^2+}$&lt;/td>
+&lt;td style="text-align:center">&lt;strong>微&lt;/strong>&lt;/td>
+&lt;td style="text-align:center">溶&lt;/td>
+&lt;td style="text-align:center">溶&lt;/td>
+&lt;td style="text-align:center">微&lt;/td>
+&lt;td style="text-align:center">不&lt;/td>
+&lt;td style="text-align:center">——&lt;/td>
+&lt;td style="text-align:center">不&lt;/td>
+&lt;td style="text-align:center">不&lt;/td>
+&lt;td style="text-align:center">不&lt;/td>
+&lt;td style="text-align:center">&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:center">$\ce{Mg^2+}$&lt;/td>
+&lt;td style="text-align:center">不&lt;/td>
+&lt;td style="text-align:center">溶&lt;/td>
+&lt;td style="text-align:center">溶&lt;/td>
+&lt;td style="text-align:center">溶&lt;/td>
+&lt;td style="text-align:center">&lt;strong>微&lt;/strong>&lt;/td>
+&lt;td style="text-align:center">——&lt;/td>
+&lt;td style="text-align:center">&lt;strong>微&lt;/strong>&lt;/td>
+&lt;td style="text-align:center">不&lt;/td>
+&lt;td style="text-align:center">不&lt;/td>
+&lt;td style="text-align:center">&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:center">$\ce{Al^3+}$&lt;/td>
+&lt;td style="text-align:center">不&lt;/td>
+&lt;td style="text-align:center">溶&lt;/td>
+&lt;td style="text-align:center">溶&lt;/td>
+&lt;td style="text-align:center">溶&lt;/td>
+&lt;td style="text-align:center">——&lt;/td>
+&lt;td style="text-align:center">——&lt;/td>
+&lt;td style="text-align:center">——&lt;/td>
+&lt;td style="text-align:center">不&lt;/td>
+&lt;td style="text-align:center">不&lt;/td>
+&lt;td style="text-align:center">&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:center">$\ce{Mn^2+}$&lt;/td>
+&lt;td style="text-align:center">不&lt;/td>
+&lt;td style="text-align:center">溶&lt;/td>
+&lt;td style="text-align:center">溶&lt;/td>
+&lt;td style="text-align:center">溶&lt;/td>
+&lt;td style="text-align:center">不&lt;/td>
+&lt;td style="text-align:center">不&lt;/td>
+&lt;td style="text-align:center">不&lt;/td>
+&lt;td style="text-align:center">不&lt;/td>
+&lt;td style="text-align:center">不&lt;/td>
+&lt;td style="text-align:center">&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:center">$\ce{Zn^2+}$&lt;/td>
+&lt;td style="text-align:center">不&lt;/td>
+&lt;td style="text-align:center">溶&lt;/td>
+&lt;td style="text-align:center">溶&lt;/td>
+&lt;td style="text-align:center">溶&lt;/td>
+&lt;td style="text-align:center">不&lt;/td>
+&lt;td style="text-align:center">不&lt;/td>
+&lt;td style="text-align:center">不&lt;/td>
+&lt;td style="text-align:center">不&lt;/td>
+&lt;td style="text-align:center">不&lt;/td>
+&lt;td style="text-align:center">溶&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:center">$\ce{Fe^2+}$&lt;/td>
+&lt;td style="text-align:center">不&lt;/td>
+&lt;td style="text-align:center">溶&lt;/td>
+&lt;td style="text-align:center">溶&lt;/td>
+&lt;td style="text-align:center">溶&lt;/td>
+&lt;td style="text-align:center">不&lt;/td>
+&lt;td style="text-align:center">不&lt;/td>
+&lt;td style="text-align:center">不&lt;/td>
+&lt;td style="text-align:center">不&lt;/td>
+&lt;td style="text-align:center">不&lt;/td>
+&lt;td style="text-align:center">&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:center">$\ce{Fe^3+}$&lt;/td>
+&lt;td style="text-align:center">不&lt;/td>
+&lt;td style="text-align:center">溶&lt;/td>
+&lt;td style="text-align:center">溶&lt;/td>
+&lt;td style="text-align:center">溶&lt;/td>
+&lt;td style="text-align:center">——&lt;/td>
+&lt;td style="text-align:center">——&lt;/td>
+&lt;td style="text-align:center">——&lt;/td>
+&lt;td style="text-align:center">不&lt;/td>
+&lt;td style="text-align:center">不&lt;/td>
+&lt;td style="text-align:center">&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:center">$\ce{Cu^2+}$&lt;/td>
+&lt;td style="text-align:center">不&lt;/td>
+&lt;td style="text-align:center">溶&lt;/td>
+&lt;td style="text-align:center">溶&lt;/td>
+&lt;td style="text-align:center">溶&lt;/td>
+&lt;td style="text-align:center">不&lt;/td>
+&lt;td style="text-align:center">不&lt;/td>
+&lt;td style="text-align:center">不&lt;/td>
+&lt;td style="text-align:center">不&lt;/td>
+&lt;td style="text-align:center">不&lt;/td>
+&lt;td style="text-align:center">&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:center">$\ce{Ag+}$&lt;/td>
+&lt;td style="text-align:center">——&lt;/td>
+&lt;td style="text-align:center">溶&lt;/td>
+&lt;td style="text-align:center">不&lt;/td>
+&lt;td style="text-align:center">&lt;strong>微&lt;/strong>&lt;/td>
+&lt;td style="text-align:center">不&lt;/td>
+&lt;td style="text-align:center">不&lt;/td>
+&lt;td style="text-align:center">不&lt;/td>
+&lt;td style="text-align:center">不&lt;/td>
+&lt;td style="text-align:center">不&lt;/td>
+&lt;td style="text-align:center">&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:center">$\ce{Pb^2+}$&lt;/td>
+&lt;td style="text-align:center">不&lt;/td>
+&lt;td style="text-align:center">溶&lt;/td>
+&lt;td style="text-align:center">&lt;strong>微&lt;/strong>&lt;/td>
+&lt;td style="text-align:center">不&lt;/td>
+&lt;td style="text-align:center">不&lt;/td>
+&lt;td style="text-align:center">不&lt;/td>
+&lt;td style="text-align:center">不&lt;/td>
+&lt;td style="text-align:center">不&lt;/td>
+&lt;td style="text-align:center">不&lt;/td>
+&lt;td style="text-align:center">溶&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;p>&lt;strong>说明：&lt;/strong>“溶”表示某种物质可溶于水，“不”表示不溶于水，“微”表示微溶于水，“挥”表示挥发性，“——”表示那种物质不存在或遇到水就分解了，为空表示一般用不到 &lt;del>(用的时候再说)&lt;/del>。&lt;/p>
+&lt;h2 id="背诵方法">背诵方法(?)&lt;/h2>
+&lt;p>&lt;del>其实可以看做是个概括总结&lt;/del>&lt;/p>
+&lt;p>钾钠硝铵醋可溶，氯除银铅(微溶)均可溶。&lt;/p>
+&lt;p>氢氧只溶钾钠钡(钙微溶)，硫酸沉钙(微溶)钡银铅。&lt;/p>
+&lt;p>碳亚硫硅磷酸硫，除钾钠铵均不溶。&lt;/p>
+&lt;p>银除硝酸都不溶(硫酸银微溶)，单独记忆五微溶。&lt;/p>
+&lt;script src='//unpkg.com/valine/dist/Valine.min.js'>&lt;/script>
+&lt;div id="vcomments">&lt;/div>
+&lt;script>
+new Valine({
+el: '#vcomments',
+appId: 'mUFdj80doBeHANJjnbmU89gH-gzGzoHsz',
+appKey: 'p4p7vzJrQnIYoajXvUjpuiRy',
+placeholder: '说点什么叭~ (邮箱和网址不强制，邮箱用于Gravatar头像显示)',
+visitor: true,
+recordIP: true,
+serverURLs: false,
+enableQQ: true
+})
+&lt;/script></description></item><item><title>电解质</title><link>/courses/chemistry/%E7%94%B5%E8%A7%A3%E8%B4%A8/</link><pubDate>Thu, 18 Nov 2021 20:57:24 +0800</pubDate><guid>/courses/chemistry/%E7%94%B5%E8%A7%A3%E8%B4%A8/</guid><description>&lt;h2 id="酸">酸&lt;/h2>
+&lt;h3 id="强酸">强酸&lt;/h3>
+&lt;p>$\ce{HCl}$ 、$\ce{H2SO4}$ 、$\ce{HNO3}$ 、$\ce{HClO4}$(高氯酸) 、$\ce{HI}$(氢碘酸) 、$\ce{HBr}$(氢溴酸)&lt;/p>
+&lt;h3 id="中强酸">中强酸&lt;/h3>
+&lt;p>$\ce{H2SO3}$(亚硫酸) 、$\ce{H3PO4}$(磷酸) 、$\ce{H2C2O4}$(草酸)&lt;/p>
+&lt;h3 id="较弱酸">较弱酸&lt;/h3>
+&lt;p>$\ce{H2CO3}$ 、$\ce{CH3COOH}$(醋酸，又写作 $\ce{HAc}$ ) 、$\ce{HF}$(氢氟酸)&lt;/p>
+&lt;h3 id="弱酸">弱酸&lt;/h3>
+&lt;p>$\ce{H2S}$(氢硫酸) 、$\ce{HClO}$(次氯酸) 、$\ce{H2SiO3}$(硅酸)&lt;/p>
+&lt;h2 id="碱">碱&lt;/h2>
+&lt;h3 id="强碱">强碱&lt;/h3>
+&lt;p>$\ce{KOH}$ 、$\ce{NaOH}$ 、$\ce{Ca(OH)2}$ 、$\ce{Ba(OH)2}$&lt;/p>
+&lt;h3 id="弱碱">弱碱&lt;/h3>
+&lt;p>$\ce{NH3*H2O}$ 、难溶性的碱&lt;/p>
+&lt;h2 id="盐">盐&lt;/h2>
+&lt;p>大部分盐都是电解质。&lt;/p>
+&lt;script src='//unpkg.com/valine/dist/Valine.min.js'>&lt;/script>
+&lt;div id="vcomments">&lt;/div>
+&lt;script>
+new Valine({
+el: '#vcomments',
+appId: 'mUFdj80doBeHANJjnbmU89gH-gzGzoHsz',
+appKey: 'p4p7vzJrQnIYoajXvUjpuiRy',
+placeholder: '说点什么叭~ (邮箱和网址不强制，邮箱用于Gravatar头像显示)',
+visitor: true,
+recordIP: true,
+serverURLs: false,
+enableQQ: true
+})
+&lt;/script></description></item><item><title>氧化还原</title><link>/courses/chemistry/%E6%B0%A7%E5%8C%96%E8%BF%98%E5%8E%9F/</link><pubDate>Thu, 18 Nov 2021 20:59:03 +0800</pubDate><guid>/courses/chemistry/%E6%B0%A7%E5%8C%96%E8%BF%98%E5%8E%9F/</guid><description>&lt;h2 id="氧化剂">氧化剂&lt;/h2>
+&lt;h3 id="常见氧化剂">常见氧化剂&lt;/h3>
+&lt;ol>
+&lt;li>活泼型较强的非金属单质：$\ce{O2}$ 、$\ce{Cl2}$ 等。&lt;/li>
+&lt;li>变价元素的最高价态化合物：$\ce{HNO3}$ 、$\ce{FeCl3}$ 、$\ce{KMnO4}$ 等。&lt;/li>
+&lt;li>其他：$\ce{HClO}$ 、$\ce{H2O2}$ 等。&lt;/li>
+&lt;/ol>
+&lt;h3 id="强氧化剂">强氧化剂&lt;/h3>
+&lt;p>$\ce{MnO4- -&amp;gt;[失 3e-] MnO2}$ 、$\ce{ClO- -&amp;gt;[失 e-] 1/2Cl2}$ 、$\ce{Fe^3+ -&amp;gt;[失 e-] Fe^2+}$ 、$\ce{NO^-3 + H+ -&amp;gt;[] NO}$ 、$\ce{Cr2O7^2- -&amp;gt;[] }$&lt;/p>
+&lt;h3 id="氧化性">氧化性&lt;/h3>
+&lt;p>$\ce{I2-&amp;gt;[失 2e-]2I-}$ &lt;font color=red size=5> &amp;lt; &lt;/font> $\ce{Fe^3+-&amp;gt;[失 e-]Fe^2+}$ &lt;font color=red size=5> &amp;lt; &lt;/font> $\ce{Br2-&amp;gt;[失 2e-]2Br-}$ &lt;font color=red size=5> &amp;lt; &lt;/font> $\ce{Cl2-&amp;gt;[失 2e-]2Cl-}$&lt;/p>
+&lt;h2 id="还原剂">还原剂&lt;/h2>
+&lt;h3 id="常见还原剂">常见还原剂&lt;/h3>
+&lt;ol>
+&lt;li>活泼金属单质：$\ce{Al}$ 、$\ce{Fe}$ 、$\ce{Zn}$&lt;/li>
+&lt;li>非金属单质：$\ce{H2}$ 、$\ce{C}$&lt;/li>
+&lt;li>变价元素的最低价态化合物：$\ce{CO}$ 、$\ce{KI}$&lt;/li>
+&lt;li>其他：$\ce{NH3}$&lt;/li>
+&lt;/ol>
+&lt;h3 id="强还原剂">强还原剂&lt;/h3>
+&lt;p>$\ce{S^2&amp;ndash;&amp;gt;[]}$ 、$\ce{I- -&amp;gt;[得 e-]1/2I2}$ 、$\ce{SO^2-_3 -&amp;gt;[得 2e-] SO^{2-}_4 }$ 、$\ce{Fe^2+ -&amp;gt;[得 e-]Fe^3+}$ 、$\ce{S2O3^2- -&amp;gt;}$ 、$\ce{C2O4^2- -&amp;gt;[]}$&lt;/p>
+&lt;h3 id="还原性">还原性&lt;/h3>
+&lt;p>$\ce{I- -&amp;gt;[得 e-]1/2I2}$ &lt;font color=red size=5>&amp;gt;&lt;/font> $\ce{Fe^2+ -&amp;gt;[得 e-]Fe^2+}$ &lt;font color=red size=5>&amp;gt;&lt;/font> $\ce{Br- -&amp;gt;[得 e-]1/2Br2}$ &lt;font color=red size=5>&amp;gt;&lt;/font> $\ce{Cl- -&amp;gt;[得 e-]1/2Cl2}$&lt;/p>
+&lt;script src='//unpkg.com/valine/dist/Valine.min.js'>&lt;/script>
+&lt;div id="vcomments">&lt;/div>
+&lt;script>
+new Valine({
+el: '#vcomments',
+appId: 'mUFdj80doBeHANJjnbmU89gH-gzGzoHsz',
+appKey: 'p4p7vzJrQnIYoajXvUjpuiRy',
+placeholder: '说点什么叭~ (邮箱和网址不强制，邮箱用于Gravatar头像显示)',
+visitor: true,
+recordIP: true,
+serverURLs: false,
+enableQQ: true
+})
+&lt;/script></description></item><item><title>焰色实验</title><link>/courses/chemistry/%E7%84%B0%E8%89%B2%E5%AE%9E%E9%AA%8C/</link><pubDate>Thu, 18 Nov 2021 21:06:12 +0800</pubDate><guid>/courses/chemistry/%E7%84%B0%E8%89%B2%E5%AE%9E%E9%AA%8C/</guid><description>&lt;p>
+&lt;figure >
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fpic2.zhimg.com%2F50%2Fv2-672b019eb1f9fbaae8a0b4d5bfb1823d_hd.jpg&amp;amp;refer=http%3A%2F%2Fpic2.zhimg.com&amp;amp;app=2002&amp;amp;size=f9999,10000&amp;amp;q=a80&amp;amp;n=0&amp;amp;g=0n&amp;amp;fmt=jpeg?sec=1638025271&amp;amp;t=162516d2b176665efc7e8131678431d2" alt="没了请自行Google啊baidu啊啥的" loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;/figure>
+&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th style="text-align:center">金属元素&lt;/th>
+&lt;th style="text-align:center">焰色&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td style="text-align:center">$\ce{Na}$&lt;/td>
+&lt;td style="text-align:center">黄色&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:center">$\ce{Ba}$&lt;/td>
+&lt;td style="text-align:center">黄绿色(俗称鬼火)&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:center">$\ce{Cu}$&lt;/td>
+&lt;td style="text-align:center">绿色&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:center">$\ce{Ca}$&lt;/td>
+&lt;td style="text-align:center">砖红色&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:center">$\ce{K}$&lt;/td>
+&lt;td style="text-align:center">紫色(被黄光掩盖，应透过蓝色钴玻璃观察)&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:center">$\ce{Li}$&lt;/td>
+&lt;td style="text-align:center">紫红色&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:center">$\ce{Rb}$ (铷)&lt;/td>
+&lt;td style="text-align:center">紫色(同 $\ce{K}$ )&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:center">$\ce{Sr}$ (锶)&lt;/td>
+&lt;td style="text-align:center">洋红色&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;p>&lt;strong>火焰黄色&lt;/strong> $\rightarrow$ 一定有 $\ce{Na}$ 元素，可能有 $\ce{K}$ 元素。&lt;/p>
+&lt;p>&lt;strong>物理变化！！！&lt;/strong>&lt;/p>
+&lt;p>&lt;strong>实验步骤&lt;/strong>：&lt;/p>
+&lt;ol>
+&lt;li>&lt;strong>烧：&lt;/strong> 把铂丝(铬丝/钨丝/光洁无锈的铁丝)在酒精灯(最好是煤气灯，火焰本身最好无色)外焰上灼烧，至与原来的火焰颜色相同。&lt;/li>
+&lt;li>&lt;strong>蘸：&lt;/strong> 蘸取待测液体。&lt;/li>
+&lt;li>&lt;strong>烧：&lt;/strong> 在外焰上灼烧，观察焰色。&lt;/li>
+&lt;li>&lt;strong>洗：&lt;/strong> 用盐酸洗净。(通常情况下，氯化物沸点低)&lt;/li>
+&lt;li>&lt;strong>烧：&lt;/strong> 再在外焰上灼烧，至与原来的火焰颜色相同。&lt;/li>
+&lt;/ol>
+&lt;script src='//unpkg.com/valine/dist/Valine.min.js'>&lt;/script>
+&lt;div id="vcomments">&lt;/div>
+&lt;script>
+new Valine({
+el: '#vcomments',
+appId: 'mUFdj80doBeHANJjnbmU89gH-gzGzoHsz',
+appKey: 'p4p7vzJrQnIYoajXvUjpuiRy',
+placeholder: '说点什么叭~ (邮箱和网址不强制，邮箱用于Gravatar头像显示)',
+visitor: true,
+recordIP: true,
+serverURLs: false,
+enableQQ: true
+})
+&lt;/script></description></item><item><title>物质的量</title><link>/courses/chemistry/%E7%89%A9%E8%B4%A8%E7%9A%84%E9%87%8F/</link><pubDate>Sun, 21 Nov 2021 14:59:26 +0800</pubDate><guid>/courses/chemistry/%E7%89%A9%E8%B4%A8%E7%9A%84%E9%87%8F/</guid><description>&lt;h2 id="物质的量">物质的量&lt;/h2>
+&lt;p>&lt;strong>物质的量&lt;/strong>是7个基本物理量之一，用于将可称量的物质与难以称量的微观粒子之间建立联系，表示&lt;b>&lt;font color=red size=4>含有一定数目例子的集合体&lt;/font>&lt;/b>，符号为 $n$ 。&lt;/p>
+&lt;p>**注意：**物质的量是一个整体，是一个物理量的名称。&lt;/p>
+&lt;p>&lt;del>这玩意你理解的话，可以用到任何玩意上，甚至是混合物。&lt;/del>&lt;/p>
+&lt;h2 id="单位">单位&lt;/h2>
+&lt;p>作为一个物理量，自然，有着单位。&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th style="text-align:center">名称&lt;/th>
+&lt;th style="text-align:center">简称&lt;/th>
+&lt;th style="text-align:center">符号&lt;/th>
+&lt;th style="text-align:center">所含粒子数&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td style="text-align:center">摩尔&lt;/td>
+&lt;td style="text-align:center">摩&lt;/td>
+&lt;td style="text-align:center">$\pu{mol}$&lt;/td>
+&lt;td style="text-align:center">&lt;strong>约&lt;/strong>为$\pu{6.02\times 10^{23} mol^{-1}}$&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;h3 id="阿伏伽德罗常数">阿伏伽德罗常数&lt;/h3>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th style="text-align:center">名称&lt;/th>
+&lt;th style="text-align:center">定义&lt;/th>
+&lt;th style="text-align:center">符号&lt;/th>
+&lt;th style="text-align:center">通常表示&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td style="text-align:center">阿伏伽德罗常数&lt;/td>
+&lt;td style="text-align:center">$\pu{1 mol}$ 任何粒子的粒子数&lt;/td>
+&lt;td style="text-align:center">$N_A$&lt;/td>
+&lt;td style="text-align:center">$\pu{6.02\times10^{23} mol^{-1}}$&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;h3 id="辨析">辨析&lt;/h3>
+&lt;p>某化学老师吐槽：谁翻译的这个玩意儿啊，真不咋地！&lt;/p>
+&lt;p>因为一些qqgg的原因，&lt;strong>物质的量&lt;/strong>这个物理量被非常直白~~(无脑)~~的翻译成了&lt;strong>物质的量&lt;/strong>。因为这个名词和其所属都有一个“量”字，所以就十分容易搞晕了。&lt;/p>
+&lt;p>tips：&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>物质的量与阿伏伽德罗常数：$1\space mol$ 任何物质都含有 $N_A$ 个粒子。&lt;/p>
+&lt;ol>
+&lt;li>阿伏伽德罗常数是个数字，&lt;del>虽然人类还不能精确&lt;/del>，单位是**“个”**。&lt;/li>
+&lt;li>物质的量和长度，时间，力等是一样的，单位是**“摩”**。&lt;/li>
+&lt;li>题目中一般~~(不排除某些丧心病狂的出题人)~~问**“量”&lt;strong>的时候，回答 $\pu{ans mol}$ ；而问 &lt;strong>&amp;ldquo;数&amp;rdquo;&lt;/strong>、&lt;/strong>“个”**的时候，回答 $(\pu{ans mol}\times6.02)\times10^{23}个$ 或 $\pu{ans\space N_A}$ 。&lt;/li>
+&lt;/ol>
+&lt;/li>
+&lt;li>
+&lt;p>物质的量是从属于物理量这一大类，与长度等属于同一类名词，&lt;strong>不是单位！&lt;/strong> 不要和摩尔搞混了。&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>虽然答题得参见第一条，但是在心里可以将粒子数转换为以摩尔为单位，便于计算。&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;h2 id="摩尔质量">摩尔质量&lt;/h2>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>名称&lt;/th>
+&lt;th>定义&lt;/th>
+&lt;th>符号&lt;/th>
+&lt;th>常用单位&lt;/th>
+&lt;th>数值特点&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>摩尔质量&lt;/td>
+&lt;td>单位&lt;strong>物质的量&lt;/strong>的物质所具有的质量&lt;/td>
+&lt;td>$M$&lt;/td>
+&lt;td>$\pu{g/mol}$( $\pu{g\space\cdot\space mol^{-1}}$)&lt;/td>
+&lt;td>以克为单位时，与该粒子的式量(相对原子/分子质量)相等&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;p>&lt;strong>公式：&lt;/strong> $物质的量=\frac{质量}{摩尔质量}$ ，即 $n=\frac{m}{M}$&lt;/p>
+&lt;h2 id="气体摩尔体积">气体摩尔体积&lt;/h2>
+&lt;p>总所周知，描述气体的量，体积比质量更方便。而既然是量，那必可以用物质的量来描述。&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>名称&lt;/th>
+&lt;th>定义&lt;/th>
+&lt;th>影响因素&lt;/th>
+&lt;th>常用单位&lt;/th>
+&lt;th>标准状况$^1$&lt;/th>
+&lt;th>室温$^2$&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>气体摩尔体积&lt;/td>
+&lt;td>单位物质的量的气体所占有的体积&lt;/td>
+&lt;td>温度和压强&lt;/td>
+&lt;td>$\pu{L/mol}$ ($\pu{L·mol-1}$) 和 $\pu{m^3/mol}$ ($\pu{m^3·mol^{-1}}$)&lt;/td>
+&lt;td>$\pu{22.4 L/mol}$&lt;/td>
+&lt;td>$\pu{24.5L/mol}$&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;blockquote>
+&lt;p>$^1$：$\pu{0^\circ C}$ 和 $\pu{101kPa}$&lt;/p>
+&lt;p>$^2$：$\pu{25^\circ C}$ 和 $\pu{101 kPa}$&lt;/p>
+&lt;/blockquote>
+&lt;h3 id="阿伏伽德罗定律">阿伏伽德罗定律&lt;/h3>
+&lt;h4 id="内容">内容&lt;/h4>
+&lt;p>在&lt;strong>相同&lt;/strong>的&lt;strong>温度和压强&lt;/strong>下，&lt;strong>相同体积&lt;/strong>的&lt;strong>任何气体&lt;/strong>都含有相同数目的粒子。&lt;/p>
+&lt;h4 id="微观解释">微观解释&lt;/h4>
+&lt;p>物体体积大小取决于构成这种物质的&lt;strong>粒子的数量&lt;/strong>、&lt;strong>粒子的大小&lt;/strong>和&lt;strong>粒子之间的距离&lt;/strong>。在 $\pu{1mol}$ 任何物质中，粒子数一定相等，因此，其体积主要取决于构成物质的粒子的&lt;strong>大小&lt;/strong>和&lt;strong>间距&lt;/strong>。&lt;/p>
+&lt;p>因此，当&lt;strong>粒子数量相同&lt;/strong>时：&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>状态&lt;/th>
+&lt;th>粒子间距&lt;/th>
+&lt;th>粒子大小&lt;/th>
+&lt;th>决定因素&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>固体&lt;/td>
+&lt;td>极小&lt;/td>
+&lt;td>各异&lt;/td>
+&lt;td>粒子大小&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>液体&lt;/td>
+&lt;td>小&lt;/td>
+&lt;td>各异&lt;/td>
+&lt;td>粒子大小&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>气体&lt;/td>
+&lt;td>远大于粒子直径&lt;/td>
+&lt;td>可忽略&lt;/td>
+&lt;td>粒子间距&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;h4 id="粒子间距">粒子间距&lt;/h4>
+&lt;p>影响因素：温度、压强和粒子数。&lt;/p>
+&lt;div>
+&lt;style>
+.markmap > svg {
+width: 100%;
+height: 300px;
+}
+&lt;/style>
+&lt;div class="markmap">
+# 粒子间距
+## 粒子数
+## 体积
+###
+#### 温度
+#### 压强
+###
+#### 质量
+##### 粒子数
+#### 密度
+&lt;/div>
+&lt;script src="https://cdn.jsdelivr.net/npm/markmap-autoloader">&lt;/script>
+&lt;/div>
+&lt;h5 id="关系">关系&lt;/h5>
+&lt;ol>
+&lt;li>体积、质量、密度：$\rho=\frac{m}{v}$ ，即确定两个，第三个确定；确定一个，其余两个成比例。&lt;/li>
+&lt;li>体积、温度、压强：&lt;/li>
+&lt;/ol>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>条件&lt;/th>
+&lt;th>公式&lt;/th>
+&lt;th>文字解释&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>$T$ 、$p$ 、$V$ 、$n$ 中任意三个相同&lt;/td>
+&lt;td>$T_1=T_2$ 、$p_1=p_2$ 、$V_1=V_2$ 、$n_1=n_2$&lt;/td>
+&lt;td>三同推一同&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>$T$ 、$p$ 、$V$ 相同&lt;/td>
+&lt;td>$\frac{M_1}{M_2}=\frac{m_1}{m_2}$&lt;/td>
+&lt;td>同温同压同体积的两种&lt;strong>气体&lt;/strong>摩尔质量与质量成正比&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>$T$ 、$p$ 相同&lt;/td>
+&lt;td>$\frac{V_1}{V_2}=\frac{n_1}{n_2}$ 、$\frac{\rho_1}{\rho_2}=\frac{M_1}{M_2}$&lt;/td>
+&lt;td>同温同压下，两种&lt;strong>气体&lt;/strong>体积与物质的量成正比，密度与摩尔质量成正比(代入公式1求出)&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>$T$ 、$V$ 相同&lt;/td>
+&lt;td>$\frac{p_1}{p_2}=\frac{n_1}{n_2}$&lt;/td>
+&lt;td>同温同体积下，两种&lt;strong>气体&lt;/strong>压强与物质的量成正比&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>$n$ 、$T$ 相同&lt;/td>
+&lt;td>$\frac{p_1}{p_2}=\frac{V_1}{V_2}$&lt;/td>
+&lt;td>同温同物质的量下，两种&lt;strong>气体&lt;/strong>压强与体积成正比&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;h3 id="平均摩尔质量气体">平均摩尔质量(气体)&lt;/h3>
+&lt;p>平均摩尔质量 $\overline{M}=\rho_{混}V_{混}=\frac{m_总}{n_总}$&lt;/p>
+&lt;p>相对密度 $D=\frac{M_1}{M_2}=\frac{\rho_1}{\rho_2}$&lt;/p>
+&lt;p>计算方法：
+$$
+\begin{aligned}
+M_1&amp;amp;\space\space\space\space\space\space\space |\overline{M}-M_2|\newline
+&amp;amp;\space\backslash \space\space /\newline
+&amp;amp;\space\space\overline{M}\space\space\space\overline{\space\space\space\space\space\space\space\space\space\space\space\space\space\space}\space\space\space=\frac{n_1}{n_2}\newline
+&amp;amp;\space/\space\space\backslash\newline
+M_2&amp;amp;\space\space\space\space\space\space\space |\overline{M}-M_1|
+\end{aligned}
+$$&lt;/p>
+&lt;h2 id="物质的量浓度">物质的量浓度&lt;/h2>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th style="text-align:center">名称&lt;/th>
+&lt;th style="text-align:center">定义&lt;/th>
+&lt;th style="text-align:center">符号&lt;/th>
+&lt;th style="text-align:center">单位&lt;/th>
+&lt;th>公式&lt;/th>
+&lt;th style="text-align:center">备注&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td style="text-align:center">物质的量浓度&lt;/td>
+&lt;td style="text-align:center">单位体积的&lt;strong>溶液&lt;/strong>里所含溶质的物质的量&lt;/td>
+&lt;td style="text-align:center">$c$&lt;/td>
+&lt;td style="text-align:center">$\pu{mol/L}$ ($\pu{mol·L^{-1}}$)&lt;/td>
+&lt;td>$c=\frac{n}{V}$&lt;/td>
+&lt;td style="text-align:center">气体溶于水按&lt;strong>气体&lt;/strong>物质的量算&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;p>溶液混合：&lt;/p>
+&lt;ol>
+&lt;li>等质量：$w'=\frac{w_1+w_2}{2}$&lt;/li>
+&lt;li>等体积：
+&lt;ol>
+&lt;li>$\rho&amp;gt;1$：$w'&amp;gt;\frac{w_1+w_2}{2}$&lt;/li>
+&lt;li>$\rho&amp;lt;1$：$w'&amp;lt;\frac{w_1+w_2}{2}$&lt;/li>
+&lt;/ol>
+&lt;/li>
+&lt;/ol>
+&lt;h2 id="配置一定物质的量浓度的溶液">配置一定物质的量浓度的溶液&lt;/h2>
+&lt;ol>
+&lt;li>算&lt;/li>
+&lt;li>称&lt;/li>
+&lt;li>溶&lt;/li>
+&lt;li>转移&lt;/li>
+&lt;li>洗&lt;/li>
+&lt;li>摇&lt;/li>
+&lt;li>定容&lt;/li>
+&lt;li>装瓶&lt;/li>
+&lt;/ol>
+&lt;p>注意：容量瓶一定带容积。&lt;/p>
+&lt;script src='//unpkg.com/valine/dist/Valine.min.js'>&lt;/script>
+&lt;div id="vcomments">&lt;/div>
+&lt;script>
+new Valine({
+el: '#vcomments',
+appId: 'mUFdj80doBeHANJjnbmU89gH-gzGzoHsz',
+appKey: 'p4p7vzJrQnIYoajXvUjpuiRy',
+placeholder: '说点什么叭~ (邮箱和网址不强制，邮箱用于Gravatar头像显示)',
+visitor: true,
+recordIP: true,
+serverURLs: false,
+enableQQ: true
+})
+&lt;/script></description></item><item><title>酸</title><link>/courses/chemistry/%E9%85%B8/</link><pubDate>Sat, 27 Nov 2021 16:32:17 +0800</pubDate><guid>/courses/chemistry/%E9%85%B8/</guid><description>&lt;h2 id="酸的定义">酸的定义&lt;/h2>
+&lt;p>在水中电离出的阳离子只有 $\ce{H+}$ 的化合物。&lt;/p>
+&lt;h2 id="酸的氧化性">酸的氧化性&lt;/h2>
+&lt;p>所有酸的通性。&lt;/p>
+&lt;p>因为 $\ce{H+}$ 离子可以得电子降价，即 $\ce{2H+-&amp;gt;[得\space2e^-]H_2 ^}$；因为所有酸均可电离出 $\ce{H+}$ ，所以都具有氧化性。&lt;/p>
+&lt;h2 id="氧化性的酸">氧化性的酸&lt;/h2>
+&lt;p>酸中阴离子具有氧化性。&lt;/p>
+&lt;p>例：$\ce{HCr2O7}$ 、$\ce{HMnO4}$ 、$\ce{HClO}$ 、$\ce{浓HNO3}$ 、$\ce{稀HNO3}$ 、$\ce{浓H2SO4}$&lt;/p>
+&lt;h2 id="非氧化性的酸">非氧化性的酸&lt;/h2>
+&lt;p>酸中阴离子不具有氧化性。&lt;/p>
+&lt;p>例：$\ce{稀HSO4}$ 、$\ce{HCl}$&lt;/p>
+&lt;script src='//unpkg.com/valine/dist/Valine.min.js'>&lt;/script>
+&lt;div id="vcomments">&lt;/div>
+&lt;script>
+new Valine({
+el: '#vcomments',
+appId: 'mUFdj80doBeHANJjnbmU89gH-gzGzoHsz',
+appKey: 'p4p7vzJrQnIYoajXvUjpuiRy',
+placeholder: '说点什么叭~ (邮箱和网址不强制，邮箱用于Gravatar头像显示)',
+visitor: true,
+recordIP: true,
+serverURLs: false,
+enableQQ: true
+})
+&lt;/script></description></item><item><title>Na钠</title><link>/courses/chemistry/na/</link><pubDate>Thu, 18 Nov 2021 21:08:39 +0800</pubDate><guid>/courses/chemistry/na/</guid><description>&lt;h2 id="物理性质">物理性质&lt;/h2>
+&lt;ol>
+&lt;li>软&lt;/li>
+&lt;li>银白色金属光泽&lt;/li>
+&lt;li>熔点低 ($\rm97.8^\circ{C}$)&lt;/li>
+&lt;li>密度小 ($\pu{0.971g/cm^3}$)&lt;/li>
+&lt;li>能导电&lt;/li>
+&lt;/ol>
+&lt;p>$\ce{K}$ 、$\ce{Na}$ 合金做原子反应堆导热剂。&lt;/p>
+&lt;p>高压钠灯透雾能力强。&lt;/p>
+&lt;h2 id="化学性质">化学性质&lt;/h2>
+&lt;p>钠的化学性质&lt;strong>非常活泼&lt;/strong>，表现出&lt;strong>很强的还原性&lt;/strong>。&lt;/p>
+&lt;p>在熔融状态下置换贵重金属：&lt;strong>钛钽铌铬锆钾&lt;/strong>。$\ce{Na + KCl \overset{熔融}{=} NaCl + K_{(g)} ^}$&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th style="text-align:center">$\ce{4Na + O2 = 2Na2O}$&lt;/th>
+&lt;th style="text-align:center">钠的表面变暗&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td style="text-align:center">$\ce{2Na + O2 \triangleq Na2O2}$&lt;/td>
+&lt;td style="text-align:center">&lt;strong>与氧气剧烈反应，发出黄色火焰，生成淡黄色固体&lt;/strong>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:center">$\ce{2Na + 2H2O = 2NaOH + H2 ^}$&lt;/td>
+&lt;td style="text-align:center">&lt;strong>浮熔游响红&lt;/strong>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:center">$\ce{2Na + Cl2 \overset{点燃}{=} 2NaCl}$&lt;/td>
+&lt;td style="text-align:center">&lt;strong>发出黄色火焰，生成白色固体&lt;/strong>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:center">$\ce{2Na + S \triangleq NaS}$&lt;/td>
+&lt;td style="text-align:center">&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:center">$\ce{2Na + 2H+ = 2Na+ + H2 ^}$ (与 $\ce{H+}$ 反应)&lt;/td>
+&lt;td style="text-align:center">&lt;strong>浮熔游响红，比水更剧烈&lt;/strong>&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;h2 id="钠的化合物">钠的化合物&lt;/h2>
+&lt;h3 id="氧化钠">氧化钠&lt;/h3>
+&lt;p>碱性氧化物&lt;/p>
+&lt;p>$\ce{Na2O + H2O = 2NaOH}$&lt;/p>
+&lt;p>$\ce{Na2O + CO2 = Na2CO3}$&lt;/p>
+&lt;p>$\ce{Na2O + H2SO4 = NaSO4 + H2O}$&lt;/p>
+&lt;p>$\ce{2Na2O + O2 \triangleq 2Na2O2}$ (热稳性不如 $\ce{Na2O2}$ )&lt;/p>
+&lt;h3 id="过氧化钠">过氧化钠&lt;/h3>
+&lt;p>可用作供氧剂、漂白剂、消毒剂。&lt;/p>
+&lt;p>同时具有氧化性和还原性，发生氧化、还原、歧化反应。&lt;/p>
+&lt;p>$\ce{Na2O2 -&amp;gt;[加入] 酚酞溶液}$ 先变红，后褪色。&lt;/p>
+&lt;p>$\ce{2Na2O2 + 2H2O = 4NaOH + O2 ^}$&lt;/p>
+&lt;p>$\ce{2Na2O2 + 2CO2 = 2Na2CO3 + O2}$&lt;/p>
+&lt;p>$\ce{2Na2O2 + 2H2SO4 = 2NaSO4 + 2H2O + O2 ^}$&lt;/p>
+&lt;h3 id="碳酸钠">碳酸钠&lt;/h3>
+&lt;p>白色粉末，加入少量水变为晶体( $\ce{Na2CO3*x H2O}$ )，并放热。&lt;/p>
+&lt;p>俗称苏打，纯碱。&lt;/p>
+&lt;p>重要的化工原料，广泛运用于纺织、制皂、造纸、制玻璃等。&lt;/p>
+&lt;p>比碳酸氢钠同等条件下溶解度更大，水溶液碱性更强。&lt;/p>
+&lt;p>$\ce{Na2CO3 + H+ = 2Na+ +HCO^-3}$ (酸少/碳酸钠多)&lt;/p>
+&lt;p>$\ce{Na2CO3 + 2H+ = 2Na+ + H2O +CO2 ^}$ (酸多/碳酸钠少)&lt;/p>
+&lt;h3 id="碳酸氢钠">碳酸氢钠&lt;/h3>
+&lt;p>细小的白色晶体，溶于水吸热。&lt;/p>
+&lt;p>俗称小苏打。&lt;/p>
+&lt;p>制药(胃酸过多，应避免穿孔)、焙制糕点、泡沫灭火器。&lt;/p>
+&lt;p>比碳酸钠同等条件下溶解度更小，水溶液碱性更弱。&lt;/p>
+&lt;p>$\ce{2NaHCO3 \triangleq Na2CO3 + H2O + CO2 ^}$&lt;/p>
+&lt;p>$\ce{NaHCO3 + H+ = Na+ + H2O + CO2 ^}$&lt;/p>
+&lt;p>同时滴入 $\ce{H+}$ ，$\ce{NaHCO3}$ 比 $\ce{Na2CO3}$ 先出气泡；等量且少量的与足量 $\ce{H+}$ 反应，$\ce{NaHCO3}$ 产生的 $\ce{CO2}$ 多。&lt;/p>
+&lt;h3 id="侯氏制碱法">侯氏制碱法&lt;/h3>
+&lt;p>先向饱和氯化钠溶液中通入足量氨气，再通入足量二氧化碳。&lt;/p>
+&lt;ol>
+&lt;li>$\ce{NH3 + CO2 = NH4HCO3}$&lt;/li>
+&lt;li>$\ce{NH4HCO3 + NaCl = NaHCO3 v + NH4Cl}$&lt;/li>
+&lt;li>$\ce{2NaHCO3 \triangleq Na2CO3 + H2O + CO2 ^}$&lt;/li>
+&lt;/ol>
+&lt;script src='//unpkg.com/valine/dist/Valine.min.js'>&lt;/script>
+&lt;div id="vcomments">&lt;/div>
+&lt;script>
+new Valine({
+el: '#vcomments',
+appId: 'mUFdj80doBeHANJjnbmU89gH-gzGzoHsz',
+appKey: 'p4p7vzJrQnIYoajXvUjpuiRy',
+placeholder: '说点什么叭~ (邮箱和网址不强制，邮箱用于Gravatar头像显示)',
+visitor: true,
+recordIP: true,
+serverURLs: false,
+enableQQ: true
+})
+&lt;/script></description></item><item><title>Cl氯</title><link>/courses/chemistry/cl/</link><pubDate>Thu, 18 Nov 2021 21:12:41 +0800</pubDate><guid>/courses/chemistry/cl/</guid><description>&lt;h2 id="物理性质">物理性质&lt;/h2>
+&lt;ol>
+&lt;li>标准状况下为气体&lt;/li>
+&lt;li>黄绿色&lt;/li>
+&lt;li>有刺激性气味&lt;/li>
+&lt;li>有毒&lt;/li>
+&lt;li>密度大于空气&lt;/li>
+&lt;li>易液化(液氯)&lt;/li>
+&lt;li>$1:2$ 溶于水(氯水)&lt;/li>
+&lt;li>难溶于饱和氯化钠溶液&lt;/li>
+&lt;/ol>
+&lt;h2 id="化学性质">化学性质&lt;/h2>
+&lt;p>氯气是&lt;strong>很活泼&lt;/strong>的非金属单质，具有&lt;strong>强氧化性&lt;/strong>。&lt;/p>
+&lt;h3 id="与金属非金属单质反应">与金属、非金属单质反应&lt;/h3>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th style="text-align:center">$\ce{2Na + Cl2 \triangleq 2NaCl}$&lt;/th>
+&lt;th style="text-align:center">黄色火焰&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td style="text-align:center">$\ce{2Fe + Cl2 \triangleq 2FeCl3}$&lt;/td>
+&lt;td style="text-align:center">&lt;strong>棕色烟，溶于水呈黄色&lt;/strong>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:center">$\ce{Cu + Cl2 \triangleq CuCl2}$&lt;/td>
+&lt;td style="text-align:center">&lt;strong>棕色烟，溶于水呈黄色(极少水)/蓝色(较多水)/蓝绿色(少量水)&lt;/strong>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:center">$\ce{H2 + Cl2 \overset{点燃}{=}2HCl}$&lt;/td>
+&lt;td style="text-align:center">&lt;strong>安静地燃烧，苍白色火焰，生成的 $\ce{HCl_{(g)}}$ 与水蒸气结合，产生白色雾(盐酸小液滴)&lt;/strong>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:center">$\ce{H2 + Cl2 \overset{光照}{=}2HCl}$&lt;/td>
+&lt;td style="text-align:center">&lt;strong>爆炸&lt;/strong>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:center">$\ce{P + Cl2 \overset{点燃}{=} PCl3}$&lt;/td>
+&lt;td style="text-align:center">&lt;strong>固体，烟，白色&lt;/strong>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:center">$\ce{P + Cl2 \overset{点燃}{=} PCl5}$&lt;/td>
+&lt;td style="text-align:center">&lt;strong>液体，瓶口有白色雾&lt;/strong>&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;h3 id="与还原性化合物反应">与还原性化合物反应&lt;/h3>
+&lt;p>$\ce{Cl2 + S^2- = S v + 2Cl-}$&lt;/p>
+&lt;ul>
+&lt;li>$\ce{Cl2 + Na2S = S v + 2NaCl}$&lt;/li>
+&lt;li>$\ce{Cl2 + H2S = S v + 2HCl}$&lt;/li>
+&lt;/ul>
+&lt;p>$\ce{Cl2 + 2I- = I2 + 2Cl-}$&lt;/p>
+&lt;ul>
+&lt;li>用湿润的淀粉碘化钾试纸测氯气
+&lt;ol>
+&lt;li>少量：$\ce{Cl2 + 2KI = I2 + 2KCl}$ (变蓝)&lt;/li>
+&lt;li>足量：$\ce{I2 + 5Cl2 + 6H2O = 2HIO3 + 10HCl}$ (褪色)&lt;/li>
+&lt;/ol>
+&lt;/li>
+&lt;/ul>
+&lt;p>$\ce{Cl2 + SO^2-_3 = SO^2-_4 + 2Cl-}$&lt;/p>
+&lt;p>$\ce{Cl2 + 2Fe^2+ = 2Fe^3+ + 2Cl-}$&lt;/p>
+&lt;p>$\ce{Cl2 + 2Br- = Br2 + 2Cl-}$&lt;/p>
+&lt;p>$\left{\begin{array}{rcl}\begin{aligned}&amp;amp;\ce{3Cl2 + 2NH3\space(少量) = N2 + 6HCl}\newline&amp;amp;\ce{3Cl2 + 8NH3\space (足量) = N2 + 6NH4Cl}\end{aligned}\end{array}\right.$&lt;/p>
+&lt;ul>
+&lt;li>用蘸有浓氨水的抹布检查 $\ce{Cl2}$ 的管道是否漏气 ($\ce{NH4Cl}$ 白烟)&lt;/li>
+&lt;/ul>
+&lt;h3 id="与水反应">与水反应&lt;/h3>
+&lt;p>一部分氯气：$\ce{Cl2 + H2O = HCl + HClO}$&lt;/p>
+&lt;h4 id="氯水">氯水&lt;/h4>
+&lt;h5 id="新制氯水">新制氯水&lt;/h5>
+&lt;ul>
+&lt;li>
+&lt;p>成分：$\ce{Cl2}$ 、$\ce{HCl}$ 、$\ce{HClO}$ 、$\ce{H2O}$ ( $\ce{Cl2}$ 、$\ce{H2O}$ 、$\ce{HClO}$ 、$\ce{Cl-}$ 、$\ce{H+}$ 、$\ce{OH-}$ 、$\ce{ClO-}$ )&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>淡黄绿色：含较多有 $\ce{Cl2}$&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>不稳定性：$\ce{2HClO \overset{光照}{=} 2HCl + O2 ^}$&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>漂白性：$\ce{ClO-}$&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>氧化性：$\ce{ClO-}$&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>酸性：较弱，$\ce{H+}$ 浓度低&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;h5 id="久置氯水">久置氯水&lt;/h5>
+&lt;ul>
+&lt;li>
+&lt;p>成分：$\ce{HCl}$ 、$\ce{H2O}$ ( $\ce{Cl-}$ 、$\ce{H+}$ 、$\ce{OH-}$ 、$\ce{H2O}$ )&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>无色&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>等价于盐酸&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>无漂白性&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>氧化性：弱 ($\ce{H+}$)&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>酸性：强，$\ce{H+}$ 浓度高&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;h3 id="与碱反应">与碱反应&lt;/h3>
+&lt;p>$\ce{Cl2 + 2OH- = Cl- + ClO- + H2O}$&lt;/p>
+&lt;ul>
+&lt;li>$\ce{Cl2 + 2NaOH = NaCl + NaClO + H2O}$&lt;/li>
+&lt;li>$\ce{2Cl2 + 2Ca(OH)2 = Ca(ClO2)+ CaCl2 + 2H2O}$&lt;/li>
+&lt;/ul>
+&lt;p>$\ce{3Cl2 + 6OH- \triangleq 5Cl- + ClO^-_3 + 3H2O}$&lt;/p>
+&lt;h2 id="氯的化合物">氯的化合物&lt;/h2>
+&lt;h3 id="次氯酸">次氯酸&lt;/h3>
+&lt;h4 id="化学性质-1">化学性质&lt;/h4>
+&lt;ol>
+&lt;li>弱酸性&lt;/li>
+&lt;li>强氧化性&lt;/li>
+&lt;li>不稳定性：$\ce{2HClO \overset{光照}{=}2HCl + O2 ^}$&lt;/li>
+&lt;/ol>
+&lt;h4 id="用途">用途&lt;/h4>
+&lt;ol>
+&lt;li>漂白剂&lt;/li>
+&lt;li>消毒液&lt;/li>
+&lt;/ol>
+&lt;h3 id="漂白液">漂白液&lt;/h3>
+&lt;h4 id="制备">制备&lt;/h4>
+&lt;p>常温下，将 $\ce{Cl2}$ 通入 $\ce{NaOH}$ 溶液。&lt;/p>
+&lt;p>$\ce{Cl2 + 2NaOH = NaCl + NaClO +H2O}$&lt;/p>
+&lt;h4 id="优点">优点&lt;/h4>
+&lt;p>低温下三年分解一半左右，稳定性远强于 $\ce{HClO}$&lt;/p>
+&lt;h4 id="生效">生效&lt;/h4>
+&lt;p>$\ce{NaClO + CO2 + H2O = HClO + NaHCO3}$&lt;/p>
+&lt;blockquote>
+&lt;p>无论 $\ce{CO2}$ 多少，均生成 $\ce{NaHCO3}$&lt;/p>
+&lt;/blockquote>
+&lt;h3 id="漂白粉">漂白粉&lt;/h3>
+&lt;p>&lt;strong>注意：&lt;/strong>$\color{red}{\ce{Ca(ClO)2 + SO2 + H2O \neq CaSO3 v + 2HClO}}$ &lt;font color=blue>(这个方程式是错的)&lt;/font>&lt;/p>
+&lt;h4 id="制备-1">制备&lt;/h4>
+&lt;p>将 $\ce{Cl2}$ 通入冷的石灰乳 $\ce{[Ca(OH)2]}$ 中。&lt;/p>
+&lt;p>$\ce{2Cl2 + 2Ca(OH)2 = Ca(ClO)2 + CaCl2 + 2H2O}$&lt;/p>
+&lt;h4 id="优点-1">优点&lt;/h4>
+&lt;p>稳定性更强&lt;/p>
+&lt;h4 id="生效-1">生效&lt;/h4>
+&lt;ul>
+&lt;li>工业：$\ce{Ca(ClO)2 + 2HCl = CaCl2 + 2HClO}$&lt;/li>
+&lt;li>生活：
+&lt;ul>
+&lt;li>少量 $\ce{CO2}$ ：$\ce{Ca(ClO)2 + CO2 + H2O = CaCO3 v + 2HClO}$&lt;/li>
+&lt;li>大量 $\ce{CO2}$ ：$\ce{Ca(ClO)2 + 2CO2 + 2H2O = Ca(HCO3)2 + 2HClO}$&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h4 id="失效">失效&lt;/h4>
+&lt;ol>
+&lt;li>与空气中 $\ce{CO2}$ 和 水蒸气接触&lt;/li>
+&lt;li>次氯酸光照分解盐酸&lt;/li>
+&lt;li>再次分解漂白粉&lt;/li>
+&lt;/ol>
+&lt;h4 id="漂白精">漂白精&lt;/h4>
+&lt;p>$\ce{Cl2}$ 与 $\ce{Ca(OH)2}$ 反应充分，并使 $\ce{Ca(ClO)2}$ 成为主要成分。&lt;/p>
+&lt;p>即 $\ce{Ca(ClO)2}$ 含量高。&lt;/p>
+&lt;h2 id="氯气">氯气&lt;/h2>
+&lt;h3 id="实验室制备">实验室制备&lt;/h3>
+&lt;img src="%E5%AE%9E%E9%AA%8C%E8%A3%85%E7%BD%AE.png" style="zoom: 45%;" />
+&lt;p>浓盐酸与二氧化锰反应&lt;/p>
+&lt;p>$\ce{MnO2 + 4HCl(浓) \triangleq MnCl2 + Cl2 ^ + 2H2O}$&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>$\ce{HCl}$：&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>酸性&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>还原性&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>浓盐酸：稀盐酸还原性弱&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>其他氧化剂(无需加热)：&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>$\ce{KMnO4}$&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>$\ce{K2MnO4}$&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>$\ce{KClO3}$&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>$\ce{Ca(ClO)2}$&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>$\ce{K2Cr2O7}$&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>杂质：&lt;/p>
+&lt;ul>
+&lt;li>氯化氢：饱和食盐水&lt;/li>
+&lt;li>水：浓硫酸&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ol>
+&lt;h3 id="工业制备">工业制备&lt;/h3>
+&lt;p>电解饱和食盐水&lt;/p>
+&lt;p>$\ce{2NaCl + 2H2O \overset{电解}{=} H2 ^ + 2NaOH + Cl2 ^}$&lt;/p>
+&lt;h3 id="氯溴碘检验">氯溴碘检验&lt;/h3>
+&lt;ol>
+&lt;li>&lt;/li>
+&lt;/ol>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th style="text-align:center">单质&lt;/th>
+&lt;th style="text-align:center">颜色状态&lt;/th>
+&lt;th style="text-align:center">水溶液&lt;/th>
+&lt;th style="text-align:center">有机溶剂&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td style="text-align:center">$\ce{Cl2}$&lt;/td>
+&lt;td style="text-align:center">黄绿色气体&lt;/td>
+&lt;td style="text-align:center">浅黄绿色&lt;/td>
+&lt;td style="text-align:center">浅黄绿色&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:center">$\ce{Br2}$&lt;/td>
+&lt;td style="text-align:center">深棕红色液体&lt;/td>
+&lt;td style="text-align:center">黄(橙)色&lt;/td>
+&lt;td style="text-align:center">橙(红)色/红棕色&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:center">$\ce{I2}$&lt;/td>
+&lt;td style="text-align:center">黑紫色固体&lt;/td>
+&lt;td style="text-align:center">黄色&lt;/td>
+&lt;td style="text-align:center">紫(紫红)色&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;ol start="2">
+&lt;li>
+&lt;p>离子：&lt;/p>
+&lt;ul>
+&lt;li>$\ce{Cl-}$
+&lt;ol>
+&lt;li>加入硝酸酸化&lt;/li>
+&lt;li>加入 $\ce{AgNO3}$ 溶液，出现 $\ce{AgCl}$ 白色沉淀&lt;/li>
+&lt;/ol>
+&lt;/li>
+&lt;li>
+&lt;h2 id="cebr-">$\ce{Br-}$&lt;/h2>
+&lt;h2 id="2-加入-ceagno3-溶液出现-ceagbr-浅黄色沉淀">1. 加入硝酸酸化
+2. 加入 $\ce{AgNO3}$ 溶液，出现 $\ce{AgBr}$ 浅黄色沉淀&lt;/h2>
+1. 加入氯水 $\ce{Cl2 + 2Br- = 2Cl- + Br2}$
+2. 加入四氯化碳 $\ce{CCl4}$ ，下层( $\ce{CCl4}$ )的 $\ce{Br2}$ 呈棕红色&lt;/li>
+&lt;li>
+&lt;h2 id="cei-">$\ce{I-}$&lt;/h2>
+1. 加入硝酸酸化
+2. 加入 $\ce{AgNO3}$ 溶液，出现 $\ce{AgI}$ 黄色沉淀
+&lt;ul>
+&lt;li>
+&lt;ol>
+&lt;li>加入氯水 $\ce{Cl2 + 2I- = 2Cl- + I2}$&lt;/li>
+&lt;li>加入四氯化碳 $\ce{CCl4}$ ，下层( $\ce{CCl4}$ )的 $\ce{I2}$ 呈紫色 &lt;font color=red>/&lt;/font> 加入淀粉，溶液呈蓝色&lt;/li>
+&lt;/ol>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ol></description></item><item><title>Fe铁</title><link>/courses/chemistry/fe/</link><pubDate>Sat, 27 Nov 2021 15:26:33 +0800</pubDate><guid>/courses/chemistry/fe/</guid><description>&lt;h2 id="物理性质">物理性质&lt;/h2>
+&lt;ol>
+&lt;li>银白色金属光泽&lt;/li>
+&lt;li>导电导热&lt;/li>
+&lt;li>延展性&lt;/li>
+&lt;li>熔点高( $\pu{1535 ^\circ C}$ )&lt;/li>
+&lt;li>易被磁铁吸引&lt;/li>
+&lt;/ol>
+&lt;h2 id="化学性质">化学性质&lt;/h2>
+&lt;p>铁的化学性质&lt;strong>比较活泼&lt;/strong>，自然界中铁元素&lt;strong>主要&lt;/strong>以 $+2$ 和 $+3$ 价态存在于矿石中，但是可以以&lt;strong>单质&lt;/strong>形式存在，如太空的&lt;strong>陨铁&lt;/strong>。&lt;/p>
+&lt;ol>
+&lt;li>非金属单质&lt;/li>
+&lt;/ol>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>$\ce{3Fe + 2O2 \overset{点燃}{=} Fe3O4}$&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>$\ce{2Fe + 3Cl3 \overset{点燃}{=} 2FeCl3}$&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>$\ce{Fe + S \triangleq FeS}$&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;ol start="2">
+&lt;li>酸&lt;/li>
+&lt;/ol>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>少量&lt;/th>
+&lt;th>$\ce{Fe + NO3- + 4H+ = Fe^{3+} + NO ^ + 4H2O}$&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>&lt;strong>大量&lt;/strong>&lt;/td>
+&lt;td>$\ce{3Fe + 2NO^-_3 + 8H+ = 3Fe^{2+} + 2NO ^ + 4H2O}$&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;p>&lt;strong>注：&lt;strong>硝酸均为&lt;/strong>稀&lt;/strong>硝酸。&lt;/p>
+&lt;ol start="3">
+&lt;li>盐溶液&lt;/li>
+&lt;/ol>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>$\ce{Fe + CuSO4 = FeSO4 + Cu}$&lt;/th>
+&lt;th>&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>$\ce{Fe + 2Fe^{3+} = 3Fe^{2+}}$&lt;/td>
+&lt;td>$\ce{Fe + 2Fe(NO3)3 = 3Fe(NO3)2}$ 、$\ce{Fe + 2FeCl3 = 3FeCl2}$&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;ol start="4">
+&lt;li>水&lt;strong>蒸气&lt;/strong>&lt;/li>
+&lt;/ol>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>$\ce{3Fe + 4H2O_{(g)}\overset{高温}{=}Fe3O4 + 4H2}$&lt;/th>
+&lt;th>先有爆鸣声(氢气不纯净)，后安静燃烧(氢气纯净)。&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;/table>
+&lt;p>铁是&lt;strong>还原剂&lt;/strong>，与氧化性较弱的物质(非氧化性酸，硫酸铜等)反应，生成 $\ce{+2}$ 价铁；与氧化性较强的物质(氧化性的酸，氯气等)反应，生成 $+3$ 价的铁。&lt;/p>
+&lt;ol>
+&lt;li>氧化性粒子顺序：$\ce{Ag+}$ &lt;font color=red size=5>&amp;gt;&lt;/font> $\ce{Fe^3+}$ &lt;font color=red size=5>&amp;gt;&lt;/font> $\ce{Cu^2+}$&lt;/li>
+&lt;li>还原性：$\ce{Fe}$ &lt;font color=red size=5>&amp;gt;&lt;/font> $\ce{Cu}$&lt;/li>
+&lt;/ol>
+&lt;h2 id="铁的氧化物">铁的氧化物&lt;/h2>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>名称&lt;/th>
+&lt;th>化学式&lt;/th>
+&lt;th>俗称&lt;/th>
+&lt;th>铁的化合价&lt;/th>
+&lt;th>颜色状态&lt;/th>
+&lt;th>备注&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>氧化亚铁&lt;/td>
+&lt;td>$\ce{FeO}$&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>$+2$&lt;/td>
+&lt;td>黑色粉末&lt;/td>
+&lt;td>不稳定，$\ce{6FeO + O2 \triangleq 2Fe3O4}$&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>氧化铁&lt;/td>
+&lt;td>$\ce{Fe2O3}$&lt;/td>
+&lt;td>铁红&lt;/td>
+&lt;td>$+3$&lt;/td>
+&lt;td>红棕色粉末&lt;/td>
+&lt;td>常用于油漆、涂料、油墨和橡胶的红色染料&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>四氧化三铁&lt;/td>
+&lt;td>$\ce{Fe3O4}$&lt;/td>
+&lt;td>磁性氧化铁&lt;/td>
+&lt;td>$\frac{+2}{+3}=\frac{1}{2}$&lt;/td>
+&lt;td>黑色晶体&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;p>铁的氧化物均不溶于水或与水反应。&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>&lt;/th>
+&lt;th>$\ce{FeO}$&lt;/th>
+&lt;th>$\ce{Fe2O3}$&lt;/th>
+&lt;th>$\ce{Fe3O4}$&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>$\ce{HCl}$ (非氧化性酸)&lt;/td>
+&lt;td>$\ce{FeO + 2HCl = FeCl2 + H2O}$&lt;/td>
+&lt;td>$\ce{Fe2O3 + 6HCl = 2FeCl3 + 3H2O}$&lt;/td>
+&lt;td>$\ce{Fe3O4 + 8HCl = FeCl2 + 2FeCl3 + 4H2O}$&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>$\ce{HNO3}$ (氧化性酸)&lt;/td>
+&lt;td>$\ce{3FeO + 10HNO3 = 3Fe(NO3)3 + NO ^ + 5H2O}$&lt;/td>
+&lt;td>$\ce{Fe2O3 + 6HNO3 = 2Fe(NO3)3 + 3H2O}$&lt;/td>
+&lt;td>$\ce{3Fe3O4 + 28HNO3 = 9Fe(NO3)3 + NO ^ + 14H2O}$&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>$\ce{HI}$ (还原性酸)&lt;/td>
+&lt;td>$\ce{FeO + 2HI = FeI2 + H2O}$&lt;/td>
+&lt;td>$\ce{Fe2O3 + 6HI = 2FeI2 + I2 v + 3H2O}$&lt;/td>
+&lt;td>$\ce{Fe3O4 + 8HI = 3FeI2 + I2 v + 4H2O}$&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;h2 id="铁的氢氧化物">铁的氢氧化物&lt;/h2>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>名称&lt;/th>
+&lt;th>化学式&lt;/th>
+&lt;th>铁的化合价&lt;/th>
+&lt;th>颜色状态&lt;/th>
+&lt;th>稳定性&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>氢氧化亚铁&lt;/td>
+&lt;td>$\ce{Fe(OH)2}$&lt;/td>
+&lt;td>$+2$&lt;/td>
+&lt;td>白色固体&lt;/td>
+&lt;td>不稳定 $\ce{4Fe(OH)2 + O2 + H2O = 4Fe(OH)3}$ $\ce{白色 -&amp;gt; 灰绿色 -&amp;gt; 红褐色}$&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>氢氧化铁&lt;/td>
+&lt;td>$\ce{Fe(OH)3}$&lt;/td>
+&lt;td>$+3$&lt;/td>
+&lt;td>红褐色固体&lt;/td>
+&lt;td>常温稳定，加热分解 $\ce{2Fe(OH)3 \triangleq Fe2O3 + 3H2O}$&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;p>铁的氢氧化物均难溶于水。&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>&lt;/th>
+&lt;th>$\ce{Fe(OH)2}$&lt;/th>
+&lt;th>$\ce{Fe(OH)3}$&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>$\ce{}$$\ce{HCl}$ (非氧化性酸)&lt;/td>
+&lt;td>$\ce{Fe(OH)2 + 2HCl = FeCl2 + 2H2O}$&lt;/td>
+&lt;td>$\ce{Fe(OH)3 + 3HCl = FeCl3 + 3H2O}$&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>$\ce{HNO3}$ (氧化性酸)&lt;/td>
+&lt;td>$\ce{3Fe(OH)2 + 10HNO3 = 3Fe(NO3)3 + NO ^ + 6H2O}$&lt;/td>
+&lt;td>$\ce{Fe(OH)3 + 3HNO3 = Fe(NO3)3 + 3H2O}$&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>$\ce{HI}$ (还原性酸)&lt;/td>
+&lt;td>$\ce{Fe(OH)2 + 2HI = FeI2 + 2H2O}$&lt;/td>
+&lt;td>$\ce{2Fe(OH)3 + 6HI = 2FeI2 + 2I2 +6H2O}$&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;h2 id="亚铁盐">亚铁盐&lt;/h2>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>亚铁离子&lt;/th>
+&lt;th>水溶液&lt;/th>
+&lt;th>常见亚铁盐&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>$\ce{Fe^{2+}}$&lt;/td>
+&lt;td>&lt;font color=lightgreen>浅绿色&lt;/font>&lt;/td>
+&lt;td>$\ce{FeSO4}$ 、$\ce{FeCl2}$ 等&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;h3 id="化学性质-1">化学性质：&lt;/h3>
+&lt;ol>
+&lt;li>复分解反应
+&lt;ol>
+&lt;li>与碱反应
+&lt;ul>
+&lt;li>$\ce{Fe + 2OH- = Fe(OH)2 v}$&lt;/li>
+&lt;li>$\ce{Fe^2+ + 2NH3*H2O = FE(OH)2 v + 2NH+_4}$&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>与 $\ce{Na2S}$ 反应
+&lt;ul>
+&lt;li>$\ce{Fe^2+ + S^2- = FeS v}$ &lt;b>&lt;font color = red>注意：$\ce{Fe^2+}$ 与 $\ce{H2S}$ 不反应，弱酸不能制强酸。&lt;/font>&lt;/b>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ol>
+&lt;/li>
+&lt;li>弱氧化性(置换反应)
+&lt;ul>
+&lt;li>$\ce{Zn + Fe^{2+} = Zn^{2+} + Fe}$&lt;/li>
+&lt;li>$\ce{Mg + Fe^{2+} = Mg^{2+} + Fe}$&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>强还原性
+&lt;ol>
+&lt;li>与非金属单质反应
+&lt;ul>
+&lt;li>$\ce{2Fe^2+ + Cl2 = 2Fe^3+ + 2Cl-}$&lt;/li>
+&lt;li>$\ce{4Fe^2+ + O2 + 4H+ = 4Fe^3+ + 2H2O}$&lt;/li>
+&lt;li>$\ce{Cl2}$ &lt;font color=red size=5> &amp;gt;&lt;/font> $\ce{Br2}$ &lt;font color=red size=5> &amp;gt;&lt;/font> $\ce{Fe^3+}$ &lt;font color=red size=5> &amp;gt;&lt;/font> $\ce{I2}$&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>与化合物反应
+&lt;ul>
+&lt;li>$\ce{2Fe^2+ + H2O2 +2H+ = 2Fe^3+ + 2H2O}$&lt;/li>
+&lt;li>$\ce{3Fe^2+ NO^-3 + 4H+ = 3Fe^3+ + NO ^ + 2H2O}$&lt;/li>
+&lt;li>$\ce{5Fe^2+ + MnO^-4 + 8H+ = 5FE^3+ + Mn^2+ + 4H2O}$&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ol>
+&lt;/li>
+&lt;li>络合反应
+&lt;ul>
+&lt;li>$\ce{3Fe^2+ + 2[Fe(CN)6]^3- = Fe3[Fe(CN)6]2 v}$ 蓝色沉淀 (常见 六氰合铁酸钾 $\ce{K3Fe(CN)6}$)&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ol>
+&lt;h2 id="铁盐">铁盐&lt;/h2>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>铁离子&lt;/th>
+&lt;th>水溶液&lt;/th>
+&lt;th>常见铁盐&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>$\ce{Fe^3+}$&lt;/td>
+&lt;td>&lt;font color=#FFC900>黄色&lt;/font>&lt;/td>
+&lt;td>$\ce{Fe2(SO4)3}$ 、$\ce{FeCl3}$ 等&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;h3 id="化学性质-2">化学性质：&lt;/h3>
+&lt;ol>
+&lt;li>复分解反应
+&lt;ol>
+&lt;li>与碱反应
+&lt;ul>
+&lt;li>$\ce{Fe^3+ + 3OH- = Fe(OH)3 v}$&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ol>
+&lt;/li>
+&lt;li>强氧化性
+&lt;ol>
+&lt;li>与金属单质反应
+&lt;ul>
+&lt;li>$\ce{2Fe^3+ + Fe = 3Fe^2+}$&lt;/li>
+&lt;li>$\ce{2Fe^3+ + Cu = 2Fe^2+}$&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>与还原性化合物反应
+&lt;ol>
+&lt;li>与 $\ce{Na2S}$ 反应&lt;/li>
+&lt;/ol>
+&lt;ul>
+&lt;li>$\ce{S^2-}$ 少量：$\ce{2Fe^3+ + S^2- = 2Fe^2+ + S v}$&lt;/li>
+&lt;li>$\ce{S^2-}$ 过量：$\ce{2Fe^3+ + 3S^2- = 2FeS v + S v}$&lt;/li>
+&lt;/ul>
+&lt;ol start="2">
+&lt;li>与 $\ce{H2S}$ 反应&lt;/li>
+&lt;/ol>
+&lt;ul>
+&lt;li>$\ce{2Fe^3+ + H2S = 2Fe^2+ + S v}$&lt;/li>
+&lt;/ul>
+&lt;ol start="3">
+&lt;li>与 $+4$ 价 $\ce{S}$ 反应&lt;/li>
+&lt;/ol>
+&lt;ul>
+&lt;li>$\ce{2Fe^3+ + SO^2-_3 + H2O = 2Fe^2+ SO^2-_4 + 2H+}$&lt;/li>
+&lt;li>$\ce{2Fe^3+ + SO2 + 2H2O = 2Fe^2+ + SO^2-_4 + 4H+}$&lt;/li>
+&lt;/ul>
+&lt;ol start="4">
+&lt;li>与 $\ce{I-}$ 反应&lt;/li>
+&lt;/ol>
+&lt;ul>
+&lt;li>$\ce{2Fe^3+ 2I- = 2Fe^2+ + I2}$&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ol>
+&lt;/li>
+&lt;li>络合反应
+&lt;ul>
+&lt;li>$\ce{Fe^3+ + 3SCN- = Fe(SCN)3}$ &lt;font color=red>红色溶液&lt;/font>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ol>
+&lt;script src='//unpkg.com/valine/dist/Valine.min.js'>&lt;/script>
+&lt;div id="vcomments">&lt;/div>
+&lt;script>
+new Valine({
+el: '#vcomments',
+appId: 'mUFdj80doBeHANJjnbmU89gH-gzGzoHsz',
+appKey: 'p4p7vzJrQnIYoajXvUjpuiRy',
+placeholder: '说点什么叭~ (邮箱和网址不强制，邮箱用于Gravatar头像显示)',
+visitor: true,
+recordIP: true,
+serverURLs: false,
+enableQQ: true
+})
+&lt;/script></description></item><item><title>Al铝</title><link>/courses/chemistry/al/</link><pubDate>Sun, 28 Nov 2021 15:56:41 +0800</pubDate><guid>/courses/chemistry/al/</guid><description>&lt;h2 id="物理性质">物理性质&lt;/h2>
+&lt;ol>
+&lt;li>银白色金属光泽&lt;/li>
+&lt;li>导电导热&lt;/li>
+&lt;li>延展性&lt;/li>
+&lt;li>质地柔软&lt;/li>
+&lt;li>密度小(轻)&lt;/li>
+&lt;/ol>
+&lt;h2 id="化学性质">化学性质&lt;/h2>
+&lt;p>铝的化学性质&lt;strong>比较活泼&lt;/strong>，是地壳中含量最多的金属元素。&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>锈蚀&lt;/p>
+&lt;ul>
+&lt;li>$\ce{4Al + 3O2 = 2Al2O3}$&lt;/li>
+&lt;li>&lt;strong>致密&lt;/strong>的 $\ce{Al2O3}$ 氧化铝薄膜，防止继续锈蚀，起&lt;strong>保护&lt;/strong>作用。&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>非金属单质&lt;/p>
+&lt;ul>
+&lt;li>$\ce{4Al + 3O2 \overset{点燃}{=} 2Al2O3}$ 发出耀眼的白光，放出大量热。&lt;/li>
+&lt;li>$\ce{2Al + 3S \triangleq Al2S3}$&lt;/li>
+&lt;li>$\ce{2ASl + 3Cl2 \overset{点燃}{=} 2AlCl3}$&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>酸&lt;/p>
+&lt;ol>
+&lt;li>非氧化性酸
+&lt;ul>
+&lt;li>$\ce{2Al + 6H+ = 2A^3+ + 3H2 ^}$&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>氧化性酸
+&lt;ul>
+&lt;li>$\ce{Al + 4HNO3_{(稀)} = NO ^ + Al(NO)3 + 2H2O}$&lt;/li>
+&lt;li>$\ce{Al + 4HNO3_{(浓)} \triangleq NO ^ + Al(NO)3 + 2H2O}$&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>钝化
+&lt;ul>
+&lt;li>&lt;strong>冷浓&lt;/strong>硝酸&lt;/li>
+&lt;li>浓硫酸&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ol>
+&lt;/li>
+&lt;li>
+&lt;p>碱&lt;/p>
+&lt;ul>
+&lt;li>$\ce{2Al + 2OH- + 2H2O = 2AlO^-_2 + 3H2 ^}$&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>盐&lt;/p>
+&lt;ul>
+&lt;li>$\ce{2Al + 3Fe^2+ = 2Al^3+ + 3Fe}$&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>金属氧化物&lt;/p>
+&lt;ul>
+&lt;li>见&lt;a href="#%e9%93%9d%e7%83%ad%e5%8f%8d%e5%ba%94">铝热反应&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ol>
+&lt;h3 id="铝热反应">铝热反应&lt;/h3>
+&lt;h4 id="实验装置">实验装置&lt;/h4>
+&lt;img src="%E8%A3%85%E7%BD%AE.PNG" style="zoom:45%;" />
+&lt;h4 id="实验原理">实验原理&lt;/h4>
+&lt;p>铝在高温下与活动性弱于铝的金属的氧化物反应，放出大量的热，制出金属单质。&lt;/p>
+&lt;p>$\ce{Fe2O3 + 2Al \overset{高温}{=} 2Fe + Al2O3}$ (铁水)&lt;/p>
+&lt;h4 id="实验现象">实验现象&lt;/h4>
+&lt;ol>
+&lt;li>
+&lt;p>镁带剧烈燃烧，放出大量的热，并发出耀眼的白光，引燃铝和氧化铁的混合物。&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>铝和氧化铁的混合物在高温下发生剧烈的反应，并放出大量的热，纸漏斗的下部被烧穿，有熔融物落入沙中。&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;h4 id="原理应用">原理应用&lt;/h4>
+&lt;ol>
+&lt;li>制取&lt;strong>熔点较高&lt;/strong>、&lt;strong>活动性弱于铝&lt;/strong>的金属(通常贵于铝)，如铁、铬、锰、钨等。&lt;/li>
+&lt;li>金属焊接，如野外焊接铁轨等。&lt;/li>
+&lt;/ol>
+&lt;h3 id="工业制备">工业制备&lt;/h3>
+&lt;p>铝土矿 $\ce{-&amp;gt;[提纯] Al2O3}$&lt;/p>
+&lt;p>$\ce{2Al2O3_{熔融} -&amp;gt;[电解][冰晶石] 4Al + 3O2 ^}$ (冰晶石：$\ce{Na3AlF6}$)&lt;/p>
+&lt;h2 id="铝的氧化物">铝的氧化物&lt;/h2>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>名称&lt;/th>
+&lt;th>化学式&lt;/th>
+&lt;th>特点&lt;/th>
+&lt;th>用途&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>氧化铝&lt;/td>
+&lt;td>$\ce{Al2O3}$&lt;/td>
+&lt;td>两性氧化物、耐火耐高温&lt;/td>
+&lt;td>制造耐火、耐高温器材；工业冶炼铝原料；制作各种宝石&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;ol>
+&lt;li>酸
+&lt;ul>
+&lt;li>$\ce{Al2O3 + 6H+ = 2Al^3+ + 3H2O}$&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>碱
+&lt;ul>
+&lt;li>$\ce{Al2O3 + 2OH- = 2AlO^-2 + H2O}$&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ol>
+&lt;h2 id="铝三角">铝三角&lt;/h2>
+&lt;p>$\ce{Al^3+ &amp;lt;=&amp;gt;[3OH-][3H+] Al(OH)3 &amp;lt;=&amp;gt;[OH-][H+] AlO2-}$&lt;/p>
+&lt;p>$\ce{Al^3+ + 3AlO^-2 + 6H2O = 4Al(OH)3}$&lt;/p>
+&lt;h3 id="铝离子">铝离子&lt;/h3>
+&lt;ol>
+&lt;li>强碱
+&lt;ol>
+&lt;li>少量氢氧根
+&lt;ul>
+&lt;li>$\ce{Al^3+ + 3OH- = Al(OH)3 v}$&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>大量氢氧根
+&lt;ul>
+&lt;li>$\ce{Al^3+ + 4OH- = AlO^-2 + 2H2O}$&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ol>
+&lt;/li>
+&lt;li>弱碱
+&lt;ul>
+&lt;li>$\ce{Al^3+ 3NH3*H2O = Al(OH)3 v + 3NH^+4}$&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>偏铝酸根&lt;/li>
+&lt;/ol>
+&lt;h3 id="氢氧化铝">氢氧化铝&lt;/h3>
+&lt;ol>
+&lt;li>强酸
+&lt;ul>
+&lt;li>$\ce{Al(OH)3 + 3H+ = Al^3+ + 3H2O}$&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>强碱
+&lt;ul>
+&lt;li>$\ce{Al(OH)3 + OH- = AlO^-2 + 2H2O}$&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>不与弱酸、弱碱反应&lt;/li>
+&lt;li>不稳定性
+&lt;ul>
+&lt;li>$\ce{2Al(OH)3 \triangleq AL2O3 + 3H2O}$&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ol>
+&lt;h4 id="电离方程式">电离方程式&lt;/h4>
+&lt;ol>
+&lt;li>碱式电离：$\ce{Al(OH)3 &amp;lt;=&amp;gt; Al^3+ + 3OH-}$&lt;/li>
+&lt;li>酸式电离：$\ce{Al(OH)3 &amp;lt;=&amp;gt; H+ + AlO^-2 + H2O}$&lt;/li>
+&lt;/ol>
+&lt;h3 id="偏铝酸根">偏铝酸根&lt;/h3>
+&lt;ol>
+&lt;li>强酸
+&lt;ol>
+&lt;li>少量氢离子
+&lt;ul>
+&lt;li>$\ce{AlO^-2 + H+ + H2O = Al(OH)3 v}$&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>大量氢离子
+&lt;ul>
+&lt;li>$\ce{AlO^-2 + 4H+ = Al^3+ 2H2O}$&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ol>
+&lt;/li>
+&lt;li>弱酸
+&lt;ul>
+&lt;li>$\ce{AlO^-2 + H+ + H2O = Al(OH)3 v}$
+&lt;ul>
+&lt;li>通入少量 $\ce{CO2}$ ：$\ce{2AlO^-2 + CO2 + 3H2O = 2Al(OH)3 v + CO^2^-3}$&lt;/li>
+&lt;li>通入大量 $\ce{CO2}$ ：$\ce{AlO^-2 + CO2 + 2H2O = Al(OH)3 v + HCO^-3}$&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ol>
+&lt;h2 id="明矾">明矾&lt;/h2>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>名称&lt;/th>
+&lt;th>化学式&lt;/th>
+&lt;th>俗称&lt;/th>
+&lt;th>用途&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>明矾&lt;/td>
+&lt;td>$\ce{KAl(SO4)*12H2O}$&lt;/td>
+&lt;td>明矾&lt;/td>
+&lt;td>吸附水中悬浊物，用于净水&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table></description></item></channel></rss>
