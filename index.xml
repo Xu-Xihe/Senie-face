@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Senie</title><link>https://xuxihe.vercel.app/</link><atom:link href="https://xuxihe.vercel.app/index.xml" rel="self" type="application/rss+xml"/><description>Senie</description><generator>Wowchemy (https://wowchemy.com)</generator><language>zh</language><copyright>© 曦曦呵呵</copyright><lastBuildDate>Mon, 13 Dec 2021 21:52:27 +0800</lastBuildDate><image><url>https://xuxihe.vercel.app/media/icon_huf638f59a6dd2257b0add8e0186347459_300061_512x512_fill_lanczos_center_3.png</url><title>Senie</title><link>https://xuxihe.vercel.app/</link></image><item><title>C++ STL</title><link>https://xuxihe.vercel.app/notes/oiknowledge/others%E6%9D%82%E9%A1%B9/c++-stl/</link><pubDate>Mon, 18 Oct 2021 00:00:00 +0000</pubDate><guid>https://xuxihe.vercel.app/notes/oiknowledge/others%E6%9D%82%E9%A1%B9/c++-stl/</guid><description>&lt;p>当你啥也不会的时候，充分利用C++ STL模板可以让你的暴力多得几分。&lt;/p></description></item><item><title>快速幂</title><link>https://xuxihe.vercel.app/notes/oiknowledge/math%E6%95%B0%E8%AE%BA/%E5%BF%AB%E9%80%9F%E5%B9%82/</link><pubDate>Mon, 18 Oct 2021 00:00:00 +0000</pubDate><guid>https://xuxihe.vercel.app/notes/oiknowledge/math%E6%95%B0%E8%AE%BA/%E5%BF%AB%E9%80%9F%E5%B9%82/</guid><description>&lt;h1 id="快速幂">快速幂&lt;/h1>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Senie</title><link>https://xuxihe.vercel.app/</link><atom:link href="https://xuxihe.vercel.app/index.xml" rel="self" type="application/rss+xml"/><description>Senie</description><generator>Wowchemy (https://wowchemy.com)</generator><language>zh</language><copyright>© 曦曦呵呵</copyright><lastBuildDate>Sat, 02 Jul 2022 22:20:32 +0800</lastBuildDate><image><url>https://xuxihe.vercel.app/media/icon_huf638f59a6dd2257b0add8e0186347459_300061_512x512_fill_lanczos_center_3.png</url><title>Senie</title><link>https://xuxihe.vercel.app/</link></image><item><title>C++ STL</title><link>https://xuxihe.vercel.app/notes/oiknowledge/others%E6%9D%82%E9%A1%B9/c++-stl/</link><pubDate>Mon, 18 Oct 2021 00:00:00 +0000</pubDate><guid>https://xuxihe.vercel.app/notes/oiknowledge/others%E6%9D%82%E9%A1%B9/c++-stl/</guid><description>&lt;p>当你啥也不会的时候，充分利用C++ STL模板可以让你的暴力多得几分。&lt;/p></description></item><item><title>快速幂</title><link>https://xuxihe.vercel.app/notes/oiknowledge/math%E6%95%B0%E8%AE%BA/%E5%BF%AB%E9%80%9F%E5%B9%82/</link><pubDate>Mon, 18 Oct 2021 00:00:00 +0000</pubDate><guid>https://xuxihe.vercel.app/notes/oiknowledge/math%E6%95%B0%E8%AE%BA/%E5%BF%AB%E9%80%9F%E5%B9%82/</guid><description>&lt;h1 id="快速幂">快速幂&lt;/h1>
 &lt;h2 id="幂还有快速">幂还有快速？&lt;/h2>
 &lt;p>我们首先来思考一个问题，对于 $7^6$ 如何求。&lt;/p>
 &lt;p>作为一个人类，你的求法一定是先算出 $7\times7=49$，然后接着算出 $49\times7=343$，…… ，$16807\times7=117649$。因为人类并不适合算两位数以上的乘法(一位数还勉强可以瞪眼)，所以有些时候我们的思维便会限制在这个里面。&lt;/p>
@@ -5610,7 +5610,61 @@ enableQQ: true
 &lt;h2 id="硅酸盐">硅酸盐&lt;/h2></description></item><item><title>数学表示</title><link>https://xuxihe.vercel.app/notes/oiknowledge/math%E6%95%B0%E8%AE%BA/%E6%95%B0%E5%AD%A6%E8%A1%A8%E7%A4%BA/</link><pubDate>Mon, 18 Oct 2021 00:00:00 +0000</pubDate><guid>https://xuxihe.vercel.app/notes/oiknowledge/math%E6%95%B0%E8%AE%BA/%E6%95%B0%E5%AD%A6%E8%A1%A8%E7%A4%BA/</guid><description>&lt;h1 id="数学表示">数学表示&lt;/h1>
 &lt;ol>
 &lt;li>$x|y$ ：$x$ 整除 $y$，即存在 $d\in Z$ 使得 $y=dx$&lt;/li>
-&lt;/ol></description></item><item><title>镇站之宝</title><link>https://xuxihe.vercel.app/post/happy/%E9%95%87%E7%AB%99%E4%B9%8B%E5%AE%9D/</link><pubDate>Mon, 29 Nov 2021 18:00:30 +0800</pubDate><guid>https://xuxihe.vercel.app/post/happy/%E9%95%87%E7%AB%99%E4%B9%8B%E5%AE%9D/</guid><description>&lt;script src='//unpkg.com/valine/dist/Valine.min.js'>&lt;/script>
+&lt;/ol></description></item><item><title>原核与真核</title><link>https://xuxihe.vercel.app/courses/biology/%E5%8E%9F%E6%A0%B8%E4%B8%8E%E7%9C%9F%E6%A0%B8/</link><pubDate>Sat, 02 Jul 2022 22:20:32 +0800</pubDate><guid>https://xuxihe.vercel.app/courses/biology/%E5%8E%9F%E6%A0%B8%E4%B8%8E%E7%9C%9F%E6%A0%B8/</guid><description>&lt;h2 id="区别">区别&lt;/h2>
+&lt;p>有无&lt;strong>成型&lt;/strong>的细胞核&lt;/p>
+&lt;h2 id="原核">原核&lt;/h2>
+&lt;p>细胞壁：肽聚糖&lt;/p>
+&lt;ol>
+&lt;li>蓝细菌：色球蓝细菌、颤蓝细菌、念珠蓝细菌、&lt;strong>发菜&lt;/strong>&lt;/li>
+&lt;li>大肠杆菌&lt;/li>
+&lt;li>支原体&lt;/li>
+&lt;li>衣原体&lt;/li>
+&lt;/ol>
+&lt;h2 id="真核">真核&lt;/h2>
+&lt;ol>
+&lt;li>动物&lt;/li>
+&lt;li>高等植物（果胶和纤维素）&lt;/li>
+&lt;li>真菌（几丁质）&lt;/li>
+&lt;li>草履虫&lt;/li>
+&lt;/ol></description></item><item><title>试剂使用</title><link>https://xuxihe.vercel.app/courses/biology/%E8%AF%95%E5%89%82%E4%BD%BF%E7%94%A8/</link><pubDate>Sat, 02 Jul 2022 22:17:34 +0800</pubDate><guid>https://xuxihe.vercel.app/courses/biology/%E8%AF%95%E5%89%82%E4%BD%BF%E7%94%A8/</guid><description>&lt;h2 id="斐林试剂">斐林试剂&lt;/h2>
+&lt;ol>
+&lt;li>
+&lt;p>用途：检测还原糖&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>成分：&lt;/p>
+&lt;ul>
+&lt;li>甲液：$\pu{0.1 g/mL}\space\ce{NaOH(aq)}$&lt;/li>
+&lt;li>乙夜：$\pu{0.05 g/mL}\space \ce{CuSO4(aq)}$&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>方法：&lt;/p>
+&lt;ol>
+&lt;li>甲乙液等量混合&lt;/li>
+&lt;li>注入待测组织样液&lt;/li>
+&lt;li>$\pu{50 \sim 60 ^\circ C}$ 水浴加热 $\pu{2 min}$&lt;/li>
+&lt;/ol>
+&lt;/li>
+&lt;li>
+&lt;p>现象：砖红色沉淀&lt;/p>
+&lt;/li>
+&lt;/ol></description></item><item><title>垂直</title><link>https://xuxihe.vercel.app/courses/gre/%E5%9E%82%E7%9B%B4/</link><pubDate>Sat, 02 Jul 2022 22:14:06 +0800</pubDate><guid>https://xuxihe.vercel.app/courses/gre/%E5%9E%82%E7%9B%B4/</guid><description>&lt;p>&lt;a href="https://imgtu.com/i/j3Y4Rx" target="_blank" rel="noopener">&lt;img src="https://s1.ax1x.com/2022/07/02/j3Y4Rx.jpg" alt="j3Y4Rx.jpg" style="zoom:50%;" />&lt;/a>&lt;/p></description></item><item><title>生物</title><link>https://xuxihe.vercel.app/project/biology/</link><pubDate>Sat, 02 Jul 2022 21:24:10 +0800</pubDate><guid>https://xuxihe.vercel.app/project/biology/</guid><description/></item><item><title>平行</title><link>https://xuxihe.vercel.app/courses/gre/%E5%B9%B3%E8%A1%8C/</link><pubDate>Sat, 02 Jul 2022 21:21:16 +0800</pubDate><guid>https://xuxihe.vercel.app/courses/gre/%E5%B9%B3%E8%A1%8C/</guid><description>&lt;p>&lt;a href="https://imgtu.com/i/j3Y4Rx" target="_blank" rel="noopener">&lt;img src="https://s1.ax1x.com/2022/07/02/j3Y4Rx.jpg" alt="j3Y4Rx.jpg" style="zoom: 50%;" />&lt;/a>&lt;/p>
+&lt;h2 id="1">$1$&lt;/h2>
+&lt;ol>
+&lt;li>定义：$l \cap \alpha = \varnothing\Rightarrow l//\alpha$&lt;/li>
+&lt;li>判定：$l \nsubseteq \alpha,m \subset \alpha,l // m\Rightarrow l//\alpha$&lt;/li>
+&lt;/ol>
+&lt;h2 id="2">$2$&lt;/h2>
+&lt;p>$l//\alpha,l\subset\beta,\alpha\cap\beta=m\Rightarrow l//m$&lt;/p>
+&lt;h2 id="3">$3$&lt;/h2>
+&lt;p>$l\subset\alpha,m\subset\alpha,a\subset\beta,b\subset\beta,l\cap m\neq\varnothing,a\cap b\neq\varnothing, l//a,m//b \Rightarrow \alpha//\beta$&lt;/p>
+&lt;h2 id="4">$4$&lt;/h2>
+&lt;p>$\gamma\cap\alpha=l,\gamma\cap\beta=m,\alpha//\beta \Rightarrow l//m$&lt;/p>
+&lt;h2 id="5">$5$&lt;/h2>
+&lt;p>$l\subset\alpha,m\subset\alpha,l\cap m\neq\varnothing,l//\beta,m//\beta\Rightarrow \alpha//\beta$&lt;/p>
+&lt;h2 id="6">$6$&lt;/h2>
+&lt;p>$\alpha//\beta,l\subset\alpha\Rightarrow l//\beta$&lt;/p></description></item><item><title>几何基本定理</title><link>https://xuxihe.vercel.app/project/gre/</link><pubDate>Sat, 02 Jul 2022 20:08:05 +0800</pubDate><guid>https://xuxihe.vercel.app/project/gre/</guid><description/></item><item><title>镇站之宝</title><link>https://xuxihe.vercel.app/post/happy/%E9%95%87%E7%AB%99%E4%B9%8B%E5%AE%9D/</link><pubDate>Mon, 29 Nov 2021 18:00:30 +0800</pubDate><guid>https://xuxihe.vercel.app/post/happy/%E9%95%87%E7%AB%99%E4%B9%8B%E5%AE%9D/</guid><description>&lt;script src='//unpkg.com/valine/dist/Valine.min.js'>&lt;/script>
 &lt;div id="vcomments">&lt;/div>
 &lt;script>
 new Valine({
@@ -5697,7 +5751,7 @@ recordIP: true,
 serverURLs: false,
 enableQQ: true
 })
-&lt;/script></description></item><item><title>语文知识</title><link>https://xuxihe.vercel.app/project/chinese/</link><pubDate>Tue, 23 Nov 2021 08:59:12 +0800</pubDate><guid>https://xuxihe.vercel.app/project/chinese/</guid><description/></item><item><title>议论文素材</title><link>https://xuxihe.vercel.app/project/argumentation/</link><pubDate>Tue, 23 Nov 2021 08:39:14 +0800</pubDate><guid>https://xuxihe.vercel.app/project/argumentation/</guid><description/></item><item><title>红楼梦</title><link>https://xuxihe.vercel.app/project/red-dream/</link><pubDate>Tue, 23 Nov 2021 08:30:36 +0800</pubDate><guid>https://xuxihe.vercel.app/project/red-dream/</guid><description>&lt;p>因为，据说，高考要考名著阅读，其中有红楼梦！！！&lt;/p>
+&lt;/script></description></item><item><title>语文</title><link>https://xuxihe.vercel.app/project/chinese/</link><pubDate>Tue, 23 Nov 2021 08:59:12 +0800</pubDate><guid>https://xuxihe.vercel.app/project/chinese/</guid><description/></item><item><title>议论文素材</title><link>https://xuxihe.vercel.app/project/argumentation/</link><pubDate>Tue, 23 Nov 2021 08:39:14 +0800</pubDate><guid>https://xuxihe.vercel.app/project/argumentation/</guid><description/></item><item><title>红楼梦</title><link>https://xuxihe.vercel.app/project/red-dream/</link><pubDate>Tue, 23 Nov 2021 08:30:36 +0800</pubDate><guid>https://xuxihe.vercel.app/project/red-dream/</guid><description>&lt;p>因为，据说，高考要考名著阅读，其中有红楼梦！！！&lt;/p>
 &lt;p>正好，边翻译边看了一遍。对于古文翻译和名著阅读都有好处。&lt;del>(夺聪明)&lt;/del>&lt;/p></description></item><item><title>2021 11 22</title><link>https://xuxihe.vercel.app/post/daily-words/2021-11-22/</link><pubDate>Mon, 22 Nov 2021 20:38:46 +0800</pubDate><guid>https://xuxihe.vercel.app/post/daily-words/2021-11-22/</guid><description>&lt;table>
 &lt;thead>
 &lt;tr>
@@ -5964,32 +6018,7 @@ recordIP: true,
 serverURLs: false,
 enableQQ: true
 })
-&lt;/script></description></item><item><title>运动学</title><link>https://xuxihe.vercel.app/courses/physics/%E8%BF%90%E5%8A%A8%E5%AD%A6/</link><pubDate>Sat, 20 Nov 2021 22:55:56 +0800</pubDate><guid>https://xuxihe.vercel.app/courses/physics/%E8%BF%90%E5%8A%A8%E5%AD%A6/</guid><description>&lt;h2 id="矢量">矢量&lt;/h2>
-&lt;p>有大小，有方向。注意区分矢量大小与矢量。&lt;/p>
-&lt;h2 id="匀加速运动">匀加速运动&lt;/h2>
-&lt;p>&lt;strong>声明：&lt;/strong>$v$ 表示瞬时速度，$\overline{v}$ 表示平均速度，$v_0$ 表示初速度，$x$ 表示位移，$t$ 表示时间，$a$ 表示加速度。单位均为国际单位。&lt;/p>
-&lt;p>$v=v_0+at$&lt;/p>
-&lt;p>$x=v_0t+\frac{1}{2}at^2$&lt;/p>
-&lt;p>$v^2+{v_0}^2=2ax$&lt;/p>
-&lt;p>$\overline{v}=\frac{x}{t}=\frac{v_0+v}{2}$&lt;/p>
-&lt;p>中间时刻瞬时速度：$v_{\frac{t}{2}}=\frac{x}{t}=\frac{v_0+v}{2}$&lt;/p>
-&lt;p>中间位移瞬时速度：$v_{\frac{x}{2}}=\sqrt{\frac{{v_0}^2+v^2}{2}}$&lt;/p>
-&lt;p>初速度 $v_0=0$ 的匀加速直线运动相等时间内位移比：$1:3:5:7:,\dots,:2n+1,(n\in{N^*})$&lt;/p>
-&lt;p>初速度 $v_0=0$ 的匀加速直线运动通过相等位移所用时间的比：$1:\sqrt{2}-1:\sqrt{3}-\sqrt{2}:2-\sqrt{3}:,\dots,:\sqrt{n+1}-\sqrt{n}$&lt;/p>
-&lt;script src='//unpkg.com/valine/dist/Valine.min.js'>&lt;/script>
-&lt;div id="vcomments">&lt;/div>
-&lt;script>
-new Valine({
-el: '#vcomments',
-appId: 'mUFdj80doBeHANJjnbmU89gH-gzGzoHsz',
-appKey: 'p4p7vzJrQnIYoajXvUjpuiRy',
-placeholder: '说点什么叭~ (上一栏选填，开放匿名评论，邮箱仅用于Gravatar头像显示)',
-visitor: true,
-recordIP: true,
-serverURLs: false,
-enableQQ: true
-})
-&lt;/script></description></item><item><title>每日单词</title><link>https://xuxihe.vercel.app/project/dailyword/</link><pubDate>Thu, 18 Nov 2021 20:15:24 +0800</pubDate><guid>https://xuxihe.vercel.app/project/dailyword/</guid><description/></item><item><title>物理知识</title><link>https://xuxihe.vercel.app/project/physics/</link><pubDate>Thu, 18 Nov 2021 20:08:05 +0800</pubDate><guid>https://xuxihe.vercel.app/project/physics/</guid><description/></item><item><title>化学知识</title><link>https://xuxihe.vercel.app/project/chemistry/</link><pubDate>Thu, 18 Nov 2021 20:05:23 +0800</pubDate><guid>https://xuxihe.vercel.app/project/chemistry/</guid><description/></item><item><title>OI题解</title><link>https://xuxihe.vercel.app/project/oique/</link><pubDate>Thu, 18 Nov 2021 19:59:55 +0800</pubDate><guid>https://xuxihe.vercel.app/project/oique/</guid><description>&lt;p>这里是一些题解，虽然可能一个都没有。&lt;/p></description></item><item><title>OI知识</title><link>https://xuxihe.vercel.app/project/oiknowledge/</link><pubDate>Tue, 16 Nov 2021 17:32:38 +0800</pubDate><guid>https://xuxihe.vercel.app/project/oiknowledge/</guid><description/></item><item><title/><link>https://xuxihe.vercel.app/notes/oiknowledge/math%E6%95%B0%E8%AE%BA/%E5%90%8C%E4%BD%99%E6%96%B9%E7%A8%8B/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://xuxihe.vercel.app/notes/oiknowledge/math%E6%95%B0%E8%AE%BA/%E5%90%8C%E4%BD%99%E6%96%B9%E7%A8%8B/</guid><description/></item><item><title/><link>https://xuxihe.vercel.app/notes/oiknowledge/math%E6%95%B0%E8%AE%BA/%E6%AC%A7%E6%8B%89%E5%87%BD%E6%95%B0/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://xuxihe.vercel.app/notes/oiknowledge/math%E6%95%B0%E8%AE%BA/%E6%AC%A7%E6%8B%89%E5%87%BD%E6%95%B0/</guid><description/></item><item><title/><link>https://xuxihe.vercel.app/notes/oiknowledge/math%E6%95%B0%E8%AE%BA/%E7%9F%A9%E9%98%B5%E4%B9%98%E6%B3%95/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://xuxihe.vercel.app/notes/oiknowledge/math%E6%95%B0%E8%AE%BA/%E7%9F%A9%E9%98%B5%E4%B9%98%E6%B3%95/</guid><description>&lt;h1 id="矩阵乘法">矩阵乘法&lt;/h1>
+&lt;/script></description></item><item><title>每日单词</title><link>https://xuxihe.vercel.app/project/dailyword/</link><pubDate>Thu, 18 Nov 2021 20:15:24 +0800</pubDate><guid>https://xuxihe.vercel.app/project/dailyword/</guid><description/></item><item><title>化学</title><link>https://xuxihe.vercel.app/project/chemistry/</link><pubDate>Thu, 18 Nov 2021 20:05:23 +0800</pubDate><guid>https://xuxihe.vercel.app/project/chemistry/</guid><description/></item><item><title>OI题解</title><link>https://xuxihe.vercel.app/project/oique/</link><pubDate>Thu, 18 Nov 2021 19:59:55 +0800</pubDate><guid>https://xuxihe.vercel.app/project/oique/</guid><description>&lt;p>这里是一些题解，虽然可能一个都没有。&lt;/p></description></item><item><title>OI知识</title><link>https://xuxihe.vercel.app/project/oiknowledge/</link><pubDate>Tue, 16 Nov 2021 17:32:38 +0800</pubDate><guid>https://xuxihe.vercel.app/project/oiknowledge/</guid><description/></item><item><title/><link>https://xuxihe.vercel.app/notes/oiknowledge/math%E6%95%B0%E8%AE%BA/%E5%90%8C%E4%BD%99%E6%96%B9%E7%A8%8B/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://xuxihe.vercel.app/notes/oiknowledge/math%E6%95%B0%E8%AE%BA/%E5%90%8C%E4%BD%99%E6%96%B9%E7%A8%8B/</guid><description/></item><item><title/><link>https://xuxihe.vercel.app/notes/oiknowledge/math%E6%95%B0%E8%AE%BA/%E6%AC%A7%E6%8B%89%E5%87%BD%E6%95%B0/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://xuxihe.vercel.app/notes/oiknowledge/math%E6%95%B0%E8%AE%BA/%E6%AC%A7%E6%8B%89%E5%87%BD%E6%95%B0/</guid><description/></item><item><title/><link>https://xuxihe.vercel.app/notes/oiknowledge/math%E6%95%B0%E8%AE%BA/%E7%9F%A9%E9%98%B5%E4%B9%98%E6%B3%95/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://xuxihe.vercel.app/notes/oiknowledge/math%E6%95%B0%E8%AE%BA/%E7%9F%A9%E9%98%B5%E4%B9%98%E6%B3%95/</guid><description>&lt;h1 id="矩阵乘法">矩阵乘法&lt;/h1>
 &lt;h2 id="基本概念">基本概念&lt;/h2>
 &lt;p>$n$ 行 $m$ 列个元素有规律的排列在一起，构成一个矩阵，记作 $A=(a_{i,j})_{n\times m}\in R^{n\times m}$。&lt;/p>
 &lt;p>若 $n=m$ ，则这个矩阵为 $n$ 阶矩阵。&lt;/p>

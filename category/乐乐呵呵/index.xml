@@ -1,1 +1,14 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>乐乐呵呵 | Senie</title><link>https://xuxihe.vercel.app/category/%E4%B9%90%E4%B9%90%E5%91%B5%E5%91%B5/</link><atom:link href="https://xuxihe.vercel.app/category/%E4%B9%90%E4%B9%90%E5%91%B5%E5%91%B5/index.xml" rel="self" type="application/rss+xml"/><description>乐乐呵呵</description><generator>Wowchemy (https://wowchemy.com)</generator><language>zh</language><copyright>© 曦曦呵呵</copyright><image><url>https://xuxihe.vercel.app/media/icon_huf638f59a6dd2257b0add8e0186347459_300061_512x512_fill_lanczos_center_3.png</url><title>乐乐呵呵</title><link>https://xuxihe.vercel.app/category/%E4%B9%90%E4%B9%90%E5%91%B5%E5%91%B5/</link></image></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>乐乐呵呵 | Senie</title><link>https://xuxihe.vercel.app/category/%E4%B9%90%E4%B9%90%E5%91%B5%E5%91%B5/</link><atom:link href="https://xuxihe.vercel.app/category/%E4%B9%90%E4%B9%90%E5%91%B5%E5%91%B5/index.xml" rel="self" type="application/rss+xml"/><description>乐乐呵呵</description><generator>Wowchemy (https://wowchemy.com)</generator><language>zh</language><copyright>© 曦曦呵呵</copyright><lastBuildDate>Mon, 29 Nov 2021 18:00:30 +0800</lastBuildDate><image><url>https://xuxihe.vercel.app/media/icon_huf638f59a6dd2257b0add8e0186347459_300061_512x512_fill_lanczos_center_3.png</url><title>乐乐呵呵</title><link>https://xuxihe.vercel.app/category/%E4%B9%90%E4%B9%90%E5%91%B5%E5%91%B5/</link></image><item><title>镇站之宝</title><link>https://xuxihe.vercel.app/post/happy/%E9%95%87%E7%AB%99%E4%B9%8B%E5%AE%9D/</link><pubDate>Mon, 29 Nov 2021 18:00:30 +0800</pubDate><guid>https://xuxihe.vercel.app/post/happy/%E9%95%87%E7%AB%99%E4%B9%8B%E5%AE%9D/</guid><description>&lt;script src='//unpkg.com/valine/dist/Valine.min.js'>&lt;/script>
+&lt;div id="vcomments">&lt;/div>
+&lt;script>
+new Valine({
+el: '#vcomments',
+appId: 'mUFdj80doBeHANJjnbmU89gH-gzGzoHsz',
+appKey: 'p4p7vzJrQnIYoajXvUjpuiRy',
+placeholder: '说点什么叭~ (上一栏选填，开放匿名评论，邮箱仅用于Gravatar头像显示)',
+visitor: true,
+recordIP: true,
+serverURLs: false,
+enableQQ: true
+})
+&lt;/script></description></item></channel></rss>
