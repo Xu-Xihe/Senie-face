@@ -14,27 +14,60 @@
 &lt;li>高等植物（果胶和纤维素）&lt;/li>
 &lt;li>真菌（几丁质）&lt;/li>
 &lt;li>草履虫&lt;/li>
-&lt;/ol></description></item><item><title>试剂使用</title><link>https://xuxihe.vercel.app/courses/biology/%E8%AF%95%E5%89%82%E4%BD%BF%E7%94%A8/</link><pubDate>Sat, 02 Jul 2022 22:17:34 +0800</pubDate><guid>https://xuxihe.vercel.app/courses/biology/%E8%AF%95%E5%89%82%E4%BD%BF%E7%94%A8/</guid><description>&lt;h2 id="斐林试剂">斐林试剂&lt;/h2>
+&lt;/ol>
+&lt;script src='//unpkg.com/valine/dist/Valine.min.js'>&lt;/script>
+&lt;div id="vcomments">&lt;/div>
+&lt;script>
+new Valine({
+el: '#vcomments',
+appId: 'mUFdj80doBeHANJjnbmU89gH-gzGzoHsz',
+appKey: 'p4p7vzJrQnIYoajXvUjpuiRy',
+placeholder: '说点什么叭~ (上一栏选填，开放匿名评论，邮箱仅用于Gravatar头像显示)',
+visitor: true,
+recordIP: true,
+serverURLs: false,
+enableQQ: true
+})
+&lt;/script></description></item><item><title>试剂使用</title><link>https://xuxihe.vercel.app/courses/biology/%E8%AF%95%E5%89%82%E4%BD%BF%E7%94%A8/</link><pubDate>Sat, 02 Jul 2022 22:17:34 +0800</pubDate><guid>https://xuxihe.vercel.app/courses/biology/%E8%AF%95%E5%89%82%E4%BD%BF%E7%94%A8/</guid><description>&lt;h2 id="斐林试剂">斐林试剂&lt;/h2>
 &lt;ol>
-&lt;li>
-&lt;p>用途：检测还原糖&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>成分：&lt;/p>
+&lt;li>用途：检测还原糖&lt;/li>
+&lt;li>成分：&lt;/li>
+&lt;/ol>
 &lt;ul>
 &lt;li>甲液：$\pu{0.1 g/mL}\space\ce{NaOH(aq)}$&lt;/li>
 &lt;li>乙夜：$\pu{0.05 g/mL}\space \ce{CuSO4(aq)}$&lt;/li>
 &lt;/ul>
-&lt;/li>
+&lt;ol start="3">
 &lt;li>
 &lt;p>方法：&lt;/p>
-&lt;ol>
-&lt;li>甲乙液等量混合&lt;/li>
-&lt;li>注入待测组织样液&lt;/li>
-&lt;li>$\pu{50 \sim 60 ^\circ C}$ 水浴加热 $\pu{2 min}$&lt;/li>
-&lt;/ol>
+&lt;/li>
+&lt;li>
+&lt;p>甲乙液等量混合&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>注入待测组织样液&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>$\pu{50 \sim 60 ^\circ C}$ 水浴加热 $\pu{2 min}$&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>现象：砖红色沉淀&lt;/p>
 &lt;/li>
-&lt;/ol></description></item></channel></rss>
+&lt;li>
+&lt;p>原理：&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;script src='//unpkg.com/valine/dist/Valine.min.js'>&lt;/script>
+&lt;div id="vcomments">&lt;/div>
+&lt;script>
+new Valine({
+el: '#vcomments',
+appId: 'mUFdj80doBeHANJjnbmU89gH-gzGzoHsz',
+appKey: 'p4p7vzJrQnIYoajXvUjpuiRy',
+placeholder: '说点什么叭~ (上一栏选填，开放匿名评论，邮箱仅用于Gravatar头像显示)',
+visitor: true,
+recordIP: true,
+serverURLs: false,
+enableQQ: true
+})
+&lt;/script></description></item></channel></rss>

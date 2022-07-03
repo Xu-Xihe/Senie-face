@@ -395,7 +395,21 @@ enableQQ: true
 &lt;ol>
 &lt;li>悬浊液：固体分散质&lt;/li>
 &lt;li>乳浊液：液体分散质&lt;/li>
-&lt;/ol></description></item><item><title>电解质</title><link>https://xuxihe.vercel.app/courses/chemistry/%E7%94%B5%E8%A7%A3%E8%B4%A8/</link><pubDate>Thu, 18 Nov 2021 20:57:24 +0800</pubDate><guid>https://xuxihe.vercel.app/courses/chemistry/%E7%94%B5%E8%A7%A3%E8%B4%A8/</guid><description>&lt;h2 id="酸">酸&lt;/h2>
+&lt;/ol>
+&lt;script src='//unpkg.com/valine/dist/Valine.min.js'>&lt;/script>
+&lt;div id="vcomments">&lt;/div>
+&lt;script>
+new Valine({
+el: '#vcomments',
+appId: 'mUFdj80doBeHANJjnbmU89gH-gzGzoHsz',
+appKey: 'p4p7vzJrQnIYoajXvUjpuiRy',
+placeholder: '说点什么叭~ (上一栏选填，开放匿名评论，邮箱仅用于Gravatar头像显示)',
+visitor: true,
+recordIP: true,
+serverURLs: false,
+enableQQ: true
+})
+&lt;/script></description></item><item><title>电解质</title><link>https://xuxihe.vercel.app/courses/chemistry/%E7%94%B5%E8%A7%A3%E8%B4%A8/</link><pubDate>Thu, 18 Nov 2021 20:57:24 +0800</pubDate><guid>https://xuxihe.vercel.app/courses/chemistry/%E7%94%B5%E8%A7%A3%E8%B4%A8/</guid><description>&lt;h2 id="酸">酸&lt;/h2>
 &lt;h3 id="强酸">强酸&lt;/h3>
 &lt;p>$\ce{HCl}$ 、$\ce{H2SO4}$ 、$\ce{HNO3}$ 、$\ce{HClO4}$(高氯酸) 、$\ce{HI}$(氢碘酸) 、$\ce{HBr}$(氢溴酸)&lt;/p>
 &lt;h3 id="中强酸">中强酸&lt;/h3>
@@ -870,7 +884,21 @@ enableQQ: true
 &lt;li>易溶：$\ce{NaOH}$ 、$\ce{KOH}$ 、$\ce{Ba(OH)2}$ 、$\ce{NH3*H2O}$&lt;/li>
 &lt;li>微溶：$\ce{Ca(OH)2}$&lt;/li>
 &lt;li>难溶：加热易分解&lt;/li>
-&lt;/ol></description></item><item><title>Na钠</title><link>https://xuxihe.vercel.app/courses/chemistry/na/</link><pubDate>Thu, 18 Nov 2021 21:08:39 +0800</pubDate><guid>https://xuxihe.vercel.app/courses/chemistry/na/</guid><description>&lt;h2 id="单质">单质&lt;/h2>
+&lt;/ol>
+&lt;script src='//unpkg.com/valine/dist/Valine.min.js'>&lt;/script>
+&lt;div id="vcomments">&lt;/div>
+&lt;script>
+new Valine({
+el: '#vcomments',
+appId: 'mUFdj80doBeHANJjnbmU89gH-gzGzoHsz',
+appKey: 'p4p7vzJrQnIYoajXvUjpuiRy',
+placeholder: '说点什么叭~ (上一栏选填，开放匿名评论，邮箱仅用于Gravatar头像显示)',
+visitor: true,
+recordIP: true,
+serverURLs: false,
+enableQQ: true
+})
+&lt;/script></description></item><item><title>Na钠</title><link>https://xuxihe.vercel.app/courses/chemistry/na/</link><pubDate>Thu, 18 Nov 2021 21:08:39 +0800</pubDate><guid>https://xuxihe.vercel.app/courses/chemistry/na/</guid><description>&lt;h2 id="单质">单质&lt;/h2>
 &lt;h3 id="物理性质">物理性质&lt;/h3>
 &lt;ol>
 &lt;li>软&lt;/li>
@@ -1251,7 +1279,21 @@ enableQQ: true
 &lt;/ol>
 &lt;h4 id="漂白精">漂白精&lt;/h4>
 &lt;p>$\ce{Cl2}$ 与 $\ce{Ca(OH)2}$ 反应充分，并使 $\ce{Ca(ClO)2}$ 成为主要成分。&lt;/p>
-&lt;p>即 $\ce{Ca(ClO)2}$ 含量高。&lt;/p></description></item><item><title>Fe铁</title><link>https://xuxihe.vercel.app/courses/chemistry/fe/</link><pubDate>Sat, 27 Nov 2021 15:26:33 +0800</pubDate><guid>https://xuxihe.vercel.app/courses/chemistry/fe/</guid><description>&lt;h2 id="单质">单质&lt;/h2>
+&lt;p>即 $\ce{Ca(ClO)2}$ 含量高。&lt;/p>
+&lt;script src='//unpkg.com/valine/dist/Valine.min.js'>&lt;/script>
+&lt;div id="vcomments">&lt;/div>
+&lt;script>
+new Valine({
+el: '#vcomments',
+appId: 'mUFdj80doBeHANJjnbmU89gH-gzGzoHsz',
+appKey: 'p4p7vzJrQnIYoajXvUjpuiRy',
+placeholder: '说点什么叭~ (上一栏选填，开放匿名评论，邮箱仅用于Gravatar头像显示)',
+visitor: true,
+recordIP: true,
+serverURLs: false,
+enableQQ: true
+})
+&lt;/script></description></item><item><title>Fe铁</title><link>https://xuxihe.vercel.app/courses/chemistry/fe/</link><pubDate>Sat, 27 Nov 2021 15:26:33 +0800</pubDate><guid>https://xuxihe.vercel.app/courses/chemistry/fe/</guid><description>&lt;h2 id="单质">单质&lt;/h2>
 &lt;h3 id="物理性质">物理性质&lt;/h3>
 &lt;ol>
 &lt;li>银白色金属光泽&lt;/li>
@@ -2152,7 +2194,21 @@ enableQQ: true
 &lt;p>浓硝酸 $:$ 浓盐酸 $= 1:3$ $(V)$&lt;/p>
 &lt;p>可溶解金、铂，钝化的铁、铝等。&lt;/p>
 &lt;h3 id="工业制法">工业制法&lt;/h3>
-&lt;p>$\ce{N2 -&amp;gt;[H2] NH3 -&amp;gt;[O2] NO -&amp;gt;[O2] NO2 -&amp;gt;[H2O] HNO3}$&lt;/p></description></item><item><title>Si硅</title><link>https://xuxihe.vercel.app/courses/chemistry/si/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://xuxihe.vercel.app/courses/chemistry/si/</guid><description>&lt;h2 id="硅">硅&lt;/h2>
+&lt;p>$\ce{N2 -&amp;gt;[H2] NH3 -&amp;gt;[O2] NO -&amp;gt;[O2] NO2 -&amp;gt;[H2O] HNO3}$&lt;/p>
+&lt;script src='//unpkg.com/valine/dist/Valine.min.js'>&lt;/script>
+&lt;div id="vcomments">&lt;/div>
+&lt;script>
+new Valine({
+el: '#vcomments',
+appId: 'mUFdj80doBeHANJjnbmU89gH-gzGzoHsz',
+appKey: 'p4p7vzJrQnIYoajXvUjpuiRy',
+placeholder: '说点什么叭~ (上一栏选填，开放匿名评论，邮箱仅用于Gravatar头像显示)',
+visitor: true,
+recordIP: true,
+serverURLs: false,
+enableQQ: true
+})
+&lt;/script></description></item><item><title>Si硅</title><link>https://xuxihe.vercel.app/courses/chemistry/si/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://xuxihe.vercel.app/courses/chemistry/si/</guid><description>&lt;h2 id="硅">硅&lt;/h2>
 &lt;h3 id="物理性质">物理性质&lt;/h3>
 &lt;p>带有金属光泽的灰黑色固体，熔点高，硬度大，有脆性。在自然界中，主要以硅酸盐（大多数矿物）和氧化物（水晶、玛瑙）的形式存在。&lt;/p>
 &lt;h3 id="化学性质">化学性质&lt;/h3>
@@ -2179,4 +2235,18 @@ enableQQ: true
 &lt;li>与碱反应：$\ce{SiO2 + NaOH = NaSiO3}$&lt;/li>
 &lt;/ol>
 &lt;h2 id="硅酸">硅酸&lt;/h2>
-&lt;h2 id="硅酸盐">硅酸盐&lt;/h2></description></item></channel></rss>
+&lt;h2 id="硅酸盐">硅酸盐&lt;/h2>
+&lt;script src='//unpkg.com/valine/dist/Valine.min.js'>&lt;/script>
+&lt;div id="vcomments">&lt;/div>
+&lt;script>
+new Valine({
+el: '#vcomments',
+appId: 'mUFdj80doBeHANJjnbmU89gH-gzGzoHsz',
+appKey: 'p4p7vzJrQnIYoajXvUjpuiRy',
+placeholder: '说点什么叭~ (上一栏选填，开放匿名评论，邮箱仅用于Gravatar头像显示)',
+visitor: true,
+recordIP: true,
+serverURLs: false,
+enableQQ: true
+})
+&lt;/script></description></item></channel></rss>
