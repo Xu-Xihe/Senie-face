@@ -1,20 +1,132 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>生物 | Senie</title><link>https://xuxihe.vercel.app/courses/biology/</link><atom:link href="https://xuxihe.vercel.app/courses/biology/index.xml" rel="self" type="application/rss+xml"/><description>生物</description><generator>Wowchemy (https://wowchemy.com)</generator><language>zh</language><copyright>© 曦曦呵呵</copyright><lastBuildDate>Sat, 02 Jul 2022 22:20:32 +0800</lastBuildDate><image><url>https://xuxihe.vercel.app/media/icon_huf638f59a6dd2257b0add8e0186347459_300061_512x512_fill_lanczos_center_3.png</url><title>生物</title><link>https://xuxihe.vercel.app/courses/biology/</link></image><item><title>原核与真核</title><link>https://xuxihe.vercel.app/courses/biology/%E5%8E%9F%E6%A0%B8%E4%B8%8E%E7%9C%9F%E6%A0%B8/</link><pubDate>Sat, 02 Jul 2022 22:20:32 +0800</pubDate><guid>https://xuxihe.vercel.app/courses/biology/%E5%8E%9F%E6%A0%B8%E4%B8%8E%E7%9C%9F%E6%A0%B8/</guid><description>&lt;h2 id="区别">区别&lt;/h2>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>生物 | Senie</title><link>https://xuxihe.vercel.app/courses/biology/</link><atom:link href="https://xuxihe.vercel.app/courses/biology/index.xml" rel="self" type="application/rss+xml"/><description>生物</description><generator>Wowchemy (https://wowchemy.com)</generator><language>zh</language><copyright>© 曦曦呵呵</copyright><lastBuildDate>Mon, 04 Jul 2022 23:06:47 +0800</lastBuildDate><image><url>https://xuxihe.vercel.app/media/icon_huf638f59a6dd2257b0add8e0186347459_300061_512x512_fill_lanczos_center_3.png</url><title>生物</title><link>https://xuxihe.vercel.app/courses/biology/</link></image><item><title>物质的运输</title><link>https://xuxihe.vercel.app/courses/biology/%E7%89%A9%E8%B4%A8%E7%9A%84%E8%BF%90%E8%BE%93/</link><pubDate>Mon, 04 Jul 2022 23:06:47 +0800</pubDate><guid>https://xuxihe.vercel.app/courses/biology/%E7%89%A9%E8%B4%A8%E7%9A%84%E8%BF%90%E8%BE%93/</guid><description>&lt;h2 id="自由扩散简单扩散">自由扩散（简单扩散）&lt;/h2>
+&lt;ol>
+&lt;li>无机小分子
+&lt;ul>
+&lt;li>$\ce{H2O}$&lt;/li>
+&lt;li>$\ce{O2}$&lt;/li>
+&lt;li>$\ce{CO2}$&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>有机小分子
+&lt;ul>
+&lt;li>苯&lt;/li>
+&lt;li>尿素&lt;/li>
+&lt;li>甘油&lt;/li>
+&lt;li>乙醇&lt;/li>
+&lt;li>脂质小分子：（维生素D、性激素、胆固醇）&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ol>
+&lt;h2 id="协助扩散">协助扩散&lt;/h2>
+&lt;ol>
+&lt;li>载体蛋白（构象改变）
+&lt;ul>
+&lt;li>葡萄糖进入红细胞&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>通道蛋白（构象不变）
+&lt;ul>
+&lt;li>神经、肌肉细胞 $\ce{K+}$ 离子外流、$\ce{Na+}$ 离子内流&lt;/li>
+&lt;li>水通道&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ol>
+&lt;h2 id="主动运输">主动运输&lt;/h2>
+&lt;ul>
+&lt;li>葡萄糖进入细胞（除红细胞）&lt;/li>
+&lt;li>一般生物小分子进出细胞（如核苷酸）&lt;/li>
+&lt;li>一般离子主动运输&lt;/li>
+&lt;/ul>
+&lt;h2 id="胞吞胞吐">胞吞胞吐&lt;/h2>
+&lt;ul>
+&lt;li>白细胞吞噬细菌&lt;/li>
+&lt;li>变形虫吞食&lt;/li>
+&lt;li>分泌蛋白
+&lt;ul>
+&lt;li>部分激素
+&lt;ul>
+&lt;li>胰岛素&lt;/li>
+&lt;li>生长激素&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>消化酶
+&lt;ul>
+&lt;li>唾液淀粉酶&lt;/li>
+&lt;li>胃蛋白酶&lt;/li>
+&lt;li>胰蛋白酶&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>核体&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;script src='//unpkg.com/valine/dist/Valine.min.js'>&lt;/script>
+&lt;div id="vcomments">&lt;/div>
+&lt;script>
+new Valine({
+el: '#vcomments',
+appId: 'mUFdj80doBeHANJjnbmU89gH-gzGzoHsz',
+appKey: 'p4p7vzJrQnIYoajXvUjpuiRy',
+placeholder: '说点什么叭~ (上一栏选填，开放匿名评论，邮箱仅用于Gravatar头像显示)',
+visitor: true,
+recordIP: true,
+serverURLs: false,
+enableQQ: true
+})
+&lt;/script></description></item><item><title>病毒分类</title><link>https://xuxihe.vercel.app/courses/biology/%E7%97%85%E6%AF%92%E5%88%86%E7%B1%BB/</link><pubDate>Mon, 04 Jul 2022 22:45:54 +0800</pubDate><guid>https://xuxihe.vercel.app/courses/biology/%E7%97%85%E6%AF%92%E5%88%86%E7%B1%BB/</guid><description>&lt;h2 id="宿主">宿主&lt;/h2>
+&lt;ol>
+&lt;li>动物病毒&lt;/li>
+&lt;li>植物病毒&lt;/li>
+&lt;li>噬菌体&lt;/li>
+&lt;/ol>
+&lt;h2 id="遗传物质">遗传物质&lt;/h2>
+&lt;ol>
+&lt;li>DNA
+&lt;ul>
+&lt;li>乙肝病毒&lt;/li>
+&lt;li>噬菌体&lt;/li>
+&lt;li>肺炎链球菌&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>RNA
+&lt;ul>
+&lt;li>烟草花叶病毒&lt;/li>
+&lt;li>HIV（艾滋病毒）&lt;/li>
+&lt;li>各种流感病毒（COVID-19）&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ol></description></item><item><title>原核与真核</title><link>https://xuxihe.vercel.app/courses/biology/%E5%8E%9F%E6%A0%B8%E4%B8%8E%E7%9C%9F%E6%A0%B8/</link><pubDate>Sat, 02 Jul 2022 22:20:32 +0800</pubDate><guid>https://xuxihe.vercel.app/courses/biology/%E5%8E%9F%E6%A0%B8%E4%B8%8E%E7%9C%9F%E6%A0%B8/</guid><description>&lt;h2 id="区别">区别&lt;/h2>
 &lt;p>有无&lt;strong>成型&lt;/strong>的细胞核&lt;/p>
 &lt;h2 id="原核">原核&lt;/h2>
-&lt;p>细胞壁：肽聚糖&lt;/p>
+&lt;p>细胞壁（除支原体）：肽聚糖&lt;/p>
 &lt;ol>
-&lt;li>蓝细菌：色球蓝细菌、颤蓝细菌、念珠蓝细菌、&lt;strong>发菜&lt;/strong>&lt;/li>
-&lt;li>大肠杆菌&lt;/li>
-&lt;li>支原体&lt;/li>
+&lt;li>蓝细菌：色球蓝细菌、颤蓝细菌、念珠蓝细菌、&lt;strong>发菜&lt;/strong>（蓝细菌群体的集合）&lt;/li>
+&lt;li>大肠杆菌（球状、弧状、链状……）&lt;/li>
+&lt;li>乳酸菌&lt;/li>
+&lt;li>硝化细菌&lt;/li>
+&lt;li>支原体（目前发现的最小细胞）&lt;/li>
 &lt;li>衣原体&lt;/li>
 &lt;/ol>
 &lt;h2 id="真核">真核&lt;/h2>
 &lt;ol>
-&lt;li>动物&lt;/li>
-&lt;li>高等植物（果胶和纤维素）&lt;/li>
-&lt;li>真菌（几丁质）&lt;/li>
-&lt;li>草履虫&lt;/li>
+&lt;li>
+&lt;p>动物&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>植物（果胶和纤维素）&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>真菌（几丁质）&lt;/p>
+&lt;ul>
+&lt;li>食用菌&lt;/li>
+&lt;li>霉菌：毛霉、曲霉、根霉……&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>酵母菌&lt;/p>
+&lt;/li>
 &lt;/ol>
+&lt;p>原生动物（单细胞生物）：草履虫、眼虫、衣藻、变形虫&lt;/p>
 &lt;script src='//unpkg.com/valine/dist/Valine.min.js'>&lt;/script>
 &lt;div id="vcomments">&lt;/div>
 &lt;script>
@@ -30,17 +142,19 @@ enableQQ: true
 })
 &lt;/script></description></item><item><title>试剂使用</title><link>https://xuxihe.vercel.app/courses/biology/%E8%AF%95%E5%89%82%E4%BD%BF%E7%94%A8/</link><pubDate>Sat, 02 Jul 2022 22:17:34 +0800</pubDate><guid>https://xuxihe.vercel.app/courses/biology/%E8%AF%95%E5%89%82%E4%BD%BF%E7%94%A8/</guid><description>&lt;h2 id="斐林试剂">斐林试剂&lt;/h2>
 &lt;ol>
-&lt;li>用途：检测还原糖&lt;/li>
-&lt;li>成分：&lt;/li>
-&lt;/ol>
+&lt;li>
+&lt;p>用途：检测还原糖&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>成分&lt;/p>
 &lt;ul>
 &lt;li>甲液：$\pu{0.1 g/mL}\space\ce{NaOH(aq)}$&lt;/li>
 &lt;li>乙夜：$\pu{0.05 g/mL}\space \ce{CuSO4(aq)}$&lt;/li>
 &lt;/ul>
-&lt;ol start="3">
-&lt;li>
-&lt;p>方法：&lt;/p>
 &lt;/li>
+&lt;li>
+&lt;p>用法&lt;/p>
+&lt;ol>
 &lt;li>
 &lt;p>甲乙液等量混合&lt;/p>
 &lt;/li>
@@ -53,8 +167,70 @@ enableQQ: true
 &lt;li>
 &lt;p>现象：砖红色沉淀&lt;/p>
 &lt;/li>
+&lt;/ol>
+&lt;/li>
+&lt;/ol>
+&lt;h2 id="苏丹iii">苏丹III&lt;/h2>
+&lt;ol>
 &lt;li>
-&lt;p>原理：&lt;/p>
+&lt;p>用途：检测脂肪&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>用法&lt;/p>
+&lt;ol>
+&lt;li>取材&lt;/li>
+&lt;li>制片
+&lt;ol>
+&lt;li>染色 $\pu{3 min}$&lt;/li>
+&lt;li>用吸水纸吸去染液&lt;/li>
+&lt;li>$50%$ 的酒精&lt;strong>洗去浮色&lt;/strong>&lt;/li>
+&lt;/ol>
+&lt;/li>
+&lt;/ol>
+&lt;/li>
+&lt;li>
+&lt;p>现象：脂肪被染成&lt;font color=orange>橘黄色&lt;/font>&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;h2 id="双缩脲试剂">双缩脲试剂&lt;/h2>
+&lt;ol>
+&lt;li>
+&lt;p>用途：检测蛋白质&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>成分&lt;/p>
+&lt;ul>
+&lt;li>A液：$\pu{0.1 g/mL}\space\ce{NaOH(aq)}$&lt;/li>
+&lt;li>B液：$\pu{0.01 g/mL}\space \ce{CuSO4(aq)}$&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>用法&lt;/p>
+&lt;ol>
+&lt;li>将A液与待测组织样液混合&lt;/li>
+&lt;li>加入 $4$ 滴B液&lt;/li>
+&lt;/ol>
+&lt;/li>
+&lt;li>
+&lt;p>现象：溶液颜色变为&lt;font color=purple>紫色&lt;/font>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>原理：在碱性条件下，$\ce{CuSO4}$ 与肽键反应形成络合物（变性、加热后均可）&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;h2 id="碘液">碘液&lt;/h2>
+&lt;ol>
+&lt;li>用途：检测淀粉（多糖）&lt;/li>
+&lt;li>现象：变蓝&lt;/li>
+&lt;/ol>
+&lt;h2 id="碱性染料">碱性染料&lt;/h2>
+&lt;ol>
+&lt;li>用途：将细胞核中染色体染色&lt;/li>
+&lt;li>包括
+&lt;ul>
+&lt;li>甲紫&lt;/li>
+&lt;li>醋酸洋红&lt;/li>
+&lt;/ul>
 &lt;/li>
 &lt;/ol>
 &lt;script src='//unpkg.com/valine/dist/Valine.min.js'>&lt;/script>
