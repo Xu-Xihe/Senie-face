@@ -50,7 +50,17 @@
 &lt;h2 id="染色体变异">染色体变异&lt;/h2>
 &lt;p>体细胞或生殖细胞内染色体数目或结构的变化。&lt;/p>
 &lt;h3 id="数目">数目&lt;/h3>
-&lt;p>单倍体，二倍体，三倍体，多倍体&lt;/p>
+&lt;ol>
+&lt;li>单倍体：花粉（生殖细胞）离体培养&lt;font color=red>（注意：单倍体是指较正常植株，染色体组数量减半，不一定只有 $1$ 个或奇数个染色体组）&lt;/font>&lt;/li>
+&lt;li>二倍体：全部动物和过半数的高等植物&lt;/li>
+&lt;li>多倍体：
+&lt;ol>
+&lt;li>三倍体：无籽西瓜、无籽香蕉（减数分裂时出现联会紊乱，不能产生可育配子）&lt;/li>
+&lt;li>四倍体：番茄、马铃薯、葡萄&lt;/li>
+&lt;li>六倍体：小麦&lt;/li>
+&lt;/ol>
+&lt;/li>
+&lt;/ol>
 &lt;p>低温诱导或秋水仙素能抑制纺锤体的形成&lt;/p>
 &lt;h3 id="结构">结构&lt;/h3>
 &lt;h4 id="类型">类型&lt;/h4>
@@ -68,33 +78,45 @@
 &lt;li>果蝇花斑眼：易位（移接）&lt;/li>
 &lt;li>果蝇卷翅：倒位&lt;/li>
 &lt;li>唐氏综合征（ $21$ 三体综合征）：$21$ 号染色体多一条&lt;/li>
-&lt;/ul></description></item><item><title>性状及遗传病</title><link>https://xuxihe.vercel.app/courses/biology/%E6%80%A7%E7%8A%B6%E5%8F%8A%E9%81%97%E4%BC%A0%E7%97%85/</link><pubDate>Thu, 07 Jul 2022 22:10:12 +0800</pubDate><guid>https://xuxihe.vercel.app/courses/biology/%E6%80%A7%E7%8A%B6%E5%8F%8A%E9%81%97%E4%BC%A0%E7%97%85/</guid><description>&lt;ul>
-&lt;li>
-&lt;p>果蝇红眼（显）白眼（隐）：伴X染色体&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>抗维生素D佝偻病：伴X显性&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>红绿色盲：伴X隐性&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>白化病：伴X隐性&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>血友病：伴X隐性&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>苯丙酮尿症：常染色体隐性&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>猫叫综合征：染色体异常（ $5$ 号染色体缺失）&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>唐氏综合征（ $21$ 三体综合征）：染色体异常&lt;/p>
-&lt;/li>
-&lt;li>&lt;/li>
-&lt;/ul></description></item><item><title>光合呼吸有关计算</title><link>https://xuxihe.vercel.app/courses/biology/%E5%85%89%E5%90%88%E5%91%BC%E5%90%B8%E6%9C%89%E5%85%B3%E8%AE%A1%E7%AE%97/</link><pubDate>Thu, 07 Jul 2022 21:59:35 +0800</pubDate><guid>https://xuxihe.vercel.app/courses/biology/%E5%85%89%E5%90%88%E5%91%BC%E5%90%B8%E6%9C%89%E5%85%B3%E8%AE%A1%E7%AE%97/</guid><description>&lt;h2 id="光照强度">光照强度&lt;/h2>
+&lt;/ul>
+&lt;script src='//unpkg.com/valine/dist/Valine.min.js'>&lt;/script>
+&lt;div id="vcomments">&lt;/div>
+&lt;script>
+new Valine({
+el: '#vcomments',
+appId: 'mUFdj80doBeHANJjnbmU89gH-gzGzoHsz',
+appKey: 'p4p7vzJrQnIYoajXvUjpuiRy',
+placeholder: '说点什么叭~ (上一栏选填，开放匿名评论，邮箱仅用于Gravatar头像显示)',
+visitor: true,
+recordIP: true,
+serverURLs: false,
+enableQQ: true
+})
+&lt;/script></description></item><item><title>性状及遗传病</title><link>https://xuxihe.vercel.app/courses/biology/%E6%80%A7%E7%8A%B6%E5%8F%8A%E9%81%97%E4%BC%A0%E7%97%85/</link><pubDate>Thu, 07 Jul 2022 22:10:12 +0800</pubDate><guid>https://xuxihe.vercel.app/courses/biology/%E6%80%A7%E7%8A%B6%E5%8F%8A%E9%81%97%E4%BC%A0%E7%97%85/</guid><description>&lt;ul>
+&lt;li>果蝇红眼（显）白眼（隐）：伴X染色体&lt;/li>
+&lt;li>抗维生素D佝偻病：伴X显性&lt;/li>
+&lt;li>红绿色盲：伴X隐性&lt;/li>
+&lt;li>白化病：伴X隐性&lt;/li>
+&lt;li>血友病：伴X隐性&lt;/li>
+&lt;li>苯丙酮尿症：常染色体隐性&lt;/li>
+&lt;li>猫叫综合征：染色体异常（ $5$ 号染色体缺失）&lt;/li>
+&lt;li>唐氏综合征（ $21$ 三体综合征、先天愚型）：染色体异常&lt;/li>
+&lt;li>软骨发育不全：多基因遗传病（单一软骨发育不全基因即致病）&lt;/li>
+&lt;/ul>
+&lt;script src='//unpkg.com/valine/dist/Valine.min.js'>&lt;/script>
+&lt;div id="vcomments">&lt;/div>
+&lt;script>
+new Valine({
+el: '#vcomments',
+appId: 'mUFdj80doBeHANJjnbmU89gH-gzGzoHsz',
+appKey: 'p4p7vzJrQnIYoajXvUjpuiRy',
+placeholder: '说点什么叭~ (上一栏选填，开放匿名评论，邮箱仅用于Gravatar头像显示)',
+visitor: true,
+recordIP: true,
+serverURLs: false,
+enableQQ: true
+})
+&lt;/script></description></item><item><title>光合呼吸有关计算</title><link>https://xuxihe.vercel.app/courses/biology/%E5%85%89%E5%90%88%E5%91%BC%E5%90%B8%E6%9C%89%E5%85%B3%E8%AE%A1%E7%AE%97/</link><pubDate>Thu, 07 Jul 2022 21:59:35 +0800</pubDate><guid>https://xuxihe.vercel.app/courses/biology/%E5%85%89%E5%90%88%E5%91%BC%E5%90%B8%E6%9C%89%E5%85%B3%E8%AE%A1%E7%AE%97/</guid><description>&lt;h2 id="光照强度">光照强度&lt;/h2>
 &lt;ol>
 &lt;li>黑暗：只有呼吸作用&lt;/li>
 &lt;li>弱光：光合速率小于呼吸速率&lt;/li>
@@ -177,6 +199,7 @@ enableQQ: true
 &lt;li>叶绿素（叶绿素a和叶绿素b）主要吸收&lt;font color=#4B0082>蓝紫光&lt;/font>和&lt;font color=red>红光&lt;/font>&lt;/li>
 &lt;li>类胡萝卜素（胡萝卜素和叶黄素）主要吸收&lt;font color=#4B0082>蓝紫光&lt;/font>&lt;/li>
 &lt;/ol>
+&lt;p>&lt;font color=red>注意：当植物光合速率等于呼吸速率时，绿色器官光合作用强度大于呼吸作用强度。&lt;/font>&lt;/p>
 &lt;script src='//unpkg.com/valine/dist/Valine.min.js'>&lt;/script>
 &lt;div id="vcomments">&lt;/div>
 &lt;script>
@@ -202,6 +225,7 @@ enableQQ: true
 &lt;li>甜菜块根&lt;/li>
 &lt;li>玉米胚&lt;/li>
 &lt;li>骨骼肌&lt;/li>
+&lt;li>哺乳动物成熟红细胞（只能进行无氧呼吸）&lt;/li>
 &lt;/ul>
 &lt;h3 id="酒精-spacececo2">酒精 $+\space\ce{CO2}$&lt;/h3>
 &lt;ul>
@@ -257,7 +281,7 @@ enableQQ: true
 &lt;li>通道蛋白（构象不变）
 &lt;ul>
 &lt;li>神经、肌肉细胞 $\ce{K+}$ 离子外流、$\ce{Na+}$ 离子内流&lt;/li>
-&lt;li>水通道&lt;/li>
+&lt;li>水通道（主要）&lt;/li>
 &lt;/ul>
 &lt;/li>
 &lt;/ol>
@@ -265,12 +289,13 @@ enableQQ: true
 &lt;ul>
 &lt;li>葡萄糖进入细胞（除红细胞）&lt;/li>
 &lt;li>一般生物小分子进出细胞（如核苷酸）&lt;/li>
-&lt;li>一般离子主动运输&lt;/li>
+&lt;li>一般离子主动运输（如 $\ce{K+}$ 进入大肠杆菌）&lt;/li>
 &lt;/ul>
 &lt;h2 id="胞吞胞吐">胞吞胞吐&lt;/h2>
 &lt;ul>
 &lt;li>白细胞吞噬细菌&lt;/li>
 &lt;li>变形虫吞食&lt;/li>
+&lt;li>生物大分子&lt;/li>
 &lt;li>分泌蛋白
 &lt;ul>
 &lt;li>部分激素
@@ -326,6 +351,12 @@ enableQQ: true
 &lt;/ul>
 &lt;/li>
 &lt;/ol>
+&lt;h2 id="生命">生命&lt;/h2>
+&lt;ol>
+&lt;li>病毒在未进入细胞时没有生命&lt;/li>
+&lt;li>繁殖是病毒唯一的生命活动&lt;/li>
+&lt;li>病毒不能独立代谢，因而不属于生命系统的结构层次&lt;/li>
+&lt;/ol>
 &lt;script src='//unpkg.com/valine/dist/Valine.min.js'>&lt;/script>
 &lt;div id="vcomments">&lt;/div>
 &lt;script>
@@ -369,8 +400,13 @@ enableQQ: true
 &lt;li>
 &lt;p>酵母菌&lt;/p>
 &lt;/li>
-&lt;/ol>
+&lt;li>
 &lt;p>原生动物（单细胞生物）：草履虫、眼虫、衣藻、变形虫&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>黑藻&lt;/p>
+&lt;/li>
+&lt;/ol>
 &lt;script src='//unpkg.com/valine/dist/Valine.min.js'>&lt;/script>
 &lt;div id="vcomments">&lt;/div>
 &lt;script>
@@ -601,6 +637,8 @@ enableQQ: true
 &lt;/ol>
 &lt;/li>
 &lt;/ol>
+&lt;h2 id="观察叶绿体和细胞质流动">观察叶绿体和细胞质流动&lt;/h2>
+&lt;p>材料：藓类叶、菠菜叶、番薯叶、新鲜的黑藻&lt;/p>
 &lt;script src='//unpkg.com/valine/dist/Valine.min.js'>&lt;/script>
 &lt;div id="vcomments">&lt;/div>
 &lt;script>
@@ -614,4 +652,18 @@ recordIP: true,
 serverURLs: false,
 enableQQ: true
 })
-&lt;/script></description></item></channel></rss>
+&lt;/script></description></item><item><title/><link>https://xuxihe.vercel.app/courses/biology/kk/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://xuxihe.vercel.app/courses/biology/kk/</guid><description>&lt;h2 id="fajkdljfasdf">fajkdljfasdf&lt;/h2>
+&lt;p>fasdfadf&lt;/p>
+&lt;p>dsfad&lt;/p>
+&lt;p>dfa&lt;/p>
+&lt;p>dfad&lt;/p>
+&lt;p>fasdf&lt;/p>
+&lt;p>asdfa&lt;/p>
+&lt;p>sdf&lt;/p>
+&lt;p>asdf&lt;/p>
+&lt;p>sda&lt;/p>
+&lt;p>f&lt;/p>
+&lt;p>asdf#&lt;/p>
+&lt;h3 id="fadfadf">fadfadf&lt;/h3>
+&lt;p>dfadsf&lt;/p>
+&lt;p>adfadsf&lt;/p></description></item></channel></rss>
