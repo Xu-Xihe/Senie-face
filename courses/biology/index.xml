@@ -1,4 +1,22 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>生物 | Senie</title><link>https://xuxihe.vercel.app/courses/biology/</link><atom:link href="https://xuxihe.vercel.app/courses/biology/index.xml" rel="self" type="application/rss+xml"/><description>生物</description><generator>Wowchemy (https://wowchemy.com)</generator><language>zh</language><copyright>© 曦曦呵呵</copyright><lastBuildDate>Thu, 07 Jul 2022 22:33:05 +0800</lastBuildDate><image><url>https://xuxihe.vercel.app/media/icon_huf638f59a6dd2257b0add8e0186347459_300061_512x512_fill_lanczos_center_3.png</url><title>生物</title><link>https://xuxihe.vercel.app/courses/biology/</link></image><item><title>突变与重组</title><link>https://xuxihe.vercel.app/courses/biology/%E7%AA%81%E5%8F%98%E4%B8%8E%E9%87%8D%E7%BB%84/</link><pubDate>Thu, 07 Jul 2022 22:33:05 +0800</pubDate><guid>https://xuxihe.vercel.app/courses/biology/%E7%AA%81%E5%8F%98%E4%B8%8E%E9%87%8D%E7%BB%84/</guid><description>&lt;h2 id="基因突变">基因突变&lt;/h2>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>生物 | Senie</title><link>https://xuxihe.vercel.app/courses/biology/</link><atom:link href="https://xuxihe.vercel.app/courses/biology/index.xml" rel="self" type="application/rss+xml"/><description>生物</description><generator>Wowchemy (https://wowchemy.com)</generator><language>zh</language><copyright>© 曦曦呵呵</copyright><lastBuildDate>Sat, 09 Jul 2022 17:20:47 +0800</lastBuildDate><image><url>https://xuxihe.vercel.app/media/icon_huf638f59a6dd2257b0add8e0186347459_300061_512x512_fill_lanczos_center_3.png</url><title>生物</title><link>https://xuxihe.vercel.app/courses/biology/</link></image><item><title>密码子</title><link>https://xuxihe.vercel.app/courses/biology/%E5%AF%86%E7%A0%81%E5%AD%90/</link><pubDate>Sat, 09 Jul 2022 17:20:47 +0800</pubDate><guid>https://xuxihe.vercel.app/courses/biology/%E5%AF%86%E7%A0%81%E5%AD%90/</guid><description>&lt;h2 id="起始密码子">起始密码子&lt;/h2>
+&lt;p>AUG（甲硫氨酸）、GUG（在原核中，甲硫氨酸）&lt;/p>
+&lt;h2 id="终止密码子">终止密码子&lt;/h2>
+&lt;p>UAA、UAG、UGA&lt;/p>
+&lt;p>终止密码子不翻译氨基酸&lt;/p>
+&lt;script src='//unpkg.com/valine/dist/Valine.min.js'>&lt;/script>
+&lt;div id="vcomments">&lt;/div>
+&lt;script>
+new Valine({
+el: '#vcomments',
+appId: 'mUFdj80doBeHANJjnbmU89gH-gzGzoHsz',
+appKey: 'p4p7vzJrQnIYoajXvUjpuiRy',
+placeholder: '说点什么叭~ (上一栏选填，开放匿名评论，邮箱仅用于Gravatar头像显示)',
+visitor: true,
+recordIP: true,
+serverURLs: false,
+enableQQ: true
+})
+&lt;/script></description></item><item><title>突变与重组</title><link>https://xuxihe.vercel.app/courses/biology/%E7%AA%81%E5%8F%98%E4%B8%8E%E9%87%8D%E7%BB%84/</link><pubDate>Thu, 07 Jul 2022 22:33:05 +0800</pubDate><guid>https://xuxihe.vercel.app/courses/biology/%E7%AA%81%E5%8F%98%E4%B8%8E%E9%87%8D%E7%BB%84/</guid><description>&lt;h2 id="基因突变">基因突变&lt;/h2>
 &lt;p>DNA分子中发生碱基的&lt;strong>替换&lt;/strong>、&lt;strong>增添&lt;/strong>或&lt;strong>缺失&lt;/strong>，而引起的基因碱基序列的改变。&lt;/p>
 &lt;ol>
 &lt;li>随机性：可以在任何细胞中的任何时间在任何基因上发生，主要发生在有丝分裂前和减数分裂前的间期&lt;/li>
@@ -56,8 +74,8 @@
 &lt;li>多倍体：
 &lt;ol>
 &lt;li>三倍体：无籽西瓜、无籽香蕉（减数分裂时出现联会紊乱，不能产生可育配子）&lt;/li>
-&lt;li>四倍体：番茄、马铃薯、葡萄&lt;/li>
-&lt;li>六倍体：小麦&lt;/li>
+&lt;li>四倍体：番茄、马铃薯、葡萄（两套不同染色体组，每套两个染色体组，用AARR表示）&lt;/li>
+&lt;li>六倍体：小麦（三套不同染色体组，每套两个染色体组，用AABBRR表示）&lt;/li>
 &lt;/ol>
 &lt;/li>
 &lt;/ol>
@@ -101,7 +119,11 @@ enableQQ: true
 &lt;li>苯丙酮尿症：常染色体隐性&lt;/li>
 &lt;li>猫叫综合征：染色体异常（ $5$ 号染色体缺失）&lt;/li>
 &lt;li>唐氏综合征（ $21$ 三体综合征、先天愚型）：染色体异常&lt;/li>
-&lt;li>软骨发育不全：多基因遗传病（单一软骨发育不全基因即致病）&lt;/li>
+&lt;li>软骨发育不全：多基因显性遗传病（单一软骨发育不全基因即致病）&lt;/li>
+&lt;li>原发性高血压：多基因遗传病&lt;/li>
+&lt;li>青少年型糖尿病：多基因遗传病&lt;/li>
+&lt;li>冠心病：多基因遗传病&lt;/li>
+&lt;li>哮喘：多基因遗传病&lt;/li>
 &lt;/ul>
 &lt;script src='//unpkg.com/valine/dist/Valine.min.js'>&lt;/script>
 &lt;div id="vcomments">&lt;/div>
@@ -652,18 +674,4 @@ recordIP: true,
 serverURLs: false,
 enableQQ: true
 })
-&lt;/script></description></item><item><title/><link>https://xuxihe.vercel.app/courses/biology/kk/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://xuxihe.vercel.app/courses/biology/kk/</guid><description>&lt;h2 id="fajkdljfasdf">fajkdljfasdf&lt;/h2>
-&lt;p>fasdfadf&lt;/p>
-&lt;p>dsfad&lt;/p>
-&lt;p>dfa&lt;/p>
-&lt;p>dfad&lt;/p>
-&lt;p>fasdf&lt;/p>
-&lt;p>asdfa&lt;/p>
-&lt;p>sdf&lt;/p>
-&lt;p>asdf&lt;/p>
-&lt;p>sda&lt;/p>
-&lt;p>f&lt;/p>
-&lt;p>asdf#&lt;/p>
-&lt;h3 id="fadfadf">fadfadf&lt;/h3>
-&lt;p>dfadsf&lt;/p>
-&lt;p>adfadsf&lt;/p></description></item></channel></rss>
+&lt;/script></description></item></channel></rss>
