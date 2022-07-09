@@ -1,95 +1,178 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>数论 | Senie</title><link>https://xuxihe.vercel.app/notes/oiknowledge/math%E6%95%B0%E8%AE%BA/</link><atom:link href="https://xuxihe.vercel.app/notes/oiknowledge/math%E6%95%B0%E8%AE%BA/index.xml" rel="self" type="application/rss+xml"/><description>数论</description><generator>Wowchemy (https://wowchemy.com)</generator><language>zh</language><copyright>© 曦曦呵呵</copyright><lastBuildDate>Mon, 18 Oct 2021 00:00:00 +0000</lastBuildDate><image><url>https://xuxihe.vercel.app/media/icon_huf638f59a6dd2257b0add8e0186347459_300061_512x512_fill_lanczos_center_3.png</url><title>数论</title><link>https://xuxihe.vercel.app/notes/oiknowledge/math%E6%95%B0%E8%AE%BA/</link></image><item><title>快速幂</title><link>https://xuxihe.vercel.app/notes/oiknowledge/math%E6%95%B0%E8%AE%BA/%E5%BF%AB%E9%80%9F%E5%B9%82/</link><pubDate>Mon, 18 Oct 2021 00:00:00 +0000</pubDate><guid>https://xuxihe.vercel.app/notes/oiknowledge/math%E6%95%B0%E8%AE%BA/%E5%BF%AB%E9%80%9F%E5%B9%82/</guid><description>&lt;h1 id="快速幂">快速幂&lt;/h1>
-&lt;h2 id="幂还有快速">幂还有快速？&lt;/h2>
-&lt;p>我们首先来思考一个问题，对于 $7^6$ 如何求。&lt;/p>
-&lt;p>作为一个人类，你的求法一定是先算出 $7\times7=49$，然后接着算出 $49\times7=343$，…… ，$16807\times7=117649$。因为人类并不适合算两位数以上的乘法(一位数还勉强可以瞪眼)，所以有些时候我们的思维便会限制在这个里面。&lt;/p>
-&lt;p>但是，我们了解，对于计算机CPU来说 $7\times7$ 和 $1561564\times1561564$ 几乎没啥差别(毕竟慢的是存储)，因此我们可以加快幂运算。&lt;/p>
-&lt;h2 id="又是二进制">又是二进制&lt;/h2>
-&lt;p>没错，你没看错，又是二进制！&lt;/p>
-&lt;p>我们早就知道了，对于任意一个二进制数，我们可以拆分成多个 $2^n$ 相加的形式。如：$6_{10}=(110)_2=(100)_2+(10)_2=2^2+2^1$。&lt;/p>
-&lt;p>相应的，任意一个数 $x$ 的 $k$ 次方 $x^k$ 都可以拆分成多个 $x^{2^n}$ 相乘的形式。这时候，我们发现，原本的 $O(k)$ 次操作被优化到了 $O(\log{k})$。而我们只需要将 $x^{2^n}$ 不断的自己乘自己，就可以得到所有我们需要的数。&lt;/p>
-&lt;p>例子：计算 $7^{14}=7^2\times7^4\times7^8$&lt;/p>
-&lt;h2 id="代码">代码&lt;/h2>
-&lt;p>[P1226 【模板】快速幂&amp;amp;取余运算][https://www.luogu.com.cn/problem/P1226]&lt;/p>
-&lt;pre>&lt;code class="language-c++">//只需要注意mi函数即可
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>数论 | Senie</title>
+    <link>https://xuxihe.vercel.app/notes/oiknowledge/math%E6%95%B0%E8%AE%BA/</link>
+      <atom:link href="https://xuxihe.vercel.app/notes/oiknowledge/math%E6%95%B0%E8%AE%BA/index.xml" rel="self" type="application/rss+xml" />
+    <description>数论</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>zh</language><copyright>© 曦曦呵呵</copyright><lastBuildDate>Mon, 18 Oct 2021 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://xuxihe.vercel.app/media/icon_huf638f59a6dd2257b0add8e0186347459_300061_512x512_fill_lanczos_center_3.png</url>
+      <title>数论</title>
+      <link>https://xuxihe.vercel.app/notes/oiknowledge/math%E6%95%B0%E8%AE%BA/</link>
+    </image>
+    
+    <item>
+      <title>快速幂</title>
+      <link>https://xuxihe.vercel.app/notes/oiknowledge/math%E6%95%B0%E8%AE%BA/%E5%BF%AB%E9%80%9F%E5%B9%82/</link>
+      <pubDate>Mon, 18 Oct 2021 00:00:00 +0000</pubDate>
+      <guid>https://xuxihe.vercel.app/notes/oiknowledge/math%E6%95%B0%E8%AE%BA/%E5%BF%AB%E9%80%9F%E5%B9%82/</guid>
+      <description>&lt;h1 id=&#34;快速幂&#34;&gt;快速幂&lt;/h1&gt;
+&lt;h2 id=&#34;幂还有快速&#34;&gt;幂还有快速？&lt;/h2&gt;
+&lt;p&gt;我们首先来思考一个问题，对于 $7^6$ 如何求。&lt;/p&gt;
+&lt;p&gt;作为一个人类，你的求法一定是先算出 $7\times7=49$，然后接着算出 $49\times7=343$，…… ，$16807\times7=117649$。因为人类并不适合算两位数以上的乘法(一位数还勉强可以瞪眼)，所以有些时候我们的思维便会限制在这个里面。&lt;/p&gt;
+&lt;p&gt;但是，我们了解，对于计算机CPU来说 $7\times7$ 和 $1561564\times1561564$ 几乎没啥差别(毕竟慢的是存储)，因此我们可以加快幂运算。&lt;/p&gt;
+&lt;h2 id=&#34;又是二进制&#34;&gt;又是二进制&lt;/h2&gt;
+&lt;p&gt;没错，你没看错，又是二进制！&lt;/p&gt;
+&lt;p&gt;我们早就知道了，对于任意一个二进制数，我们可以拆分成多个 $2^n$ 相加的形式。如：$6_{10}=(110)_2=(100)_2+(10)_2=2^2+2^1$。&lt;/p&gt;
+&lt;p&gt;相应的，任意一个数 $x$ 的 $k$ 次方 $x^k$ 都可以拆分成多个 $x^{2^n}$ 相乘的形式。这时候，我们发现，原本的 $O(k)$ 次操作被优化到了 $O(\log{k})$。而我们只需要将 $x^{2^n}$ 不断的自己乘自己，就可以得到所有我们需要的数。&lt;/p&gt;
+&lt;p&gt;例子：计算 $7^{14}=7^2\times7^4\times7^8$&lt;/p&gt;
+&lt;h2 id=&#34;代码&#34;&gt;代码&lt;/h2&gt;
+&lt;p&gt;[P1226 【模板】快速幂&amp;amp;取余运算][https://www.luogu.com.cn/problem/P1226]&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-c++&#34;&gt;//只需要注意mi函数即可
 #include &amp;lt;cstdio&amp;gt;
 int a, b, p;
 inline int mi(int n, int m, int mod, long long sum = 1, long long ans = 1)
 //n表示底数,m表示指数,mod为模数,sum为累加器,ans为结果
 {
-sum = n; //初始化累加器至n^1
-while (m) //保证指数不为0
-{
-if (m &amp;amp; 1) //如果最后一位是1,则应该乘上
-{
-ans *= sum;
-ans %= mod;
-}
-sum *= sum; //累加器自乘
-sum %= mod;
-m &amp;gt;&amp;gt;= 1; //这一位已经处理完毕,开始处理下一位
-}
-return ans % mod;
+    sum = n;  //初始化累加器至n^1
+    while (m) //保证指数不为0
+    {
+        if (m &amp;amp; 1) //如果最后一位是1,则应该乘上
+        {
+            ans *= sum;
+            ans %= mod;
+        }
+        sum *= sum; //累加器自乘
+        sum %= mod;
+        m &amp;gt;&amp;gt;= 1; //这一位已经处理完毕,开始处理下一位
+    }
+    return ans % mod;
 }
 int main()
 {
-scanf(&amp;quot;%d%d%d&amp;quot;, &amp;amp;a, &amp;amp;b, &amp;amp;p);
-printf(&amp;quot;%d^%d mod %d=%d\n&amp;quot;, a, b, p, mi(a, b, p)); //奇奇怪怪的输出方式
+    scanf(&amp;quot;%d%d%d&amp;quot;, &amp;amp;a, &amp;amp;b, &amp;amp;p);
+    printf(&amp;quot;%d^%d mod %d=%d\n&amp;quot;, a, b, p, mi(a, b, p)); //奇奇怪怪的输出方式
 }
-&lt;/code>&lt;/pre>
-&lt;h2 id="链接">链接&lt;/h2>
-&lt;p>其他更快的方法，参见[]、[]。&lt;/p></description></item><item><title>质数、合数、约数</title><link>https://xuxihe.vercel.app/notes/oiknowledge/math%E6%95%B0%E8%AE%BA/%E8%B4%A8%E6%95%B0%E5%90%88%E6%95%B0%E7%BA%A6%E6%95%B0%E5%80%8D%E6%95%B0/</link><pubDate>Mon, 18 Oct 2021 00:00:00 +0000</pubDate><guid>https://xuxihe.vercel.app/notes/oiknowledge/math%E6%95%B0%E8%AE%BA/%E8%B4%A8%E6%95%B0%E5%90%88%E6%95%B0%E7%BA%A6%E6%95%B0%E5%80%8D%E6%95%B0/</guid><description>&lt;h1 id="质数">质数&lt;/h1>
-&lt;p>本标题下所有数 $x\in N^*$ 。&lt;/p>
-&lt;h2 id="单个质数的判定">单个质数的判定&lt;/h2>
-&lt;h3 id="思想">思想&lt;/h3>
-&lt;p>枚举 $i\in{{1\sim\sqrt{P}}}$​​ ，判断$P\mod{i}$​​​​是否为$0$​即可。&lt;/p>
-&lt;p>若数 $P=p_1*p_2$​ 并且 $p_2&amp;gt;\sqrt{P}$​ ​​，则 $p_1&amp;lt;\sqrt{P}$​ ,所以只需要枚举 $i$​ 到 $i&amp;lt;=\sqrt{P}$​ 。&lt;/p>
-&lt;h3 id="代码">代码&lt;/h3>
-&lt;pre>&lt;code class="language-c++">bool prime(int n)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;链接&#34;&gt;链接&lt;/h2&gt;
+&lt;p&gt;其他更快的方法，参见[]、[]。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>质数、合数、约数</title>
+      <link>https://xuxihe.vercel.app/notes/oiknowledge/math%E6%95%B0%E8%AE%BA/%E8%B4%A8%E6%95%B0%E5%90%88%E6%95%B0%E7%BA%A6%E6%95%B0%E5%80%8D%E6%95%B0/</link>
+      <pubDate>Mon, 18 Oct 2021 00:00:00 +0000</pubDate>
+      <guid>https://xuxihe.vercel.app/notes/oiknowledge/math%E6%95%B0%E8%AE%BA/%E8%B4%A8%E6%95%B0%E5%90%88%E6%95%B0%E7%BA%A6%E6%95%B0%E5%80%8D%E6%95%B0/</guid>
+      <description>&lt;h1 id=&#34;质数&#34;&gt;质数&lt;/h1&gt;
+&lt;p&gt;本标题下所有数 $x\in N^*$ 。&lt;/p&gt;
+&lt;h2 id=&#34;单个质数的判定&#34;&gt;单个质数的判定&lt;/h2&gt;
+&lt;h3 id=&#34;思想&#34;&gt;思想&lt;/h3&gt;
+&lt;p&gt;枚举 $i\in{{1\sim\sqrt{P}}}$​​ ，判断$P\mod{i}$​​​​是否为$0$​即可。&lt;/p&gt;
+&lt;p&gt;若数 $P=p_1*p_2$​ 并且 $p_2&amp;gt;\sqrt{P}$​ ​​，则 $p_1&amp;lt;\sqrt{P}$​ ,所以只需要枚举 $i$​ 到 $i&amp;lt;=\sqrt{P}$​ 。&lt;/p&gt;
+&lt;h3 id=&#34;代码&#34;&gt;代码&lt;/h3&gt;
+&lt;pre&gt;&lt;code class=&#34;language-c++&#34;&gt;bool prime(int n)
 {
-int len = sqrt(n);//求i的遍历范围
-for (int i = 2; i &amp;lt;= len; i++)
-if (!(n % i))//如果i是n的约数，说明n不是质数，返回false
-return false;
-return true;//n除了1和n以外没有别的约数，证明n是质数，返回true
+    int len = sqrt(n);//求i的遍历范围
+    for (int i = 2; i &amp;lt;= len; i++)
+        if (!(n % i))//如果i是n的约数，说明n不是质数，返回false
+            return false;
+    return true;//n除了1和n以外没有别的约数，证明n是质数，返回true
 }
-&lt;/code>&lt;/pre>
-&lt;p>时间复杂度 $O(\sqrt{n})$。&lt;/p>
-&lt;h2 id="单个数分解质因数">单个数分解质因数&lt;/h2>
-&lt;p>想法和上面的一样，只不过找到一个因数就循环除他罢辽。&lt;/p>
-&lt;pre>&lt;code class="language-c++">list&amp;lt;int&amp;gt; prime(int n)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;时间复杂度 $O(\sqrt{n})$。&lt;/p&gt;
+&lt;h2 id=&#34;单个数分解质因数&#34;&gt;单个数分解质因数&lt;/h2&gt;
+&lt;p&gt;想法和上面的一样，只不过找到一个因数就循环除他罢辽。&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-c++&#34;&gt;list&amp;lt;int&amp;gt; prime(int n)
 {
-list&amp;lt;int&amp;gt; result;
-int len = sqrt(n); //求i的遍历范围
-for (int i = 2; i &amp;lt;= len; i++)
-{
-if (N % i == 0)
-{ // 如果 i 能够整除 N，说明 i 为 N 的一个质因子。
-while (N % i == 0)
-N /= i;
-result.push_back(i);
+    list&amp;lt;int&amp;gt; result;
+    int len = sqrt(n); //求i的遍历范围
+    for (int i = 2; i &amp;lt;= len; i++)
+    {
+        if (N % i == 0)
+        { // 如果 i 能够整除 N，说明 i 为 N 的一个质因子。
+            while (N % i == 0)
+                N /= i;
+            result.push_back(i);
+        }
+    }
+    if (N != 1)
+    { // 说明再经过操作之后 N 留下了一个素数
+        result.push_back(N)
+    }
 }
-}
-if (N != 1)
-{ // 说明再经过操作之后 N 留下了一个素数
-result.push_back(N)
-}
-}
-&lt;/code>&lt;/pre>
-&lt;h2 id="范围内所有质数的判定">范围内所有质数的判定&lt;/h2>
-&lt;h3 id="纯暴力">纯暴力&lt;/h3>
-&lt;p>就把上面那个套个循环，复杂度 $O(n\sqrt n)$。&lt;/p>
-&lt;h3 id="埃氏筛">埃氏筛&lt;/h3>
-&lt;p>从 $2$ 开始，不断寻找没有被标记的，并把它的倍数全部标记，复杂度 $O(n\log\log n)$。&lt;/p>
-&lt;p>但是，我们注意到，某一些合数被标记了不止一次，因此仍有优化空间。&lt;/p>
-&lt;h3 id="欧拉筛">欧拉筛&lt;/h3></description></item><item><title>数学表示</title><link>https://xuxihe.vercel.app/notes/oiknowledge/math%E6%95%B0%E8%AE%BA/%E6%95%B0%E5%AD%A6%E8%A1%A8%E7%A4%BA/</link><pubDate>Mon, 18 Oct 2021 00:00:00 +0000</pubDate><guid>https://xuxihe.vercel.app/notes/oiknowledge/math%E6%95%B0%E8%AE%BA/%E6%95%B0%E5%AD%A6%E8%A1%A8%E7%A4%BA/</guid><description>&lt;h1 id="数学表示">数学表示&lt;/h1>
-&lt;ol>
-&lt;li>$x|y$ ：$x$ 整除 $y$，即存在 $d\in Z$ 使得 $y=dx$&lt;/li>
-&lt;/ol></description></item><item><title/><link>https://xuxihe.vercel.app/notes/oiknowledge/math%E6%95%B0%E8%AE%BA/%E5%90%8C%E4%BD%99%E6%96%B9%E7%A8%8B/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://xuxihe.vercel.app/notes/oiknowledge/math%E6%95%B0%E8%AE%BA/%E5%90%8C%E4%BD%99%E6%96%B9%E7%A8%8B/</guid><description/></item><item><title/><link>https://xuxihe.vercel.app/notes/oiknowledge/math%E6%95%B0%E8%AE%BA/%E6%AC%A7%E6%8B%89%E5%87%BD%E6%95%B0/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://xuxihe.vercel.app/notes/oiknowledge/math%E6%95%B0%E8%AE%BA/%E6%AC%A7%E6%8B%89%E5%87%BD%E6%95%B0/</guid><description/></item><item><title/><link>https://xuxihe.vercel.app/notes/oiknowledge/math%E6%95%B0%E8%AE%BA/%E7%9F%A9%E9%98%B5%E4%B9%98%E6%B3%95/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://xuxihe.vercel.app/notes/oiknowledge/math%E6%95%B0%E8%AE%BA/%E7%9F%A9%E9%98%B5%E4%B9%98%E6%B3%95/</guid><description>&lt;h1 id="矩阵乘法">矩阵乘法&lt;/h1>
-&lt;h2 id="基本概念">基本概念&lt;/h2>
-&lt;p>$n$ 行 $m$ 列个元素有规律的排列在一起，构成一个矩阵，记作 $A=(a_{i,j})_{n\times m}\in R^{n\times m}$。&lt;/p>
-&lt;p>若 $n=m$ ，则这个矩阵为 $n$ 阶矩阵。&lt;/p>
-&lt;h2 id="基本运算规则">基本运算规则&lt;/h2>
-&lt;h3 id="加减法">加减法&lt;/h3>
-&lt;p>对于两个矩阵 $A=(a_{i,j})&lt;em>{a\times b}$ 和 $B=(b&lt;/em>{i,j})_{x\times y}$，当且仅当 $a=x$ 且 $b=y$ 时，$A-B$ 和 $A+B$ 有意义。&lt;/p>
-&lt;p>$A-B=$&lt;/p>
-&lt;h3 id="乘法">乘法&lt;/h3></description></item><item><title/><link>https://xuxihe.vercel.app/notes/oiknowledge/math%E6%95%B0%E8%AE%BA/%E7%BB%84%E5%90%88%E6%95%B0%E5%AD%A6/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://xuxihe.vercel.app/notes/oiknowledge/math%E6%95%B0%E8%AE%BA/%E7%BB%84%E5%90%88%E6%95%B0%E5%AD%A6/</guid><description/></item><item><title/><link>https://xuxihe.vercel.app/notes/oiknowledge/math%E6%95%B0%E8%AE%BA/%E9%AB%98%E6%96%AF%E6%B6%88%E5%85%83/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://xuxihe.vercel.app/notes/oiknowledge/math%E6%95%B0%E8%AE%BA/%E9%AB%98%E6%96%AF%E6%B6%88%E5%85%83/</guid><description/></item></channel></rss>
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;范围内所有质数的判定&#34;&gt;范围内所有质数的判定&lt;/h2&gt;
+&lt;h3 id=&#34;纯暴力&#34;&gt;纯暴力&lt;/h3&gt;
+&lt;p&gt;就把上面那个套个循环，复杂度 $O(n\sqrt n)$。&lt;/p&gt;
+&lt;h3 id=&#34;埃氏筛&#34;&gt;埃氏筛&lt;/h3&gt;
+&lt;p&gt;从 $2$ 开始，不断寻找没有被标记的，并把它的倍数全部标记，复杂度 $O(n\log\log n)$。&lt;/p&gt;
+&lt;p&gt;但是，我们注意到，某一些合数被标记了不止一次，因此仍有优化空间。&lt;/p&gt;
+&lt;h3 id=&#34;欧拉筛&#34;&gt;欧拉筛&lt;/h3&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>数学表示</title>
+      <link>https://xuxihe.vercel.app/notes/oiknowledge/math%E6%95%B0%E8%AE%BA/%E6%95%B0%E5%AD%A6%E8%A1%A8%E7%A4%BA/</link>
+      <pubDate>Mon, 18 Oct 2021 00:00:00 +0000</pubDate>
+      <guid>https://xuxihe.vercel.app/notes/oiknowledge/math%E6%95%B0%E8%AE%BA/%E6%95%B0%E5%AD%A6%E8%A1%A8%E7%A4%BA/</guid>
+      <description>&lt;h1 id=&#34;数学表示&#34;&gt;数学表示&lt;/h1&gt;
+&lt;ol&gt;
+&lt;li&gt;$x|y$ ：$x$ 整除 $y$，即存在 $d\in Z$ 使得 $y=dx$&lt;/li&gt;
+&lt;/ol&gt;
+</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://xuxihe.vercel.app/notes/oiknowledge/math%E6%95%B0%E8%AE%BA/%E5%90%8C%E4%BD%99%E6%96%B9%E7%A8%8B/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xuxihe.vercel.app/notes/oiknowledge/math%E6%95%B0%E8%AE%BA/%E5%90%8C%E4%BD%99%E6%96%B9%E7%A8%8B/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://xuxihe.vercel.app/notes/oiknowledge/math%E6%95%B0%E8%AE%BA/%E6%AC%A7%E6%8B%89%E5%87%BD%E6%95%B0/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xuxihe.vercel.app/notes/oiknowledge/math%E6%95%B0%E8%AE%BA/%E6%AC%A7%E6%8B%89%E5%87%BD%E6%95%B0/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://xuxihe.vercel.app/notes/oiknowledge/math%E6%95%B0%E8%AE%BA/%E7%9F%A9%E9%98%B5%E4%B9%98%E6%B3%95/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xuxihe.vercel.app/notes/oiknowledge/math%E6%95%B0%E8%AE%BA/%E7%9F%A9%E9%98%B5%E4%B9%98%E6%B3%95/</guid>
+      <description>&lt;h1 id=&#34;矩阵乘法&#34;&gt;矩阵乘法&lt;/h1&gt;
+&lt;h2 id=&#34;基本概念&#34;&gt;基本概念&lt;/h2&gt;
+&lt;p&gt;$n$ 行 $m$ 列个元素有规律的排列在一起，构成一个矩阵，记作 $A=(a_{i,j})_{n\times m}\in R^{n\times m}$。&lt;/p&gt;
+&lt;p&gt;若 $n=m$ ，则这个矩阵为 $n$ 阶矩阵。&lt;/p&gt;
+&lt;h2 id=&#34;基本运算规则&#34;&gt;基本运算规则&lt;/h2&gt;
+&lt;h3 id=&#34;加减法&#34;&gt;加减法&lt;/h3&gt;
+&lt;p&gt;对于两个矩阵 $A=(a_{i,j})&lt;em&gt;{a\times b}$ 和 $B=(b&lt;/em&gt;{i,j})_{x\times y}$，当且仅当 $a=x$ 且 $b=y$ 时，$A-B$ 和 $A+B$ 有意义。&lt;/p&gt;
+&lt;p&gt;$A-B=$&lt;/p&gt;
+&lt;h3 id=&#34;乘法&#34;&gt;乘法&lt;/h3&gt;
+</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://xuxihe.vercel.app/notes/oiknowledge/math%E6%95%B0%E8%AE%BA/%E7%BB%84%E5%90%88%E6%95%B0%E5%AD%A6/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xuxihe.vercel.app/notes/oiknowledge/math%E6%95%B0%E8%AE%BA/%E7%BB%84%E5%90%88%E6%95%B0%E5%AD%A6/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://xuxihe.vercel.app/notes/oiknowledge/math%E6%95%B0%E8%AE%BA/%E9%AB%98%E6%96%AF%E6%B6%88%E5%85%83/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xuxihe.vercel.app/notes/oiknowledge/math%E6%95%B0%E8%AE%BA/%E9%AB%98%E6%96%AF%E6%B6%88%E5%85%83/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

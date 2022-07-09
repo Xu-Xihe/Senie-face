@@ -1,142 +1,658 @@
-<!doctype html><html lang=zh>
+<!DOCTYPE html><html lang="zh" >
+
+
 <head>
-<meta charset=utf-8>
-<meta name=viewport content="width=device-width,initial-scale=1">
-<meta http-equiv=x-ua-compatible content="IE=edge">
-<meta name=generator content="Wowchemy 5.3.0 for Hugo">
-<link rel=preconnect href=https://fonts.gstatic.com crossorigin>
-<link rel=preload as=style href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap">
-<link rel=stylesheet href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap" media=print onload="this.media='all'">
-<meta name=baidu-site-verification content="code-avxFYJ9aCr">
-<meta name=author content="曦曦呵呵">
-<meta name=description content="最短路径 是个啥 这种问题恰如其名，问如何走才能用最小的代价达到">
-<link rel=alternate hreflang=zh href=https://xuxihe.vercel.app/notes/oiknowledge/graph%E5%9B%BE%E8%AE%BA/%E6%9C%80%E7%9F%AD%E8%B7%AF%E5%BE%84/>
-<meta name=theme-color content="#8a2be2">
-<script src=/js/mathjax-config.js></script>
-<link rel=stylesheet href=/css/vendor-bundle.min.f1ecf783c14edc00c9320c205831ad8e.css media=print onload="this.media='all'">
-<link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/styles/github.min.css crossorigin=anonymous title=hl-light media=print onload="this.media='all'">
-<link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/styles/dracula.min.css crossorigin=anonymous title=hl-dark media=print onload="this.media='all'" disabled>
-<link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.min.css integrity="sha512-1xoFisiGdy9nvho8EgXuXvnpR5GAMSjFwp40gSRE3NwdUdIMIKuPa7bqoUhLD0O/5tPNhteAsE5XyyMi5reQVA==" crossorigin=anonymous media=print onload="this.media='all'">
-<script src=https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js integrity crossorigin=anonymous async></script>
-<link rel=stylesheet href=/css/wowchemy.36d7c79ef70cfd4ede320d3031e72a79.css>
-<link rel=manifest href=/manifest.webmanifest>
-<link rel=icon type=image/png href=/media/icon_huf638f59a6dd2257b0add8e0186347459_300061_32x32_fill_lanczos_center_3.png>
-<link rel=apple-touch-icon type=image/png href=/media/icon_huf638f59a6dd2257b0add8e0186347459_300061_180x180_fill_lanczos_center_3.png>
-<link rel=canonical href=https://xuxihe.vercel.app/notes/oiknowledge/graph%E5%9B%BE%E8%AE%BA/%E6%9C%80%E7%9F%AD%E8%B7%AF%E5%BE%84/>
-<meta property="twitter:card" content="summary">
-<meta property="og:site_name" content="Senie">
-<meta property="og:url" content="https://xuxihe.vercel.app/notes/oiknowledge/graph%E5%9B%BE%E8%AE%BA/%E6%9C%80%E7%9F%AD%E8%B7%AF%E5%BE%84/">
-<meta property="og:title" content="最短路径 | Senie">
-<meta property="og:description" content="最短路径 是个啥 这种问题恰如其名，问如何走才能用最小的代价达到"><meta property="og:image" content="https://xuxihe.vercel.app/media/icon_huf638f59a6dd2257b0add8e0186347459_300061_512x512_fill_lanczos_center_3.png">
-<meta property="twitter:image" content="https://xuxihe.vercel.app/media/icon_huf638f59a6dd2257b0add8e0186347459_300061_512x512_fill_lanczos_center_3.png"><meta property="og:locale" content="zh">
-<meta property="article:published_time" content="2021-10-18T00:00:00+00:00">
-<meta property="article:modified_time" content="2021-10-18T00:00:00+00:00">
-<title>最短路径 | Senie</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  
+  
+  
+    <meta name="generator" content="Wowchemy 5.3.0 for Hugo" />
+  
+
+  
+  
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  
+
+  
+  
+  
+    
+      
+      <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap" media="print" onload="this.media='all'">
+    
+  
+
+  
+    <meta name="baidu-site-verification" content="code-avxFYJ9aCr" />
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="曦曦呵呵" />
+
+  
+  
+  
+    
+  
+  <meta name="description" content="最短路径 是个啥 这种问题恰如其名，问如何走才能用最小的代价达到" />
+
+  
+  <link rel="alternate" hreflang="zh" href="https://xuxihe.vercel.app/notes/oiknowledge/graph%E5%9B%BE%E8%AE%BA/%E6%9C%80%E7%9F%AD%E8%B7%AF%E5%BE%84/" />
+
+  
+  
+  
+    <meta name="theme-color" content="#8a2be2" />
+  
+
+  
+  
+    
+    <script src="/js/mathjax-config.js"></script>
+  
+
+  
+
+  <link rel="stylesheet" href="/css/vendor-bundle.min.f1ecf783c14edc00c9320c205831ad8e.css" media="print" onload="this.media='all'">
+
+  
+  
+  
+    
+    
+
+    
+    
+    
+    
+      
+      
+    
+    
+    
+
+    
+    
+    
+      
+    
+    
+      
+      
+        
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/styles/github.min.css" crossorigin="anonymous" title="hl-light" media="print" onload="this.media='all'">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" media="print" onload="this.media='all'" disabled>
+        
+      
+    
+
+    
+    
+    
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.min.css" integrity="sha512-1xoFisiGdy9nvho8EgXuXvnpR5GAMSjFwp40gSRE3NwdUdIMIKuPa7bqoUhLD0O/5tPNhteAsE5XyyMi5reQVA==" crossorigin="anonymous" media="print" onload="this.media='all'">
+    
+
+    
+
+    
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" integrity="" crossorigin="anonymous" async></script>
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+  
+
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="/css/wowchemy.36d7c79ef70cfd4ede320d3031e72a79.css" />
+
+  
+
+
+
+  
+
+  
+
+  
+
+
+
+
+  
+  
+  
+
+  
+
+  
+    <link rel="manifest" href="/manifest.webmanifest" />
+  
+
+  <link rel="icon" type="image/png" href="/media/icon_huf638f59a6dd2257b0add8e0186347459_300061_32x32_fill_lanczos_center_3.png" />
+  <link rel="apple-touch-icon" type="image/png" href="/media/icon_huf638f59a6dd2257b0add8e0186347459_300061_180x180_fill_lanczos_center_3.png" />
+
+  <link rel="canonical" href="https://xuxihe.vercel.app/notes/oiknowledge/graph%E5%9B%BE%E8%AE%BA/%E6%9C%80%E7%9F%AD%E8%B7%AF%E5%BE%84/" />
+
+  
+  
+  
+  
+  
+  
+  
+  
+    
+    
+  
+  
+
+  
+  
+    
+    
+  
+  <meta property="twitter:card" content="summary" />
+  
+  <meta property="og:site_name" content="Senie" />
+  <meta property="og:url" content="https://xuxihe.vercel.app/notes/oiknowledge/graph%E5%9B%BE%E8%AE%BA/%E6%9C%80%E7%9F%AD%E8%B7%AF%E5%BE%84/" />
+  <meta property="og:title" content="最短路径 | Senie" />
+  <meta property="og:description" content="最短路径 是个啥 这种问题恰如其名，问如何走才能用最小的代价达到" /><meta property="og:image" content="https://xuxihe.vercel.app/media/icon_huf638f59a6dd2257b0add8e0186347459_300061_512x512_fill_lanczos_center_3.png" />
+    <meta property="twitter:image" content="https://xuxihe.vercel.app/media/icon_huf638f59a6dd2257b0add8e0186347459_300061_512x512_fill_lanczos_center_3.png" /><meta property="og:locale" content="zh" />
+  
+    
+      <meta
+        property="article:published_time"
+        content="2021-10-18T00:00:00&#43;00:00"
+      />
+    
+    <meta property="article:modified_time" content="2021-10-18T00:00:00&#43;00:00">
+  
+
+  
+
+
+
+  
+
+  
+
+  
+
+
+
+
+
+  <title>最短路径 | Senie</title>
 </head>
-<body id=top data-spy=scroll data-offset=70 data-target=#TableOfContents class=page-wrapper data-wc-page-id=875d0237fcb3b27781309b66246c5da8>
-<script src=/js/wowchemy-init.min.2da3b1fa37e894630bf6de39b1b694b3.js></script>
-<aside class=search-modal id=search>
-<div class=container>
-<section class=search-header>
-<div class="row no-gutters justify-content-between mb-3">
-<div class=col-6>
-<h1>搜索</h1>
-</div>
-<div class="col-6 col-search-close">
-<a class=js-search href=# aria-label=Close><i class="fas fa-times-circle text-muted" aria-hidden=true></i></a>
-</div>
-</div>
-<div id=search-box>
-<input name=q id=search-query placeholder=搜索... autocapitalize=off autocomplete=off autocorrect=off spellcheck=false type=search class=form-control aria-label=搜索...>
-</div>
-</section>
-<section class=section-search-results>
-<div id=search-hits>
-</div>
-</section>
-</div>
+
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper   " data-wc-page-id="875d0237fcb3b27781309b66246c5da8" >
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <script src="/js/wowchemy-init.min.2da3b1fa37e894630bf6de39b1b694b3.js"></script>
+
+  
+
+
+<aside class="search-modal" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>搜索</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#" aria-label="Close"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="搜索..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search" class="form-control"
+        aria-label="搜索...">
+        
+      </div>
+
+      
+      
+
+      
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
 </aside>
-<div class=page-header>
-<nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id=navbar-main>
-<div class=container-xl>
-<div class="d-none d-lg-inline-flex">
-<a class=navbar-brand href=/>Senie</a>
-</div>
-<button type=button class=navbar-toggler data-toggle=collapse data-target=#navbar-content aria-controls=navbar-content aria-expanded=false aria-label=切换导航>
-<span><i class="fas fa-bars"></i></span>
-</button>
-<div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
-<a class=navbar-brand href=/>Senie</a>
-</div>
-<div class="navbar-collapse main-menu-item collapse justify-content-start" id=navbar-content>
-<ul class="navbar-nav d-md-inline-flex">
-<li class=nav-item>
-<a class="nav-link active" href=/notes/><span>OI</span></a>
-</li>
-<li class=nav-item>
-<a class=nav-link href=/courses/><span>高中</span></a>
-</li>
-<li class="nav-item dropdown">
-<a href=# class="nav-link dropdown-toggle" data-toggle=dropdown aria-haspopup=true><span>杂七杂八</span><span class=caret></span>
-</a>
-<div class=dropdown-menu>
-<a class=dropdown-item href=/category/%e4%b9%90%e4%b9%90%e5%91%b5%e5%91%b5/><span>乐乐呵呵</span></a>
-<a class=dropdown-item href=/category/%e6%8a%80%e6%9c%afblog/><span>技术blog</span></a>
-</div>
-</li>
-</ul>
-</div>
-<ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
-<li class="nav-item d-none d-lg-inline-flex">
-<a class=nav-link href=https://github.com/Xu-Xihe data-toggle=tooltip data-placement=bottom title=在Github上关注我吧！ target=_blank rel=noopener aria-label=在Github上关注我吧！>
-<i class="fab fa-github" aria-hidden=true></i>
-</a>
-</li>
-<li class=nav-item>
-<a class="nav-link js-search" href=# aria-label=搜索><i class="fas fa-search" aria-hidden=true></i></a>
-</li>
-<li class="nav-item dropdown theme-dropdown">
-<a href=# class=nav-link data-toggle=dropdown aria-haspopup=true aria-label="Display preferences">
-<i class="fas fa-moon" aria-hidden=true></i>
-</a>
-<div class=dropdown-menu>
-<a href=# class="dropdown-item js-set-theme-light">
-<span>浅色</span>
-</a>
-<a href=# class="dropdown-item js-set-theme-dark">
-<span>深色</span>
-</a>
-<a href=# class="dropdown-item js-set-theme-auto">
-<span>自动</span>
-</a>
-</div>
-</li>
-</ul>
-</div>
+
+
+
+  <div class="page-header">
+    
+
+
+
+
+
+
+
+
+
+
+
+
+<nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+  <div class="container-xl">
+
+    
+    <div class="d-none d-lg-inline-flex">
+      <a class="navbar-brand" href="/">Senie</a>
+    </div>
+    
+
+    
+    <button type="button" class="navbar-toggler" data-toggle="collapse"
+            data-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false" aria-label="切换导航">
+    <span><i class="fas fa-bars"></i></span>
+    </button>
+    
+
+    
+    <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+      <a class="navbar-brand" href="/">Senie</a>
+    </div>
+    
+
+    
+    
+    <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
+
+      
+      <ul class="navbar-nav d-md-inline-flex">
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link  active" href="/notes/"><span>OI</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/courses/"><span>高中</span></a>
+        </li>
+
+        
+        
+
+        
+        <li class="nav-item dropdown">
+          <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"><span>杂七杂八</span><span class="caret"></span>
+          </a>
+          <div class="dropdown-menu">
+            
+              <a class="dropdown-item" href="/category/%e4%b9%90%e4%b9%90%e5%91%b5%e5%91%b5/"><span>乐乐呵呵</span></a>
+            
+              <a class="dropdown-item" href="/category/%e6%8a%80%e6%9c%afblog/"><span>技术blog</span></a>
+            
+          </div>
+        </li>
+
+        
+        
+
+      
+
+        
+      </ul>
+    </div>
+
+    <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+
+      
+      
+        
+          
+          <li class="nav-item d-none d-lg-inline-flex">
+            <a class="nav-link" href="https://github.com/Xu-Xihe" data-toggle="tooltip" data-placement="bottom" title="在Github上关注我吧！" target="_blank" rel="noopener" aria-label="在Github上关注我吧！">
+              <i class="fab fa-github" aria-hidden="true"></i>
+            </a>
+          </li>
+        
+      
+
+      
+      
+      <li class="nav-item">
+        <a class="nav-link js-search" href="#" aria-label="搜索"><i class="fas fa-search" aria-hidden="true"></i></a>
+      </li>
+      
+
+      
+      
+      <li class="nav-item dropdown theme-dropdown">
+        <a href="#" class="nav-link" data-toggle="dropdown" aria-haspopup="true" aria-label="Display preferences">
+          <i class="fas fa-moon" aria-hidden="true"></i>
+        </a>
+        <div class="dropdown-menu">
+          <a href="#" class="dropdown-item js-set-theme-light">
+            <span>浅色</span>
+          </a>
+          <a href="#" class="dropdown-item js-set-theme-dark">
+            <span>深色</span>
+          </a>
+          <a href="#" class="dropdown-item js-set-theme-auto">
+            <span>自动</span>
+          </a>
+        </div>
+      </li>
+      
+
+      
+      
+
+    </ul>
+
+  </div>
 </nav>
-</div>
-<div class=page-body>
-<article class=article>
+
+
+  </div>
+
+  <div class="page-body">
+    <article class="article">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+  
+  
 <div class="article-container pt-3">
-<h1>最短路径</h1>
-<div class=article-metadata>
-<span class=article-date>
-2021年10月18日
-</span>
+  <h1>最短路径</h1>
+
+  
+
+  
+    
+
+
+<div class="article-metadata">
+
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    2021年10月18日
+  </span>
+  
+
+  
+
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+  
+
 </div>
+
+    
+
+
+
+
+
+  
 </div>
-<div class=article-container>
-<div class=article-style>
-<h1 id=最短路径>最短路径</h1>
-<h2 id=是个啥>是个啥</h2>
+
+
+
+  <div class="article-container">
+
+    <div class="article-style">
+      <h1 id="最短路径">最短路径</h1>
+<h2 id="是个啥">是个啥</h2>
 <p>这种问题恰如其名，问如何走才能用最小的代价达到目的。<del>(人生哲学)</del></p>
 <p>给你一张有边权的图(无权图可看做所有边边权均为1；无向图可将所有边拆分成两条有向边)，求$i$节点到$j$​节点的最短路径。</p>
 <p>直接上算法。</p>
-<h2 id=dfs>DFS</h2>
+<h2 id="dfs">DFS</h2>
 <p><em>BFS就涉及到其他算法了。</em></p>
 <p>只能求解单源单尽~~(自创)~~最短路(固定起点和终点)并且通常情况下过于暴力。</p>
 <p>想法很简单，遍历两点之间的所有路径，选择最短的那条。</p>
-<pre><code class=language-c++>#include &lt;cstdio&gt;
+<pre><code class="language-c++">#include &lt;cstdio&gt;
 #include &lt;vector&gt;
 const int maxe = 1e4 + 9;
 struct node
@@ -177,10 +693,10 @@ int main()
     return 0;
 }
 </code></pre>
-<h2 id=floyd弗洛伊德算法>Floyd(弗洛伊德)算法</h2>
+<h2 id="floyd弗洛伊德算法">Floyd(弗洛伊德)算法</h2>
 <p>多源最短路(任意起止点)算法，时间复杂度 $O(n^3)$​，空间复杂度 $O(n^2)$​​。</p>
 <p>适用于具有正或负边缘权重，但**没有负周期(负环)**的加权图中。在稠密图中效率较高。</p>
-<p>运用dp思想，最开始只允许经过1号顶点进行中转，接下来只允许经过1号和2号顶点进行中转&mldr;&mldr;允许经过$1\sim n$​号所有顶点进行中转，来不断动态更新任意两点之间的最短路程。</p>
+<p>运用dp思想，最开始只允许经过1号顶点进行中转，接下来只允许经过1号和2号顶点进行中转&hellip;&hellip;允许经过$1\sim n$​号所有顶点进行中转，来不断动态更新任意两点之间的最短路程。</p>
 <p>dp[i][j]表示从 $i$ 号节点到 $j$ 号节点的最短路径长度。</p>
 <ol>
 <li>首先构建邻接矩阵(存图)，假如现在只允许经过1号结点，求任意两点间的最短路程，很显然</li>
@@ -188,15 +704,15 @@ int main()
 <p>$$
 dp[i][j]=\min{dp[i][j],dp[i][1]+dp[1][j]}
 $$</p>
-<ol start=2>
+<ol start="2">
 <li>接下来继续求在只允许经过1和2号两个顶点的情况下任意两点之间的最短距离，在已经实现了从 $i$ 号顶点到 $j$ 号顶点只经过$1$号节点的最短路程的前提下，现在再插入第$2$号结点，来更新更短路径，故只需在步骤1求得的基础上求
 $$
 dp[i][j]=\min{dp[i][j],dp[i][2]+dp[2][j]}
 $$</li>
-<li>$n$次更新后，表示依次插入了1号，2号&mldr;&mldr;n号结点，最后求得的dp[i][j]是从 $i$ 号顶点到 $j$​ 号顶点只经过前 $n$ 号点的最短路程。</li>
+<li>$n$次更新后，表示依次插入了1号，2号&hellip;&hellip;n号结点，最后求得的dp[i][j]是从 $i$ 号顶点到 $j$​ 号顶点只经过前 $n$ 号点的最短路程。</li>
 </ol>
 <p>如需要记录详细路径，可使用另外一个二维数组存贮中转节点。</p>
-<pre><code class=language-c++>#include &lt;cstdio&gt;
+<pre><code class="language-c++">#include &lt;cstdio&gt;
 #include &lt;algorithm&gt;
 using std::min;
 const int maxe = 3000, INF = 1000000009;
@@ -268,18 +784,18 @@ int main()
     return 0;
 }
 </code></pre>
-<h2 id=dijkstra算法>Dijkstra算法</h2>
+<h2 id="dijkstra算法">Dijkstra算法</h2>
 <p>用于求解非负权图的单源最短路径。</p>
-<p>运用<a href=/oiblogs/basic%e5%9f%ba%e6%9c%ac%e6%80%9d%e6%83%b3/%e8%b4%aa%e5%bf%83/>贪心</a>思想，时间复杂度 $O(n^2)$ 或优化后 $O(n\log{n})$，空间复杂度 运行空间 $O(n)$ 和存图 $O(m)$。</p>
+<p>运用<a href="/oiblogs/basic%e5%9f%ba%e6%9c%ac%e6%80%9d%e6%83%b3/%e8%b4%aa%e5%bf%83/">贪心</a>思想，时间复杂度 $O(n^2)$ 或优化后 $O(n\log{n})$，空间复杂度 运行空间 $O(n)$ 和存图 $O(m)$。</p>
 <p>用 $dis[i]$ 存贮从起始节点到第 $i$ 号节点的相对最短路径长度，并标记已经确定最短路径的顶点。</p>
 <ol>
 <li>初始化：设起始节点编号为 $k$，则 $dis[k]=0$，$i$ 与 $k$ 相连则 $dis[i]=边权$，其余的 $dis[j]=\infty$。</li>
 <li>松弛：在 $dis$ 数组中寻找未确定最短路径中 $dis[i]$ 最小，将 $i$ 加入已确定的顶点集合，并用其连接的边尝试使周围节点的 $dis$ 更小。(若存在负权，则有可能存在走负权边将以确定节点的最短路径变更小的可能，因此算法失效)</li>
 </ol>
 <p>例子：</p>
-<img src=Dijkstra.jpg alt=dijkstra style=zoom:70%>
+<img src="Dijkstra.jpg" alt="dijkstra" style="zoom: 70%;" />
 <p><strong>最暴力的code:</strong></p>
-<pre><code class=language-c++>#include &lt;cstdio&gt;
+<pre><code class="language-c++">#include &lt;cstdio&gt;
 #include &lt;vector&gt;
 const int maxe = 1e5 + 9, INF = 2147483647;
 struct node //邻接链表存图
@@ -338,7 +854,7 @@ int main()
 <p><strong>优化后code：</strong></p>
 <p>用堆(优先队列)来找到dis最小的结点的复杂度为 $O(\log{n})$。</p>
 <p>当一个节点的dis从 $\infty$ 被更新到一个值时会被加入优先队列，若没有更改，则所有可能到达的点的最小dis都被加入优先队列。</p>
-<pre><code class=language-c++>#include &lt;cstdio&gt;
+<pre><code class="language-c++">#include &lt;cstdio&gt;
 #include &lt;vector&gt;
 #include &lt;queue&gt;
 const int maxe = 1e5 + 9, INF = 2147483647;
@@ -394,7 +910,7 @@ int main()
     return 0;
 }
 </code></pre>
-<h2 id=spfa算法>SPFA算法</h2>
+<h2 id="spfa算法">SPFA算法</h2>
 <p>Bellman-Ford算法的队列优化算法的别称。</p>
 <p>空间复杂度为 $O(n)$ 级别(不算图的存储)。</p>
 <p>在正常情况下(数据随机构造或出题人很善良)，期望的时间复杂度为 $O(km)\space,\space k&lt;2$，但是如果你碰上一个很厉(e)害(xin)的出题人，存在针对性数据，能把你卡成 $O(nm)$​，直接 <strong>T</strong> 飞！</p>
@@ -405,7 +921,7 @@ int main()
 <li>BFS：整体速度高于DFS，但应在仅需判断负环的题中弃用。</li>
 </ul>
 <p>因此，应按照题目要求，选择对应的算法和方式。</p>
-<h3 id=bfs方式>BFS方式</h3>
+<h3 id="bfs方式">BFS方式</h3>
 <p>最常见也是综合最优。</p>
 <ol>
 <li>初始化：将dis数组除起点外赋值为 $\infty$ ，起点dis为$0$​，将起点加入run队列。</li>
@@ -413,7 +929,7 @@ int main()
 <li>重复执行松弛操作，直到队列为空。</li>
 </ol>
 <p>优化原理：因为并不是dis一更新就继续迭代，而是很可能dis被更新多次之后才再次迭代，因此比DFS更优。</p>
-<pre><code class=language-c++>#include &lt;cstdio&gt;
+<pre><code class="language-c++">#include &lt;cstdio&gt;
 #include &lt;queue&gt;
 #include &lt;vector&gt;
 const int maxe = 1e5 + 9, INF = 2147483647;
@@ -468,13 +984,13 @@ int main()
     return 0;
 }
 </code></pre>
-<h4 id=对于负环的判断>对于负环的判断</h4>
+<h4 id="对于负环的判断">对于负环的判断</h4>
 <p>记录当前路径的最短路经过的边的数量，若边数大于总节点数，则说明一定有一条边被走了两次，证明有负环的存在。</p>
 <p>代码实现也很简单：</p>
-<pre><code class=language-c++>//在上面标号1的地方加入
+<pre><code class="language-c++">//在上面标号1的地方加入
 int pass[maxe];
 </code></pre>
-<pre><code class=language-c++>//在上面标号2的地方加入
+<pre><code class="language-c++">//在上面标号2的地方加入
 pass[edges[now][i].next] = pass[now] + 1;
 if (pass[edges[now][i].next] &gt; n)
 {
@@ -484,20 +1000,20 @@ if (pass[edges[now][i].next] &gt; n)
 </code></pre>
 <p>还有一种比较玄学的判负环方式，就是如果扩展了MAXN次还没出结果，就判定有负环。（MAXN为根据题目规模自拟的常量）</p>
 <p>原理简单易懂：跑了这么久还没出结果，当然是有负环咯~~NB的是经实测正确率还相当高！当然相当高还是牺牲了算法的正确性的，因此不到万不得已之时不建议使用(玄学你懂的)。</p>
-<h4 id=一些优化的方法>一些优化的方法</h4>
+<h4 id="一些优化的方法">一些优化的方法</h4>
 <p>总体思想就是在你被出题人构造数据的情况下，如何能另辟蹊径，做出一些让出题人意想不到、另人捧腹大笑的sao操作，从而达到骗分的效果。</p>
 <ol>
 <li>简单的优化(只能让你的spfa跑的快一点，适用于常数大的同学。至于卡了spfa的题，仍旧没有什么用处。)
 <ol>
-<li><strong>SLF(Small Label First)优化：</strong> 在使用queue作为spfa的辅助数据结构时，将队列替换为双端队列，每当插入元素 $now$ 时，与队首进行比较，若 $dis[q.front()] > dis[now]$，将 $now$ 从队首插入，否则从队尾插入，使得更可能更新出节点最优解的节点最先进行更新，减少无用迭代次数。</li>
-<li><strong>LLL(Large Label Last）优化：</strong> 使用双端队列，维护目前队列中元素到起点的距离的平均值（即 $\sum^{tail}_{i=head}dis[edges[i]/n]$），设该数为 $k$，若 $dis[now] > k$，则从队尾插入，否则从队首插入，用处不大。</li>
+<li><strong>SLF(Small Label First)优化：</strong> 在使用queue作为spfa的辅助数据结构时，将队列替换为双端队列，每当插入元素 $now$ 时，与队首进行比较，若 $dis[q.front()] &gt; dis[now]$，将 $now$ 从队首插入，否则从队尾插入，使得更可能更新出节点最优解的节点最先进行更新，减少无用迭代次数。</li>
+<li><strong>LLL(Large Label Last）优化：</strong> 使用双端队列，维护目前队列中元素到起点的距离的平均值（即 $\sum^{tail}_{i=head}dis[edges[i]/n]$），设该数为 $k$，若 $dis[now] &gt; k$，则从队尾插入，否则从队首插入，用处不大。</li>
 </ol>
 </li>
 <li>升级的优化 (能过数据不刁钻的卡spfa的题，至于某些丧心病狂的出题人，拜拜了您嘞)
 <ol>
-<li><strong>容错后的SLF：</strong> 定义容错值 $val$，当满足 $dis[now] > dis[q.front()] + val$ 时从队尾插入，否则从队首插入，可以让程序不陷入局部最优解。</li>
+<li><strong>容错后的SLF：</strong> 定义容错值 $val$，当满足 $dis[now] &gt; dis[q.front()] + val$ 时从队尾插入，否则从队首插入，可以让程序不陷入局部最优解。</li>
 <li><strong>mcfx优化：</strong> 定义区间 $[l,r]$，当入队节点的入队次数属于这个区间的时候，从队首插入，否则从队尾插入，如过某个节点出发的大多数边都只能更新一个次解，那么它在队列中的优先级就会降低，防止链式结构卡死你。</li>
-<li><strong>Swap-SLF：</strong> 若队列改变且 $dis[q.front()] > dis[q.back()]$​​，交换队首队尾，比较玄学。</li>
+<li><strong>Swap-SLF：</strong> 若队列改变且 $dis[q.front()] &gt; dis[q.back()]$​​，交换队首队尾，比较玄学。</li>
 </ol>
 </li>
 <li>玄学的优化(都是sao操作，能过多少看人品)
@@ -508,7 +1024,7 @@ if (pass[edges[now][i].next] &gt; n)
 </ol>
 </li>
 </ol>
-<h3 id=dfs方式>DFS方式</h3>
+<h3 id="dfs方式">DFS方式</h3>
 <p>经过极其强大的优化后速度可能和BFS同级，但是在仅判断负环的问题中十分快。</p>
 <ol>
 <li>初始化：将dis数组除起点外赋值为 $\infty$ ，起点dis为$0$，将起点加入run队列。</li>
@@ -516,16 +1032,16 @@ if (pass[edges[now][i].next] &gt; n)
 <li>重复递归，直到无法更新。</li>
 </ol>
 <p>由于这种东西的实用性过低，不给出标程(实际上是懒得)。</p>
-<h4 id=关于优化>关于优化</h4>
-<p><a href=http://www.doc88.com/p-49816668344446.html target=_blank rel=noopener>姜碧野的《spfa算法的优化及应用》</a>十分详细且难以理解。</p>
-<h4 id=对于负环的判断-1>对于负环的判断</h4>
-<p>十分新奇，其实只需要记住结论即可。证明：<a href=./SPFA-DFS%e8%b4%9f%e7%8e%af%e8%af%81%e6%98%8e.md>文档</a></p>
+<h4 id="关于优化">关于优化</h4>
+<p><a href="http://www.doc88.com/p-49816668344446.html" target="_blank" rel="noopener">姜碧野的《spfa算法的优化及应用》</a>十分详细且难以理解。</p>
+<h4 id="对于负环的判断-1">对于负环的判断</h4>
+<p>十分新奇，其实只需要记住结论即可。证明：<a href="./SPFA-DFS%e8%b4%9f%e7%8e%af%e8%af%81%e6%98%8e.md">文档</a></p>
 <p>结论即为：若存在负环，则<strong>一定</strong>存在特定的至少一对终止点之间的不重叠顶点最短路径的边权从起点<strong>依次</strong>相加<strong>始终</strong>为负。</p>
 <p>所以，我们可以将dis数组初始值设为 $0$​，然后以每个节点为起点DFS，如果路径dis为正数就结束递归，这样相比于BFS方式可以忽略掉众多无用的边。</p>
 <p>但是，这种方法不能求最短路。</p>
-<pre><code class=language-c++>
+<pre><code class="language-c++">
 </code></pre>
-<h2 id=最短路图>最短路图</h2>
+<h2 id="最短路图">最短路图</h2>
 <p>对于只能在最短路径上操作且可能同时存在多条最短路的问题时，可以采用建最短路图的方法。</p>
 <p>将在 $i$ 和 $j$ 的最短路径上的边放入一个新的图当中，使得问题可以在一个DAG（有向无环图）上操作，因为最短路保证不出现环。</p>
 <p>最短路图的建立(有一点点dp的感jio)：</p>
@@ -533,9 +1049,9 @@ if (pass[edges[now][i].next] &gt; n)
 <p>首先，思考一个事情，如何判断一条边是否在最短路图中？</p>
 <p>当且仅当其满足 $dis_i[start]+val+dis_j[end]=dis_i[j]$ 时。</p>
 <p>翻译一下，就是从 $i$ 到边起点的最短路径长度加上路径的权值再加 $j$ 到路径终点的最短路径长度等于 $i$ 到 $j$​ 的最短路径长度，因为只有这样，才能保证最短路径长度不变，即一种可能的情况。</p>
-<pre><code class=language-c++>
+<pre><code class="language-c++">
 </code></pre>
-<h2 id=分层图最短路>分层图最短路</h2>
+<h2 id="分层图最短路">分层图最短路</h2>
 <p>用于求解一些有复杂决策的问题。</p>
 <p>在一个正常的图上可以进行 k 次决策，对于每次决策，不影响图的结构，只影响目前的状态或代价。一般将决策前的状态和决策后的状态之间连接一条权值为决策代价的边，表示付出该代价后就可以转换状态了。</p>
 <p>就是将每个点根据状态的不同拆成若干个点，用拆出来的所有点建立新图并跑最短路。</p>
@@ -549,127 +1065,360 @@ if (pass[edges[now][i].next] &gt; n)
 </li>
 </ol>
 <p>然后，在新建立的图中跑最短路。</p>
+
+    </div>
+
+    
+
+
+
+
+
+
+
+
+<div class="share-box">
+  <ul class="share">
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://twitter.com/intent/tweet?url=https://xuxihe.vercel.app/notes/oiknowledge/graph%E5%9B%BE%E8%AE%BA/%E6%9C%80%E7%9F%AD%E8%B7%AF%E5%BE%84/&amp;text=%e6%9c%80%e7%9f%ad%e8%b7%af%e5%be%84" target="_blank" rel="noopener" class="share-btn-twitter" aria-label="twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.facebook.com/sharer.php?u=https://xuxihe.vercel.app/notes/oiknowledge/graph%E5%9B%BE%E8%AE%BA/%E6%9C%80%E7%9F%AD%E8%B7%AF%E5%BE%84/&amp;t=%e6%9c%80%e7%9f%ad%e8%b7%af%e5%be%84" target="_blank" rel="noopener" class="share-btn-facebook" aria-label="facebook">
+          <i class="fab fa-facebook"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="mailto:?subject=%e6%9c%80%e7%9f%ad%e8%b7%af%e5%be%84&amp;body=https://xuxihe.vercel.app/notes/oiknowledge/graph%E5%9B%BE%E8%AE%BA/%E6%9C%80%E7%9F%AD%E8%B7%AF%E5%BE%84/" target="_blank" rel="noopener" class="share-btn-email" aria-label="envelope">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.linkedin.com/shareArticle?url=https://xuxihe.vercel.app/notes/oiknowledge/graph%E5%9B%BE%E8%AE%BA/%E6%9C%80%E7%9F%AD%E8%B7%AF%E5%BE%84/&amp;title=%e6%9c%80%e7%9f%ad%e8%b7%af%e5%be%84" target="_blank" rel="noopener" class="share-btn-linkedin" aria-label="linkedin-in">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="whatsapp://send?text=%e6%9c%80%e7%9f%ad%e8%b7%af%e5%be%84%20https://xuxihe.vercel.app/notes/oiknowledge/graph%E5%9B%BE%E8%AE%BA/%E6%9C%80%E7%9F%AD%E8%B7%AF%E5%BE%84/" target="_blank" rel="noopener" class="share-btn-whatsapp" aria-label="whatsapp">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://service.weibo.com/share/share.php?url=https://xuxihe.vercel.app/notes/oiknowledge/graph%E5%9B%BE%E8%AE%BA/%E6%9C%80%E7%9F%AD%E8%B7%AF%E5%BE%84/&amp;title=%e6%9c%80%e7%9f%ad%e8%b7%af%e5%be%84" target="_blank" rel="noopener" class="share-btn-weibo" aria-label="weibo">
+          <i class="fab fa-weibo"></i>
+        </a>
+      </li>
+    
+  </ul>
 </div>
-<div class=share-box>
-<ul class=share>
-<li>
-<a href="https://twitter.com/intent/tweet?url=https://xuxihe.vercel.app/notes/oiknowledge/graph%E5%9B%BE%E8%AE%BA/%E6%9C%80%E7%9F%AD%E8%B7%AF%E5%BE%84/&text=%e6%9c%80%e7%9f%ad%e8%b7%af%e5%be%84" target=_blank rel=noopener class=share-btn-twitter aria-label=twitter>
-<i class="fab fa-twitter"></i>
-</a>
-</li>
-<li>
-<a href="https://www.facebook.com/sharer.php?u=https://xuxihe.vercel.app/notes/oiknowledge/graph%E5%9B%BE%E8%AE%BA/%E6%9C%80%E7%9F%AD%E8%B7%AF%E5%BE%84/&t=%e6%9c%80%e7%9f%ad%e8%b7%af%e5%be%84" target=_blank rel=noopener class=share-btn-facebook aria-label=facebook>
-<i class="fab fa-facebook"></i>
-</a>
-</li>
-<li>
-<a href="mailto:?subject=%e6%9c%80%e7%9f%ad%e8%b7%af%e5%be%84&body=https://xuxihe.vercel.app/notes/oiknowledge/graph%E5%9B%BE%E8%AE%BA/%E6%9C%80%E7%9F%AD%E8%B7%AF%E5%BE%84/" target=_blank rel=noopener class=share-btn-email aria-label=envelope>
-<i class="fas fa-envelope"></i>
-</a>
-</li>
-<li>
-<a href="https://www.linkedin.com/shareArticle?url=https://xuxihe.vercel.app/notes/oiknowledge/graph%E5%9B%BE%E8%AE%BA/%E6%9C%80%E7%9F%AD%E8%B7%AF%E5%BE%84/&title=%e6%9c%80%e7%9f%ad%e8%b7%af%e5%be%84" target=_blank rel=noopener class=share-btn-linkedin aria-label=linkedin-in>
-<i class="fab fa-linkedin-in"></i>
-</a>
-</li>
-<li>
-<a href="whatsapp://send?text=%e6%9c%80%e7%9f%ad%e8%b7%af%e5%be%84%20https://xuxihe.vercel.app/notes/oiknowledge/graph%E5%9B%BE%E8%AE%BA/%E6%9C%80%E7%9F%AD%E8%B7%AF%E5%BE%84/" target=_blank rel=noopener class=share-btn-whatsapp aria-label=whatsapp>
-<i class="fab fa-whatsapp"></i>
-</a>
-</li>
-<li>
-<a href="https://service.weibo.com/share/share.php?url=https://xuxihe.vercel.app/notes/oiknowledge/graph%E5%9B%BE%E8%AE%BA/%E6%9C%80%E7%9F%AD%E8%B7%AF%E5%BE%84/&title=%e6%9c%80%e7%9f%ad%e8%b7%af%e5%be%84" target=_blank rel=noopener class=share-btn-weibo aria-label=weibo>
-<i class="fab fa-weibo"></i>
-</a>
-</li>
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+  
+  
+  
+    
+  
+  
+  
+  <div class="media author-card content-widget-hr">
+    
+      
+      <a href="https://xuxihe.vercel.app/"><img class="avatar mr-3 avatar-circle" src="/author/%E6%9B%A6%E6%9B%A6%E5%91%B5%E5%91%B5/avatar_hudb29ded1c25f9d5e935a5b2ce5ff59ff_1255814_270x270_fill_lanczos_center_3.png" alt="曦曦呵呵"></a>
+    
+
+    <div class="media-body">
+      <h5 class="card-title"><a href="https://xuxihe.vercel.app/">曦曦呵呵</a></h5>
+      <h6 class="card-subtitle">一名卑微的OIer。</h6>
+      <p class="card-text">开开心心，蹦蹦跳跳~</p>
+      <ul class="network-icon" aria-hidden="true">
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="/#contact" >
+        <i class="fas fa-envelope"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://github.com/Xu-Xihe" target="_blank" rel="noopener">
+        <i class="fab fa-github"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://qm.qq.com/cgi-bin/qm/qr?k=Wns5qUpuYc9CC616JJSKEyC3vXqZWjrF&amp;noverify=0" target="_blank" rel="noopener">
+        <i class="fab fa-qq"></i>
+      </a>
+    </li>
+  
 </ul>
+
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="article-widget">
+  
+<div class="post-nav">
+  
+  
+  
+  <div class="post-nav-item">
+    <div class="meta-nav">下一页</div>
+    <a href="/notes/oiknowledge/graph%E5%9B%BE%E8%AE%BA/%E6%9C%80%E5%B0%8F%E7%94%9F%E6%88%90%E6%A0%91/" rel="next">最小生成树</a>
+  </div>
+  
+  
+  
+  <div class="post-nav-item">
+    <div class="meta-nav">上一页</div>
+    <a href="/notes/oiknowledge/graph%E5%9B%BE%E8%AE%BA/spfa-dfs%E8%B4%9F%E7%8E%AF%E8%AF%81%E6%98%8E/" rel="prev">SPFA-DFS负环证明</a>
+  </div>
+  
 </div>
-<div class="media author-card content-widget-hr">
-<a href=https://xuxihe.vercel.app/><img class="avatar mr-3 avatar-circle" src=/author/%E6%9B%A6%E6%9B%A6%E5%91%B5%E5%91%B5/avatar_hudb29ded1c25f9d5e935a5b2ce5ff59ff_1255814_270x270_fill_lanczos_center_3.png alt=曦曦呵呵></a>
-<div class=media-body>
-<h5 class=card-title><a href=https://xuxihe.vercel.app/>曦曦呵呵</a></h5>
-<h6 class=card-subtitle>一名卑微的OIer。</h6>
-<p class=card-text>开开心心，蹦蹦跳跳~</p>
-<ul class=network-icon aria-hidden=true>
-<li>
-<a href=/#contact>
-<i class="fas fa-envelope"></i>
-</a>
-</li>
-<li>
-<a href=https://github.com/Xu-Xihe target=_blank rel=noopener>
-<i class="fab fa-github"></i>
-</a>
-</li>
-<li>
-<a href="https://qm.qq.com/cgi-bin/qm/qr?k=Wns5qUpuYc9CC616JJSKEyC3vXqZWjrF&noverify=0" target=_blank rel=noopener>
-<i class="fab fa-qq"></i>
-</a>
-</li>
-</ul>
+
 </div>
-</div>
-<div class=article-widget>
-<div class=post-nav>
-<div class=post-nav-item>
-<div class=meta-nav>下一页</div>
-<a href=/notes/oiknowledge/graph%E5%9B%BE%E8%AE%BA/%E6%9C%80%E5%B0%8F%E7%94%9F%E6%88%90%E6%A0%91/ rel=next>最小生成树</a>
-</div>
-<div class=post-nav-item>
-<div class=meta-nav>上一页</div>
-<a href=/notes/oiknowledge/graph%E5%9B%BE%E8%AE%BA/spfa-dfs%E8%B4%9F%E7%8E%AF%E8%AF%81%E6%98%8E/ rel=prev>SPFA-DFS负环证明</a>
-</div>
-</div>
-</div>
-</div>
+
+
+
+
+
+
+
+
+
+  </div>
 </article>
-</div>
-<div class=page-footer>
-<div class=container>
-<footer class=site-footer>
-<p class=powered-by>
-© 曦曦呵呵
-</p>
-<p class=powered-by>
-由<a href="https://wowchemy.com/?utm_campaign=poweredby" target=_blank rel=noopener>Wowchemy</a>支持发布——免费<a href=https://github.com/wowchemy/wowchemy-hugo-themes target=_blank rel=noopener>开源</a>网站，为创作者赋能。
-</p>
+  </div>
+
+  <div class="page-footer">
+    
+    
+    <div class="container">
+      <footer class="site-footer">
+
+  
+
+
+
+  
+
+  
+
+  
+  <p class="powered-by">
+    © 曦曦呵呵
+  </p>
+  
+
+  
+  
+
+
+
+
+
+
+  <p class="powered-by">
+    
+    
+    
+      
+      
+      
+      
+      
+      
+      由<a href="https://wowchemy.com/?utm_campaign=poweredby" target="_blank" rel="noopener">Wowchemy</a>支持发布——免费<a href="https://github.com/wowchemy/wowchemy-hugo-themes" target="_blank" rel="noopener">开源</a>网站，为创作者赋能。
+    
+  </p>
 </footer>
+
+    </div>
+    
+  </div>
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">引用</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> 复制
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> 下载
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
 </div>
-</div>
-<div id=modal class="modal fade" role=dialog>
-<div class=modal-dialog>
-<div class=modal-content>
-<div class=modal-header>
-<h5 class=modal-title>引用</h5>
-<button type=button class=close data-dismiss=modal aria-label=Close>
-<span aria-hidden=true>&#215;</span>
-</button>
-</div>
-<div class=modal-body>
-<pre><code class="tex hljs"></code></pre>
-</div>
-<div class=modal-footer>
-<a class="btn btn-outline-primary my-1 js-copy-cite" href=# target=_blank>
-<i class="fas fa-copy"></i> 复制
-</a>
-<a class="btn btn-outline-primary my-1 js-download-cite" href=# target=_blank>
-<i class="fas fa-download"></i> 下载
-</a>
-<div id=modal-error></div>
-</div>
-</div>
-</div>
-</div>
-<script src=/js/vendor-bundle.min.b73dfaac3b6499dc997741748a7c3fe2.js></script>
-<script src=https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin=anonymous></script>
-<script src=https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin=anonymous></script>
-<script src=https://cdnjs.cloudflare.com/ajax/libs/mermaid/8.8.4/mermaid.min.js integrity="sha512-as1BF4+iHZ3BVO6LLDQ7zrbvTXM+c/1iZ1qII/c3c4L8Rn5tHLpFUtpaEtBNS92f+xGsCzsD7b62XP3XYap6oA==" crossorigin=anonymous title=mermaid></script>
-<script src=https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/highlight.min.js integrity="sha512-TDKKr+IvoqZnPzc3l35hdjpHD0m+b2EC2SrLEgKDRWpxf2rFCxemkgvJ5kfU48ip+Y+m2XVKyOCD85ybtlZDmw==" crossorigin=anonymous></script>
-<script src=https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/languages/r.min.js crossorigin=anonymous></script>
-<script src=https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/languages/python.min.js crossorigin=anonymous></script>
-<script src=https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/languages/latex.min.js crossorigin=anonymous></script>
-<script src=https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.min.js integrity="sha512-SeiQaaDh73yrb56sTW/RgVdi/mMqNeM2oBwubFHagc5BkixSpP1fvqF47mKzPGWYSSy4RwbBunrJBQ4Co8fRWA==" crossorigin=anonymous></script>
-<script id=search-hit-fuse-template type=text/x-template>
+
+      
+
+    
+    <script src="/js/vendor-bundle.min.b73dfaac3b6499dc997741748a7c3fe2.js"></script>
+
+    
+    
+    
+      
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      
+
+      
+      
+
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/8.8.4/mermaid.min.js" integrity="sha512-as1BF4+iHZ3BVO6LLDQ7zrbvTXM+c/1iZ1qII/c3c4L8Rn5tHLpFUtpaEtBNS92f+xGsCzsD7b62XP3XYap6oA==" crossorigin="anonymous" title="mermaid"></script>
+      
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/highlight.min.js" integrity="sha512-TDKKr+IvoqZnPzc3l35hdjpHD0m+b2EC2SrLEgKDRWpxf2rFCxemkgvJ5kfU48ip+Y+m2XVKyOCD85ybtlZDmw==" crossorigin="anonymous"></script>
+        
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/languages/r.min.js" crossorigin="anonymous"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/languages/python.min.js" crossorigin="anonymous"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/languages/latex.min.js" crossorigin="anonymous"></script>
+        
+      
+
+    
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.min.js" integrity="sha512-SeiQaaDh73yrb56sTW/RgVdi/mMqNeM2oBwubFHagc5BkixSpP1fvqF47mKzPGWYSSy4RwbBunrJBQ4Co8fRWA==" crossorigin="anonymous"></script>
+    
+
+    
+    
+
+    
+    
+    
+      
+      <script id="search-hit-fuse-template" type="text/x-template">
         <div class="search-hit" id="summary-{{key}}">
           <div class="search-hit-content">
             <div class="search-hit-name">
@@ -680,8 +1429,51 @@ if (pass[edges[now][i].next] &gt; n)
           </div>
         </div>
       </script>
-<script src=https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin=anonymous></script>
-<script src=https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin=anonymous></script>
-<script src=/zh/js/wowchemy.min.d16321ec6884b061cbaaf961484b65c8.js></script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+      
+    
+
+    
+    
+
+    
+    
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+      
+      
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+      
+      
+    
+    
+    <script src="/zh/js/wowchemy.min.d16321ec6884b061cbaaf961484b65c8.js"></script>
+
+    
+
+
+
+
+
+
 </body>
 </html>

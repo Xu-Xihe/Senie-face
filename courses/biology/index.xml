@@ -1,677 +1,782 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>生物 | Senie</title><link>https://xuxihe.vercel.app/courses/biology/</link><atom:link href="https://xuxihe.vercel.app/courses/biology/index.xml" rel="self" type="application/rss+xml"/><description>生物</description><generator>Wowchemy (https://wowchemy.com)</generator><language>zh</language><copyright>© 曦曦呵呵</copyright><lastBuildDate>Sat, 09 Jul 2022 17:20:47 +0800</lastBuildDate><image><url>https://xuxihe.vercel.app/media/icon_huf638f59a6dd2257b0add8e0186347459_300061_512x512_fill_lanczos_center_3.png</url><title>生物</title><link>https://xuxihe.vercel.app/courses/biology/</link></image><item><title>密码子</title><link>https://xuxihe.vercel.app/courses/biology/%E5%AF%86%E7%A0%81%E5%AD%90/</link><pubDate>Sat, 09 Jul 2022 17:20:47 +0800</pubDate><guid>https://xuxihe.vercel.app/courses/biology/%E5%AF%86%E7%A0%81%E5%AD%90/</guid><description>&lt;h2 id="起始密码子">起始密码子&lt;/h2>
-&lt;p>AUG（甲硫氨酸）、GUG（在原核中，甲硫氨酸）&lt;/p>
-&lt;h2 id="终止密码子">终止密码子&lt;/h2>
-&lt;p>UAA、UAG、UGA&lt;/p>
-&lt;p>终止密码子不翻译氨基酸&lt;/p>
-&lt;script src='//unpkg.com/valine/dist/Valine.min.js'>&lt;/script>
-&lt;div id="vcomments">&lt;/div>
-&lt;script>
-new Valine({
-el: '#vcomments',
-appId: 'mUFdj80doBeHANJjnbmU89gH-gzGzoHsz',
-appKey: 'p4p7vzJrQnIYoajXvUjpuiRy',
-placeholder: '说点什么叭~ (上一栏选填，开放匿名评论，邮箱仅用于Gravatar头像显示)',
-visitor: true,
-recordIP: true,
-serverURLs: false,
-enableQQ: true
-})
-&lt;/script></description></item><item><title>突变与重组</title><link>https://xuxihe.vercel.app/courses/biology/%E7%AA%81%E5%8F%98%E4%B8%8E%E9%87%8D%E7%BB%84/</link><pubDate>Thu, 07 Jul 2022 22:33:05 +0800</pubDate><guid>https://xuxihe.vercel.app/courses/biology/%E7%AA%81%E5%8F%98%E4%B8%8E%E9%87%8D%E7%BB%84/</guid><description>&lt;h2 id="基因突变">基因突变&lt;/h2>
-&lt;p>DNA分子中发生碱基的&lt;strong>替换&lt;/strong>、&lt;strong>增添&lt;/strong>或&lt;strong>缺失&lt;/strong>，而引起的基因碱基序列的改变。&lt;/p>
-&lt;ol>
-&lt;li>随机性：可以在任何细胞中的任何时间在任何基因上发生，主要发生在有丝分裂前和减数分裂前的间期&lt;/li>
-&lt;li>不定向性&lt;/li>
-&lt;/ol>
-&lt;h3 id="基因突变不一定使性状改变">基因突变不一定使性状改变&lt;/h3>
-&lt;ol>
-&lt;li>突变前后，经转录形成的密码子所决定的氨基酸相同&lt;/li>
-&lt;li>显性纯合子突变为杂合子：$\ce{AA\rightarrow Aa}$&lt;/li>
-&lt;li>内含子发生碱基突变&lt;/li>
-&lt;/ol>
-&lt;h3 id="细胞的癌变">细胞的癌变&lt;/h3>
-&lt;ol>
-&lt;li>
-&lt;p>原癌基因：表达的蛋白质是细胞正常生长和增殖所必须的&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>抑癌基因：抑制细胞的生长和繁殖，或者促进细胞凋亡&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>癌变原因&lt;/p>
-&lt;ol>
-&lt;li>原癌基因突变或过量表达，导致相应蛋白质活性过强&lt;/li>
-&lt;li>抑癌基因突变或表达受抑制，导致相应蛋白质活性减弱或失活&lt;/li>
-&lt;li>相关基因甲基化&lt;/li>
-&lt;/ol>
-&lt;/li>
-&lt;li>
-&lt;p>癌细胞特点&lt;/p>
-&lt;ol>
-&lt;li>能够无限增殖&lt;/li>
-&lt;li>形态结构发生显著变化&lt;/li>
-&lt;li>细胞膜上糖蛋白等物质减少，细胞之间的黏着性显著降低，容易在体内分散和转移&lt;/li>
-&lt;/ol>
-&lt;/li>
-&lt;/ol>
-&lt;h3 id="例子">例子&lt;/h3>
-&lt;ul>
-&lt;li>囊性纤维化：基因缺失&lt;/li>
-&lt;li>豌豆皱粒：基因增添&lt;/li>
-&lt;li>镰状细胞贫血：基因替换&lt;/li>
-&lt;/ul>
-&lt;h2 id="基因重组">基因重组&lt;/h2>
-&lt;p>生物体进行有性生殖的过程中，控制不同性状的基因的重新组合。&lt;/p>
-&lt;ol>
-&lt;li>非同源染色体自由组合&lt;/li>
-&lt;li>同源染色体的非姐妹染色单体缠绕互换&lt;/li>
-&lt;/ol>
-&lt;h2 id="染色体变异">染色体变异&lt;/h2>
-&lt;p>体细胞或生殖细胞内染色体数目或结构的变化。&lt;/p>
-&lt;h3 id="数目">数目&lt;/h3>
-&lt;ol>
-&lt;li>单倍体：花粉（生殖细胞）离体培养&lt;font color=red>（注意：单倍体是指较正常植株，染色体组数量减半，不一定只有 $1$ 个或奇数个染色体组）&lt;/font>&lt;/li>
-&lt;li>二倍体：全部动物和过半数的高等植物&lt;/li>
-&lt;li>多倍体：
-&lt;ol>
-&lt;li>三倍体：无籽西瓜、无籽香蕉（减数分裂时出现联会紊乱，不能产生可育配子）&lt;/li>
-&lt;li>四倍体：番茄、马铃薯、葡萄（两套不同染色体组，每套两个染色体组，用AARR表示）&lt;/li>
-&lt;li>六倍体：小麦（三套不同染色体组，每套两个染色体组，用AABBRR表示）&lt;/li>
-&lt;/ol>
-&lt;/li>
-&lt;/ol>
-&lt;p>低温诱导或秋水仙素能抑制纺锤体的形成&lt;/p>
-&lt;h3 id="结构">结构&lt;/h3>
-&lt;h4 id="类型">类型&lt;/h4>
-&lt;ol>
-&lt;li>缺失&lt;/li>
-&lt;li>重复&lt;/li>
-&lt;li>易位（移接）：染色体的某一片段移接到另一条&lt;strong>非同源染色体&lt;/strong>上&lt;/li>
-&lt;li>倒位&lt;/li>
-&lt;/ol>
-&lt;h4 id="例子-1">例子&lt;/h4>
-&lt;ul>
-&lt;li>猫叫综合征：$5$ 号染色体缺失&lt;/li>
-&lt;li>果蝇残翅：缺失&lt;/li>
-&lt;li>果蝇棒状眼：重复&lt;/li>
-&lt;li>果蝇花斑眼：易位（移接）&lt;/li>
-&lt;li>果蝇卷翅：倒位&lt;/li>
-&lt;li>唐氏综合征（ $21$ 三体综合征）：$21$ 号染色体多一条&lt;/li>
-&lt;/ul>
-&lt;script src='//unpkg.com/valine/dist/Valine.min.js'>&lt;/script>
-&lt;div id="vcomments">&lt;/div>
-&lt;script>
-new Valine({
-el: '#vcomments',
-appId: 'mUFdj80doBeHANJjnbmU89gH-gzGzoHsz',
-appKey: 'p4p7vzJrQnIYoajXvUjpuiRy',
-placeholder: '说点什么叭~ (上一栏选填，开放匿名评论，邮箱仅用于Gravatar头像显示)',
-visitor: true,
-recordIP: true,
-serverURLs: false,
-enableQQ: true
-})
-&lt;/script></description></item><item><title>性状及遗传病</title><link>https://xuxihe.vercel.app/courses/biology/%E6%80%A7%E7%8A%B6%E5%8F%8A%E9%81%97%E4%BC%A0%E7%97%85/</link><pubDate>Thu, 07 Jul 2022 22:10:12 +0800</pubDate><guid>https://xuxihe.vercel.app/courses/biology/%E6%80%A7%E7%8A%B6%E5%8F%8A%E9%81%97%E4%BC%A0%E7%97%85/</guid><description>&lt;ul>
-&lt;li>果蝇红眼（显）白眼（隐）：伴X染色体&lt;/li>
-&lt;li>抗维生素D佝偻病：伴X显性&lt;/li>
-&lt;li>红绿色盲：伴X隐性&lt;/li>
-&lt;li>白化病：伴X隐性&lt;/li>
-&lt;li>血友病：伴X隐性&lt;/li>
-&lt;li>苯丙酮尿症：常染色体隐性&lt;/li>
-&lt;li>猫叫综合征：染色体异常（ $5$ 号染色体缺失）&lt;/li>
-&lt;li>唐氏综合征（ $21$ 三体综合征、先天愚型）：染色体异常&lt;/li>
-&lt;li>软骨发育不全：多基因显性遗传病（单一软骨发育不全基因即致病）&lt;/li>
-&lt;li>原发性高血压：多基因遗传病&lt;/li>
-&lt;li>青少年型糖尿病：多基因遗传病&lt;/li>
-&lt;li>冠心病：多基因遗传病&lt;/li>
-&lt;li>哮喘：多基因遗传病&lt;/li>
-&lt;/ul>
-&lt;script src='//unpkg.com/valine/dist/Valine.min.js'>&lt;/script>
-&lt;div id="vcomments">&lt;/div>
-&lt;script>
-new Valine({
-el: '#vcomments',
-appId: 'mUFdj80doBeHANJjnbmU89gH-gzGzoHsz',
-appKey: 'p4p7vzJrQnIYoajXvUjpuiRy',
-placeholder: '说点什么叭~ (上一栏选填，开放匿名评论，邮箱仅用于Gravatar头像显示)',
-visitor: true,
-recordIP: true,
-serverURLs: false,
-enableQQ: true
-})
-&lt;/script></description></item><item><title>光合呼吸有关计算</title><link>https://xuxihe.vercel.app/courses/biology/%E5%85%89%E5%90%88%E5%91%BC%E5%90%B8%E6%9C%89%E5%85%B3%E8%AE%A1%E7%AE%97/</link><pubDate>Thu, 07 Jul 2022 21:59:35 +0800</pubDate><guid>https://xuxihe.vercel.app/courses/biology/%E5%85%89%E5%90%88%E5%91%BC%E5%90%B8%E6%9C%89%E5%85%B3%E8%AE%A1%E7%AE%97/</guid><description>&lt;h2 id="光照强度">光照强度&lt;/h2>
-&lt;ol>
-&lt;li>黑暗：只有呼吸作用&lt;/li>
-&lt;li>弱光：光合速率小于呼吸速率&lt;/li>
-&lt;li>中等光：光合速率等于呼吸速率&lt;/li>
-&lt;li>强光：光合速率大于呼吸速率&lt;/li>
-&lt;/ol>
-&lt;h2 id="计算">计算&lt;/h2>
-&lt;p>总光合速率 $=$ 净光合速率 $+$ 呼吸速率&lt;/p>
-&lt;ol>
-&lt;li>总光合速率（有负值）
-&lt;ul>
-&lt;li>$\ce{CO2}$ 固定量&lt;/li>
-&lt;li>$\ce{O2}$ 产生量&lt;/li>
-&lt;li>有机物产生量&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>净光合速率（无负值）
-&lt;ul>
-&lt;li>$\ce{CO2}$ 吸收量（外界）&lt;/li>
-&lt;li>$\ce{O2}$ 释放量&lt;/li>
-&lt;li>有机物积累量&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ol>
-&lt;script src='//unpkg.com/valine/dist/Valine.min.js'>&lt;/script>
-&lt;div id="vcomments">&lt;/div>
-&lt;script>
-new Valine({
-el: '#vcomments',
-appId: 'mUFdj80doBeHANJjnbmU89gH-gzGzoHsz',
-appKey: 'p4p7vzJrQnIYoajXvUjpuiRy',
-placeholder: '说点什么叭~ (上一栏选填，开放匿名评论，邮箱仅用于Gravatar头像显示)',
-visitor: true,
-recordIP: true,
-serverURLs: false,
-enableQQ: true
-})
-&lt;/script></description></item><item><title>光合色素</title><link>https://xuxihe.vercel.app/courses/biology/%E5%85%89%E5%90%88%E8%89%B2%E7%B4%A0/</link><pubDate>Tue, 05 Jul 2022 22:15:25 +0800</pubDate><guid>https://xuxihe.vercel.app/courses/biology/%E5%85%89%E5%90%88%E8%89%B2%E7%B4%A0/</guid><description>&lt;p>&lt;a href="https://imgtu.com/i/jNoDns" target="_blank" rel="noopener">&lt;img src="https://s1.ax1x.com/2022/07/05/jNoDns.jpg" alt="jNoDns.jpg" style="zoom: 67%;" />&lt;/a>&lt;/p>
-&lt;h2 id="实验">实验&lt;/h2>
-&lt;p>见&lt;a href="%e8%af%95%e5%89%82%e4%b8%8e%e5%ae%9e%e9%aa%8c.md">试剂与实验&lt;/a>&lt;/p>
-&lt;h2 id="光合色素">光合色素&lt;/h2>
-&lt;table>
-&lt;thead>
-&lt;tr>
-&lt;th style="text-align:center">色素种类&lt;/th>
-&lt;th style="text-align:center">色素颜色&lt;/th>
-&lt;th style="text-align:center">色素含量（色条宽度）&lt;/th>
-&lt;th style="text-align:center">溶解度（扩散速度）（高度）&lt;/th>
-&lt;/tr>
-&lt;/thead>
-&lt;tbody>
-&lt;tr>
-&lt;td style="text-align:center">叶绿素a&lt;/td>
-&lt;td style="text-align:center">&lt;font color=#047475>蓝绿色&lt;/font>&lt;/td>
-&lt;td style="text-align:center">1&lt;/td>
-&lt;td style="text-align:center">3&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td style="text-align:center">叶绿素b&lt;/td>
-&lt;td style="text-align:center">&lt;font color=#8acd01>黄绿色&lt;/font>&lt;/td>
-&lt;td style="text-align:center">2&lt;/td>
-&lt;td style="text-align:center">4&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td style="text-align:center">胡萝卜素&lt;/td>
-&lt;td style="text-align:center">&lt;font color=#ff7f00>橙黄色&lt;/font>&lt;/td>
-&lt;td style="text-align:center">4&lt;/td>
-&lt;td style="text-align:center">1&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td style="text-align:center">叶黄素&lt;/td>
-&lt;td style="text-align:center">&lt;font color=#f8ce3a>黄色&lt;/font>&lt;/td>
-&lt;td style="text-align:center">3&lt;/td>
-&lt;td style="text-align:center">2&lt;/td>
-&lt;/tr>
-&lt;/tbody>
-&lt;/table>
-&lt;h2 id="吸收光谱">吸收光谱&lt;/h2>
-&lt;ol>
-&lt;li>叶绿素（叶绿素a和叶绿素b）主要吸收&lt;font color=#4B0082>蓝紫光&lt;/font>和&lt;font color=red>红光&lt;/font>&lt;/li>
-&lt;li>类胡萝卜素（胡萝卜素和叶黄素）主要吸收&lt;font color=#4B0082>蓝紫光&lt;/font>&lt;/li>
-&lt;/ol>
-&lt;p>&lt;font color=red>注意：当植物光合速率等于呼吸速率时，绿色器官光合作用强度大于呼吸作用强度。&lt;/font>&lt;/p>
-&lt;script src='//unpkg.com/valine/dist/Valine.min.js'>&lt;/script>
-&lt;div id="vcomments">&lt;/div>
-&lt;script>
-new Valine({
-el: '#vcomments',
-appId: 'mUFdj80doBeHANJjnbmU89gH-gzGzoHsz',
-appKey: 'p4p7vzJrQnIYoajXvUjpuiRy',
-placeholder: '说点什么叭~ (上一栏选填，开放匿名评论，邮箱仅用于Gravatar头像显示)',
-visitor: true,
-recordIP: true,
-serverURLs: false,
-enableQQ: true
-})
-&lt;/script></description></item><item><title>生物呼吸方式</title><link>https://xuxihe.vercel.app/courses/biology/%E7%94%9F%E7%89%A9%E5%91%BC%E5%90%B8%E6%96%B9%E5%BC%8F/</link><pubDate>Tue, 05 Jul 2022 22:05:29 +0800</pubDate><guid>https://xuxihe.vercel.app/courses/biology/%E7%94%9F%E7%89%A9%E5%91%BC%E5%90%B8%E6%96%B9%E5%BC%8F/</guid><description>&lt;h2 id="厌氧菌">厌氧菌&lt;/h2>
-&lt;ol>
-&lt;li>兼性厌氧菌：酵母菌&lt;/li>
-&lt;li>严格厌氧菌：乳酸菌、破伤风杆菌&lt;/li>
-&lt;/ol>
-&lt;h2 id="无氧呼吸产物">无氧呼吸产物&lt;/h2>
-&lt;h3 id="乳酸">乳酸&lt;/h3>
-&lt;ul>
-&lt;li>马铃薯块茎&lt;/li>
-&lt;li>甜菜块根&lt;/li>
-&lt;li>玉米胚&lt;/li>
-&lt;li>骨骼肌&lt;/li>
-&lt;li>哺乳动物成熟红细胞（只能进行无氧呼吸）&lt;/li>
-&lt;/ul>
-&lt;h3 id="酒精-spacececo2">酒精 $+\space\ce{CO2}$&lt;/h3>
-&lt;ul>
-&lt;li>高等植物&lt;/li>
-&lt;li>酵母菌&lt;/li>
-&lt;/ul>
-&lt;h2 id="氧气消耗量">氧气消耗量&lt;/h2>
-&lt;ol>
-&lt;li>$\ce{O2}&amp;gt;\ce{CO2}$：有脂肪等分解&lt;/li>
-&lt;li>$\ce{O2}=\ce{CO2}$：只进行有氧呼吸&lt;/li>
-&lt;li>$\ce{O2}&amp;lt;\ce{CO2}$：同时进行有氧和无氧呼吸&lt;/li>
-&lt;li>$\ce{O2}=0$：只进行无氧呼吸&lt;/li>
-&lt;/ol>
-&lt;script src='//unpkg.com/valine/dist/Valine.min.js'>&lt;/script>
-&lt;div id="vcomments">&lt;/div>
-&lt;script>
-new Valine({
-el: '#vcomments',
-appId: 'mUFdj80doBeHANJjnbmU89gH-gzGzoHsz',
-appKey: 'p4p7vzJrQnIYoajXvUjpuiRy',
-placeholder: '说点什么叭~ (上一栏选填，开放匿名评论，邮箱仅用于Gravatar头像显示)',
-visitor: true,
-recordIP: true,
-serverURLs: false,
-enableQQ: true
-})
-&lt;/script></description></item><item><title>物质的运输</title><link>https://xuxihe.vercel.app/courses/biology/%E7%89%A9%E8%B4%A8%E7%9A%84%E8%BF%90%E8%BE%93/</link><pubDate>Mon, 04 Jul 2022 23:06:47 +0800</pubDate><guid>https://xuxihe.vercel.app/courses/biology/%E7%89%A9%E8%B4%A8%E7%9A%84%E8%BF%90%E8%BE%93/</guid><description>&lt;h2 id="自由扩散简单扩散">自由扩散（简单扩散）&lt;/h2>
-&lt;ol>
-&lt;li>无机小分子
-&lt;ul>
-&lt;li>$\ce{H2O}$&lt;/li>
-&lt;li>$\ce{O2}$&lt;/li>
-&lt;li>$\ce{CO2}$&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>有机小分子
-&lt;ul>
-&lt;li>苯&lt;/li>
-&lt;li>尿素&lt;/li>
-&lt;li>甘油&lt;/li>
-&lt;li>乙醇&lt;/li>
-&lt;li>脂质小分子：（维生素D、性激素、胆固醇）&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ol>
-&lt;h2 id="协助扩散">协助扩散&lt;/h2>
-&lt;ol>
-&lt;li>载体蛋白（构象改变）
-&lt;ul>
-&lt;li>葡萄糖进入红细胞&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>通道蛋白（构象不变）
-&lt;ul>
-&lt;li>神经、肌肉细胞 $\ce{K+}$ 离子外流、$\ce{Na+}$ 离子内流&lt;/li>
-&lt;li>水通道（主要）&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ol>
-&lt;h2 id="主动运输">主动运输&lt;/h2>
-&lt;ul>
-&lt;li>葡萄糖进入细胞（除红细胞）&lt;/li>
-&lt;li>一般生物小分子进出细胞（如核苷酸）&lt;/li>
-&lt;li>一般离子主动运输（如 $\ce{K+}$ 进入大肠杆菌）&lt;/li>
-&lt;/ul>
-&lt;h2 id="胞吞胞吐">胞吞胞吐&lt;/h2>
-&lt;ul>
-&lt;li>白细胞吞噬细菌&lt;/li>
-&lt;li>变形虫吞食&lt;/li>
-&lt;li>生物大分子&lt;/li>
-&lt;li>分泌蛋白
-&lt;ul>
-&lt;li>部分激素
-&lt;ul>
-&lt;li>胰岛素&lt;/li>
-&lt;li>生长激素&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>消化酶
-&lt;ul>
-&lt;li>唾液淀粉酶&lt;/li>
-&lt;li>胃蛋白酶&lt;/li>
-&lt;li>胰蛋白酶&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>核体&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ul>
-&lt;script src='//unpkg.com/valine/dist/Valine.min.js'>&lt;/script>
-&lt;div id="vcomments">&lt;/div>
-&lt;script>
-new Valine({
-el: '#vcomments',
-appId: 'mUFdj80doBeHANJjnbmU89gH-gzGzoHsz',
-appKey: 'p4p7vzJrQnIYoajXvUjpuiRy',
-placeholder: '说点什么叭~ (上一栏选填，开放匿名评论，邮箱仅用于Gravatar头像显示)',
-visitor: true,
-recordIP: true,
-serverURLs: false,
-enableQQ: true
-})
-&lt;/script></description></item><item><title>病毒分类</title><link>https://xuxihe.vercel.app/courses/biology/%E7%97%85%E6%AF%92%E5%88%86%E7%B1%BB/</link><pubDate>Mon, 04 Jul 2022 22:45:54 +0800</pubDate><guid>https://xuxihe.vercel.app/courses/biology/%E7%97%85%E6%AF%92%E5%88%86%E7%B1%BB/</guid><description>&lt;h2 id="宿主">宿主&lt;/h2>
-&lt;ol>
-&lt;li>动物病毒&lt;/li>
-&lt;li>植物病毒&lt;/li>
-&lt;li>噬菌体&lt;/li>
-&lt;/ol>
-&lt;h2 id="遗传物质">遗传物质&lt;/h2>
-&lt;ol>
-&lt;li>DNA
-&lt;ul>
-&lt;li>乙肝病毒&lt;/li>
-&lt;li>噬菌体&lt;/li>
-&lt;li>肺炎链球菌&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>RNA
-&lt;ul>
-&lt;li>烟草花叶病毒&lt;/li>
-&lt;li>HIV（艾滋病毒）&lt;/li>
-&lt;li>各种流感病毒（COVID-19）&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ol>
-&lt;h2 id="生命">生命&lt;/h2>
-&lt;ol>
-&lt;li>病毒在未进入细胞时没有生命&lt;/li>
-&lt;li>繁殖是病毒唯一的生命活动&lt;/li>
-&lt;li>病毒不能独立代谢，因而不属于生命系统的结构层次&lt;/li>
-&lt;/ol>
-&lt;script src='//unpkg.com/valine/dist/Valine.min.js'>&lt;/script>
-&lt;div id="vcomments">&lt;/div>
-&lt;script>
-new Valine({
-el: '#vcomments',
-appId: 'mUFdj80doBeHANJjnbmU89gH-gzGzoHsz',
-appKey: 'p4p7vzJrQnIYoajXvUjpuiRy',
-placeholder: '说点什么叭~ (上一栏选填，开放匿名评论，邮箱仅用于Gravatar头像显示)',
-visitor: true,
-recordIP: true,
-serverURLs: false,
-enableQQ: true
-})
-&lt;/script></description></item><item><title>原核与真核</title><link>https://xuxihe.vercel.app/courses/biology/%E5%8E%9F%E6%A0%B8%E4%B8%8E%E7%9C%9F%E6%A0%B8/</link><pubDate>Sat, 02 Jul 2022 22:20:32 +0800</pubDate><guid>https://xuxihe.vercel.app/courses/biology/%E5%8E%9F%E6%A0%B8%E4%B8%8E%E7%9C%9F%E6%A0%B8/</guid><description>&lt;h2 id="区别">区别&lt;/h2>
-&lt;p>有无&lt;strong>成型&lt;/strong>的细胞核&lt;/p>
-&lt;h2 id="原核">原核&lt;/h2>
-&lt;p>细胞壁（除支原体）：肽聚糖&lt;/p>
-&lt;ol>
-&lt;li>蓝细菌：色球蓝细菌、颤蓝细菌、念珠蓝细菌、&lt;strong>发菜&lt;/strong>（蓝细菌群体的集合）&lt;/li>
-&lt;li>大肠杆菌（球状、弧状、链状……）&lt;/li>
-&lt;li>乳酸菌&lt;/li>
-&lt;li>硝化细菌&lt;/li>
-&lt;li>支原体（目前发现的最小细胞）&lt;/li>
-&lt;li>衣原体&lt;/li>
-&lt;/ol>
-&lt;h2 id="真核">真核&lt;/h2>
-&lt;ol>
-&lt;li>
-&lt;p>动物&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>植物（果胶和纤维素）&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>真菌（几丁质）&lt;/p>
-&lt;ul>
-&lt;li>食用菌&lt;/li>
-&lt;li>霉菌：毛霉、曲霉、根霉……&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>
-&lt;p>酵母菌&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>原生动物（单细胞生物）：草履虫、眼虫、衣藻、变形虫&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>黑藻&lt;/p>
-&lt;/li>
-&lt;/ol>
-&lt;script src='//unpkg.com/valine/dist/Valine.min.js'>&lt;/script>
-&lt;div id="vcomments">&lt;/div>
-&lt;script>
-new Valine({
-el: '#vcomments',
-appId: 'mUFdj80doBeHANJjnbmU89gH-gzGzoHsz',
-appKey: 'p4p7vzJrQnIYoajXvUjpuiRy',
-placeholder: '说点什么叭~ (上一栏选填，开放匿名评论，邮箱仅用于Gravatar头像显示)',
-visitor: true,
-recordIP: true,
-serverURLs: false,
-enableQQ: true
-})
-&lt;/script></description></item><item><title>试剂使用</title><link>https://xuxihe.vercel.app/courses/biology/%E8%AF%95%E5%89%82%E4%B8%8E%E5%AE%9E%E9%AA%8C/</link><pubDate>Sat, 02 Jul 2022 22:17:34 +0800</pubDate><guid>https://xuxihe.vercel.app/courses/biology/%E8%AF%95%E5%89%82%E4%B8%8E%E5%AE%9E%E9%AA%8C/</guid><description>&lt;h2 id="斐林试剂">斐林试剂&lt;/h2>
-&lt;ol>
-&lt;li>
-&lt;p>用途：检测还原糖&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>成分&lt;/p>
-&lt;ul>
-&lt;li>甲液：$\pu{0.1 g/mL}\space\ce{NaOH(aq)}$&lt;/li>
-&lt;li>乙夜：$\pu{0.05 g/mL}\space \ce{CuSO4(aq)}$&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>
-&lt;p>用法&lt;/p>
-&lt;ol>
-&lt;li>
-&lt;p>甲乙液等量混合&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>注入待测组织样液&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>$\pu{50 \sim 60 ^\circ C}$ 水浴加热 $\pu{2 min}$&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>现象：砖红色沉淀&lt;/p>
-&lt;/li>
-&lt;/ol>
-&lt;/li>
-&lt;/ol>
-&lt;h2 id="苏丹iii">苏丹III&lt;/h2>
-&lt;ol>
-&lt;li>
-&lt;p>用途：检测脂肪&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>用法&lt;/p>
-&lt;ol>
-&lt;li>取材&lt;/li>
-&lt;li>制片
-&lt;ol>
-&lt;li>染色 $\pu{3 min}$&lt;/li>
-&lt;li>用吸水纸吸去染液&lt;/li>
-&lt;li>$50%$ 的酒精&lt;strong>洗去浮色&lt;/strong>&lt;/li>
-&lt;/ol>
-&lt;/li>
-&lt;/ol>
-&lt;/li>
-&lt;li>
-&lt;p>现象：脂肪被染成&lt;font color=orange>橘黄色&lt;/font>&lt;/p>
-&lt;/li>
-&lt;/ol>
-&lt;h2 id="双缩脲试剂">双缩脲试剂&lt;/h2>
-&lt;ol>
-&lt;li>
-&lt;p>用途：检测蛋白质&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>成分&lt;/p>
-&lt;ul>
-&lt;li>A液：$\pu{0.1 g/mL}\space\ce{NaOH(aq)}$&lt;/li>
-&lt;li>B液：$\pu{0.01 g/mL}\space \ce{CuSO4(aq)}$&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>
-&lt;p>用法&lt;/p>
-&lt;ol>
-&lt;li>将A液与待测组织样液混合&lt;/li>
-&lt;li>加入 $4$ 滴B液&lt;/li>
-&lt;/ol>
-&lt;/li>
-&lt;li>
-&lt;p>现象：溶液颜色变为&lt;font color=purple>紫色&lt;/font>&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>原理：在碱性条件下，$\ce{CuSO4}$ 与肽键反应形成络合物（变性、加热后均可）&lt;/p>
-&lt;/li>
-&lt;/ol>
-&lt;h2 id="碘液">碘液&lt;/h2>
-&lt;ol>
-&lt;li>用途：检测淀粉（多糖）&lt;/li>
-&lt;li>现象：变蓝&lt;/li>
-&lt;/ol>
-&lt;h2 id="碱性染料">碱性染料&lt;/h2>
-&lt;ol>
-&lt;li>用途：将细胞核中染色体染色&lt;/li>
-&lt;li>包括
-&lt;ul>
-&lt;li>甲紫&lt;/li>
-&lt;li>醋酸洋红&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ol>
-&lt;h2 id="酶的活性">酶的活性&lt;/h2>
-&lt;ol>
-&lt;li>温度
-&lt;ol>
-&lt;li>材料
-&lt;ul>
-&lt;li>淀粉酶溶液 （$\ce{H2O2}$ 加热分解）&lt;/li>
-&lt;li>缓冲液（维持PH $= 7$）&lt;/li>
-&lt;li>可溶性淀粉溶液&lt;/li>
-&lt;li>碘液 （斐林试剂需要水浴加热）&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>步骤
-&lt;ol>
-&lt;li>将底物与酶&lt;strong>分别&lt;/strong>加热（冷却）至设定温度&lt;/li>
-&lt;li>将底物与酶混合并维持设定温度&lt;/li>
-&lt;/ol>
-&lt;/li>
-&lt;/ol>
-&lt;/li>
-&lt;li>PH值
-&lt;ul>
-&lt;li>材料
-&lt;ul>
-&lt;li>$\ce{H2O2(aq)}$（淀粉在 PH $&amp;lt;7$ 时水解）&lt;/li>
-&lt;li>新鲜的肝脏研磨液&lt;/li>
-&lt;li>$\ce{HCl(aq)}$&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ol>
-&lt;h2 id="溴麝香草酚蓝溶液">溴麝香草酚蓝溶液&lt;/h2>
-&lt;ol>
-&lt;li>与 $\ce{CO2}$ 反应，由&lt;font color=blue>蓝色&lt;/font>先变&lt;font color=green>绿色&lt;/font>再变&lt;font color=dayellow>黄色&lt;/font>&lt;/li>
-&lt;li>根据变成黄色的时间，可判断 $\ce{CO2}$ 含量情况&lt;/li>
-&lt;/ol>
-&lt;h2 id="重铬酸钾溶液">重铬酸钾溶液&lt;/h2>
-&lt;ul>
-&lt;li>
-&lt;p>&lt;font color=orange>橙色&lt;/font>的重铬酸钾溶液在酸性条件下与乙醇反应，变成&lt;font color=#668800>灰绿色&lt;/font>&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>与葡萄糖发生颜色反应（应延长培养时间，尽量耗尽葡萄糖）&lt;/p>
-&lt;/li>
-&lt;/ul>
-&lt;h2 id="绿叶中的色素的提取和分离">绿叶中的色素的提取和分离&lt;/h2>
-&lt;ol>
-&lt;li>
-&lt;p>材料&lt;/p>
-&lt;ul>
-&lt;li>新鲜的绿叶&lt;/li>
-&lt;li>无水乙醇（也可以用 $95%$ 的酒精加入适量无水碳酸钠）&lt;/li>
-&lt;li>层析液（有毒）&lt;/li>
-&lt;li>二氧化硅（有助于更充分的研磨）&lt;/li>
-&lt;li>碳酸钙（防止色素被酸破坏）&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>
-&lt;p>步骤&lt;/p>
-&lt;ol>
-&lt;li>
-&lt;p>提取色素&lt;/p>
-&lt;ol>
-&lt;li>绿叶去主叶脉，剪碎&lt;/li>
-&lt;li>加入少许二氧化硅和碳酸钙，再加无水乙醇，迅速充分研磨&lt;/li>
-&lt;li>迅速导入底部为单层尼龙布的漏斗中过滤&lt;/li>
-&lt;li>收集滤液到试管，棉花塞严（色素易挥发，易氧化）&lt;/li>
-&lt;/ol>
-&lt;/li>
-&lt;li>
-&lt;p>制备滤纸条&lt;/p>
-&lt;ol>
-&lt;li>将干燥定性试纸剪成宽度略小于试管直径、长度略小于试管的滤纸条&lt;/li>
-&lt;li>在滤纸条端剪去两角&lt;/li>
-&lt;li>在离底部 $\pu{1cm}$ 处铅笔画横线（细、直、齐）&lt;/li>
-&lt;/ol>
-&lt;/li>
-&lt;li>
-&lt;p>画滤液细线&lt;/p>
-&lt;ol>
-&lt;li>用毛细吸管（盖玻片）沿铅笔线均匀的画出一条细线。&lt;/li>
-&lt;li>待滤液干后，再重画一到两次&lt;/li>
-&lt;/ol>
-&lt;/li>
-&lt;li>
-&lt;p>分离&lt;/p>
-&lt;ol>
-&lt;li>将滤纸条有滤液细线的一端插入有层析液的试管中（滤液细线不触碰层析液）&lt;/li>
-&lt;li>棉花塞紧试管管口&lt;/li>
-&lt;/ol>
-&lt;/li>
-&lt;/ol>
-&lt;/li>
-&lt;li>
-&lt;p>现象：见&lt;a href="%e5%85%89%e5%90%88%e8%89%b2%e7%b4%a0.md">光合色素&lt;/a>&lt;/p>
-&lt;/li>
-&lt;/ol>
-&lt;h2 id="根尖分生区组织细胞有丝分裂">根尖分生区组织细胞有丝分裂&lt;/h2>
-&lt;ol>
-&lt;li>
-&lt;p>材料&lt;/p>
-&lt;ul>
-&lt;li>&lt;a href="#%e7%a2%b1%e6%80%a7%e6%9f%93%e6%96%99">碱性染料&lt;/a>&lt;/li>
-&lt;li>盐酸&lt;/li>
-&lt;li>$95%$ 的酒精&lt;/li>
-&lt;li>洋葱根尖分生区&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>
-&lt;p>步骤&lt;/p>
-&lt;ol>
-&lt;li>解离（细胞死亡）
-&lt;ol>
-&lt;li>材料：盐酸与酒精 $1:1$ 混合溶液&lt;/li>
-&lt;li>目的：用药液使组织中的细胞相互分离开来&lt;/li>
-&lt;/ol>
-&lt;/li>
-&lt;li>漂洗：放入&lt;strong>清水&lt;/strong>中，洗去药液，防止解离过度&lt;/li>
-&lt;li>染色&lt;/li>
-&lt;li>制片：按压盖玻片，使细胞分散开来，有利于观察&lt;/li>
-&lt;/ol>
-&lt;/li>
-&lt;/ol>
-&lt;h2 id="观察叶绿体和细胞质流动">观察叶绿体和细胞质流动&lt;/h2>
-&lt;p>材料：藓类叶、菠菜叶、番薯叶、新鲜的黑藻&lt;/p>
-&lt;script src='//unpkg.com/valine/dist/Valine.min.js'>&lt;/script>
-&lt;div id="vcomments">&lt;/div>
-&lt;script>
-new Valine({
-el: '#vcomments',
-appId: 'mUFdj80doBeHANJjnbmU89gH-gzGzoHsz',
-appKey: 'p4p7vzJrQnIYoajXvUjpuiRy',
-placeholder: '说点什么叭~ (上一栏选填，开放匿名评论，邮箱仅用于Gravatar头像显示)',
-visitor: true,
-recordIP: true,
-serverURLs: false,
-enableQQ: true
-})
-&lt;/script></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>生物 | Senie</title>
+    <link>https://xuxihe.vercel.app/courses/biology/</link>
+      <atom:link href="https://xuxihe.vercel.app/courses/biology/index.xml" rel="self" type="application/rss+xml" />
+    <description>生物</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>zh</language><copyright>© 曦曦呵呵</copyright><lastBuildDate>Sat, 09 Jul 2022 17:20:47 +0800</lastBuildDate>
+    <image>
+      <url>https://xuxihe.vercel.app/media/icon_huf638f59a6dd2257b0add8e0186347459_300061_512x512_fill_lanczos_center_3.png</url>
+      <title>生物</title>
+      <link>https://xuxihe.vercel.app/courses/biology/</link>
+    </image>
+    
+    <item>
+      <title>密码子</title>
+      <link>https://xuxihe.vercel.app/courses/biology/%E5%AF%86%E7%A0%81%E5%AD%90/</link>
+      <pubDate>Sat, 09 Jul 2022 17:20:47 +0800</pubDate>
+      <guid>https://xuxihe.vercel.app/courses/biology/%E5%AF%86%E7%A0%81%E5%AD%90/</guid>
+      <description>&lt;h2 id=&#34;起始密码子&#34;&gt;起始密码子&lt;/h2&gt;
+&lt;p&gt;AUG（甲硫氨酸）、GUG（在原核中，甲硫氨酸）&lt;/p&gt;
+&lt;h2 id=&#34;终止密码子&#34;&gt;终止密码子&lt;/h2&gt;
+&lt;p&gt;UAA、UAG、UGA&lt;/p&gt;
+&lt;p&gt;终止密码子不翻译氨基酸&lt;/p&gt;
+&lt;script src=&#39;//unpkg.com/valine/dist/Valine.min.js&#39;&gt;&lt;/script&gt;
+&lt;div id=&#34;vcomments&#34;&gt;&lt;/div&gt;
+&lt;script&gt;
+    new Valine({
+        el: &#39;#vcomments&#39;,
+        appId: &#39;mUFdj80doBeHANJjnbmU89gH-gzGzoHsz&#39;,
+        appKey: &#39;p4p7vzJrQnIYoajXvUjpuiRy&#39;,
+        placeholder: &#39;说点什么叭~ (上一栏选填，开放匿名评论，邮箱仅用于Gravatar头像显示)&#39;,
+        visitor: true,
+        recordIP: true,
+        serverURLs: false,
+        enableQQ: true
+    })
+&lt;/script&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>突变与重组</title>
+      <link>https://xuxihe.vercel.app/courses/biology/%E7%AA%81%E5%8F%98%E4%B8%8E%E9%87%8D%E7%BB%84/</link>
+      <pubDate>Thu, 07 Jul 2022 22:33:05 +0800</pubDate>
+      <guid>https://xuxihe.vercel.app/courses/biology/%E7%AA%81%E5%8F%98%E4%B8%8E%E9%87%8D%E7%BB%84/</guid>
+      <description>&lt;h2 id=&#34;基因突变&#34;&gt;基因突变&lt;/h2&gt;
+&lt;p&gt;DNA分子中发生碱基的&lt;strong&gt;替换&lt;/strong&gt;、&lt;strong&gt;增添&lt;/strong&gt;或&lt;strong&gt;缺失&lt;/strong&gt;，而引起的基因碱基序列的改变。&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;随机性：可以在任何细胞中的任何时间在任何基因上发生，主要发生在有丝分裂前和减数分裂前的间期&lt;/li&gt;
+&lt;li&gt;不定向性&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;基因突变不一定使性状改变&#34;&gt;基因突变不一定使性状改变&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;突变前后，经转录形成的密码子所决定的氨基酸相同&lt;/li&gt;
+&lt;li&gt;显性纯合子突变为杂合子：$\ce{AA\rightarrow Aa}$&lt;/li&gt;
+&lt;li&gt;内含子发生碱基突变&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;细胞的癌变&#34;&gt;细胞的癌变&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;原癌基因：表达的蛋白质是细胞正常生长和增殖所必须的&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;抑癌基因：抑制细胞的生长和繁殖，或者促进细胞凋亡&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;癌变原因&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;原癌基因突变或过量表达，导致相应蛋白质活性过强&lt;/li&gt;
+&lt;li&gt;抑癌基因突变或表达受抑制，导致相应蛋白质活性减弱或失活&lt;/li&gt;
+&lt;li&gt;相关基因甲基化&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;癌细胞特点&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;能够无限增殖&lt;/li&gt;
+&lt;li&gt;形态结构发生显著变化&lt;/li&gt;
+&lt;li&gt;细胞膜上糖蛋白等物质减少，细胞之间的黏着性显著降低，容易在体内分散和转移&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;例子&#34;&gt;例子&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;囊性纤维化：基因缺失&lt;/li&gt;
+&lt;li&gt;豌豆皱粒：基因增添&lt;/li&gt;
+&lt;li&gt;镰状细胞贫血：基因替换&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;基因重组&#34;&gt;基因重组&lt;/h2&gt;
+&lt;p&gt;生物体进行有性生殖的过程中，控制不同性状的基因的重新组合。&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;非同源染色体自由组合&lt;/li&gt;
+&lt;li&gt;同源染色体的非姐妹染色单体缠绕互换&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;染色体变异&#34;&gt;染色体变异&lt;/h2&gt;
+&lt;p&gt;体细胞或生殖细胞内染色体数目或结构的变化。&lt;/p&gt;
+&lt;h3 id=&#34;数目&#34;&gt;数目&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;单倍体：花粉（生殖细胞）离体培养&lt;font color=red&gt;（注意：单倍体是指较正常植株，染色体组数量减半，不一定只有 $1$ 个或奇数个染色体组）&lt;/font&gt;&lt;/li&gt;
+&lt;li&gt;二倍体：全部动物和过半数的高等植物&lt;/li&gt;
+&lt;li&gt;多倍体：
+&lt;ol&gt;
+&lt;li&gt;三倍体：无籽西瓜、无籽香蕉（减数分裂时出现联会紊乱，不能产生可育配子）&lt;/li&gt;
+&lt;li&gt;四倍体：番茄、马铃薯、葡萄（两套不同染色体组，每套两个染色体组，用AARR表示）&lt;/li&gt;
+&lt;li&gt;六倍体：小麦（三套不同染色体组，每套两个染色体组，用AABBRR表示）&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;低温诱导或秋水仙素能抑制纺锤体的形成&lt;/p&gt;
+&lt;h3 id=&#34;结构&#34;&gt;结构&lt;/h3&gt;
+&lt;h4 id=&#34;类型&#34;&gt;类型&lt;/h4&gt;
+&lt;ol&gt;
+&lt;li&gt;缺失&lt;/li&gt;
+&lt;li&gt;重复&lt;/li&gt;
+&lt;li&gt;易位（移接）：染色体的某一片段移接到另一条&lt;strong&gt;非同源染色体&lt;/strong&gt;上&lt;/li&gt;
+&lt;li&gt;倒位&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h4 id=&#34;例子-1&#34;&gt;例子&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;猫叫综合征：$5$ 号染色体缺失&lt;/li&gt;
+&lt;li&gt;果蝇残翅：缺失&lt;/li&gt;
+&lt;li&gt;果蝇棒状眼：重复&lt;/li&gt;
+&lt;li&gt;果蝇花斑眼：易位（移接）&lt;/li&gt;
+&lt;li&gt;果蝇卷翅：倒位&lt;/li&gt;
+&lt;li&gt;唐氏综合征（ $21$ 三体综合征）：$21$ 号染色体多一条&lt;/li&gt;
+&lt;/ul&gt;
+&lt;script src=&#39;//unpkg.com/valine/dist/Valine.min.js&#39;&gt;&lt;/script&gt;
+&lt;div id=&#34;vcomments&#34;&gt;&lt;/div&gt;
+&lt;script&gt;
+    new Valine({
+        el: &#39;#vcomments&#39;,
+        appId: &#39;mUFdj80doBeHANJjnbmU89gH-gzGzoHsz&#39;,
+        appKey: &#39;p4p7vzJrQnIYoajXvUjpuiRy&#39;,
+        placeholder: &#39;说点什么叭~ (上一栏选填，开放匿名评论，邮箱仅用于Gravatar头像显示)&#39;,
+        visitor: true,
+        recordIP: true,
+        serverURLs: false,
+        enableQQ: true
+    })
+&lt;/script&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>性状及遗传病</title>
+      <link>https://xuxihe.vercel.app/courses/biology/%E6%80%A7%E7%8A%B6%E5%8F%8A%E9%81%97%E4%BC%A0%E7%97%85/</link>
+      <pubDate>Thu, 07 Jul 2022 22:10:12 +0800</pubDate>
+      <guid>https://xuxihe.vercel.app/courses/biology/%E6%80%A7%E7%8A%B6%E5%8F%8A%E9%81%97%E4%BC%A0%E7%97%85/</guid>
+      <description>&lt;ul&gt;
+&lt;li&gt;果蝇红眼（显）白眼（隐）：伴X染色体&lt;/li&gt;
+&lt;li&gt;抗维生素D佝偻病：伴X显性&lt;/li&gt;
+&lt;li&gt;红绿色盲：伴X隐性&lt;/li&gt;
+&lt;li&gt;白化病：伴X隐性&lt;/li&gt;
+&lt;li&gt;血友病：伴X隐性&lt;/li&gt;
+&lt;li&gt;苯丙酮尿症：常染色体隐性&lt;/li&gt;
+&lt;li&gt;猫叫综合征：染色体异常（ $5$ 号染色体缺失）&lt;/li&gt;
+&lt;li&gt;唐氏综合征（ $21$ 三体综合征、先天愚型）：染色体异常&lt;/li&gt;
+&lt;li&gt;软骨发育不全：多基因显性遗传病（单一软骨发育不全基因即致病）&lt;/li&gt;
+&lt;li&gt;原发性高血压：多基因遗传病&lt;/li&gt;
+&lt;li&gt;青少年型糖尿病：多基因遗传病&lt;/li&gt;
+&lt;li&gt;冠心病：多基因遗传病&lt;/li&gt;
+&lt;li&gt;哮喘：多基因遗传病&lt;/li&gt;
+&lt;/ul&gt;
+&lt;script src=&#39;//unpkg.com/valine/dist/Valine.min.js&#39;&gt;&lt;/script&gt;
+&lt;div id=&#34;vcomments&#34;&gt;&lt;/div&gt;
+&lt;script&gt;
+    new Valine({
+        el: &#39;#vcomments&#39;,
+        appId: &#39;mUFdj80doBeHANJjnbmU89gH-gzGzoHsz&#39;,
+        appKey: &#39;p4p7vzJrQnIYoajXvUjpuiRy&#39;,
+        placeholder: &#39;说点什么叭~ (上一栏选填，开放匿名评论，邮箱仅用于Gravatar头像显示)&#39;,
+        visitor: true,
+        recordIP: true,
+        serverURLs: false,
+        enableQQ: true
+    })
+&lt;/script&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>光合呼吸有关计算</title>
+      <link>https://xuxihe.vercel.app/courses/biology/%E5%85%89%E5%90%88%E5%91%BC%E5%90%B8%E6%9C%89%E5%85%B3%E8%AE%A1%E7%AE%97/</link>
+      <pubDate>Thu, 07 Jul 2022 21:59:35 +0800</pubDate>
+      <guid>https://xuxihe.vercel.app/courses/biology/%E5%85%89%E5%90%88%E5%91%BC%E5%90%B8%E6%9C%89%E5%85%B3%E8%AE%A1%E7%AE%97/</guid>
+      <description>&lt;h2 id=&#34;光照强度&#34;&gt;光照强度&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;黑暗：只有呼吸作用&lt;/li&gt;
+&lt;li&gt;弱光：光合速率小于呼吸速率&lt;/li&gt;
+&lt;li&gt;中等光：光合速率等于呼吸速率&lt;/li&gt;
+&lt;li&gt;强光：光合速率大于呼吸速率&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;计算&#34;&gt;计算&lt;/h2&gt;
+&lt;p&gt;总光合速率 $=$ 净光合速率 $+$ 呼吸速率&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;总光合速率（有负值）
+&lt;ul&gt;
+&lt;li&gt;$\ce{CO2}$ 固定量&lt;/li&gt;
+&lt;li&gt;$\ce{O2}$ 产生量&lt;/li&gt;
+&lt;li&gt;有机物产生量&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;净光合速率（无负值）
+&lt;ul&gt;
+&lt;li&gt;$\ce{CO2}$ 吸收量（外界）&lt;/li&gt;
+&lt;li&gt;$\ce{O2}$ 释放量&lt;/li&gt;
+&lt;li&gt;有机物积累量&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;script src=&#39;//unpkg.com/valine/dist/Valine.min.js&#39;&gt;&lt;/script&gt;
+&lt;div id=&#34;vcomments&#34;&gt;&lt;/div&gt;
+&lt;script&gt;
+    new Valine({
+        el: &#39;#vcomments&#39;,
+        appId: &#39;mUFdj80doBeHANJjnbmU89gH-gzGzoHsz&#39;,
+        appKey: &#39;p4p7vzJrQnIYoajXvUjpuiRy&#39;,
+        placeholder: &#39;说点什么叭~ (上一栏选填，开放匿名评论，邮箱仅用于Gravatar头像显示)&#39;,
+        visitor: true,
+        recordIP: true,
+        serverURLs: false,
+        enableQQ: true
+    })
+&lt;/script&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>光合色素</title>
+      <link>https://xuxihe.vercel.app/courses/biology/%E5%85%89%E5%90%88%E8%89%B2%E7%B4%A0/</link>
+      <pubDate>Tue, 05 Jul 2022 22:15:25 +0800</pubDate>
+      <guid>https://xuxihe.vercel.app/courses/biology/%E5%85%89%E5%90%88%E8%89%B2%E7%B4%A0/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://imgtu.com/i/jNoDns&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;img src=&#34;https://s1.ax1x.com/2022/07/05/jNoDns.jpg&#34; alt=&#34;jNoDns.jpg&#34; style=&#34;zoom: 67%;&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;实验&#34;&gt;实验&lt;/h2&gt;
+&lt;p&gt;见&lt;a href=&#34;%e8%af%95%e5%89%82%e4%b8%8e%e5%ae%9e%e9%aa%8c.md&#34;&gt;试剂与实验&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;光合色素&#34;&gt;光合色素&lt;/h2&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&#34;text-align:center&#34;&gt;色素种类&lt;/th&gt;
+&lt;th style=&#34;text-align:center&#34;&gt;色素颜色&lt;/th&gt;
+&lt;th style=&#34;text-align:center&#34;&gt;色素含量（色条宽度）&lt;/th&gt;
+&lt;th style=&#34;text-align:center&#34;&gt;溶解度（扩散速度）（高度）&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;叶绿素a&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;&lt;font color=#047475&gt;蓝绿色&lt;/font&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;1&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;3&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;叶绿素b&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;&lt;font color=#8acd01&gt;黄绿色&lt;/font&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;2&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;4&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;胡萝卜素&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;&lt;font color=#ff7f00&gt;橙黄色&lt;/font&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;4&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;1&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;叶黄素&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;&lt;font color=#f8ce3a&gt;黄色&lt;/font&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;3&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;2&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;吸收光谱&#34;&gt;吸收光谱&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;叶绿素（叶绿素a和叶绿素b）主要吸收&lt;font color=#4B0082&gt;蓝紫光&lt;/font&gt;和&lt;font color=red&gt;红光&lt;/font&gt;&lt;/li&gt;
+&lt;li&gt;类胡萝卜素（胡萝卜素和叶黄素）主要吸收&lt;font color=#4B0082&gt;蓝紫光&lt;/font&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;font color=red&gt;注意：当植物光合速率等于呼吸速率时，绿色器官光合作用强度大于呼吸作用强度。&lt;/font&gt;&lt;/p&gt;
+&lt;script src=&#39;//unpkg.com/valine/dist/Valine.min.js&#39;&gt;&lt;/script&gt;
+&lt;div id=&#34;vcomments&#34;&gt;&lt;/div&gt;
+&lt;script&gt;
+    new Valine({
+        el: &#39;#vcomments&#39;,
+        appId: &#39;mUFdj80doBeHANJjnbmU89gH-gzGzoHsz&#39;,
+        appKey: &#39;p4p7vzJrQnIYoajXvUjpuiRy&#39;,
+        placeholder: &#39;说点什么叭~ (上一栏选填，开放匿名评论，邮箱仅用于Gravatar头像显示)&#39;,
+        visitor: true,
+        recordIP: true,
+        serverURLs: false,
+        enableQQ: true
+    })
+&lt;/script&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>生物呼吸方式</title>
+      <link>https://xuxihe.vercel.app/courses/biology/%E7%94%9F%E7%89%A9%E5%91%BC%E5%90%B8%E6%96%B9%E5%BC%8F/</link>
+      <pubDate>Tue, 05 Jul 2022 22:05:29 +0800</pubDate>
+      <guid>https://xuxihe.vercel.app/courses/biology/%E7%94%9F%E7%89%A9%E5%91%BC%E5%90%B8%E6%96%B9%E5%BC%8F/</guid>
+      <description>&lt;h2 id=&#34;厌氧菌&#34;&gt;厌氧菌&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;兼性厌氧菌：酵母菌&lt;/li&gt;
+&lt;li&gt;严格厌氧菌：乳酸菌、破伤风杆菌&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;无氧呼吸产物&#34;&gt;无氧呼吸产物&lt;/h2&gt;
+&lt;h3 id=&#34;乳酸&#34;&gt;乳酸&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;马铃薯块茎&lt;/li&gt;
+&lt;li&gt;甜菜块根&lt;/li&gt;
+&lt;li&gt;玉米胚&lt;/li&gt;
+&lt;li&gt;骨骼肌&lt;/li&gt;
+&lt;li&gt;哺乳动物成熟红细胞（只能进行无氧呼吸）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;酒精-spacececo2&#34;&gt;酒精 $+\space\ce{CO2}$&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;高等植物&lt;/li&gt;
+&lt;li&gt;酵母菌&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;氧气消耗量&#34;&gt;氧气消耗量&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;$\ce{O2}&amp;gt;\ce{CO2}$：有脂肪等分解&lt;/li&gt;
+&lt;li&gt;$\ce{O2}=\ce{CO2}$：只进行有氧呼吸&lt;/li&gt;
+&lt;li&gt;$\ce{O2}&amp;lt;\ce{CO2}$：同时进行有氧和无氧呼吸&lt;/li&gt;
+&lt;li&gt;$\ce{O2}=0$：只进行无氧呼吸&lt;/li&gt;
+&lt;/ol&gt;
+&lt;script src=&#39;//unpkg.com/valine/dist/Valine.min.js&#39;&gt;&lt;/script&gt;
+&lt;div id=&#34;vcomments&#34;&gt;&lt;/div&gt;
+&lt;script&gt;
+    new Valine({
+        el: &#39;#vcomments&#39;,
+        appId: &#39;mUFdj80doBeHANJjnbmU89gH-gzGzoHsz&#39;,
+        appKey: &#39;p4p7vzJrQnIYoajXvUjpuiRy&#39;,
+        placeholder: &#39;说点什么叭~ (上一栏选填，开放匿名评论，邮箱仅用于Gravatar头像显示)&#39;,
+        visitor: true,
+        recordIP: true,
+        serverURLs: false,
+        enableQQ: true
+    })
+&lt;/script&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>物质的运输</title>
+      <link>https://xuxihe.vercel.app/courses/biology/%E7%89%A9%E8%B4%A8%E7%9A%84%E8%BF%90%E8%BE%93/</link>
+      <pubDate>Mon, 04 Jul 2022 23:06:47 +0800</pubDate>
+      <guid>https://xuxihe.vercel.app/courses/biology/%E7%89%A9%E8%B4%A8%E7%9A%84%E8%BF%90%E8%BE%93/</guid>
+      <description>&lt;h2 id=&#34;自由扩散简单扩散&#34;&gt;自由扩散（简单扩散）&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;无机小分子
+&lt;ul&gt;
+&lt;li&gt;$\ce{H2O}$&lt;/li&gt;
+&lt;li&gt;$\ce{O2}$&lt;/li&gt;
+&lt;li&gt;$\ce{CO2}$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;有机小分子
+&lt;ul&gt;
+&lt;li&gt;苯&lt;/li&gt;
+&lt;li&gt;尿素&lt;/li&gt;
+&lt;li&gt;甘油&lt;/li&gt;
+&lt;li&gt;乙醇&lt;/li&gt;
+&lt;li&gt;脂质小分子：（维生素D、性激素、胆固醇）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;协助扩散&#34;&gt;协助扩散&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;载体蛋白（构象改变）
+&lt;ul&gt;
+&lt;li&gt;葡萄糖进入红细胞&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;通道蛋白（构象不变）
+&lt;ul&gt;
+&lt;li&gt;神经、肌肉细胞 $\ce{K+}$ 离子外流、$\ce{Na+}$ 离子内流&lt;/li&gt;
+&lt;li&gt;水通道（主要）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;主动运输&#34;&gt;主动运输&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;葡萄糖进入细胞（除红细胞）&lt;/li&gt;
+&lt;li&gt;一般生物小分子进出细胞（如核苷酸）&lt;/li&gt;
+&lt;li&gt;一般离子主动运输（如 $\ce{K+}$ 进入大肠杆菌）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;胞吞胞吐&#34;&gt;胞吞胞吐&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;白细胞吞噬细菌&lt;/li&gt;
+&lt;li&gt;变形虫吞食&lt;/li&gt;
+&lt;li&gt;生物大分子&lt;/li&gt;
+&lt;li&gt;分泌蛋白
+&lt;ul&gt;
+&lt;li&gt;部分激素
+&lt;ul&gt;
+&lt;li&gt;胰岛素&lt;/li&gt;
+&lt;li&gt;生长激素&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;消化酶
+&lt;ul&gt;
+&lt;li&gt;唾液淀粉酶&lt;/li&gt;
+&lt;li&gt;胃蛋白酶&lt;/li&gt;
+&lt;li&gt;胰蛋白酶&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;核体&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;script src=&#39;//unpkg.com/valine/dist/Valine.min.js&#39;&gt;&lt;/script&gt;
+&lt;div id=&#34;vcomments&#34;&gt;&lt;/div&gt;
+&lt;script&gt;
+    new Valine({
+        el: &#39;#vcomments&#39;,
+        appId: &#39;mUFdj80doBeHANJjnbmU89gH-gzGzoHsz&#39;,
+        appKey: &#39;p4p7vzJrQnIYoajXvUjpuiRy&#39;,
+        placeholder: &#39;说点什么叭~ (上一栏选填，开放匿名评论，邮箱仅用于Gravatar头像显示)&#39;,
+        visitor: true,
+        recordIP: true,
+        serverURLs: false,
+        enableQQ: true
+    })
+&lt;/script&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>病毒分类</title>
+      <link>https://xuxihe.vercel.app/courses/biology/%E7%97%85%E6%AF%92%E5%88%86%E7%B1%BB/</link>
+      <pubDate>Mon, 04 Jul 2022 22:45:54 +0800</pubDate>
+      <guid>https://xuxihe.vercel.app/courses/biology/%E7%97%85%E6%AF%92%E5%88%86%E7%B1%BB/</guid>
+      <description>&lt;h2 id=&#34;宿主&#34;&gt;宿主&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;动物病毒&lt;/li&gt;
+&lt;li&gt;植物病毒&lt;/li&gt;
+&lt;li&gt;噬菌体&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;遗传物质&#34;&gt;遗传物质&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;DNA
+&lt;ul&gt;
+&lt;li&gt;乙肝病毒&lt;/li&gt;
+&lt;li&gt;噬菌体&lt;/li&gt;
+&lt;li&gt;肺炎链球菌&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;RNA
+&lt;ul&gt;
+&lt;li&gt;烟草花叶病毒&lt;/li&gt;
+&lt;li&gt;HIV（艾滋病毒）&lt;/li&gt;
+&lt;li&gt;各种流感病毒（COVID-19）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;生命&#34;&gt;生命&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;病毒在未进入细胞时没有生命&lt;/li&gt;
+&lt;li&gt;繁殖是病毒唯一的生命活动&lt;/li&gt;
+&lt;li&gt;病毒不能独立代谢，因而不属于生命系统的结构层次&lt;/li&gt;
+&lt;/ol&gt;
+&lt;script src=&#39;//unpkg.com/valine/dist/Valine.min.js&#39;&gt;&lt;/script&gt;
+&lt;div id=&#34;vcomments&#34;&gt;&lt;/div&gt;
+&lt;script&gt;
+    new Valine({
+        el: &#39;#vcomments&#39;,
+        appId: &#39;mUFdj80doBeHANJjnbmU89gH-gzGzoHsz&#39;,
+        appKey: &#39;p4p7vzJrQnIYoajXvUjpuiRy&#39;,
+        placeholder: &#39;说点什么叭~ (上一栏选填，开放匿名评论，邮箱仅用于Gravatar头像显示)&#39;,
+        visitor: true,
+        recordIP: true,
+        serverURLs: false,
+        enableQQ: true
+    })
+&lt;/script&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>原核与真核</title>
+      <link>https://xuxihe.vercel.app/courses/biology/%E5%8E%9F%E6%A0%B8%E4%B8%8E%E7%9C%9F%E6%A0%B8/</link>
+      <pubDate>Sat, 02 Jul 2022 22:20:32 +0800</pubDate>
+      <guid>https://xuxihe.vercel.app/courses/biology/%E5%8E%9F%E6%A0%B8%E4%B8%8E%E7%9C%9F%E6%A0%B8/</guid>
+      <description>&lt;h2 id=&#34;区别&#34;&gt;区别&lt;/h2&gt;
+&lt;p&gt;有无&lt;strong&gt;成型&lt;/strong&gt;的细胞核&lt;/p&gt;
+&lt;h2 id=&#34;原核&#34;&gt;原核&lt;/h2&gt;
+&lt;p&gt;细胞壁（除支原体）：肽聚糖&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;蓝细菌：色球蓝细菌、颤蓝细菌、念珠蓝细菌、&lt;strong&gt;发菜&lt;/strong&gt;（蓝细菌群体的集合）&lt;/li&gt;
+&lt;li&gt;大肠杆菌（球状、弧状、链状……）&lt;/li&gt;
+&lt;li&gt;乳酸菌&lt;/li&gt;
+&lt;li&gt;硝化细菌&lt;/li&gt;
+&lt;li&gt;支原体（目前发现的最小细胞）&lt;/li&gt;
+&lt;li&gt;衣原体&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;真核&#34;&gt;真核&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;动物&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;植物（果胶和纤维素）&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;真菌（几丁质）&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;食用菌&lt;/li&gt;
+&lt;li&gt;霉菌：毛霉、曲霉、根霉……&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;酵母菌&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;原生动物（单细胞生物）：草履虫、眼虫、衣藻、变形虫&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;黑藻&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;script src=&#39;//unpkg.com/valine/dist/Valine.min.js&#39;&gt;&lt;/script&gt;
+&lt;div id=&#34;vcomments&#34;&gt;&lt;/div&gt;
+&lt;script&gt;
+    new Valine({
+        el: &#39;#vcomments&#39;,
+        appId: &#39;mUFdj80doBeHANJjnbmU89gH-gzGzoHsz&#39;,
+        appKey: &#39;p4p7vzJrQnIYoajXvUjpuiRy&#39;,
+        placeholder: &#39;说点什么叭~ (上一栏选填，开放匿名评论，邮箱仅用于Gravatar头像显示)&#39;,
+        visitor: true,
+        recordIP: true,
+        serverURLs: false,
+        enableQQ: true
+    })
+&lt;/script&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>试剂使用</title>
+      <link>https://xuxihe.vercel.app/courses/biology/%E8%AF%95%E5%89%82%E4%B8%8E%E5%AE%9E%E9%AA%8C/</link>
+      <pubDate>Sat, 02 Jul 2022 22:17:34 +0800</pubDate>
+      <guid>https://xuxihe.vercel.app/courses/biology/%E8%AF%95%E5%89%82%E4%B8%8E%E5%AE%9E%E9%AA%8C/</guid>
+      <description>&lt;h2 id=&#34;斐林试剂&#34;&gt;斐林试剂&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;用途：检测还原糖&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;成分&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;甲液：$\pu{0.1 g/mL}\space\ce{NaOH(aq)}$&lt;/li&gt;
+&lt;li&gt;乙夜：$\pu{0.05 g/mL}\space \ce{CuSO4(aq)}$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;用法&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;甲乙液等量混合&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;注入待测组织样液&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;$\pu{50 \sim 60 ^\circ C}$ 水浴加热 $\pu{2 min}$&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;现象：砖红色沉淀&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;苏丹iii&#34;&gt;苏丹III&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;用途：检测脂肪&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;用法&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;取材&lt;/li&gt;
+&lt;li&gt;制片
+&lt;ol&gt;
+&lt;li&gt;染色 $\pu{3 min}$&lt;/li&gt;
+&lt;li&gt;用吸水纸吸去染液&lt;/li&gt;
+&lt;li&gt;$50%$ 的酒精&lt;strong&gt;洗去浮色&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;现象：脂肪被染成&lt;font color=orange&gt;橘黄色&lt;/font&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;双缩脲试剂&#34;&gt;双缩脲试剂&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;用途：检测蛋白质&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;成分&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;A液：$\pu{0.1 g/mL}\space\ce{NaOH(aq)}$&lt;/li&gt;
+&lt;li&gt;B液：$\pu{0.01 g/mL}\space \ce{CuSO4(aq)}$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;用法&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;将A液与待测组织样液混合&lt;/li&gt;
+&lt;li&gt;加入 $4$ 滴B液&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;现象：溶液颜色变为&lt;font color=purple&gt;紫色&lt;/font&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;原理：在碱性条件下，$\ce{CuSO4}$ 与肽键反应形成络合物（变性、加热后均可）&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;碘液&#34;&gt;碘液&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;用途：检测淀粉（多糖）&lt;/li&gt;
+&lt;li&gt;现象：变蓝&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;碱性染料&#34;&gt;碱性染料&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;用途：将细胞核中染色体染色&lt;/li&gt;
+&lt;li&gt;包括
+&lt;ul&gt;
+&lt;li&gt;甲紫&lt;/li&gt;
+&lt;li&gt;醋酸洋红&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;酶的活性&#34;&gt;酶的活性&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;温度
+&lt;ol&gt;
+&lt;li&gt;材料
+&lt;ul&gt;
+&lt;li&gt;淀粉酶溶液 （$\ce{H2O2}$ 加热分解）&lt;/li&gt;
+&lt;li&gt;缓冲液（维持PH $= 7$）&lt;/li&gt;
+&lt;li&gt;可溶性淀粉溶液&lt;/li&gt;
+&lt;li&gt;碘液 （斐林试剂需要水浴加热）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;步骤
+&lt;ol&gt;
+&lt;li&gt;将底物与酶&lt;strong&gt;分别&lt;/strong&gt;加热（冷却）至设定温度&lt;/li&gt;
+&lt;li&gt;将底物与酶混合并维持设定温度&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;PH值
+&lt;ul&gt;
+&lt;li&gt;材料
+&lt;ul&gt;
+&lt;li&gt;$\ce{H2O2(aq)}$（淀粉在 PH $&amp;lt;7$ 时水解）&lt;/li&gt;
+&lt;li&gt;新鲜的肝脏研磨液&lt;/li&gt;
+&lt;li&gt;$\ce{HCl(aq)}$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;溴麝香草酚蓝溶液&#34;&gt;溴麝香草酚蓝溶液&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;与 $\ce{CO2}$ 反应，由&lt;font color=blue&gt;蓝色&lt;/font&gt;先变&lt;font color=green&gt;绿色&lt;/font&gt;再变&lt;font color=dayellow&gt;黄色&lt;/font&gt;&lt;/li&gt;
+&lt;li&gt;根据变成黄色的时间，可判断 $\ce{CO2}$ 含量情况&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;重铬酸钾溶液&#34;&gt;重铬酸钾溶液&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;font color=orange&gt;橙色&lt;/font&gt;的重铬酸钾溶液在酸性条件下与乙醇反应，变成&lt;font color=#668800&gt;灰绿色&lt;/font&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;与葡萄糖发生颜色反应（应延长培养时间，尽量耗尽葡萄糖）&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;绿叶中的色素的提取和分离&#34;&gt;绿叶中的色素的提取和分离&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;材料&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;新鲜的绿叶&lt;/li&gt;
+&lt;li&gt;无水乙醇（也可以用 $95%$ 的酒精加入适量无水碳酸钠）&lt;/li&gt;
+&lt;li&gt;层析液（有毒）&lt;/li&gt;
+&lt;li&gt;二氧化硅（有助于更充分的研磨）&lt;/li&gt;
+&lt;li&gt;碳酸钙（防止色素被酸破坏）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;步骤&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;提取色素&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;绿叶去主叶脉，剪碎&lt;/li&gt;
+&lt;li&gt;加入少许二氧化硅和碳酸钙，再加无水乙醇，迅速充分研磨&lt;/li&gt;
+&lt;li&gt;迅速导入底部为单层尼龙布的漏斗中过滤&lt;/li&gt;
+&lt;li&gt;收集滤液到试管，棉花塞严（色素易挥发，易氧化）&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;制备滤纸条&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;将干燥定性试纸剪成宽度略小于试管直径、长度略小于试管的滤纸条&lt;/li&gt;
+&lt;li&gt;在滤纸条端剪去两角&lt;/li&gt;
+&lt;li&gt;在离底部 $\pu{1cm}$ 处铅笔画横线（细、直、齐）&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;画滤液细线&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;用毛细吸管（盖玻片）沿铅笔线均匀的画出一条细线。&lt;/li&gt;
+&lt;li&gt;待滤液干后，再重画一到两次&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;分离&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;将滤纸条有滤液细线的一端插入有层析液的试管中（滤液细线不触碰层析液）&lt;/li&gt;
+&lt;li&gt;棉花塞紧试管管口&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;现象：见&lt;a href=&#34;%e5%85%89%e5%90%88%e8%89%b2%e7%b4%a0.md&#34;&gt;光合色素&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;根尖分生区组织细胞有丝分裂&#34;&gt;根尖分生区组织细胞有丝分裂&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;材料&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#%e7%a2%b1%e6%80%a7%e6%9f%93%e6%96%99&#34;&gt;碱性染料&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;盐酸&lt;/li&gt;
+&lt;li&gt;$95%$ 的酒精&lt;/li&gt;
+&lt;li&gt;洋葱根尖分生区&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;步骤&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;解离（细胞死亡）
+&lt;ol&gt;
+&lt;li&gt;材料：盐酸与酒精 $1:1$ 混合溶液&lt;/li&gt;
+&lt;li&gt;目的：用药液使组织中的细胞相互分离开来&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;漂洗：放入&lt;strong&gt;清水&lt;/strong&gt;中，洗去药液，防止解离过度&lt;/li&gt;
+&lt;li&gt;染色&lt;/li&gt;
+&lt;li&gt;制片：按压盖玻片，使细胞分散开来，有利于观察&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;观察叶绿体和细胞质流动&#34;&gt;观察叶绿体和细胞质流动&lt;/h2&gt;
+&lt;p&gt;材料：藓类叶、菠菜叶、番薯叶、新鲜的黑藻&lt;/p&gt;
+&lt;script src=&#39;//unpkg.com/valine/dist/Valine.min.js&#39;&gt;&lt;/script&gt;
+&lt;div id=&#34;vcomments&#34;&gt;&lt;/div&gt;
+&lt;script&gt;
+    new Valine({
+        el: &#39;#vcomments&#39;,
+        appId: &#39;mUFdj80doBeHANJjnbmU89gH-gzGzoHsz&#39;,
+        appKey: &#39;p4p7vzJrQnIYoajXvUjpuiRy&#39;,
+        placeholder: &#39;说点什么叭~ (上一栏选填，开放匿名评论，邮箱仅用于Gravatar头像显示)&#39;,
+        visitor: true,
+        recordIP: true,
+        serverURLs: false,
+        enableQQ: true
+    })
+&lt;/script&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

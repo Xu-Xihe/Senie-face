@@ -1,152 +1,668 @@
-<!doctype html><html lang=zh>
+<!DOCTYPE html><html lang="zh" >
+
+
 <head>
-<meta charset=utf-8>
-<meta name=viewport content="width=device-width,initial-scale=1">
-<meta http-equiv=x-ua-compatible content="IE=edge">
-<meta name=generator content="Wowchemy 5.3.0 for Hugo">
-<link rel=preconnect href=https://fonts.gstatic.com crossorigin>
-<link rel=preload as=style href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap">
-<link rel=stylesheet href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap" media=print onload="this.media='all'">
-<meta name=baidu-site-verification content="code-avxFYJ9aCr">
-<meta name=author content="曦曦呵呵">
-<meta name=description content="强连通分量与缩点 又是啥玩意 强连通 在有向图 $G$ 中，两个顶点 $u$">
-<link rel=alternate hreflang=zh href=https://xuxihe.vercel.app/notes/oiknowledge/graph%E5%9B%BE%E8%AE%BA/%E5%BC%BA%E8%BF%9E%E9%80%9A%E5%88%86%E9%87%8F%E4%B8%8E%E7%BC%A9%E7%82%B9/>
-<meta name=theme-color content="#8a2be2">
-<script src=/js/mathjax-config.js></script>
-<link rel=stylesheet href=/css/vendor-bundle.min.f1ecf783c14edc00c9320c205831ad8e.css media=print onload="this.media='all'">
-<link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/styles/github.min.css crossorigin=anonymous title=hl-light media=print onload="this.media='all'">
-<link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/styles/dracula.min.css crossorigin=anonymous title=hl-dark media=print onload="this.media='all'" disabled>
-<link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.min.css integrity="sha512-1xoFisiGdy9nvho8EgXuXvnpR5GAMSjFwp40gSRE3NwdUdIMIKuPa7bqoUhLD0O/5tPNhteAsE5XyyMi5reQVA==" crossorigin=anonymous media=print onload="this.media='all'">
-<script src=https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js integrity crossorigin=anonymous async></script>
-<link rel=stylesheet href=/css/wowchemy.36d7c79ef70cfd4ede320d3031e72a79.css>
-<link rel=manifest href=/manifest.webmanifest>
-<link rel=icon type=image/png href=/media/icon_huf638f59a6dd2257b0add8e0186347459_300061_32x32_fill_lanczos_center_3.png>
-<link rel=apple-touch-icon type=image/png href=/media/icon_huf638f59a6dd2257b0add8e0186347459_300061_180x180_fill_lanczos_center_3.png>
-<link rel=canonical href=https://xuxihe.vercel.app/notes/oiknowledge/graph%E5%9B%BE%E8%AE%BA/%E5%BC%BA%E8%BF%9E%E9%80%9A%E5%88%86%E9%87%8F%E4%B8%8E%E7%BC%A9%E7%82%B9/>
-<meta property="twitter:card" content="summary">
-<meta property="og:site_name" content="Senie">
-<meta property="og:url" content="https://xuxihe.vercel.app/notes/oiknowledge/graph%E5%9B%BE%E8%AE%BA/%E5%BC%BA%E8%BF%9E%E9%80%9A%E5%88%86%E9%87%8F%E4%B8%8E%E7%BC%A9%E7%82%B9/">
-<meta property="og:title" content="强连通分量与缩点 | Senie">
-<meta property="og:description" content="强连通分量与缩点 又是啥玩意 强连通 在有向图 $G$ 中，两个顶点 $u$"><meta property="og:image" content="https://xuxihe.vercel.app/media/icon_huf638f59a6dd2257b0add8e0186347459_300061_512x512_fill_lanczos_center_3.png">
-<meta property="twitter:image" content="https://xuxihe.vercel.app/media/icon_huf638f59a6dd2257b0add8e0186347459_300061_512x512_fill_lanczos_center_3.png"><meta property="og:locale" content="zh">
-<meta property="article:published_time" content="2021-10-18T00:00:00+00:00">
-<meta property="article:modified_time" content="2021-10-18T00:00:00+00:00">
-<title>强连通分量与缩点 | Senie</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  
+  
+  
+    <meta name="generator" content="Wowchemy 5.3.0 for Hugo" />
+  
+
+  
+  
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  
+
+  
+  
+  
+    
+      
+      <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap" media="print" onload="this.media='all'">
+    
+  
+
+  
+    <meta name="baidu-site-verification" content="code-avxFYJ9aCr" />
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="曦曦呵呵" />
+
+  
+  
+  
+    
+  
+  <meta name="description" content="强连通分量与缩点 又是啥玩意 强连通 在有向图 $G$ 中，两个顶点 $u$" />
+
+  
+  <link rel="alternate" hreflang="zh" href="https://xuxihe.vercel.app/notes/oiknowledge/graph%E5%9B%BE%E8%AE%BA/%E5%BC%BA%E8%BF%9E%E9%80%9A%E5%88%86%E9%87%8F%E4%B8%8E%E7%BC%A9%E7%82%B9/" />
+
+  
+  
+  
+    <meta name="theme-color" content="#8a2be2" />
+  
+
+  
+  
+    
+    <script src="/js/mathjax-config.js"></script>
+  
+
+  
+
+  <link rel="stylesheet" href="/css/vendor-bundle.min.f1ecf783c14edc00c9320c205831ad8e.css" media="print" onload="this.media='all'">
+
+  
+  
+  
+    
+    
+
+    
+    
+    
+    
+      
+      
+    
+    
+    
+
+    
+    
+    
+      
+    
+    
+      
+      
+        
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/styles/github.min.css" crossorigin="anonymous" title="hl-light" media="print" onload="this.media='all'">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" media="print" onload="this.media='all'" disabled>
+        
+      
+    
+
+    
+    
+    
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.min.css" integrity="sha512-1xoFisiGdy9nvho8EgXuXvnpR5GAMSjFwp40gSRE3NwdUdIMIKuPa7bqoUhLD0O/5tPNhteAsE5XyyMi5reQVA==" crossorigin="anonymous" media="print" onload="this.media='all'">
+    
+
+    
+
+    
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" integrity="" crossorigin="anonymous" async></script>
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+  
+
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="/css/wowchemy.36d7c79ef70cfd4ede320d3031e72a79.css" />
+
+  
+
+
+
+  
+
+  
+
+  
+
+
+
+
+  
+  
+  
+
+  
+
+  
+    <link rel="manifest" href="/manifest.webmanifest" />
+  
+
+  <link rel="icon" type="image/png" href="/media/icon_huf638f59a6dd2257b0add8e0186347459_300061_32x32_fill_lanczos_center_3.png" />
+  <link rel="apple-touch-icon" type="image/png" href="/media/icon_huf638f59a6dd2257b0add8e0186347459_300061_180x180_fill_lanczos_center_3.png" />
+
+  <link rel="canonical" href="https://xuxihe.vercel.app/notes/oiknowledge/graph%E5%9B%BE%E8%AE%BA/%E5%BC%BA%E8%BF%9E%E9%80%9A%E5%88%86%E9%87%8F%E4%B8%8E%E7%BC%A9%E7%82%B9/" />
+
+  
+  
+  
+  
+  
+  
+  
+  
+    
+    
+  
+  
+
+  
+  
+    
+    
+  
+  <meta property="twitter:card" content="summary" />
+  
+  <meta property="og:site_name" content="Senie" />
+  <meta property="og:url" content="https://xuxihe.vercel.app/notes/oiknowledge/graph%E5%9B%BE%E8%AE%BA/%E5%BC%BA%E8%BF%9E%E9%80%9A%E5%88%86%E9%87%8F%E4%B8%8E%E7%BC%A9%E7%82%B9/" />
+  <meta property="og:title" content="强连通分量与缩点 | Senie" />
+  <meta property="og:description" content="强连通分量与缩点 又是啥玩意 强连通 在有向图 $G$ 中，两个顶点 $u$" /><meta property="og:image" content="https://xuxihe.vercel.app/media/icon_huf638f59a6dd2257b0add8e0186347459_300061_512x512_fill_lanczos_center_3.png" />
+    <meta property="twitter:image" content="https://xuxihe.vercel.app/media/icon_huf638f59a6dd2257b0add8e0186347459_300061_512x512_fill_lanczos_center_3.png" /><meta property="og:locale" content="zh" />
+  
+    
+      <meta
+        property="article:published_time"
+        content="2021-10-18T00:00:00&#43;00:00"
+      />
+    
+    <meta property="article:modified_time" content="2021-10-18T00:00:00&#43;00:00">
+  
+
+  
+
+
+
+  
+
+  
+
+  
+
+
+
+
+
+  <title>强连通分量与缩点 | Senie</title>
 </head>
-<body id=top data-spy=scroll data-offset=70 data-target=#TableOfContents class=page-wrapper data-wc-page-id=07d98ed7c80d84a445c35d3d579738d8>
-<script src=/js/wowchemy-init.min.2da3b1fa37e894630bf6de39b1b694b3.js></script>
-<aside class=search-modal id=search>
-<div class=container>
-<section class=search-header>
-<div class="row no-gutters justify-content-between mb-3">
-<div class=col-6>
-<h1>搜索</h1>
-</div>
-<div class="col-6 col-search-close">
-<a class=js-search href=# aria-label=Close><i class="fas fa-times-circle text-muted" aria-hidden=true></i></a>
-</div>
-</div>
-<div id=search-box>
-<input name=q id=search-query placeholder=搜索... autocapitalize=off autocomplete=off autocorrect=off spellcheck=false type=search class=form-control aria-label=搜索...>
-</div>
-</section>
-<section class=section-search-results>
-<div id=search-hits>
-</div>
-</section>
-</div>
+
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper   " data-wc-page-id="07d98ed7c80d84a445c35d3d579738d8" >
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <script src="/js/wowchemy-init.min.2da3b1fa37e894630bf6de39b1b694b3.js"></script>
+
+  
+
+
+<aside class="search-modal" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>搜索</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#" aria-label="Close"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="搜索..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search" class="form-control"
+        aria-label="搜索...">
+        
+      </div>
+
+      
+      
+
+      
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
 </aside>
-<div class=page-header>
-<nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id=navbar-main>
-<div class=container-xl>
-<div class="d-none d-lg-inline-flex">
-<a class=navbar-brand href=/>Senie</a>
-</div>
-<button type=button class=navbar-toggler data-toggle=collapse data-target=#navbar-content aria-controls=navbar-content aria-expanded=false aria-label=切换导航>
-<span><i class="fas fa-bars"></i></span>
-</button>
-<div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
-<a class=navbar-brand href=/>Senie</a>
-</div>
-<div class="navbar-collapse main-menu-item collapse justify-content-start" id=navbar-content>
-<ul class="navbar-nav d-md-inline-flex">
-<li class=nav-item>
-<a class="nav-link active" href=/notes/><span>OI</span></a>
-</li>
-<li class=nav-item>
-<a class=nav-link href=/courses/><span>高中</span></a>
-</li>
-<li class="nav-item dropdown">
-<a href=# class="nav-link dropdown-toggle" data-toggle=dropdown aria-haspopup=true><span>杂七杂八</span><span class=caret></span>
-</a>
-<div class=dropdown-menu>
-<a class=dropdown-item href=/category/%e4%b9%90%e4%b9%90%e5%91%b5%e5%91%b5/><span>乐乐呵呵</span></a>
-<a class=dropdown-item href=/category/%e6%8a%80%e6%9c%afblog/><span>技术blog</span></a>
-</div>
-</li>
-</ul>
-</div>
-<ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
-<li class="nav-item d-none d-lg-inline-flex">
-<a class=nav-link href=https://github.com/Xu-Xihe data-toggle=tooltip data-placement=bottom title=在Github上关注我吧！ target=_blank rel=noopener aria-label=在Github上关注我吧！>
-<i class="fab fa-github" aria-hidden=true></i>
-</a>
-</li>
-<li class=nav-item>
-<a class="nav-link js-search" href=# aria-label=搜索><i class="fas fa-search" aria-hidden=true></i></a>
-</li>
-<li class="nav-item dropdown theme-dropdown">
-<a href=# class=nav-link data-toggle=dropdown aria-haspopup=true aria-label="Display preferences">
-<i class="fas fa-moon" aria-hidden=true></i>
-</a>
-<div class=dropdown-menu>
-<a href=# class="dropdown-item js-set-theme-light">
-<span>浅色</span>
-</a>
-<a href=# class="dropdown-item js-set-theme-dark">
-<span>深色</span>
-</a>
-<a href=# class="dropdown-item js-set-theme-auto">
-<span>自动</span>
-</a>
-</div>
-</li>
-</ul>
-</div>
+
+
+
+  <div class="page-header">
+    
+
+
+
+
+
+
+
+
+
+
+
+
+<nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+  <div class="container-xl">
+
+    
+    <div class="d-none d-lg-inline-flex">
+      <a class="navbar-brand" href="/">Senie</a>
+    </div>
+    
+
+    
+    <button type="button" class="navbar-toggler" data-toggle="collapse"
+            data-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false" aria-label="切换导航">
+    <span><i class="fas fa-bars"></i></span>
+    </button>
+    
+
+    
+    <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+      <a class="navbar-brand" href="/">Senie</a>
+    </div>
+    
+
+    
+    
+    <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
+
+      
+      <ul class="navbar-nav d-md-inline-flex">
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link  active" href="/notes/"><span>OI</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/courses/"><span>高中</span></a>
+        </li>
+
+        
+        
+
+        
+        <li class="nav-item dropdown">
+          <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"><span>杂七杂八</span><span class="caret"></span>
+          </a>
+          <div class="dropdown-menu">
+            
+              <a class="dropdown-item" href="/category/%e4%b9%90%e4%b9%90%e5%91%b5%e5%91%b5/"><span>乐乐呵呵</span></a>
+            
+              <a class="dropdown-item" href="/category/%e6%8a%80%e6%9c%afblog/"><span>技术blog</span></a>
+            
+          </div>
+        </li>
+
+        
+        
+
+      
+
+        
+      </ul>
+    </div>
+
+    <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+
+      
+      
+        
+          
+          <li class="nav-item d-none d-lg-inline-flex">
+            <a class="nav-link" href="https://github.com/Xu-Xihe" data-toggle="tooltip" data-placement="bottom" title="在Github上关注我吧！" target="_blank" rel="noopener" aria-label="在Github上关注我吧！">
+              <i class="fab fa-github" aria-hidden="true"></i>
+            </a>
+          </li>
+        
+      
+
+      
+      
+      <li class="nav-item">
+        <a class="nav-link js-search" href="#" aria-label="搜索"><i class="fas fa-search" aria-hidden="true"></i></a>
+      </li>
+      
+
+      
+      
+      <li class="nav-item dropdown theme-dropdown">
+        <a href="#" class="nav-link" data-toggle="dropdown" aria-haspopup="true" aria-label="Display preferences">
+          <i class="fas fa-moon" aria-hidden="true"></i>
+        </a>
+        <div class="dropdown-menu">
+          <a href="#" class="dropdown-item js-set-theme-light">
+            <span>浅色</span>
+          </a>
+          <a href="#" class="dropdown-item js-set-theme-dark">
+            <span>深色</span>
+          </a>
+          <a href="#" class="dropdown-item js-set-theme-auto">
+            <span>自动</span>
+          </a>
+        </div>
+      </li>
+      
+
+      
+      
+
+    </ul>
+
+  </div>
 </nav>
-</div>
-<div class=page-body>
-<article class=article>
+
+
+  </div>
+
+  <div class="page-body">
+    <article class="article">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+  
+  
 <div class="article-container pt-3">
-<h1>强连通分量与缩点</h1>
-<div class=article-metadata>
-<span class=article-date>
-2021年10月18日
-</span>
+  <h1>强连通分量与缩点</h1>
+
+  
+
+  
+    
+
+
+<div class="article-metadata">
+
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    2021年10月18日
+  </span>
+  
+
+  
+
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+  
+
 </div>
+
+    
+
+
+
+
+
+  
 </div>
-<div class=article-container>
-<div class=article-style>
-<h1 id=强连通分量与缩点>强连通分量与缩点</h1>
-<h2 id=又是啥玩意>又是啥玩意</h2>
-<h3 id=强连通>强连通</h3>
+
+
+
+  <div class="article-container">
+
+    <div class="article-style">
+      <h1 id="强连通分量与缩点">强连通分量与缩点</h1>
+<h2 id="又是啥玩意">又是啥玩意</h2>
+<h3 id="强连通">强连通</h3>
 <p><del>在<strong>有向图</strong> $G$ 中，两个顶点 $u$，$v$ 间有一条从 $u$ 到 $v$ 的有向路径，同时还有一条从 $v$ 到 $u$ 的有向路径，则节点 $u$ 和 节点 $v$ 强连通。</del></p>
 <p>啥玩意嘛。</p>
 <p>简单一点，<strong>有向图</strong>中，两个节点之间可以<strong>互相</strong>到达，则这两个节点强连通。</p>
-<h3 id=强连通图>强连通图</h3>
+<h3 id="强连通图">强连通图</h3>
 <p>若有向图 $G$ 的每两个顶点都强连通，则 $G$ 是一个强连通图。</p>
-<h3 id=强连通分量>强连通分量</h3>
+<h3 id="强连通分量">强连通分量</h3>
 <p><del>有向非强连通图的极大强连通子图，称为强连通分量。</del></p>
 <p>又是嘛?</p>
 <p>一个图 $G$，如果是有向图，但是不是强连通图，则图 $G$ 的所有是强连通图的子图中最大的(节点数最多的)称为强连通分量。</p>
-<h2 id=咋求向你缓缓打出一个>咋求？<del>(向你缓缓打出一个？)</del></h2>
-<h3 id=tarjan算法>Tarjan算法</h3>
+<h2 id="咋求向你缓缓打出一个">咋求？<del>(向你缓缓打出一个？)</del></h2>
+<h3 id="tarjan算法">Tarjan算法</h3>
 <p>经典算法？</p>
-<p>首先，需要知道关于<a href=/oiblogs/graph%e5%9b%be%e8%ae%ba/%e6%90%9c%e7%b4%a2/%e6%90%9c%e7%b4%a2/>DFS生成树</a>的一些东西。</p>
+<p>首先，需要知道关于<a href="/oiblogs/graph%e5%9b%be%e8%ae%ba/%e6%90%9c%e7%b4%a2/%e6%90%9c%e7%b4%a2/">DFS生成树</a>的一些东西。</p>
 <p>观察发现，任何一个强连通分量中必须有至少一个返祖边，因此如果结点 $u$ 是某个强连通分量在搜索树中遇到的第一个结点，那么这个强连通分量的其余结点肯定是在搜索树中以 $u$ 为根的子树中。$u$ 被称为这个强连通分量的根。Tarjan便以此为基础，进行求解。</p>
-<h4 id=维护变量>维护变量</h4>
+<h4 id="维护变量">维护变量</h4>
 <ul>
-<li>$dfn[i]$：维护节点 $i$ 的<a href=/oiblogs/graph%e5%9b%be%e8%ae%ba/%e6%90%9c%e7%b4%a2/%e6%90%9c%e7%b4%a2/>dfs搜索序</a>。</li>
+<li>$dfn[i]$：维护节点 $i$ 的<a href="/oiblogs/graph%e5%9b%be%e8%ae%ba/%e6%90%9c%e7%b4%a2/%e6%90%9c%e7%b4%a2/">dfs搜索序</a>。</li>
 <li>$low[i]$：维护节点 $i$ 的子树中和子树中通过一条不在搜索树上的边能到达的所有结点的最小dfn值。</li>
 <li>$stack:run$：维护一个队列，保证上面的节点在以底下第一个 $low[i]=dfn[i]$ 的节点为根的强连通分量中。</li>
 </ul>
@@ -155,26 +671,26 @@
 <li>上节点的 $dfn$ 都大于该结点的 $dfn$ 。</li>
 <li>从根开始的一条路径上的 $dfn$ 严格递增，$low$ 严格非降。</li>
 </ol>
-<h4 id=三种情况>三种情况</h4>
+<h4 id="三种情况">三种情况</h4>
 <p>对于当前节点 $u$，有一条 $u\rightarrow{v}$ 的边：</p>
 <ol>
 <li>节点 $v$ 未被访问过：继续对 $v$ 进行深度搜索。在回溯过程中，更新 $low[u]=min(low[u],low[v])$。</li>
 <li>节点 $v$ 被访问过，并且在栈中：说明找到一个返祖边，直接更新 $low[u]=min(low[u],low[v])$ 即可。</li>
 <li>节点 $v$ 被访问过，并且不在栈中：节点 $v$ 的强连通分量的根节点已经被找到，其强连通分量已经确定，不用操作。</li>
 </ol>
-<h4 id=注意>注意</h4>
-<img src=graph%20(1).png style=zoom:75%>
+<h4 id="注意">注意</h4>
+<img src="graph%20(1).png" style="zoom: 75%;" />
 <p>当我们回溯到节点 $i$，发现其 $low[i]=dfn[i]$ 时，说明我们找到一个强连通分量的根节点，栈中在节点 $i$ 上面的都在以节点 $i$ 为根的强连通分量中，因此，对于 $\forall{}\space node\space x\in{upper\space i},\space low[x]=dfn[i]$ 。</p>
 <p>否则，看上图…………经过细致的观察，我们发现，节点 $1、7、5、8、3、4$ 为强连通分量。如果你不在出栈的时候再更新一次，你就惊喜的发现，$low[4]=4$ ？？？因为搜索到 $4\rightarrow8$ 这条边的时候，因为节点 $8$ 刚刚搜搜索到一条至 $low=4$ 的节点，所以$low[8]=4$，就导致 $low[4]=4$，而后没有边再访问到节点 $4$，因此其 $low$ 值无法得到更新，始终为 $4$ ！！！然而，这显然是错的…………</p>
 <p>然后，注意一定要在子树都搜索完成后，在进行弹栈操作。这样，保证横叉边也可以积攒在栈中。</p>
-<h4 id=缩点>缩点</h4>
+<h4 id="缩点">缩点</h4>
 <p><del>看起来好高深的ya子</del></p>
 <p>这玩意菜的一批。</p>
 <p>就是对于原来图中的边 $u\rightarrow v$ ，若 $low[u]\neq low[v]$ ，则在新图中连接一条 $low[u]\rightarrow low[v]$ 的边；若 $low[u]=low[v]$ ，则不执行任何操作。</p>
 <p>这时候，我们会发现有可能连重了…………不影响的，好吧，不要强迫症。</p>
-<h4 id=板子>板子</h4>
-<p><a href=https://www.luogu.com.cn/problem/P3387 target=_blank rel=noopener>洛谷P3387 【模板】缩点</a></p>
-<pre><code class=language-c++>#include &lt;cstdio&gt;
+<h4 id="板子">板子</h4>
+<p><a href="https://www.luogu.com.cn/problem/P3387" target="_blank" rel="noopener">洛谷P3387 【模板】缩点</a></p>
+<pre><code class="language-c++">#include &lt;cstdio&gt;
 #include &lt;stack&gt;
 #include &lt;vector&gt;
 #include &lt;bitset&gt;
@@ -284,127 +800,360 @@ int main()
 	return 0;
 }
 </code></pre>
+
+    </div>
+
+    
+
+
+
+
+
+
+
+
+<div class="share-box">
+  <ul class="share">
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://twitter.com/intent/tweet?url=https://xuxihe.vercel.app/notes/oiknowledge/graph%E5%9B%BE%E8%AE%BA/%E5%BC%BA%E8%BF%9E%E9%80%9A%E5%88%86%E9%87%8F%E4%B8%8E%E7%BC%A9%E7%82%B9/&amp;text=%e5%bc%ba%e8%bf%9e%e9%80%9a%e5%88%86%e9%87%8f%e4%b8%8e%e7%bc%a9%e7%82%b9" target="_blank" rel="noopener" class="share-btn-twitter" aria-label="twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.facebook.com/sharer.php?u=https://xuxihe.vercel.app/notes/oiknowledge/graph%E5%9B%BE%E8%AE%BA/%E5%BC%BA%E8%BF%9E%E9%80%9A%E5%88%86%E9%87%8F%E4%B8%8E%E7%BC%A9%E7%82%B9/&amp;t=%e5%bc%ba%e8%bf%9e%e9%80%9a%e5%88%86%e9%87%8f%e4%b8%8e%e7%bc%a9%e7%82%b9" target="_blank" rel="noopener" class="share-btn-facebook" aria-label="facebook">
+          <i class="fab fa-facebook"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="mailto:?subject=%e5%bc%ba%e8%bf%9e%e9%80%9a%e5%88%86%e9%87%8f%e4%b8%8e%e7%bc%a9%e7%82%b9&amp;body=https://xuxihe.vercel.app/notes/oiknowledge/graph%E5%9B%BE%E8%AE%BA/%E5%BC%BA%E8%BF%9E%E9%80%9A%E5%88%86%E9%87%8F%E4%B8%8E%E7%BC%A9%E7%82%B9/" target="_blank" rel="noopener" class="share-btn-email" aria-label="envelope">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.linkedin.com/shareArticle?url=https://xuxihe.vercel.app/notes/oiknowledge/graph%E5%9B%BE%E8%AE%BA/%E5%BC%BA%E8%BF%9E%E9%80%9A%E5%88%86%E9%87%8F%E4%B8%8E%E7%BC%A9%E7%82%B9/&amp;title=%e5%bc%ba%e8%bf%9e%e9%80%9a%e5%88%86%e9%87%8f%e4%b8%8e%e7%bc%a9%e7%82%b9" target="_blank" rel="noopener" class="share-btn-linkedin" aria-label="linkedin-in">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="whatsapp://send?text=%e5%bc%ba%e8%bf%9e%e9%80%9a%e5%88%86%e9%87%8f%e4%b8%8e%e7%bc%a9%e7%82%b9%20https://xuxihe.vercel.app/notes/oiknowledge/graph%E5%9B%BE%E8%AE%BA/%E5%BC%BA%E8%BF%9E%E9%80%9A%E5%88%86%E9%87%8F%E4%B8%8E%E7%BC%A9%E7%82%B9/" target="_blank" rel="noopener" class="share-btn-whatsapp" aria-label="whatsapp">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://service.weibo.com/share/share.php?url=https://xuxihe.vercel.app/notes/oiknowledge/graph%E5%9B%BE%E8%AE%BA/%E5%BC%BA%E8%BF%9E%E9%80%9A%E5%88%86%E9%87%8F%E4%B8%8E%E7%BC%A9%E7%82%B9/&amp;title=%e5%bc%ba%e8%bf%9e%e9%80%9a%e5%88%86%e9%87%8f%e4%b8%8e%e7%bc%a9%e7%82%b9" target="_blank" rel="noopener" class="share-btn-weibo" aria-label="weibo">
+          <i class="fab fa-weibo"></i>
+        </a>
+      </li>
+    
+  </ul>
 </div>
-<div class=share-box>
-<ul class=share>
-<li>
-<a href="https://twitter.com/intent/tweet?url=https://xuxihe.vercel.app/notes/oiknowledge/graph%E5%9B%BE%E8%AE%BA/%E5%BC%BA%E8%BF%9E%E9%80%9A%E5%88%86%E9%87%8F%E4%B8%8E%E7%BC%A9%E7%82%B9/&text=%e5%bc%ba%e8%bf%9e%e9%80%9a%e5%88%86%e9%87%8f%e4%b8%8e%e7%bc%a9%e7%82%b9" target=_blank rel=noopener class=share-btn-twitter aria-label=twitter>
-<i class="fab fa-twitter"></i>
-</a>
-</li>
-<li>
-<a href="https://www.facebook.com/sharer.php?u=https://xuxihe.vercel.app/notes/oiknowledge/graph%E5%9B%BE%E8%AE%BA/%E5%BC%BA%E8%BF%9E%E9%80%9A%E5%88%86%E9%87%8F%E4%B8%8E%E7%BC%A9%E7%82%B9/&t=%e5%bc%ba%e8%bf%9e%e9%80%9a%e5%88%86%e9%87%8f%e4%b8%8e%e7%bc%a9%e7%82%b9" target=_blank rel=noopener class=share-btn-facebook aria-label=facebook>
-<i class="fab fa-facebook"></i>
-</a>
-</li>
-<li>
-<a href="mailto:?subject=%e5%bc%ba%e8%bf%9e%e9%80%9a%e5%88%86%e9%87%8f%e4%b8%8e%e7%bc%a9%e7%82%b9&body=https://xuxihe.vercel.app/notes/oiknowledge/graph%E5%9B%BE%E8%AE%BA/%E5%BC%BA%E8%BF%9E%E9%80%9A%E5%88%86%E9%87%8F%E4%B8%8E%E7%BC%A9%E7%82%B9/" target=_blank rel=noopener class=share-btn-email aria-label=envelope>
-<i class="fas fa-envelope"></i>
-</a>
-</li>
-<li>
-<a href="https://www.linkedin.com/shareArticle?url=https://xuxihe.vercel.app/notes/oiknowledge/graph%E5%9B%BE%E8%AE%BA/%E5%BC%BA%E8%BF%9E%E9%80%9A%E5%88%86%E9%87%8F%E4%B8%8E%E7%BC%A9%E7%82%B9/&title=%e5%bc%ba%e8%bf%9e%e9%80%9a%e5%88%86%e9%87%8f%e4%b8%8e%e7%bc%a9%e7%82%b9" target=_blank rel=noopener class=share-btn-linkedin aria-label=linkedin-in>
-<i class="fab fa-linkedin-in"></i>
-</a>
-</li>
-<li>
-<a href="whatsapp://send?text=%e5%bc%ba%e8%bf%9e%e9%80%9a%e5%88%86%e9%87%8f%e4%b8%8e%e7%bc%a9%e7%82%b9%20https://xuxihe.vercel.app/notes/oiknowledge/graph%E5%9B%BE%E8%AE%BA/%E5%BC%BA%E8%BF%9E%E9%80%9A%E5%88%86%E9%87%8F%E4%B8%8E%E7%BC%A9%E7%82%B9/" target=_blank rel=noopener class=share-btn-whatsapp aria-label=whatsapp>
-<i class="fab fa-whatsapp"></i>
-</a>
-</li>
-<li>
-<a href="https://service.weibo.com/share/share.php?url=https://xuxihe.vercel.app/notes/oiknowledge/graph%E5%9B%BE%E8%AE%BA/%E5%BC%BA%E8%BF%9E%E9%80%9A%E5%88%86%E9%87%8F%E4%B8%8E%E7%BC%A9%E7%82%B9/&title=%e5%bc%ba%e8%bf%9e%e9%80%9a%e5%88%86%e9%87%8f%e4%b8%8e%e7%bc%a9%e7%82%b9" target=_blank rel=noopener class=share-btn-weibo aria-label=weibo>
-<i class="fab fa-weibo"></i>
-</a>
-</li>
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+  
+  
+  
+    
+  
+  
+  
+  <div class="media author-card content-widget-hr">
+    
+      
+      <a href="https://xuxihe.vercel.app/"><img class="avatar mr-3 avatar-circle" src="/author/%E6%9B%A6%E6%9B%A6%E5%91%B5%E5%91%B5/avatar_hudb29ded1c25f9d5e935a5b2ce5ff59ff_1255814_270x270_fill_lanczos_center_3.png" alt="曦曦呵呵"></a>
+    
+
+    <div class="media-body">
+      <h5 class="card-title"><a href="https://xuxihe.vercel.app/">曦曦呵呵</a></h5>
+      <h6 class="card-subtitle">一名卑微的OIer。</h6>
+      <p class="card-text">开开心心，蹦蹦跳跳~</p>
+      <ul class="network-icon" aria-hidden="true">
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="/#contact" >
+        <i class="fas fa-envelope"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://github.com/Xu-Xihe" target="_blank" rel="noopener">
+        <i class="fab fa-github"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://qm.qq.com/cgi-bin/qm/qr?k=Wns5qUpuYc9CC616JJSKEyC3vXqZWjrF&amp;noverify=0" target="_blank" rel="noopener">
+        <i class="fab fa-qq"></i>
+      </a>
+    </li>
+  
 </ul>
+
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="article-widget">
+  
+<div class="post-nav">
+  
+  
+  
+  <div class="post-nav-item">
+    <div class="meta-nav">下一页</div>
+    <a href="/notes/oiknowledge/graph%E5%9B%BE%E8%AE%BA/spfa-dfs%E8%B4%9F%E7%8E%AF%E8%AF%81%E6%98%8E/" rel="next">SPFA-DFS负环证明</a>
+  </div>
+  
+  
+  
+  <div class="post-nav-item">
+    <div class="meta-nav">上一页</div>
+    <a href="/notes/oiknowledge/graph%E5%9B%BE%E8%AE%BA/%E6%A0%91%E9%93%BE%E5%89%96%E5%88%86/" rel="prev">树链刨分</a>
+  </div>
+  
 </div>
-<div class="media author-card content-widget-hr">
-<a href=https://xuxihe.vercel.app/><img class="avatar mr-3 avatar-circle" src=/author/%E6%9B%A6%E6%9B%A6%E5%91%B5%E5%91%B5/avatar_hudb29ded1c25f9d5e935a5b2ce5ff59ff_1255814_270x270_fill_lanczos_center_3.png alt=曦曦呵呵></a>
-<div class=media-body>
-<h5 class=card-title><a href=https://xuxihe.vercel.app/>曦曦呵呵</a></h5>
-<h6 class=card-subtitle>一名卑微的OIer。</h6>
-<p class=card-text>开开心心，蹦蹦跳跳~</p>
-<ul class=network-icon aria-hidden=true>
-<li>
-<a href=/#contact>
-<i class="fas fa-envelope"></i>
-</a>
-</li>
-<li>
-<a href=https://github.com/Xu-Xihe target=_blank rel=noopener>
-<i class="fab fa-github"></i>
-</a>
-</li>
-<li>
-<a href="https://qm.qq.com/cgi-bin/qm/qr?k=Wns5qUpuYc9CC616JJSKEyC3vXqZWjrF&noverify=0" target=_blank rel=noopener>
-<i class="fab fa-qq"></i>
-</a>
-</li>
-</ul>
+
 </div>
-</div>
-<div class=article-widget>
-<div class=post-nav>
-<div class=post-nav-item>
-<div class=meta-nav>下一页</div>
-<a href=/notes/oiknowledge/graph%E5%9B%BE%E8%AE%BA/spfa-dfs%E8%B4%9F%E7%8E%AF%E8%AF%81%E6%98%8E/ rel=next>SPFA-DFS负环证明</a>
-</div>
-<div class=post-nav-item>
-<div class=meta-nav>上一页</div>
-<a href=/notes/oiknowledge/graph%E5%9B%BE%E8%AE%BA/%E6%A0%91%E9%93%BE%E5%89%96%E5%88%86/ rel=prev>树链刨分</a>
-</div>
-</div>
-</div>
-</div>
+
+
+
+
+
+
+
+
+
+  </div>
 </article>
-</div>
-<div class=page-footer>
-<div class=container>
-<footer class=site-footer>
-<p class=powered-by>
-© 曦曦呵呵
-</p>
-<p class=powered-by>
-由<a href="https://wowchemy.com/?utm_campaign=poweredby" target=_blank rel=noopener>Wowchemy</a>支持发布——免费<a href=https://github.com/wowchemy/wowchemy-hugo-themes target=_blank rel=noopener>开源</a>网站，为创作者赋能。
-</p>
+  </div>
+
+  <div class="page-footer">
+    
+    
+    <div class="container">
+      <footer class="site-footer">
+
+  
+
+
+
+  
+
+  
+
+  
+  <p class="powered-by">
+    © 曦曦呵呵
+  </p>
+  
+
+  
+  
+
+
+
+
+
+
+  <p class="powered-by">
+    
+    
+    
+      
+      
+      
+      
+      
+      
+      由<a href="https://wowchemy.com/?utm_campaign=poweredby" target="_blank" rel="noopener">Wowchemy</a>支持发布——免费<a href="https://github.com/wowchemy/wowchemy-hugo-themes" target="_blank" rel="noopener">开源</a>网站，为创作者赋能。
+    
+  </p>
 </footer>
+
+    </div>
+    
+  </div>
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">引用</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> 复制
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> 下载
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
 </div>
-</div>
-<div id=modal class="modal fade" role=dialog>
-<div class=modal-dialog>
-<div class=modal-content>
-<div class=modal-header>
-<h5 class=modal-title>引用</h5>
-<button type=button class=close data-dismiss=modal aria-label=Close>
-<span aria-hidden=true>&#215;</span>
-</button>
-</div>
-<div class=modal-body>
-<pre><code class="tex hljs"></code></pre>
-</div>
-<div class=modal-footer>
-<a class="btn btn-outline-primary my-1 js-copy-cite" href=# target=_blank>
-<i class="fas fa-copy"></i> 复制
-</a>
-<a class="btn btn-outline-primary my-1 js-download-cite" href=# target=_blank>
-<i class="fas fa-download"></i> 下载
-</a>
-<div id=modal-error></div>
-</div>
-</div>
-</div>
-</div>
-<script src=/js/vendor-bundle.min.b73dfaac3b6499dc997741748a7c3fe2.js></script>
-<script src=https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin=anonymous></script>
-<script src=https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin=anonymous></script>
-<script src=https://cdnjs.cloudflare.com/ajax/libs/mermaid/8.8.4/mermaid.min.js integrity="sha512-as1BF4+iHZ3BVO6LLDQ7zrbvTXM+c/1iZ1qII/c3c4L8Rn5tHLpFUtpaEtBNS92f+xGsCzsD7b62XP3XYap6oA==" crossorigin=anonymous title=mermaid></script>
-<script src=https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/highlight.min.js integrity="sha512-TDKKr+IvoqZnPzc3l35hdjpHD0m+b2EC2SrLEgKDRWpxf2rFCxemkgvJ5kfU48ip+Y+m2XVKyOCD85ybtlZDmw==" crossorigin=anonymous></script>
-<script src=https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/languages/r.min.js crossorigin=anonymous></script>
-<script src=https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/languages/python.min.js crossorigin=anonymous></script>
-<script src=https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/languages/latex.min.js crossorigin=anonymous></script>
-<script src=https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.min.js integrity="sha512-SeiQaaDh73yrb56sTW/RgVdi/mMqNeM2oBwubFHagc5BkixSpP1fvqF47mKzPGWYSSy4RwbBunrJBQ4Co8fRWA==" crossorigin=anonymous></script>
-<script id=search-hit-fuse-template type=text/x-template>
+
+      
+
+    
+    <script src="/js/vendor-bundle.min.b73dfaac3b6499dc997741748a7c3fe2.js"></script>
+
+    
+    
+    
+      
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      
+
+      
+      
+
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/8.8.4/mermaid.min.js" integrity="sha512-as1BF4+iHZ3BVO6LLDQ7zrbvTXM+c/1iZ1qII/c3c4L8Rn5tHLpFUtpaEtBNS92f+xGsCzsD7b62XP3XYap6oA==" crossorigin="anonymous" title="mermaid"></script>
+      
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/highlight.min.js" integrity="sha512-TDKKr+IvoqZnPzc3l35hdjpHD0m+b2EC2SrLEgKDRWpxf2rFCxemkgvJ5kfU48ip+Y+m2XVKyOCD85ybtlZDmw==" crossorigin="anonymous"></script>
+        
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/languages/r.min.js" crossorigin="anonymous"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/languages/python.min.js" crossorigin="anonymous"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/languages/latex.min.js" crossorigin="anonymous"></script>
+        
+      
+
+    
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.min.js" integrity="sha512-SeiQaaDh73yrb56sTW/RgVdi/mMqNeM2oBwubFHagc5BkixSpP1fvqF47mKzPGWYSSy4RwbBunrJBQ4Co8fRWA==" crossorigin="anonymous"></script>
+    
+
+    
+    
+
+    
+    
+    
+      
+      <script id="search-hit-fuse-template" type="text/x-template">
         <div class="search-hit" id="summary-{{key}}">
           <div class="search-hit-content">
             <div class="search-hit-name">
@@ -415,8 +1164,51 @@ int main()
           </div>
         </div>
       </script>
-<script src=https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin=anonymous></script>
-<script src=https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin=anonymous></script>
-<script src=/zh/js/wowchemy.min.d16321ec6884b061cbaaf961484b65c8.js></script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+      
+    
+
+    
+    
+
+    
+    
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+      
+      
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+      
+      
+    
+    
+    <script src="/zh/js/wowchemy.min.d16321ec6884b061cbaaf961484b65c8.js"></script>
+
+    
+
+
+
+
+
+
 </body>
 </html>

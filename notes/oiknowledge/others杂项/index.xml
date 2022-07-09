@@ -1,365 +1,416 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>杂项 | Senie</title><link>https://xuxihe.vercel.app/notes/oiknowledge/others%E6%9D%82%E9%A1%B9/</link><atom:link href="https://xuxihe.vercel.app/notes/oiknowledge/others%E6%9D%82%E9%A1%B9/index.xml" rel="self" type="application/rss+xml"/><description>杂项</description><generator>Wowchemy (https://wowchemy.com)</generator><language>zh</language><copyright>© 曦曦呵呵</copyright><lastBuildDate>Mon, 18 Oct 2021 00:00:00 +0000</lastBuildDate><image><url>https://xuxihe.vercel.app/media/icon_huf638f59a6dd2257b0add8e0186347459_300061_512x512_fill_lanczos_center_3.png</url><title>杂项</title><link>https://xuxihe.vercel.app/notes/oiknowledge/others%E6%9D%82%E9%A1%B9/</link></image><item><title>C++ STL</title><link>https://xuxihe.vercel.app/notes/oiknowledge/others%E6%9D%82%E9%A1%B9/c++-stl/</link><pubDate>Mon, 18 Oct 2021 00:00:00 +0000</pubDate><guid>https://xuxihe.vercel.app/notes/oiknowledge/others%E6%9D%82%E9%A1%B9/c++-stl/</guid><description>&lt;p>当你啥也不会的时候，充分利用C++ STL模板可以让你的暴力多得几分。&lt;/p></description></item><item><title>离散化</title><link>https://xuxihe.vercel.app/notes/oiknowledge/others%E6%9D%82%E9%A1%B9/%E7%A6%BB%E6%95%A3%E5%8C%96/</link><pubDate>Mon, 18 Oct 2021 00:00:00 +0000</pubDate><guid>https://xuxihe.vercel.app/notes/oiknowledge/others%E6%9D%82%E9%A1%B9/%E7%A6%BB%E6%95%A3%E5%8C%96/</guid><description>&lt;h1 id="离散化">离散化&lt;/h1>
-&lt;p>&lt;del>好高深的鸭子&lt;/del>&lt;/p>
-&lt;p>&lt;del>其实，用STL水就可以了&lt;/del>&lt;/p>
-&lt;h2 id="离散化-1">离……散化？&lt;/h2>
-&lt;p>离散化，就是把无限空间中有限的个体映射到有限的空间中去，以此提高算法的时空效率。即在不改变数据相对大小的条件下，对数据进行相应的缩小。通俗地讲就是当有些数据因为本身很大或者类型不支持，自身无法作为数组的下标来方便地处理，而影响最终结果的只有元素之间的相对大小关系时，我们可以将原来的数据按照从大到小编号来处理问题，即离散化。&lt;/p>
-&lt;p>&lt;del>好了，上面的多无聊&lt;/del>&lt;/p>
-&lt;p>很简单，就是如果你只需要 $k$ 个数，但是可能存在 $n$ 种情况，你开不下下标为 $n$ 的数组，因此你丢出了离散化来解决这个问题。&lt;/p>
-&lt;h2 id="所以实现">所以……实现？&lt;/h2>
-&lt;p>如果你不嫌累的话，你大可以学习各种各样奇奇怪怪的离散化的方法(包括但不限于Hash、排序)。&lt;/p>
-&lt;p>但是，这种非常常见的东西C++ STL里面肯定有啊。&lt;/p>
-&lt;p>所以，介绍几个：&lt;/p>
-&lt;h3 id="map">map&lt;/h3>
-&lt;h3 id="heading">&lt;/h3></description></item><item><title>差分数组</title><link>https://xuxihe.vercel.app/notes/oiknowledge/others%E6%9D%82%E9%A1%B9/%E5%B7%AE%E5%88%86%E6%95%B0%E7%BB%84/</link><pubDate>Mon, 18 Oct 2021 00:00:00 +0000</pubDate><guid>https://xuxihe.vercel.app/notes/oiknowledge/others%E6%9D%82%E9%A1%B9/%E5%B7%AE%E5%88%86%E6%95%B0%E7%BB%84/</guid><description>&lt;h1 id="差分数组">差分数组&lt;/h1>
-&lt;h2 id="定义">定义&lt;/h2>
-&lt;p>对于第$i$位，记录第$i$位减第$i-1$位的差值。&lt;/p>
-&lt;p>例子：&lt;/p>
-&lt;table>
-&lt;thead>
-&lt;tr>
-&lt;th style="text-align:center">下标&lt;/th>
-&lt;th style="text-align:center">0&lt;/th>
-&lt;th style="text-align:center">1&lt;/th>
-&lt;th style="text-align:center">2&lt;/th>
-&lt;th style="text-align:center">3&lt;/th>
-&lt;th style="text-align:center">4&lt;/th>
-&lt;th style="text-align:center">5&lt;/th>
-&lt;th style="text-align:center">6&lt;/th>
-&lt;/tr>
-&lt;/thead>
-&lt;tbody>
-&lt;tr>
-&lt;td style="text-align:center">&lt;strong>原数组&lt;/strong>&lt;/td>
-&lt;td style="text-align:center">0&lt;/td>
-&lt;td style="text-align:center">6&lt;/td>
-&lt;td style="text-align:center">9&lt;/td>
-&lt;td style="text-align:center">5&lt;/td>
-&lt;td style="text-align:center">4&lt;/td>
-&lt;td style="text-align:center">7&lt;/td>
-&lt;td style="text-align:center">3&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td style="text-align:center">&lt;strong>差分数组&lt;/strong>&lt;/td>
-&lt;td style="text-align:center">0&lt;/td>
-&lt;td style="text-align:center">+6&lt;/td>
-&lt;td style="text-align:center">+3&lt;/td>
-&lt;td style="text-align:center">-4&lt;/td>
-&lt;td style="text-align:center">-1&lt;/td>
-&lt;td style="text-align:center">+3&lt;/td>
-&lt;td style="text-align:center">-4&lt;/td>
-&lt;/tr>
-&lt;/tbody>
-&lt;/table>
-&lt;h2 id="用途">用途&lt;/h2>
-&lt;p>快速进行区间修改操作。&lt;/p>
-&lt;p>&lt;strong>注意!&lt;/strong> 只适用于可被抵消贡献的运算中，如$+/-/\and$​(加、减、异或)等。&lt;/p>
-&lt;p>若将原数组$[l,r]$区间内加$val$，则相当于将差分数组第$l$位加$val$，第$r+1$位减去$val$(将贡献抵消)。&lt;/p>
-&lt;h6 id="注意-是第r1位而不是第r位">&lt;strong>注意! 是第$r+1$位，而不是第$r$​位!!!&lt;/strong>&lt;/h6>
-&lt;p>经常和维和区间和的数据结构一起使用。(&lt;a href="../data%e6%95%b0%e6%8d%ae%e7%bb%93%e6%9e%84/%e6%a0%91%e7%8a%b6%e6%95%b0%e7%bb%84.md">树状数组&lt;/a>等)&lt;/p></description></item><item><title>位运算</title><link>https://xuxihe.vercel.app/notes/oiknowledge/others%E6%9D%82%E9%A1%B9/%E4%BD%8D%E8%BF%90%E7%AE%97/</link><pubDate>Mon, 18 Oct 2021 00:00:00 +0000</pubDate><guid>https://xuxihe.vercel.app/notes/oiknowledge/others%E6%9D%82%E9%A1%B9/%E4%BD%8D%E8%BF%90%E7%AE%97/</guid><description>&lt;h1 id="位运算">位运算&lt;/h1>
-&lt;h2 id="概述">概述&lt;/h2>
-&lt;p>现代计算机中所有的数据均以二进制的形式存储在设备中，即 $0$、$1$ 两种状态计。计算机对二进制数据进行的运算( $+$、$-$、$*$、$/$ )都是位运算，即将符号位共同参与运算的运算。由于计算机内部就是以二进制来存储数据，位运算是相当快的。&lt;/p>
-&lt;p>基本的位运算共 $6$ 种，分别为按位与、按位或、按位异或、按位取反、左移和右移。通俗叫法会去掉“按位”，即与、或、异或、取反、左移和右移。&lt;/p>
-&lt;p>其中，按位与、按位或、按位异或是将&lt;strong>两个整数&lt;/strong>作为二进制数，对二进制表示中的每一位逐一运算；按位取反、左移和右移是对于某&lt;strong>一个整数&lt;/strong>作为二进制数，对二进制表示中的每一位逐一运算。&lt;/p>
-&lt;p>在位运算时，若两个整数的二进制位数不同，则在位数较少的前面补 $0$ 即可。&lt;/p>
-&lt;h2 id="整数二进制表">整数二进制表&lt;/h2>
-&lt;p>这是一张 $0\sim31$ 的 $十进制\longleftrightarrow二进制$ 对照表。&lt;/p>
-&lt;p>二进制这个东西可以手推，但是比较麻烦，这张表在位运算的学习和实际应用中很方便比较并找到规律。&lt;/p>
-&lt;table>
-&lt;thead>
-&lt;tr>
-&lt;th>十进制&lt;/th>
-&lt;th>二进制&lt;/th>
-&lt;/tr>
-&lt;/thead>
-&lt;tbody>
-&lt;tr>
-&lt;td>0&lt;/td>
-&lt;td>00000&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td>1&lt;/td>
-&lt;td>00001&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td>2&lt;/td>
-&lt;td>00010&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td>3&lt;/td>
-&lt;td>00011&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td>4&lt;/td>
-&lt;td>00100&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td>5&lt;/td>
-&lt;td>00101&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td>6&lt;/td>
-&lt;td>00110&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td>7&lt;/td>
-&lt;td>00111&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td>8&lt;/td>
-&lt;td>01000&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td>9&lt;/td>
-&lt;td>01001&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td>10&lt;/td>
-&lt;td>01010&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td>11&lt;/td>
-&lt;td>01011&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td>12&lt;/td>
-&lt;td>01100&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td>13&lt;/td>
-&lt;td>01101&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td>14&lt;/td>
-&lt;td>01110&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td>15&lt;/td>
-&lt;td>01111&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td>16&lt;/td>
-&lt;td>10000&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td>17&lt;/td>
-&lt;td>10001&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td>18&lt;/td>
-&lt;td>10010&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td>19&lt;/td>
-&lt;td>10011&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td>20&lt;/td>
-&lt;td>10100&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td>21&lt;/td>
-&lt;td>10101&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td>22&lt;/td>
-&lt;td>10110&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td>23&lt;/td>
-&lt;td>10111&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td>24&lt;/td>
-&lt;td>11000&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td>25&lt;/td>
-&lt;td>11001&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td>26&lt;/td>
-&lt;td>11010&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td>27&lt;/td>
-&lt;td>11011&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td>28&lt;/td>
-&lt;td>11100&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td>29&lt;/td>
-&lt;td>11101&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td>30&lt;/td>
-&lt;td>11110&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td>31&lt;/td>
-&lt;td>11111&lt;/td>
-&lt;/tr>
-&lt;/tbody>
-&lt;/table>
-&lt;h2 id="与">与&lt;/h2>
-&lt;p>“与”，就是和的意思。定义如下：&lt;/p>
-&lt;table>
-&lt;thead>
-&lt;tr>
-&lt;th style="text-align:center">C++运算符&lt;/th>
-&lt;th style="text-align:center">数学符号&lt;/th>
-&lt;th style="text-align:center">意义(咋算的)&lt;/th>
-&lt;/tr>
-&lt;/thead>
-&lt;tbody>
-&lt;tr>
-&lt;td style="text-align:center">&amp;amp;&lt;/td>
-&lt;td style="text-align:center">$&amp;amp;\space、\operatorname{and}$&lt;/td>
-&lt;td style="text-align:center">均为 $1$，则结果为 $1$；任意一个是 $0$，结果为 $0$。&lt;/td>
-&lt;/tr>
-&lt;/tbody>
-&lt;/table>
-&lt;p>其对应的结果如下表：&lt;/p>
-&lt;table>
-&lt;thead>
-&lt;tr>
-&lt;th>数A第 $i$ 位&lt;/th>
-&lt;th>数B第 $i$ 位&lt;/th>
-&lt;th>结果&lt;/th>
-&lt;/tr>
-&lt;/thead>
-&lt;tbody>
-&lt;tr>
-&lt;td>$1$&lt;/td>
-&lt;td>$1$&lt;/td>
-&lt;td>$1$&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td>$1$&lt;/td>
-&lt;td>$0$&lt;/td>
-&lt;td>$0$&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td>$0$&lt;/td>
-&lt;td>$1$&lt;/td>
-&lt;td>$0$&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td>$0$&lt;/td>
-&lt;td>$0$&lt;/td>
-&lt;td>$0$&lt;/td>
-&lt;/tr>
-&lt;/tbody>
-&lt;/table>
-&lt;h3 id="lowbit">lowbit&lt;/h3>
-&lt;p>正确的使用&lt;strong>与&lt;/strong>运算(再加上一点技巧)，可以求出某一个数二进制下最低位的 $1$ 的位置。详情请参见&lt;a href="../data%e6%95%b0%e6%8d%ae%e7%bb%93%e6%9e%84/%e6%a0%91%e7%8a%b6%e6%95%b0%e7%bb%84.md">树状数组&lt;/a>。&lt;/p>
-&lt;h2 id="或">或&lt;/h2>
-&lt;p>“或”，即或者。定义：&lt;/p>
-&lt;table>
-&lt;thead>
-&lt;tr>
-&lt;th style="text-align:center">C++运算符&lt;/th>
-&lt;th style="text-align:center">数学符号&lt;/th>
-&lt;th style="text-align:center">意义(咋算的)&lt;/th>
-&lt;/tr>
-&lt;/thead>
-&lt;tbody>
-&lt;tr>
-&lt;td style="text-align:center">|&lt;/td>
-&lt;td style="text-align:center">$\mid\space、\operatorname{or}$&lt;/td>
-&lt;td style="text-align:center">均为 $0$，则结果为 $0$；任意一个是 $1$，结果为 $1$。&lt;/td>
-&lt;/tr>
-&lt;/tbody>
-&lt;/table>
-&lt;p>其对应的结果如下表：&lt;/p>
-&lt;table>
-&lt;thead>
-&lt;tr>
-&lt;th>数A第 $i$ 位&lt;/th>
-&lt;th>数B第 $i$ 位&lt;/th>
-&lt;th>结果&lt;/th>
-&lt;/tr>
-&lt;/thead>
-&lt;tbody>
-&lt;tr>
-&lt;td>$1$&lt;/td>
-&lt;td>$1$&lt;/td>
-&lt;td>$1$&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td>$1$&lt;/td>
-&lt;td>$0$&lt;/td>
-&lt;td>$1$&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td>$0$&lt;/td>
-&lt;td>$1$&lt;/td>
-&lt;td>$1$&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td>$0$&lt;/td>
-&lt;td>$0$&lt;/td>
-&lt;td>$0$&lt;/td>
-&lt;/tr>
-&lt;/tbody>
-&lt;/table>
-&lt;h2 id="异或">异或&lt;/h2>
-&lt;p>&lt;del>“异或”，大概就是变异的“或”吧。&lt;/del>&lt;/p>
-&lt;table>
-&lt;thead>
-&lt;tr>
-&lt;th style="text-align:center">C++运算符&lt;/th>
-&lt;th style="text-align:center">数学符号&lt;/th>
-&lt;th style="text-align:center">意义(咋算的)&lt;/th>
-&lt;/tr>
-&lt;/thead>
-&lt;tbody>
-&lt;tr>
-&lt;td style="text-align:center">^&lt;/td>
-&lt;td style="text-align:center">$\oplus\space、\operatorname{xor}$&lt;/td>
-&lt;td style="text-align:center">均为 $0$ 或均为 $1$，结果为 $0$；两个不同(任意一个是 $1$，另一个是 $0$)，结果为 $1$。&lt;/td>
-&lt;/tr>
-&lt;/tbody>
-&lt;/table>
-&lt;p>其对应的结果如下表：&lt;/p>
-&lt;table>
-&lt;thead>
-&lt;tr>
-&lt;th>数A第 $i$ 位&lt;/th>
-&lt;th>数B第 $i$ 位&lt;/th>
-&lt;th>结果&lt;/th>
-&lt;/tr>
-&lt;/thead>
-&lt;tbody>
-&lt;tr>
-&lt;td>$1$&lt;/td>
-&lt;td>$1$&lt;/td>
-&lt;td>$0$&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td>$1$&lt;/td>
-&lt;td>$0$&lt;/td>
-&lt;td>$1$&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td>$0$&lt;/td>
-&lt;td>$1$&lt;/td>
-&lt;td>$1$&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td>$0$&lt;/td>
-&lt;td>$0$&lt;/td>
-&lt;td>$0$&lt;/td>
-&lt;/tr>
-&lt;/tbody>
-&lt;/table>
-&lt;h3 id="异或与加法">异或与加法&lt;/h3>
-&lt;p>一个定理：$a\oplus{b}\le{a+b}$&lt;/p>
-&lt;p>&lt;strong>证明：&lt;/strong>&lt;/p>
-&lt;p>我们发现，位运算不进位；而加法运算当两个位都是 $1$ 时会进位。因此，观察上表，异或运算的得数是加法运算进位后剩余的数字。&lt;/p>
-&lt;p>因此，在加法不进位时，$a\oplus{b}={a+b}$；加法进位时，$a\oplus{b}&amp;lt;{a+b}$。&lt;/p>
-&lt;h2 id="取反">取反&lt;/h2>
-&lt;p>“取反”，顾名思义，就是 $0$ 变 $1$；&lt;/p>
-&lt;h2 id="左移">左移&lt;/h2>
-&lt;h2 id="右移">右移&lt;/h2></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>杂项 | Senie</title>
+    <link>https://xuxihe.vercel.app/notes/oiknowledge/others%E6%9D%82%E9%A1%B9/</link>
+      <atom:link href="https://xuxihe.vercel.app/notes/oiknowledge/others%E6%9D%82%E9%A1%B9/index.xml" rel="self" type="application/rss+xml" />
+    <description>杂项</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>zh</language><copyright>© 曦曦呵呵</copyright><lastBuildDate>Mon, 18 Oct 2021 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://xuxihe.vercel.app/media/icon_huf638f59a6dd2257b0add8e0186347459_300061_512x512_fill_lanczos_center_3.png</url>
+      <title>杂项</title>
+      <link>https://xuxihe.vercel.app/notes/oiknowledge/others%E6%9D%82%E9%A1%B9/</link>
+    </image>
+    
+    <item>
+      <title>C&#43;&#43; STL</title>
+      <link>https://xuxihe.vercel.app/notes/oiknowledge/others%E6%9D%82%E9%A1%B9/c&#43;&#43;-stl/</link>
+      <pubDate>Mon, 18 Oct 2021 00:00:00 +0000</pubDate>
+      <guid>https://xuxihe.vercel.app/notes/oiknowledge/others%E6%9D%82%E9%A1%B9/c&#43;&#43;-stl/</guid>
+      <description>&lt;p&gt;当你啥也不会的时候，充分利用C++ STL模板可以让你的暴力多得几分。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>离散化</title>
+      <link>https://xuxihe.vercel.app/notes/oiknowledge/others%E6%9D%82%E9%A1%B9/%E7%A6%BB%E6%95%A3%E5%8C%96/</link>
+      <pubDate>Mon, 18 Oct 2021 00:00:00 +0000</pubDate>
+      <guid>https://xuxihe.vercel.app/notes/oiknowledge/others%E6%9D%82%E9%A1%B9/%E7%A6%BB%E6%95%A3%E5%8C%96/</guid>
+      <description>&lt;h1 id=&#34;离散化&#34;&gt;离散化&lt;/h1&gt;
+&lt;p&gt;&lt;del&gt;好高深的鸭子&lt;/del&gt;&lt;/p&gt;
+&lt;p&gt;&lt;del&gt;其实，用STL水就可以了&lt;/del&gt;&lt;/p&gt;
+&lt;h2 id=&#34;离散化-1&#34;&gt;离……散化？&lt;/h2&gt;
+&lt;p&gt;离散化，就是把无限空间中有限的个体映射到有限的空间中去，以此提高算法的时空效率。即在不改变数据相对大小的条件下，对数据进行相应的缩小。通俗地讲就是当有些数据因为本身很大或者类型不支持，自身无法作为数组的下标来方便地处理，而影响最终结果的只有元素之间的相对大小关系时，我们可以将原来的数据按照从大到小编号来处理问题，即离散化。&lt;/p&gt;
+&lt;p&gt;&lt;del&gt;好了，上面的多无聊&lt;/del&gt;&lt;/p&gt;
+&lt;p&gt;很简单，就是如果你只需要 $k$ 个数，但是可能存在 $n$ 种情况，你开不下下标为 $n$ 的数组，因此你丢出了离散化来解决这个问题。&lt;/p&gt;
+&lt;h2 id=&#34;所以实现&#34;&gt;所以……实现？&lt;/h2&gt;
+&lt;p&gt;如果你不嫌累的话，你大可以学习各种各样奇奇怪怪的离散化的方法(包括但不限于Hash、排序)。&lt;/p&gt;
+&lt;p&gt;但是，这种非常常见的东西C++ STL里面肯定有啊。&lt;/p&gt;
+&lt;p&gt;所以，介绍几个：&lt;/p&gt;
+&lt;h3 id=&#34;map&#34;&gt;map&lt;/h3&gt;
+&lt;h3 id=&#34;heading&#34;&gt;&lt;/h3&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>差分数组</title>
+      <link>https://xuxihe.vercel.app/notes/oiknowledge/others%E6%9D%82%E9%A1%B9/%E5%B7%AE%E5%88%86%E6%95%B0%E7%BB%84/</link>
+      <pubDate>Mon, 18 Oct 2021 00:00:00 +0000</pubDate>
+      <guid>https://xuxihe.vercel.app/notes/oiknowledge/others%E6%9D%82%E9%A1%B9/%E5%B7%AE%E5%88%86%E6%95%B0%E7%BB%84/</guid>
+      <description>&lt;h1 id=&#34;差分数组&#34;&gt;差分数组&lt;/h1&gt;
+&lt;h2 id=&#34;定义&#34;&gt;定义&lt;/h2&gt;
+&lt;p&gt;对于第$i$位，记录第$i$位减第$i-1$位的差值。&lt;/p&gt;
+&lt;p&gt;例子：&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&#34;text-align:center&#34;&gt;下标&lt;/th&gt;
+&lt;th style=&#34;text-align:center&#34;&gt;0&lt;/th&gt;
+&lt;th style=&#34;text-align:center&#34;&gt;1&lt;/th&gt;
+&lt;th style=&#34;text-align:center&#34;&gt;2&lt;/th&gt;
+&lt;th style=&#34;text-align:center&#34;&gt;3&lt;/th&gt;
+&lt;th style=&#34;text-align:center&#34;&gt;4&lt;/th&gt;
+&lt;th style=&#34;text-align:center&#34;&gt;5&lt;/th&gt;
+&lt;th style=&#34;text-align:center&#34;&gt;6&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;&lt;strong&gt;原数组&lt;/strong&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;0&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;6&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;9&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;5&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;4&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;7&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;3&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;&lt;strong&gt;差分数组&lt;/strong&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;0&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;+6&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;+3&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;-4&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;-1&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;+3&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;-4&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;用途&#34;&gt;用途&lt;/h2&gt;
+&lt;p&gt;快速进行区间修改操作。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;注意!&lt;/strong&gt; 只适用于可被抵消贡献的运算中，如$+/-/\and$​(加、减、异或)等。&lt;/p&gt;
+&lt;p&gt;若将原数组$[l,r]$区间内加$val$，则相当于将差分数组第$l$位加$val$，第$r+1$位减去$val$(将贡献抵消)。&lt;/p&gt;
+&lt;h6 id=&#34;注意-是第r1位而不是第r位&#34;&gt;&lt;strong&gt;注意! 是第$r+1$位，而不是第$r$​位!!!&lt;/strong&gt;&lt;/h6&gt;
+&lt;p&gt;经常和维和区间和的数据结构一起使用。(&lt;a href=&#34;../data%e6%95%b0%e6%8d%ae%e7%bb%93%e6%9e%84/%e6%a0%91%e7%8a%b6%e6%95%b0%e7%bb%84.md&#34;&gt;树状数组&lt;/a&gt;等)&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>位运算</title>
+      <link>https://xuxihe.vercel.app/notes/oiknowledge/others%E6%9D%82%E9%A1%B9/%E4%BD%8D%E8%BF%90%E7%AE%97/</link>
+      <pubDate>Mon, 18 Oct 2021 00:00:00 +0000</pubDate>
+      <guid>https://xuxihe.vercel.app/notes/oiknowledge/others%E6%9D%82%E9%A1%B9/%E4%BD%8D%E8%BF%90%E7%AE%97/</guid>
+      <description>&lt;h1 id=&#34;位运算&#34;&gt;位运算&lt;/h1&gt;
+&lt;h2 id=&#34;概述&#34;&gt;概述&lt;/h2&gt;
+&lt;p&gt;现代计算机中所有的数据均以二进制的形式存储在设备中，即 $0$、$1$ 两种状态计。计算机对二进制数据进行的运算( $+$、$-$、$*$、$/$ )都是位运算，即将符号位共同参与运算的运算。由于计算机内部就是以二进制来存储数据，位运算是相当快的。&lt;/p&gt;
+&lt;p&gt;基本的位运算共 $6$ 种，分别为按位与、按位或、按位异或、按位取反、左移和右移。通俗叫法会去掉“按位”，即与、或、异或、取反、左移和右移。&lt;/p&gt;
+&lt;p&gt;其中，按位与、按位或、按位异或是将&lt;strong&gt;两个整数&lt;/strong&gt;作为二进制数，对二进制表示中的每一位逐一运算；按位取反、左移和右移是对于某&lt;strong&gt;一个整数&lt;/strong&gt;作为二进制数，对二进制表示中的每一位逐一运算。&lt;/p&gt;
+&lt;p&gt;在位运算时，若两个整数的二进制位数不同，则在位数较少的前面补 $0$ 即可。&lt;/p&gt;
+&lt;h2 id=&#34;整数二进制表&#34;&gt;整数二进制表&lt;/h2&gt;
+&lt;p&gt;这是一张 $0\sim31$ 的 $十进制\longleftrightarrow二进制$ 对照表。&lt;/p&gt;
+&lt;p&gt;二进制这个东西可以手推，但是比较麻烦，这张表在位运算的学习和实际应用中很方便比较并找到规律。&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;十进制&lt;/th&gt;
+&lt;th&gt;二进制&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;0&lt;/td&gt;
+&lt;td&gt;00000&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;td&gt;00001&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;2&lt;/td&gt;
+&lt;td&gt;00010&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;3&lt;/td&gt;
+&lt;td&gt;00011&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;4&lt;/td&gt;
+&lt;td&gt;00100&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;5&lt;/td&gt;
+&lt;td&gt;00101&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;6&lt;/td&gt;
+&lt;td&gt;00110&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;7&lt;/td&gt;
+&lt;td&gt;00111&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;8&lt;/td&gt;
+&lt;td&gt;01000&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;9&lt;/td&gt;
+&lt;td&gt;01001&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;10&lt;/td&gt;
+&lt;td&gt;01010&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;11&lt;/td&gt;
+&lt;td&gt;01011&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;12&lt;/td&gt;
+&lt;td&gt;01100&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;13&lt;/td&gt;
+&lt;td&gt;01101&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;14&lt;/td&gt;
+&lt;td&gt;01110&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;15&lt;/td&gt;
+&lt;td&gt;01111&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;16&lt;/td&gt;
+&lt;td&gt;10000&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;17&lt;/td&gt;
+&lt;td&gt;10001&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;18&lt;/td&gt;
+&lt;td&gt;10010&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;19&lt;/td&gt;
+&lt;td&gt;10011&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;20&lt;/td&gt;
+&lt;td&gt;10100&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;21&lt;/td&gt;
+&lt;td&gt;10101&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;22&lt;/td&gt;
+&lt;td&gt;10110&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;23&lt;/td&gt;
+&lt;td&gt;10111&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;24&lt;/td&gt;
+&lt;td&gt;11000&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;25&lt;/td&gt;
+&lt;td&gt;11001&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;26&lt;/td&gt;
+&lt;td&gt;11010&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;27&lt;/td&gt;
+&lt;td&gt;11011&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;28&lt;/td&gt;
+&lt;td&gt;11100&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;29&lt;/td&gt;
+&lt;td&gt;11101&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;30&lt;/td&gt;
+&lt;td&gt;11110&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;31&lt;/td&gt;
+&lt;td&gt;11111&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;与&#34;&gt;与&lt;/h2&gt;
+&lt;p&gt;“与”，就是和的意思。定义如下：&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&#34;text-align:center&#34;&gt;C++运算符&lt;/th&gt;
+&lt;th style=&#34;text-align:center&#34;&gt;数学符号&lt;/th&gt;
+&lt;th style=&#34;text-align:center&#34;&gt;意义(咋算的)&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;&amp;amp;&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;$&amp;amp;\space、\operatorname{and}$&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;均为 $1$，则结果为 $1$；任意一个是 $0$，结果为 $0$。&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;其对应的结果如下表：&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;数A第 $i$ 位&lt;/th&gt;
+&lt;th&gt;数B第 $i$ 位&lt;/th&gt;
+&lt;th&gt;结果&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;$1$&lt;/td&gt;
+&lt;td&gt;$1$&lt;/td&gt;
+&lt;td&gt;$1$&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;$1$&lt;/td&gt;
+&lt;td&gt;$0$&lt;/td&gt;
+&lt;td&gt;$0$&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;$0$&lt;/td&gt;
+&lt;td&gt;$1$&lt;/td&gt;
+&lt;td&gt;$0$&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;$0$&lt;/td&gt;
+&lt;td&gt;$0$&lt;/td&gt;
+&lt;td&gt;$0$&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id=&#34;lowbit&#34;&gt;lowbit&lt;/h3&gt;
+&lt;p&gt;正确的使用&lt;strong&gt;与&lt;/strong&gt;运算(再加上一点技巧)，可以求出某一个数二进制下最低位的 $1$ 的位置。详情请参见&lt;a href=&#34;../data%e6%95%b0%e6%8d%ae%e7%bb%93%e6%9e%84/%e6%a0%91%e7%8a%b6%e6%95%b0%e7%bb%84.md&#34;&gt;树状数组&lt;/a&gt;。&lt;/p&gt;
+&lt;h2 id=&#34;或&#34;&gt;或&lt;/h2&gt;
+&lt;p&gt;“或”，即或者。定义：&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&#34;text-align:center&#34;&gt;C++运算符&lt;/th&gt;
+&lt;th style=&#34;text-align:center&#34;&gt;数学符号&lt;/th&gt;
+&lt;th style=&#34;text-align:center&#34;&gt;意义(咋算的)&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;|&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;$\mid\space、\operatorname{or}$&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;均为 $0$，则结果为 $0$；任意一个是 $1$，结果为 $1$。&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;其对应的结果如下表：&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;数A第 $i$ 位&lt;/th&gt;
+&lt;th&gt;数B第 $i$ 位&lt;/th&gt;
+&lt;th&gt;结果&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;$1$&lt;/td&gt;
+&lt;td&gt;$1$&lt;/td&gt;
+&lt;td&gt;$1$&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;$1$&lt;/td&gt;
+&lt;td&gt;$0$&lt;/td&gt;
+&lt;td&gt;$1$&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;$0$&lt;/td&gt;
+&lt;td&gt;$1$&lt;/td&gt;
+&lt;td&gt;$1$&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;$0$&lt;/td&gt;
+&lt;td&gt;$0$&lt;/td&gt;
+&lt;td&gt;$0$&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;异或&#34;&gt;异或&lt;/h2&gt;
+&lt;p&gt;&lt;del&gt;“异或”，大概就是变异的“或”吧。&lt;/del&gt;&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&#34;text-align:center&#34;&gt;C++运算符&lt;/th&gt;
+&lt;th style=&#34;text-align:center&#34;&gt;数学符号&lt;/th&gt;
+&lt;th style=&#34;text-align:center&#34;&gt;意义(咋算的)&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;^&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;$\oplus\space、\operatorname{xor}$&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;均为 $0$ 或均为 $1$，结果为 $0$；两个不同(任意一个是 $1$，另一个是 $0$)，结果为 $1$。&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;其对应的结果如下表：&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;数A第 $i$ 位&lt;/th&gt;
+&lt;th&gt;数B第 $i$ 位&lt;/th&gt;
+&lt;th&gt;结果&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;$1$&lt;/td&gt;
+&lt;td&gt;$1$&lt;/td&gt;
+&lt;td&gt;$0$&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;$1$&lt;/td&gt;
+&lt;td&gt;$0$&lt;/td&gt;
+&lt;td&gt;$1$&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;$0$&lt;/td&gt;
+&lt;td&gt;$1$&lt;/td&gt;
+&lt;td&gt;$1$&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;$0$&lt;/td&gt;
+&lt;td&gt;$0$&lt;/td&gt;
+&lt;td&gt;$0$&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id=&#34;异或与加法&#34;&gt;异或与加法&lt;/h3&gt;
+&lt;p&gt;一个定理：$a\oplus{b}\le{a+b}$&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;证明：&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;我们发现，位运算不进位；而加法运算当两个位都是 $1$ 时会进位。因此，观察上表，异或运算的得数是加法运算进位后剩余的数字。&lt;/p&gt;
+&lt;p&gt;因此，在加法不进位时，$a\oplus{b}={a+b}$；加法进位时，$a\oplus{b}&amp;lt;{a+b}$。&lt;/p&gt;
+&lt;h2 id=&#34;取反&#34;&gt;取反&lt;/h2&gt;
+&lt;p&gt;“取反”，顾名思义，就是 $0$ 变 $1$；&lt;/p&gt;
+&lt;h2 id=&#34;左移&#34;&gt;左移&lt;/h2&gt;
+&lt;h2 id=&#34;右移&#34;&gt;右移&lt;/h2&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
