@@ -1,661 +1,145 @@
-<!DOCTYPE html><html lang="zh" >
-
-
+<!doctype html><html lang=zh>
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  
-  
-  
-    <meta name="generator" content="Wowchemy 5.3.0 for Hugo" />
-  
-
-  
-  
-
-
-
-
-
-
-
-
-
-  
-
-
-
-
-  
-  
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  
-
-  
-  
-  
-    
-      
-      <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap">
-      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap" media="print" onload="this.media='all'">
-    
-  
-
-  
-    <meta name="baidu-site-verification" content="code-avxFYJ9aCr" />
-  
-  
-  
-  
-    
-    
-    
-  
-  
-
-  <meta name="author" content="曦曦呵呵" />
-
-  
-  
-  
-    
-  
-  <meta name="description" content="快速幂 幂还有快速？ 我们首先来思考一个问题，对于 $7^6$ 如何求。 作为" />
-
-  
-  <link rel="alternate" hreflang="zh" href="https://xuxihe.vercel.app/notes/oiknowledge/math%E6%95%B0%E8%AE%BA/%E5%BF%AB%E9%80%9F%E5%B9%82/" />
-
-  
-  
-  
-    <meta name="theme-color" content="#8a2be2" />
-  
-
-  
-  
-    
-    <script src="/js/mathjax-config.js"></script>
-  
-
-  
-
-  <link rel="stylesheet" href="/css/vendor-bundle.min.f1ecf783c14edc00c9320c205831ad8e.css" media="print" onload="this.media='all'">
-
-  
-  
-  
-    
-    
-
-    
-    
-    
-    
-      
-      
-    
-    
-    
-
-    
-    
-    
-      
-    
-    
-      
-      
-        
-          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/styles/github.min.css" crossorigin="anonymous" title="hl-light" media="print" onload="this.media='all'">
-          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" media="print" onload="this.media='all'" disabled>
-        
-      
-    
-
-    
-    
-    
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.min.css" integrity="sha512-1xoFisiGdy9nvho8EgXuXvnpR5GAMSjFwp40gSRE3NwdUdIMIKuPa7bqoUhLD0O/5tPNhteAsE5XyyMi5reQVA==" crossorigin="anonymous" media="print" onload="this.media='all'">
-    
-
-    
-
-    
-    
-      
-      
-
-      
-      
-
-      
-    
-      
-      
-
-      
-      
-
-      
-    
-      
-      
-
-      
-      
-
-      
-    
-      
-      
-
-      
-      
-
-      
-    
-      
-      
-
-      
-      
-
-      
-    
-      
-      
-
-      
-      
-
-      
-    
-      
-      
-
-      
-      
-
-      
-    
-      
-      
-
-      
-      
-
-      
-    
-      
-      
-
-      
-      
-
-      
-    
-      
-      
-
-      
-      
-
-      
-    
-      
-      
-
-      
-      
-
-      
-    
-      
-      
-
-      
-      
-
-      
-    
-      
-      
-
-      
-      
-
-      
-        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" integrity="" crossorigin="anonymous" async></script>
-      
-    
-      
-      
-
-      
-      
-
-      
-    
-      
-      
-
-      
-      
-
-      
-    
-  
-
-  
-  
-  
-  
-  
-  <link rel="stylesheet" href="/css/wowchemy.36d7c79ef70cfd4ede320d3031e72a79.css" />
-
-  
-
-
-
-  
-
-  
-
-  
-
-
-
-
-  
-  
-  
-
-  
-
-  
-    <link rel="manifest" href="/manifest.webmanifest" />
-  
-
-  <link rel="icon" type="image/png" href="/media/icon_huf638f59a6dd2257b0add8e0186347459_300061_32x32_fill_lanczos_center_3.png" />
-  <link rel="apple-touch-icon" type="image/png" href="/media/icon_huf638f59a6dd2257b0add8e0186347459_300061_180x180_fill_lanczos_center_3.png" />
-
-  <link rel="canonical" href="https://xuxihe.vercel.app/notes/oiknowledge/math%E6%95%B0%E8%AE%BA/%E5%BF%AB%E9%80%9F%E5%B9%82/" />
-
-  
-  
-  
-  
-  
-  
-  
-  
-    
-    
-  
-  
-
-  
-  
-    
-    
-  
-  <meta property="twitter:card" content="summary" />
-  
-  <meta property="og:site_name" content="Senie" />
-  <meta property="og:url" content="https://xuxihe.vercel.app/notes/oiknowledge/math%E6%95%B0%E8%AE%BA/%E5%BF%AB%E9%80%9F%E5%B9%82/" />
-  <meta property="og:title" content="快速幂 | Senie" />
-  <meta property="og:description" content="快速幂 幂还有快速？ 我们首先来思考一个问题，对于 $7^6$ 如何求。 作为" /><meta property="og:image" content="https://xuxihe.vercel.app/media/icon_huf638f59a6dd2257b0add8e0186347459_300061_512x512_fill_lanczos_center_3.png" />
-    <meta property="twitter:image" content="https://xuxihe.vercel.app/media/icon_huf638f59a6dd2257b0add8e0186347459_300061_512x512_fill_lanczos_center_3.png" /><meta property="og:locale" content="zh" />
-  
-    
-      <meta
-        property="article:published_time"
-        content="2021-10-18T00:00:00&#43;00:00"
-      />
-    
-    <meta property="article:modified_time" content="2021-10-18T00:00:00&#43;00:00">
-  
-
-  
-
-
-
-  
-
-  
-
-  
-
-
-
-
-
-  <title>快速幂 | Senie</title>
+<meta charset=utf-8>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<meta http-equiv=x-ua-compatible content="IE=edge">
+<meta name=generator content="Wowchemy 5.3.0 for Hugo">
+<link rel=preconnect href=https://fonts.gstatic.com crossorigin>
+<link rel=preload as=style href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap">
+<link rel=stylesheet href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap" media=print onload="this.media='all'">
+<meta name=baidu-site-verification content="code-avxFYJ9aCr">
+<meta name=author content="曦曦呵呵">
+<meta name=description content="快速幂 幂还有快速？ 我们首先来思考一个问题，对于 $7^6$ 如何求。 作为">
+<link rel=alternate hreflang=zh href=/notes/oiknowledge/math%E6%95%B0%E8%AE%BA/%E5%BF%AB%E9%80%9F%E5%B9%82/>
+<meta name=theme-color content="#8a2be2">
+<script src=/js/mathjax-config.js></script>
+<link rel=stylesheet href=/css/vendor-bundle.min.f1ecf783c14edc00c9320c205831ad8e.css media=print onload="this.media='all'">
+<link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/styles/github.min.css crossorigin=anonymous title=hl-light media=print onload="this.media='all'">
+<link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/styles/dracula.min.css crossorigin=anonymous title=hl-dark media=print onload="this.media='all'" disabled>
+<link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.min.css integrity="sha512-1xoFisiGdy9nvho8EgXuXvnpR5GAMSjFwp40gSRE3NwdUdIMIKuPa7bqoUhLD0O/5tPNhteAsE5XyyMi5reQVA==" crossorigin=anonymous media=print onload="this.media='all'">
+<script src=https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js integrity crossorigin=anonymous async></script>
+<link rel=stylesheet href=/css/wowchemy.36d7c79ef70cfd4ede320d3031e72a79.css>
+<link rel=manifest href=/manifest.webmanifest>
+<link rel=icon type=image/png href=/media/icon_huf638f59a6dd2257b0add8e0186347459_300061_32x32_fill_lanczos_center_3.png>
+<link rel=apple-touch-icon type=image/png href=/media/icon_huf638f59a6dd2257b0add8e0186347459_300061_180x180_fill_lanczos_center_3.png>
+<link rel=canonical href=/notes/oiknowledge/math%E6%95%B0%E8%AE%BA/%E5%BF%AB%E9%80%9F%E5%B9%82/>
+<meta property="twitter:card" content="summary">
+<meta property="og:site_name" content="Senie">
+<meta property="og:url" content="/notes/oiknowledge/math%E6%95%B0%E8%AE%BA/%E5%BF%AB%E9%80%9F%E5%B9%82/">
+<meta property="og:title" content="快速幂 | Senie">
+<meta property="og:description" content="快速幂 幂还有快速？ 我们首先来思考一个问题，对于 $7^6$ 如何求。 作为"><meta property="og:image" content="/media/icon_huf638f59a6dd2257b0add8e0186347459_300061_512x512_fill_lanczos_center_3.png">
+<meta property="twitter:image" content="/media/icon_huf638f59a6dd2257b0add8e0186347459_300061_512x512_fill_lanczos_center_3.png"><meta property="og:locale" content="zh">
+<meta property="article:published_time" content="2021-10-18T00:00:00+00:00">
+<meta property="article:modified_time" content="2021-10-18T00:00:00+00:00">
+<title>快速幂 | Senie</title>
 </head>
-
-
-<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper   " data-wc-page-id="73ec95f6e0482e0e38ba22c72af9e26b" >
-
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  <script src="/js/wowchemy-init.min.2da3b1fa37e894630bf6de39b1b694b3.js"></script>
-
-  
-
-
-<aside class="search-modal" id="search">
-  <div class="container">
-    <section class="search-header">
-
-      <div class="row no-gutters justify-content-between mb-3">
-        <div class="col-6">
-          <h1>搜索</h1>
-        </div>
-        <div class="col-6 col-search-close">
-          <a class="js-search" href="#" aria-label="Close"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
-        </div>
-      </div>
-
-      <div id="search-box">
-        
-        <input name="q" id="search-query" placeholder="搜索..." autocapitalize="off"
-        autocomplete="off" autocorrect="off" spellcheck="false" type="search" class="form-control"
-        aria-label="搜索...">
-        
-      </div>
-
-      
-      
-
-      
-
-    </section>
-    <section class="section-search-results">
-
-      <div id="search-hits">
-        
-      </div>
-
-    </section>
-  </div>
+<body id=top data-spy=scroll data-offset=70 data-target=#TableOfContents class=page-wrapper data-wc-page-id=73ec95f6e0482e0e38ba22c72af9e26b>
+<script src=/js/wowchemy-init.min.2da3b1fa37e894630bf6de39b1b694b3.js></script>
+<aside class=search-modal id=search>
+<div class=container>
+<section class=search-header>
+<div class="row no-gutters justify-content-between mb-3">
+<div class=col-6>
+<h1>搜索</h1>
+</div>
+<div class="col-6 col-search-close">
+<a class=js-search href=# aria-label=Close><i class="fas fa-times-circle text-muted" aria-hidden=true></i></a>
+</div>
+</div>
+<div id=search-box>
+<input name=q id=search-query placeholder=搜索... autocapitalize=off autocomplete=off autocorrect=off spellcheck=false type=search class=form-control aria-label=搜索...>
+</div>
+</section>
+<section class=section-search-results>
+<div id=search-hits>
+</div>
+</section>
+</div>
 </aside>
-
-
-
-  <div class="page-header">
-    
-
-
-
-
-
-
-
-
-
-
-
-
-<nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
-  <div class="container-xl">
-
-    
-    <div class="d-none d-lg-inline-flex">
-      <a class="navbar-brand" href="/">Senie</a>
-    </div>
-    
-
-    
-    <button type="button" class="navbar-toggler" data-toggle="collapse"
-            data-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false" aria-label="切换导航">
-    <span><i class="fas fa-bars"></i></span>
-    </button>
-    
-
-    
-    <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
-      <a class="navbar-brand" href="/">Senie</a>
-    </div>
-    
-
-    
-    
-    <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
-
-      
-      <ul class="navbar-nav d-md-inline-flex">
-        
-
-        
-
-        
-        
-        
-          
-        
-
-        
-
-        
-        
-        
-        
-
-        
-          
-            
-            
-          
-          
-        
-
-        <li class="nav-item">
-          <a class="nav-link  active" href="/notes/"><span>OI</span></a>
-        </li>
-
-        
-        
-
-        
-
-        
-        
-        
-          
-        
-
-        
-
-        
-        
-        
-        
-
-        
-          
-            
-            
-          
-          
-        
-
-        <li class="nav-item">
-          <a class="nav-link " href="/courses/"><span>高中</span></a>
-        </li>
-
-        
-        
-
-        
-        <li class="nav-item dropdown">
-          <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"><span>杂七杂八</span><span class="caret"></span>
-          </a>
-          <div class="dropdown-menu">
-            
-              <a class="dropdown-item" href="/category/%e4%b9%90%e4%b9%90%e5%91%b5%e5%91%b5/"><span>乐乐呵呵</span></a>
-            
-              <a class="dropdown-item" href="/category/%e6%8a%80%e6%9c%afblog/"><span>技术blog</span></a>
-            
-          </div>
-        </li>
-
-        
-        
-
-      
-
-        
-      </ul>
-    </div>
-
-    <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
-
-      
-      
-        
-          
-          <li class="nav-item d-none d-lg-inline-flex">
-            <a class="nav-link" href="https://github.com/Xu-Xihe" data-toggle="tooltip" data-placement="bottom" title="在Github上关注我吧！" target="_blank" rel="noopener" aria-label="在Github上关注我吧！">
-              <i class="fab fa-github" aria-hidden="true"></i>
-            </a>
-          </li>
-        
-      
-
-      
-      
-      <li class="nav-item">
-        <a class="nav-link js-search" href="#" aria-label="搜索"><i class="fas fa-search" aria-hidden="true"></i></a>
-      </li>
-      
-
-      
-      
-      <li class="nav-item dropdown theme-dropdown">
-        <a href="#" class="nav-link" data-toggle="dropdown" aria-haspopup="true" aria-label="Display preferences">
-          <i class="fas fa-moon" aria-hidden="true"></i>
-        </a>
-        <div class="dropdown-menu">
-          <a href="#" class="dropdown-item js-set-theme-light">
-            <span>浅色</span>
-          </a>
-          <a href="#" class="dropdown-item js-set-theme-dark">
-            <span>深色</span>
-          </a>
-          <a href="#" class="dropdown-item js-set-theme-auto">
-            <span>自动</span>
-          </a>
-        </div>
-      </li>
-      
-
-      
-      
-
-    </ul>
-
-  </div>
+<div class=page-header>
+<nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id=navbar-main>
+<div class=container-xl>
+<div class="d-none d-lg-inline-flex">
+<a class=navbar-brand href=/>Senie</a>
+</div>
+<button type=button class=navbar-toggler data-toggle=collapse data-target=#navbar-content aria-controls=navbar-content aria-expanded=false aria-label=切换导航>
+<span><i class="fas fa-bars"></i></span>
+</button>
+<div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+<a class=navbar-brand href=/>Senie</a>
+</div>
+<div class="navbar-collapse main-menu-item collapse justify-content-start" id=navbar-content>
+<ul class="navbar-nav d-md-inline-flex">
+<li class=nav-item>
+<a class="nav-link active" href=/notes/><span>OI</span></a>
+</li>
+<li class=nav-item>
+<a class=nav-link href=/courses/><span>高中</span></a>
+</li>
+<li class="nav-item dropdown">
+<a href=# class="nav-link dropdown-toggle" data-toggle=dropdown aria-haspopup=true><span>杂七杂八</span><span class=caret></span>
+</a>
+<div class=dropdown-menu>
+<a class=dropdown-item href=/category/%e4%b9%90%e4%b9%90%e5%91%b5%e5%91%b5/><span>乐乐呵呵</span></a>
+<a class=dropdown-item href=/category/%e6%8a%80%e6%9c%afblog/><span>技术blog</span></a>
+</div>
+</li>
+</ul>
+</div>
+<ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+<li class="nav-item d-none d-lg-inline-flex">
+<a class=nav-link href=https://github.com/Xu-Xihe data-toggle=tooltip data-placement=bottom title=在Github上关注我吧！ target=_blank rel=noopener aria-label=在Github上关注我吧！>
+<i class="fab fa-github" aria-hidden=true></i>
+</a>
+</li>
+<li class=nav-item>
+<a class="nav-link js-search" href=# aria-label=搜索><i class="fas fa-search" aria-hidden=true></i></a>
+</li>
+<li class="nav-item dropdown theme-dropdown">
+<a href=# class=nav-link data-toggle=dropdown aria-haspopup=true aria-label="Display preferences">
+<i class="fas fa-moon" aria-hidden=true></i>
+</a>
+<div class=dropdown-menu>
+<a href=# class="dropdown-item js-set-theme-light">
+<span>浅色</span>
+</a>
+<a href=# class="dropdown-item js-set-theme-dark">
+<span>深色</span>
+</a>
+<a href=# class="dropdown-item js-set-theme-auto">
+<span>自动</span>
+</a>
+</div>
+</li>
+</ul>
+</div>
 </nav>
-
-
-  </div>
-
-  <div class="page-body">
-    <article class="article">
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-  
-  
-  
+</div>
+<div class=page-body>
+<article class=article>
 <div class="article-container pt-3">
-  <h1>快速幂</h1>
-
-  
-
-  
-    
-
-
-<div class="article-metadata">
-
-  
-  
-
-  
-  <span class="article-date">
-    
-    
-      
-    
-    2021年10月18日
-  </span>
-  
-
-  
-
-  
-
-  
-  
-  
-  
-  
-  
-
-  
-  
-
+<h1>快速幂</h1>
+<div class=article-metadata>
+<span class=article-date>
+2021年10月18日
+</span>
 </div>
-
-    
-
-
-
-
-
-  
 </div>
-
-
-
-  <div class="article-container">
-
-    <div class="article-style">
-      <h1 id="快速幂">快速幂</h1>
-<h2 id="幂还有快速">幂还有快速？</h2>
+<div class=article-container>
+<div class=article-style>
+<h1 id=快速幂>快速幂</h1>
+<h2 id=幂还有快速>幂还有快速？</h2>
 <p>我们首先来思考一个问题，对于 $7^6$ 如何求。</p>
 <p>作为一个人类，你的求法一定是先算出 $7\times7=49$，然后接着算出 $49\times7=343$，…… ，$16807\times7=117649$。因为人类并不适合算两位数以上的乘法(一位数还勉强可以瞪眼)，所以有些时候我们的思维便会限制在这个里面。</p>
 <p>但是，我们了解，对于计算机CPU来说 $7\times7$ 和 $1561564\times1561564$ 几乎没啥差别(毕竟慢的是存储)，因此我们可以加快幂运算。</p>
-<h2 id="又是二进制">又是二进制</h2>
+<h2 id=又是二进制>又是二进制</h2>
 <p>没错，你没看错，又是二进制！</p>
 <p>我们早就知道了，对于任意一个二进制数，我们可以拆分成多个 $2^n$ 相加的形式。如：$6_{10}=(110)_2=(100)_2+(10)_2=2^2+2^1$。</p>
 <p>相应的，任意一个数 $x$ 的 $k$ 次方 $x^k$ 都可以拆分成多个 $x^{2^n}$ 相乘的形式。这时候，我们发现，原本的 $O(k)$ 次操作被优化到了 $O(\log{k})$。而我们只需要将 $x^{2^n}$ 不断的自己乘自己，就可以得到所有我们需要的数。</p>
 <p>例子：计算 $7^{14}=7^2\times7^4\times7^8$</p>
-<h2 id="代码">代码</h2>
-<p>[P1226 【模板】快速幂&amp;取余运算][https://www.luogu.com.cn/problem/P1226]</p>
-<pre><code class="language-c++">//只需要注意mi函数即可
+<h2 id=代码>代码</h2>
+<p>[P1226 【模板】快速幂&取余运算][https://www.luogu.com.cn/problem/P1226]</p>
+<pre><code class=language-c++>//只需要注意mi函数即可
 #include &lt;cstdio&gt;
 int a, b, p;
 inline int mi(int n, int m, int mod, long long sum = 1, long long ans = 1)
@@ -681,355 +165,125 @@ int main()
     printf(&quot;%d^%d mod %d=%d\n&quot;, a, b, p, mi(a, b, p)); //奇奇怪怪的输出方式
 }
 </code></pre>
-<h2 id="链接">链接</h2>
+<h2 id=链接>链接</h2>
 <p>其他更快的方法，参见[]、[]。</p>
-
-    </div>
-
-    
-
-
-
-
-
-
-
-
-<div class="share-box">
-  <ul class="share">
-    
-      
-      
-      
-        
-      
-      
-      
-      <li>
-        <a href="https://twitter.com/intent/tweet?url=https://xuxihe.vercel.app/notes/oiknowledge/math%E6%95%B0%E8%AE%BA/%E5%BF%AB%E9%80%9F%E5%B9%82/&amp;text=%e5%bf%ab%e9%80%9f%e5%b9%82" target="_blank" rel="noopener" class="share-btn-twitter" aria-label="twitter">
-          <i class="fab fa-twitter"></i>
-        </a>
-      </li>
-    
-      
-      
-      
-        
-      
-      
-      
-      <li>
-        <a href="https://www.facebook.com/sharer.php?u=https://xuxihe.vercel.app/notes/oiknowledge/math%E6%95%B0%E8%AE%BA/%E5%BF%AB%E9%80%9F%E5%B9%82/&amp;t=%e5%bf%ab%e9%80%9f%e5%b9%82" target="_blank" rel="noopener" class="share-btn-facebook" aria-label="facebook">
-          <i class="fab fa-facebook"></i>
-        </a>
-      </li>
-    
-      
-      
-      
-        
-      
-      
-      
-      <li>
-        <a href="mailto:?subject=%e5%bf%ab%e9%80%9f%e5%b9%82&amp;body=https://xuxihe.vercel.app/notes/oiknowledge/math%E6%95%B0%E8%AE%BA/%E5%BF%AB%E9%80%9F%E5%B9%82/" target="_blank" rel="noopener" class="share-btn-email" aria-label="envelope">
-          <i class="fas fa-envelope"></i>
-        </a>
-      </li>
-    
-      
-      
-      
-        
-      
-      
-      
-      <li>
-        <a href="https://www.linkedin.com/shareArticle?url=https://xuxihe.vercel.app/notes/oiknowledge/math%E6%95%B0%E8%AE%BA/%E5%BF%AB%E9%80%9F%E5%B9%82/&amp;title=%e5%bf%ab%e9%80%9f%e5%b9%82" target="_blank" rel="noopener" class="share-btn-linkedin" aria-label="linkedin-in">
-          <i class="fab fa-linkedin-in"></i>
-        </a>
-      </li>
-    
-      
-      
-      
-        
-      
-      
-      
-      <li>
-        <a href="whatsapp://send?text=%e5%bf%ab%e9%80%9f%e5%b9%82%20https://xuxihe.vercel.app/notes/oiknowledge/math%E6%95%B0%E8%AE%BA/%E5%BF%AB%E9%80%9F%E5%B9%82/" target="_blank" rel="noopener" class="share-btn-whatsapp" aria-label="whatsapp">
-          <i class="fab fa-whatsapp"></i>
-        </a>
-      </li>
-    
-      
-      
-      
-        
-      
-      
-      
-      <li>
-        <a href="https://service.weibo.com/share/share.php?url=https://xuxihe.vercel.app/notes/oiknowledge/math%E6%95%B0%E8%AE%BA/%E5%BF%AB%E9%80%9F%E5%B9%82/&amp;title=%e5%bf%ab%e9%80%9f%e5%b9%82" target="_blank" rel="noopener" class="share-btn-weibo" aria-label="weibo">
-          <i class="fab fa-weibo"></i>
-        </a>
-      </li>
-    
-  </ul>
 </div>
-
-
-
-
-
-
-
-
-
-
-
-  
-  
-
-
-
-  
-  
-  
-    
-  
-  
-  
-  <div class="media author-card content-widget-hr">
-    
-      
-      <a href="https://xuxihe.vercel.app/"><img class="avatar mr-3 avatar-circle" src="/author/%E6%9B%A6%E6%9B%A6%E5%91%B5%E5%91%B5/avatar_hudb29ded1c25f9d5e935a5b2ce5ff59ff_1255814_270x270_fill_lanczos_center_3.png" alt="曦曦呵呵"></a>
-    
-
-    <div class="media-body">
-      <h5 class="card-title"><a href="https://xuxihe.vercel.app/">曦曦呵呵</a></h5>
-      <h6 class="card-subtitle">一名卑微的OIer。</h6>
-      <p class="card-text">开开心心，蹦蹦跳跳~</p>
-      <ul class="network-icon" aria-hidden="true">
-  
-    
-    
-    
-      
-    
-    
-    
-    
-    
-      
-    
-    <li>
-      <a href="/#contact" >
-        <i class="fas fa-envelope"></i>
-      </a>
-    </li>
-  
-    
-    
-    
-      
-    
-    
-    
-    
-    
-      
-    
-    <li>
-      <a href="https://github.com/Xu-Xihe" target="_blank" rel="noopener">
-        <i class="fab fa-github"></i>
-      </a>
-    </li>
-  
-    
-    
-    
-      
-    
-    
-    
-    
-    
-      
-    
-    <li>
-      <a href="https://qm.qq.com/cgi-bin/qm/qr?k=Wns5qUpuYc9CC616JJSKEyC3vXqZWjrF&amp;noverify=0" target="_blank" rel="noopener">
-        <i class="fab fa-qq"></i>
-      </a>
-    </li>
-  
+<div class=share-box>
+<ul class=share>
+<li>
+<a href="https://twitter.com/intent/tweet?url=/notes/oiknowledge/math%E6%95%B0%E8%AE%BA/%E5%BF%AB%E9%80%9F%E5%B9%82/&text=%e5%bf%ab%e9%80%9f%e5%b9%82" target=_blank rel=noopener class=share-btn-twitter aria-label=twitter>
+<i class="fab fa-twitter"></i>
+</a>
+</li>
+<li>
+<a href="https://www.facebook.com/sharer.php?u=/notes/oiknowledge/math%E6%95%B0%E8%AE%BA/%E5%BF%AB%E9%80%9F%E5%B9%82/&t=%e5%bf%ab%e9%80%9f%e5%b9%82" target=_blank rel=noopener class=share-btn-facebook aria-label=facebook>
+<i class="fab fa-facebook"></i>
+</a>
+</li>
+<li>
+<a href="mailto:?subject=%e5%bf%ab%e9%80%9f%e5%b9%82&body=/notes/oiknowledge/math%E6%95%B0%E8%AE%BA/%E5%BF%AB%E9%80%9F%E5%B9%82/" target=_blank rel=noopener class=share-btn-email aria-label=envelope>
+<i class="fas fa-envelope"></i>
+</a>
+</li>
+<li>
+<a href="https://www.linkedin.com/shareArticle?url=/notes/oiknowledge/math%E6%95%B0%E8%AE%BA/%E5%BF%AB%E9%80%9F%E5%B9%82/&title=%e5%bf%ab%e9%80%9f%e5%b9%82" target=_blank rel=noopener class=share-btn-linkedin aria-label=linkedin-in>
+<i class="fab fa-linkedin-in"></i>
+</a>
+</li>
+<li>
+<a href="whatsapp://send?text=%e5%bf%ab%e9%80%9f%e5%b9%82%20/notes/oiknowledge/math%E6%95%B0%E8%AE%BA/%E5%BF%AB%E9%80%9F%E5%B9%82/" target=_blank rel=noopener class=share-btn-whatsapp aria-label=whatsapp>
+<i class="fab fa-whatsapp"></i>
+</a>
+</li>
+<li>
+<a href="https://service.weibo.com/share/share.php?url=/notes/oiknowledge/math%E6%95%B0%E8%AE%BA/%E5%BF%AB%E9%80%9F%E5%B9%82/&title=%e5%bf%ab%e9%80%9f%e5%b9%82" target=_blank rel=noopener class=share-btn-weibo aria-label=weibo>
+<i class="fab fa-weibo"></i>
+</a>
+</li>
 </ul>
-
-    </div>
-  </div>
-
-
-
-
-
-
-
-
-
-
-
-
-<div class="article-widget">
-  
-<div class="post-nav">
-  
-  
-  
-  <div class="post-nav-item">
-    <div class="meta-nav">上一页</div>
-    <a href="/notes/oiknowledge/math%E6%95%B0%E8%AE%BA/%E8%B4%A8%E6%95%B0%E5%90%88%E6%95%B0%E7%BA%A6%E6%95%B0%E5%80%8D%E6%95%B0/" rel="prev">质数、合数、约数</a>
-  </div>
-  
 </div>
-
+<div class="media author-card content-widget-hr">
+<a href=/><img class="avatar mr-3 avatar-circle" src=/author/%E6%9B%A6%E6%9B%A6%E5%91%B5%E5%91%B5/avatar_hudb29ded1c25f9d5e935a5b2ce5ff59ff_1255814_270x270_fill_lanczos_center_3.png alt=曦曦呵呵></a>
+<div class=media-body>
+<h5 class=card-title><a href=/>曦曦呵呵</a></h5>
+<h6 class=card-subtitle>一名卑微的OIer。</h6>
+<p class=card-text>开开心心，蹦蹦跳跳~</p>
+<ul class=network-icon aria-hidden=true>
+<li>
+<a href=/#contact>
+<i class="fas fa-envelope"></i>
+</a>
+</li>
+<li>
+<a href=https://github.com/Xu-Xihe target=_blank rel=noopener>
+<i class="fab fa-github"></i>
+</a>
+</li>
+<li>
+<a href="https://qm.qq.com/cgi-bin/qm/qr?k=Wns5qUpuYc9CC616JJSKEyC3vXqZWjrF&noverify=0" target=_blank rel=noopener>
+<i class="fab fa-qq"></i>
+</a>
+</li>
+</ul>
 </div>
-
-
-
-
-
-
-
-
-
-  </div>
+</div>
+<div class=article-widget>
+<div class=post-nav>
+<div class=post-nav-item>
+<div class=meta-nav>上一页</div>
+<a href=/notes/oiknowledge/math%E6%95%B0%E8%AE%BA/%E8%B4%A8%E6%95%B0%E5%90%88%E6%95%B0%E7%BA%A6%E6%95%B0%E5%80%8D%E6%95%B0/ rel=prev>质数、合数、约数</a>
+</div>
+</div>
+</div>
+</div>
 </article>
-  </div>
-
-  <div class="page-footer">
-    
-    
-    <div class="container">
-      <footer class="site-footer">
-
-  
-
-
-
-  
-
-  
-
-  
-  <p class="powered-by">
-    © 曦曦呵呵
-  </p>
-  
-
-  
-  
-
-
-
-
-
-
-  <p class="powered-by">
-    
-    
-    
-      
-      
-      
-      
-      
-      
-      由<a href="https://wowchemy.com/?utm_campaign=poweredby" target="_blank" rel="noopener">Wowchemy</a>支持发布——免费<a href="https://github.com/wowchemy/wowchemy-hugo-themes" target="_blank" rel="noopener">开源</a>网站，为创作者赋能。
-    
-  </p>
-</footer>
-
-    </div>
-    
-  </div>
-
-  
-<div id="modal" class="modal fade" role="dialog">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title">引用</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <pre><code class="tex hljs"></code></pre>
-      </div>
-      <div class="modal-footer">
-        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
-          <i class="fas fa-copy"></i> 复制
-        </a>
-        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
-          <i class="fas fa-download"></i> 下载
-        </a>
-        <div id="modal-error"></div>
-      </div>
-    </div>
-  </div>
 </div>
-
-      
-
-    
-    <script src="/js/vendor-bundle.min.b73dfaac3b6499dc997741748a7c3fe2.js"></script>
-
-    
-    
-    
-      
-      
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
-      
-
-      
-      
-
-      
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/8.8.4/mermaid.min.js" integrity="sha512-as1BF4+iHZ3BVO6LLDQ7zrbvTXM+c/1iZ1qII/c3c4L8Rn5tHLpFUtpaEtBNS92f+xGsCzsD7b62XP3XYap6oA==" crossorigin="anonymous" title="mermaid"></script>
-      
-
-      
-        
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/highlight.min.js" integrity="sha512-TDKKr+IvoqZnPzc3l35hdjpHD0m+b2EC2SrLEgKDRWpxf2rFCxemkgvJ5kfU48ip+Y+m2XVKyOCD85ybtlZDmw==" crossorigin="anonymous"></script>
-        
-        
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/languages/r.min.js" crossorigin="anonymous"></script>
-        
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/languages/python.min.js" crossorigin="anonymous"></script>
-        
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/languages/latex.min.js" crossorigin="anonymous"></script>
-        
-      
-
-    
-
-    
-    
-    
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.min.js" integrity="sha512-SeiQaaDh73yrb56sTW/RgVdi/mMqNeM2oBwubFHagc5BkixSpP1fvqF47mKzPGWYSSy4RwbBunrJBQ4Co8fRWA==" crossorigin="anonymous"></script>
-    
-
-    
-    
-
-    
-    
-    
-      
-      <script id="search-hit-fuse-template" type="text/x-template">
+<div class=page-footer>
+<div class=container>
+<footer class=site-footer>
+<p class=powered-by>
+© 星梦
+</p>
+<p class=powered-by>
+由<a href="https://wowchemy.com/?utm_campaign=poweredby" target=_blank rel=noopener>Wowchemy</a>支持发布——免费<a href=https://github.com/wowchemy/wowchemy-hugo-themes target=_blank rel=noopener>开源</a>网站，为创作者赋能。
+</p>
+</footer>
+</div>
+</div>
+<div id=modal class="modal fade" role=dialog>
+<div class=modal-dialog>
+<div class=modal-content>
+<div class=modal-header>
+<h5 class=modal-title>引用</h5>
+<button type=button class=close data-dismiss=modal aria-label=Close>
+<span aria-hidden=true>&#215;</span>
+</button>
+</div>
+<div class=modal-body>
+<pre><code class="tex hljs"></code></pre>
+</div>
+<div class=modal-footer>
+<a class="btn btn-outline-primary my-1 js-copy-cite" href=# target=_blank>
+<i class="fas fa-copy"></i> 复制
+</a>
+<a class="btn btn-outline-primary my-1 js-download-cite" href=# target=_blank>
+<i class="fas fa-download"></i> 下载
+</a>
+<div id=modal-error></div>
+</div>
+</div>
+</div>
+</div>
+<script src=/js/vendor-bundle.min.b73dfaac3b6499dc997741748a7c3fe2.js></script>
+<script src=https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin=anonymous></script>
+<script src=https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin=anonymous></script>
+<script src=https://cdnjs.cloudflare.com/ajax/libs/mermaid/8.8.4/mermaid.min.js integrity="sha512-as1BF4+iHZ3BVO6LLDQ7zrbvTXM+c/1iZ1qII/c3c4L8Rn5tHLpFUtpaEtBNS92f+xGsCzsD7b62XP3XYap6oA==" crossorigin=anonymous title=mermaid></script>
+<script src=https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/highlight.min.js integrity="sha512-TDKKr+IvoqZnPzc3l35hdjpHD0m+b2EC2SrLEgKDRWpxf2rFCxemkgvJ5kfU48ip+Y+m2XVKyOCD85ybtlZDmw==" crossorigin=anonymous></script>
+<script src=https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/languages/r.min.js crossorigin=anonymous></script>
+<script src=https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/languages/python.min.js crossorigin=anonymous></script>
+<script src=https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/languages/latex.min.js crossorigin=anonymous></script>
+<script src=https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.min.js integrity="sha512-SeiQaaDh73yrb56sTW/RgVdi/mMqNeM2oBwubFHagc5BkixSpP1fvqF47mKzPGWYSSy4RwbBunrJBQ4Co8fRWA==" crossorigin=anonymous></script>
+<script id=search-hit-fuse-template type=text/x-template>
         <div class="search-hit" id="summary-{{key}}">
           <div class="search-hit-content">
             <div class="search-hit-name">
@@ -1040,51 +294,8 @@ int main()
           </div>
         </div>
       </script>
-      
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
-      
-    
-
-    
-    
-
-    
-    
-    
-    
-
-    
-    
-      
-      
-      
-      
-      
-      
-      
-    
-
-    
-    
-    
-    
-    
-    
-    
-    
-      
-      
-    
-    
-    <script src="/zh/js/wowchemy.min.d16321ec6884b061cbaaf961484b65c8.js"></script>
-
-    
-
-
-
-
-
-
+<script src=https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin=anonymous></script>
+<script src=https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin=anonymous></script>
+<script src=/zh/js/wowchemy.min.d16321ec6884b061cbaaf961484b65c8.js></script>
 </body>
 </html>

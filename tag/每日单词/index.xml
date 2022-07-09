@@ -1,172 +1,139 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>每日单词 | Senie</title>
-    <link>https://xuxihe.vercel.app/tag/%E6%AF%8F%E6%97%A5%E5%8D%95%E8%AF%8D/</link>
-      <atom:link href="https://xuxihe.vercel.app/tag/%E6%AF%8F%E6%97%A5%E5%8D%95%E8%AF%8D/index.xml" rel="self" type="application/rss+xml" />
-    <description>每日单词</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>zh</language><copyright>© 曦曦呵呵</copyright><lastBuildDate>Thu, 25 Nov 2021 22:05:43 +0800</lastBuildDate>
-    <image>
-      <url>https://xuxihe.vercel.app/media/icon_huf638f59a6dd2257b0add8e0186347459_300061_512x512_fill_lanczos_center_3.png</url>
-      <title>每日单词</title>
-      <link>https://xuxihe.vercel.app/tag/%E6%AF%8F%E6%97%A5%E5%8D%95%E8%AF%8D/</link>
-    </image>
-    
-    <item>
-      <title>2021 11 25</title>
-      <link>https://xuxihe.vercel.app/post/daily-words/2021-11-25/</link>
-      <pubDate>Thu, 25 Nov 2021 22:05:43 +0800</pubDate>
-      <guid>https://xuxihe.vercel.app/post/daily-words/2021-11-25/</guid>
-      <description>&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;生词&lt;/th&gt;
-&lt;th&gt;释义&lt;/th&gt;
-&lt;th&gt;备注&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;http://www.youdao.com/w/eng/foresee/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;foresee&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;&lt;strong&gt;v.&lt;/strong&gt; 预见，预知&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;http://www.youdao.com/w/eng/linguistic/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;linguistic&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;&lt;strong&gt;adj.&lt;/strong&gt; 语言的&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;http://www.youdao.com/w/eng/interstellar/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;interstellar&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;&lt;strong&gt;adj.&lt;/strong&gt; 星际的&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;http://www.youdao.com/w/eng/previous/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;previous&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;&lt;strong&gt;adj.&lt;/strong&gt; 之前的；早先的&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;http://www.youdao.com/w/eng/subsequent/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;subsequent&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;&lt;strong&gt;adj.&lt;/strong&gt; 随后的；后来的&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;http://www.youdao.com/w/eng/isolation/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;isolation&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;&lt;strong&gt;n.&lt;/strong&gt; 隔离，孤立&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;http://www.youdao.com/w/eng/regarding/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;regarding&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;&lt;strong&gt;vt.&lt;/strong&gt; 看待；&lt;strong&gt;n.&lt;/strong&gt; 尊重；敬意&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;http://www.youdao.com/w/eng/coauthor/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;coauthor&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;&lt;strong&gt;n.&lt;/strong&gt; 共同执笔者&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;http://www.youdao.com/w/eng/concept/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;concept&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;&lt;strong&gt;n.&lt;/strong&gt; 理念；观念&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;http://www.youdao.com/w/eng/current/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;current&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;&lt;strong&gt;adj.&lt;/strong&gt; 当前的&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;script src=&#39;//unpkg.com/valine/dist/Valine.min.js&#39;&gt;&lt;/script&gt;
-&lt;div id=&#34;vcomments&#34;&gt;&lt;/div&gt;
-&lt;script&gt;
-    new Valine({
-        el: &#39;#vcomments&#39;,
-        appId: &#39;mUFdj80doBeHANJjnbmU89gH-gzGzoHsz&#39;,
-        appKey: &#39;p4p7vzJrQnIYoajXvUjpuiRy&#39;,
-        placeholder: &#39;说点什么叭~ (上一栏选填，开放匿名评论，邮箱仅用于Gravatar头像显示)&#39;,
-        visitor: true,
-        recordIP: true,
-        serverURLs: false,
-        enableQQ: true
-    })
-&lt;/script&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>2021 11 22</title>
-      <link>https://xuxihe.vercel.app/post/daily-words/2021-11-22/</link>
-      <pubDate>Mon, 22 Nov 2021 20:38:46 +0800</pubDate>
-      <guid>https://xuxihe.vercel.app/post/daily-words/2021-11-22/</guid>
-      <description>&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th style=&#34;text-align:left&#34;&gt;生词&lt;/th&gt;
-&lt;th style=&#34;text-align:left&#34;&gt;释义&lt;/th&gt;
-&lt;th style=&#34;text-align:left&#34;&gt;备注&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td style=&#34;text-align:left&#34;&gt;&lt;a href=&#34;http://www.youdao.com/w/eng/due/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;due&lt;/a&gt;&lt;/td&gt;
-&lt;td style=&#34;text-align:left&#34;&gt;&lt;strong&gt;adj.&lt;/strong&gt; 到期的，预期的；应有的，应得的&lt;/td&gt;
-&lt;td style=&#34;text-align:left&#34;&gt;&lt;strong&gt;due to&lt;/strong&gt; 由于，因为&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style=&#34;text-align:left&#34;&gt;&lt;a href=&#34;http://www.youdao.com/w/eng/popularity/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;popularity&lt;/a&gt;&lt;/td&gt;
-&lt;td style=&#34;text-align:left&#34;&gt;&lt;strong&gt;n.&lt;/strong&gt; 流行；普及&lt;/td&gt;
-&lt;td style=&#34;text-align:left&#34;&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style=&#34;text-align:left&#34;&gt;&lt;a href=&#34;http://www.youdao.com/w/eng/alteration/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;alteration&lt;/a&gt;&lt;/td&gt;
-&lt;td style=&#34;text-align:left&#34;&gt;&lt;strong&gt;n.&lt;/strong&gt; 改变&lt;/td&gt;
-&lt;td style=&#34;text-align:left&#34;&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style=&#34;text-align:left&#34;&gt;&lt;a href=&#34;http://www.youdao.com/w/eng/term/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;term&lt;/a&gt;&lt;/td&gt;
-&lt;td style=&#34;text-align:left&#34;&gt;&lt;strong&gt;n.&lt;/strong&gt; 时期；学期；期限&lt;/td&gt;
-&lt;td style=&#34;text-align:left&#34;&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style=&#34;text-align:left&#34;&gt;&lt;a href=&#34;http://www.youdao.com/w/eng/ancestor/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;ancestor&lt;/a&gt;&lt;/td&gt;
-&lt;td style=&#34;text-align:left&#34;&gt;&lt;strong&gt;n.&lt;/strong&gt; 祖先&lt;/td&gt;
-&lt;td style=&#34;text-align:left&#34;&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style=&#34;text-align:left&#34;&gt;&lt;a href=&#34;http://www.youdao.com/w/eng/annoyance/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;annoyance&lt;/a&gt;&lt;/td&gt;
-&lt;td style=&#34;text-align:left&#34;&gt;&lt;strong&gt;n.&lt;/strong&gt; 恼火；令人恼火的事&lt;/td&gt;
-&lt;td style=&#34;text-align:left&#34;&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style=&#34;text-align:left&#34;&gt;&lt;a href=&#34;http://www.youdao.com/w/eng/mannered/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;mannered&lt;/a&gt;&lt;/td&gt;
-&lt;td style=&#34;text-align:left&#34;&gt;&lt;strong&gt;n.&lt;/strong&gt; 礼貌；方式方法&lt;/td&gt;
-&lt;td style=&#34;text-align:left&#34;&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style=&#34;text-align:left&#34;&gt;&lt;a href=&#34;http://www.youdao.com/w/eng/contemporary/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;contemporary&lt;/a&gt;&lt;/td&gt;
-&lt;td style=&#34;text-align:left&#34;&gt;&lt;/td&gt;
-&lt;td style=&#34;text-align:left&#34;&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;script src=&#39;//unpkg.com/valine/dist/Valine.min.js&#39;&gt;&lt;/script&gt;
-&lt;div id=&#34;vcomments&#34;&gt;&lt;/div&gt;
-&lt;script&gt;
-    new Valine({
-        el: &#39;#vcomments&#39;,
-        appId: &#39;mUFdj80doBeHANJjnbmU89gH-gzGzoHsz&#39;,
-        appKey: &#39;p4p7vzJrQnIYoajXvUjpuiRy&#39;,
-        placeholder: &#39;说点什么叭~ (上一栏选填，开放匿名评论，邮箱仅用于Gravatar头像显示)&#39;,
-        visitor: true,
-        recordIP: true,
-        serverURLs: false,
-        enableQQ: true
-    })
-&lt;/script&gt;
-</description>
-    </item>
-    
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>每日单词 | Senie</title><link>/tag/%E6%AF%8F%E6%97%A5%E5%8D%95%E8%AF%8D/</link><atom:link href="/tag/%E6%AF%8F%E6%97%A5%E5%8D%95%E8%AF%8D/index.xml" rel="self" type="application/rss+xml"/><description>每日单词</description><generator>Wowchemy (https://wowchemy.com)</generator><language>zh</language><copyright>© 星梦</copyright><lastBuildDate>Thu, 25 Nov 2021 22:05:43 +0800</lastBuildDate><image><url>/media/icon_huf638f59a6dd2257b0add8e0186347459_300061_512x512_fill_lanczos_center_3.png</url><title>每日单词</title><link>/tag/%E6%AF%8F%E6%97%A5%E5%8D%95%E8%AF%8D/</link></image><item><title>2021 11 25</title><link>/post/daily-words/2021-11-25/</link><pubDate>Thu, 25 Nov 2021 22:05:43 +0800</pubDate><guid>/post/daily-words/2021-11-25/</guid><description>&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>生词&lt;/th>
+&lt;th>释义&lt;/th>
+&lt;th>备注&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>&lt;a href="http://www.youdao.com/w/eng/foresee/" target="_blank" rel="noopener">foresee&lt;/a>&lt;/td>
+&lt;td>&lt;strong>v.&lt;/strong> 预见，预知&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;a href="http://www.youdao.com/w/eng/linguistic/" target="_blank" rel="noopener">linguistic&lt;/a>&lt;/td>
+&lt;td>&lt;strong>adj.&lt;/strong> 语言的&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;a href="http://www.youdao.com/w/eng/interstellar/" target="_blank" rel="noopener">interstellar&lt;/a>&lt;/td>
+&lt;td>&lt;strong>adj.&lt;/strong> 星际的&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;a href="http://www.youdao.com/w/eng/previous/" target="_blank" rel="noopener">previous&lt;/a>&lt;/td>
+&lt;td>&lt;strong>adj.&lt;/strong> 之前的；早先的&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;a href="http://www.youdao.com/w/eng/subsequent/" target="_blank" rel="noopener">subsequent&lt;/a>&lt;/td>
+&lt;td>&lt;strong>adj.&lt;/strong> 随后的；后来的&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;a href="http://www.youdao.com/w/eng/isolation/" target="_blank" rel="noopener">isolation&lt;/a>&lt;/td>
+&lt;td>&lt;strong>n.&lt;/strong> 隔离，孤立&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;a href="http://www.youdao.com/w/eng/regarding/" target="_blank" rel="noopener">regarding&lt;/a>&lt;/td>
+&lt;td>&lt;strong>vt.&lt;/strong> 看待；&lt;strong>n.&lt;/strong> 尊重；敬意&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;a href="http://www.youdao.com/w/eng/coauthor/" target="_blank" rel="noopener">coauthor&lt;/a>&lt;/td>
+&lt;td>&lt;strong>n.&lt;/strong> 共同执笔者&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;a href="http://www.youdao.com/w/eng/concept/" target="_blank" rel="noopener">concept&lt;/a>&lt;/td>
+&lt;td>&lt;strong>n.&lt;/strong> 理念；观念&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;a href="http://www.youdao.com/w/eng/current/" target="_blank" rel="noopener">current&lt;/a>&lt;/td>
+&lt;td>&lt;strong>adj.&lt;/strong> 当前的&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;script src='//unpkg.com/valine/dist/Valine.min.js'>&lt;/script>
+&lt;div id="vcomments">&lt;/div>
+&lt;script>
+new Valine({
+el: '#vcomments',
+appId: 'mUFdj80doBeHANJjnbmU89gH-gzGzoHsz',
+appKey: 'p4p7vzJrQnIYoajXvUjpuiRy',
+placeholder: '说点什么叭~ (上一栏选填，开放匿名评论，邮箱仅用于Gravatar头像显示)',
+visitor: true,
+recordIP: true,
+serverURLs: false,
+enableQQ: true
+})
+&lt;/script></description></item><item><title>2021 11 22</title><link>/post/daily-words/2021-11-22/</link><pubDate>Mon, 22 Nov 2021 20:38:46 +0800</pubDate><guid>/post/daily-words/2021-11-22/</guid><description>&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th style="text-align:left">生词&lt;/th>
+&lt;th style="text-align:left">释义&lt;/th>
+&lt;th style="text-align:left">备注&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td style="text-align:left">&lt;a href="http://www.youdao.com/w/eng/due/" target="_blank" rel="noopener">due&lt;/a>&lt;/td>
+&lt;td style="text-align:left">&lt;strong>adj.&lt;/strong> 到期的，预期的；应有的，应得的&lt;/td>
+&lt;td style="text-align:left">&lt;strong>due to&lt;/strong> 由于，因为&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">&lt;a href="http://www.youdao.com/w/eng/popularity/" target="_blank" rel="noopener">popularity&lt;/a>&lt;/td>
+&lt;td style="text-align:left">&lt;strong>n.&lt;/strong> 流行；普及&lt;/td>
+&lt;td style="text-align:left">&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">&lt;a href="http://www.youdao.com/w/eng/alteration/" target="_blank" rel="noopener">alteration&lt;/a>&lt;/td>
+&lt;td style="text-align:left">&lt;strong>n.&lt;/strong> 改变&lt;/td>
+&lt;td style="text-align:left">&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">&lt;a href="http://www.youdao.com/w/eng/term/" target="_blank" rel="noopener">term&lt;/a>&lt;/td>
+&lt;td style="text-align:left">&lt;strong>n.&lt;/strong> 时期；学期；期限&lt;/td>
+&lt;td style="text-align:left">&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">&lt;a href="http://www.youdao.com/w/eng/ancestor/" target="_blank" rel="noopener">ancestor&lt;/a>&lt;/td>
+&lt;td style="text-align:left">&lt;strong>n.&lt;/strong> 祖先&lt;/td>
+&lt;td style="text-align:left">&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">&lt;a href="http://www.youdao.com/w/eng/annoyance/" target="_blank" rel="noopener">annoyance&lt;/a>&lt;/td>
+&lt;td style="text-align:left">&lt;strong>n.&lt;/strong> 恼火；令人恼火的事&lt;/td>
+&lt;td style="text-align:left">&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">&lt;a href="http://www.youdao.com/w/eng/mannered/" target="_blank" rel="noopener">mannered&lt;/a>&lt;/td>
+&lt;td style="text-align:left">&lt;strong>n.&lt;/strong> 礼貌；方式方法&lt;/td>
+&lt;td style="text-align:left">&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">&lt;a href="http://www.youdao.com/w/eng/contemporary/" target="_blank" rel="noopener">contemporary&lt;/a>&lt;/td>
+&lt;td style="text-align:left">&lt;/td>
+&lt;td style="text-align:left">&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;script src='//unpkg.com/valine/dist/Valine.min.js'>&lt;/script>
+&lt;div id="vcomments">&lt;/div>
+&lt;script>
+new Valine({
+el: '#vcomments',
+appId: 'mUFdj80doBeHANJjnbmU89gH-gzGzoHsz',
+appKey: 'p4p7vzJrQnIYoajXvUjpuiRy',
+placeholder: '说点什么叭~ (上一栏选填，开放匿名评论，邮箱仅用于Gravatar头像显示)',
+visitor: true,
+recordIP: true,
+serverURLs: false,
+enableQQ: true
+})
+&lt;/script></description></item></channel></rss>

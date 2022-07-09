@@ -1,46 +1,22 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>解决方案 | Senie</title>
-    <link>https://xuxihe.vercel.app/tag/%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/</link>
-      <atom:link href="https://xuxihe.vercel.app/tag/%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/index.xml" rel="self" type="application/rss+xml" />
-    <description>解决方案</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>zh</language><copyright>© 曦曦呵呵</copyright><lastBuildDate>Mon, 22 Nov 2021 15:15:41 +0800</lastBuildDate>
-    <image>
-      <url>https://xuxihe.vercel.app/media/icon_huf638f59a6dd2257b0add8e0186347459_300061_512x512_fill_lanczos_center_3.png</url>
-      <title>解决方案</title>
-      <link>https://xuxihe.vercel.app/tag/%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/</link>
-    </image>
-    
-    <item>
-      <title>Ubuntu关机90s</title>
-      <link>https://xuxihe.vercel.app/post/tec/ubuntu%E5%85%B3%E6%9C%BA90s/</link>
-      <pubDate>Mon, 22 Nov 2021 15:15:41 +0800</pubDate>
-      <guid>https://xuxihe.vercel.app/post/tec/ubuntu%E5%85%B3%E6%9C%BA90s/</guid>
-      <description>&lt;h2 id=&#34;现象&#34;&gt;现象&lt;/h2&gt;
-&lt;p&gt;通常情况下，他会显示一个啥啥啥 is running，然后后面有一个括号 &lt;code&gt;(..s/1min30s)&lt;/code&gt; 这种。&lt;/p&gt;
-&lt;h2 id=&#34;解决方法&#34;&gt;解决方法&lt;/h2&gt;
-&lt;p&gt;虽然我们并不知道为啥，但是我们确实有一种解决的方法。&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;用root权限（其实就是加个 &lt;code&gt;sudo&lt;/code&gt;）编辑 &lt;code&gt; /etc/systemd/system.conf&lt;/code&gt;，找到里面有一个 &lt;code&gt;DefaultTimeoutStopSec=90s&lt;/code&gt;，把行首的 &lt;code&gt;#&lt;/code&gt; 去掉，并改成 &lt;code&gt;DefaultTimeoutStopSec=1ms&lt;/code&gt;，保存，退出。&lt;/li&gt;
-&lt;li&gt;执行 &lt;code&gt;sudo systemctl daemon-reload&lt;/code&gt; 更新配置文件。&lt;/li&gt;
-&lt;/ol&gt;
-&lt;script src=&#39;//unpkg.com/valine/dist/Valine.min.js&#39;&gt;&lt;/script&gt;
-&lt;div id=&#34;vcomments&#34;&gt;&lt;/div&gt;
-&lt;script&gt;
-    new Valine({
-        el: &#39;#vcomments&#39;,
-        appId: &#39;mUFdj80doBeHANJjnbmU89gH-gzGzoHsz&#39;,
-        appKey: &#39;p4p7vzJrQnIYoajXvUjpuiRy&#39;,
-        placeholder: &#39;说点什么叭~ (上一栏选填，开放匿名评论，邮箱仅用于Gravatar头像显示)&#39;,
-        visitor: true,
-        recordIP: true,
-        serverURLs: false,
-        enableQQ: true
-    })
-&lt;/script&gt;
-</description>
-    </item>
-    
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>解决方案 | Senie</title><link>/tag/%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/</link><atom:link href="/tag/%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/index.xml" rel="self" type="application/rss+xml"/><description>解决方案</description><generator>Wowchemy (https://wowchemy.com)</generator><language>zh</language><copyright>© 星梦</copyright><lastBuildDate>Mon, 22 Nov 2021 15:15:41 +0800</lastBuildDate><image><url>/media/icon_huf638f59a6dd2257b0add8e0186347459_300061_512x512_fill_lanczos_center_3.png</url><title>解决方案</title><link>/tag/%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/</link></image><item><title>Ubuntu关机90s</title><link>/post/tec/ubuntu%E5%85%B3%E6%9C%BA90s/</link><pubDate>Mon, 22 Nov 2021 15:15:41 +0800</pubDate><guid>/post/tec/ubuntu%E5%85%B3%E6%9C%BA90s/</guid><description>&lt;h2 id="现象">现象&lt;/h2>
+&lt;p>通常情况下，他会显示一个啥啥啥 is running，然后后面有一个括号 &lt;code>(..s/1min30s)&lt;/code> 这种。&lt;/p>
+&lt;h2 id="解决方法">解决方法&lt;/h2>
+&lt;p>虽然我们并不知道为啥，但是我们确实有一种解决的方法。&lt;/p>
+&lt;ol>
+&lt;li>用root权限（其实就是加个 &lt;code>sudo&lt;/code>）编辑 &lt;code> /etc/systemd/system.conf&lt;/code>，找到里面有一个 &lt;code>DefaultTimeoutStopSec=90s&lt;/code>，把行首的 &lt;code>#&lt;/code> 去掉，并改成 &lt;code>DefaultTimeoutStopSec=1ms&lt;/code>，保存，退出。&lt;/li>
+&lt;li>执行 &lt;code>sudo systemctl daemon-reload&lt;/code> 更新配置文件。&lt;/li>
+&lt;/ol>
+&lt;script src='//unpkg.com/valine/dist/Valine.min.js'>&lt;/script>
+&lt;div id="vcomments">&lt;/div>
+&lt;script>
+new Valine({
+el: '#vcomments',
+appId: 'mUFdj80doBeHANJjnbmU89gH-gzGzoHsz',
+appKey: 'p4p7vzJrQnIYoajXvUjpuiRy',
+placeholder: '说点什么叭~ (上一栏选填，开放匿名评论，邮箱仅用于Gravatar头像显示)',
+visitor: true,
+recordIP: true,
+serverURLs: false,
+enableQQ: true
+})
+&lt;/script></description></item></channel></rss>

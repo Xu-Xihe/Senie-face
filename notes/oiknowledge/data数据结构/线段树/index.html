@@ -1,674 +1,158 @@
-<!DOCTYPE html><html lang="zh" >
-
-
+<!doctype html><html lang=zh>
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  
-  
-  
-    <meta name="generator" content="Wowchemy 5.3.0 for Hugo" />
-  
-
-  
-  
-
-
-
-
-
-
-
-
-
-  
-
-
-
-
-  
-  
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  
-
-  
-  
-  
-    
-      
-      <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap">
-      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap" media="print" onload="this.media='all'">
-    
-  
-
-  
-    <meta name="baidu-site-verification" content="code-avxFYJ9aCr" />
-  
-  
-  
-  
-    
-    
-    
-  
-  
-
-  <meta name="author" content="曦曦呵呵" />
-
-  
-  
-  
-    
-  
-  <meta name="description" content="线段树 介绍一下 又是一个倍增思想下奇奇怪怪的东西。 线段树是一种" />
-
-  
-  <link rel="alternate" hreflang="zh" href="https://xuxihe.vercel.app/notes/oiknowledge/data%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/%E7%BA%BF%E6%AE%B5%E6%A0%91/" />
-
-  
-  
-  
-    <meta name="theme-color" content="#8a2be2" />
-  
-
-  
-  
-    
-    <script src="/js/mathjax-config.js"></script>
-  
-
-  
-
-  <link rel="stylesheet" href="/css/vendor-bundle.min.f1ecf783c14edc00c9320c205831ad8e.css" media="print" onload="this.media='all'">
-
-  
-  
-  
-    
-    
-
-    
-    
-    
-    
-      
-      
-    
-    
-    
-
-    
-    
-    
-      
-    
-    
-      
-      
-        
-          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/styles/github.min.css" crossorigin="anonymous" title="hl-light" media="print" onload="this.media='all'">
-          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" media="print" onload="this.media='all'" disabled>
-        
-      
-    
-
-    
-    
-    
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.min.css" integrity="sha512-1xoFisiGdy9nvho8EgXuXvnpR5GAMSjFwp40gSRE3NwdUdIMIKuPa7bqoUhLD0O/5tPNhteAsE5XyyMi5reQVA==" crossorigin="anonymous" media="print" onload="this.media='all'">
-    
-
-    
-
-    
-    
-      
-      
-
-      
-      
-
-      
-    
-      
-      
-
-      
-      
-
-      
-    
-      
-      
-
-      
-      
-
-      
-    
-      
-      
-
-      
-      
-
-      
-    
-      
-      
-
-      
-      
-
-      
-    
-      
-      
-
-      
-      
-
-      
-    
-      
-      
-
-      
-      
-
-      
-    
-      
-      
-
-      
-      
-
-      
-    
-      
-      
-
-      
-      
-
-      
-    
-      
-      
-
-      
-      
-
-      
-    
-      
-      
-
-      
-      
-
-      
-    
-      
-      
-
-      
-      
-
-      
-    
-      
-      
-
-      
-      
-
-      
-        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" integrity="" crossorigin="anonymous" async></script>
-      
-    
-      
-      
-
-      
-      
-
-      
-    
-      
-      
-
-      
-      
-
-      
-    
-  
-
-  
-  
-  
-  
-  
-  <link rel="stylesheet" href="/css/wowchemy.36d7c79ef70cfd4ede320d3031e72a79.css" />
-
-  
-
-
-
-  
-
-  
-
-  
-
-
-
-
-  
-  
-  
-
-  
-
-  
-    <link rel="manifest" href="/manifest.webmanifest" />
-  
-
-  <link rel="icon" type="image/png" href="/media/icon_huf638f59a6dd2257b0add8e0186347459_300061_32x32_fill_lanczos_center_3.png" />
-  <link rel="apple-touch-icon" type="image/png" href="/media/icon_huf638f59a6dd2257b0add8e0186347459_300061_180x180_fill_lanczos_center_3.png" />
-
-  <link rel="canonical" href="https://xuxihe.vercel.app/notes/oiknowledge/data%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/%E7%BA%BF%E6%AE%B5%E6%A0%91/" />
-
-  
-  
-  
-  
-  
-  
-  
-  
-    
-    
-  
-  
-
-  
-  
-    
-    
-  
-  <meta property="twitter:card" content="summary" />
-  
-  <meta property="og:site_name" content="Senie" />
-  <meta property="og:url" content="https://xuxihe.vercel.app/notes/oiknowledge/data%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/%E7%BA%BF%E6%AE%B5%E6%A0%91/" />
-  <meta property="og:title" content="线段树 | Senie" />
-  <meta property="og:description" content="线段树 介绍一下 又是一个倍增思想下奇奇怪怪的东西。 线段树是一种" /><meta property="og:image" content="https://xuxihe.vercel.app/media/icon_huf638f59a6dd2257b0add8e0186347459_300061_512x512_fill_lanczos_center_3.png" />
-    <meta property="twitter:image" content="https://xuxihe.vercel.app/media/icon_huf638f59a6dd2257b0add8e0186347459_300061_512x512_fill_lanczos_center_3.png" /><meta property="og:locale" content="zh" />
-  
-    
-      <meta
-        property="article:published_time"
-        content="2021-10-17T00:00:00&#43;00:00"
-      />
-    
-    <meta property="article:modified_time" content="2021-10-17T00:00:00&#43;00:00">
-  
-
-  
-
-
-
-  
-
-  
-
-  
-
-
-
-
-
-  <title>线段树 | Senie</title>
+<meta charset=utf-8>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<meta http-equiv=x-ua-compatible content="IE=edge">
+<meta name=generator content="Wowchemy 5.3.0 for Hugo">
+<link rel=preconnect href=https://fonts.gstatic.com crossorigin>
+<link rel=preload as=style href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap">
+<link rel=stylesheet href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap" media=print onload="this.media='all'">
+<meta name=baidu-site-verification content="code-avxFYJ9aCr">
+<meta name=author content="曦曦呵呵">
+<meta name=description content="线段树 介绍一下 又是一个倍增思想下奇奇怪怪的东西。 线段树是一种">
+<link rel=alternate hreflang=zh href=/notes/oiknowledge/data%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/%E7%BA%BF%E6%AE%B5%E6%A0%91/>
+<meta name=theme-color content="#8a2be2">
+<script src=/js/mathjax-config.js></script>
+<link rel=stylesheet href=/css/vendor-bundle.min.f1ecf783c14edc00c9320c205831ad8e.css media=print onload="this.media='all'">
+<link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/styles/github.min.css crossorigin=anonymous title=hl-light media=print onload="this.media='all'">
+<link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/styles/dracula.min.css crossorigin=anonymous title=hl-dark media=print onload="this.media='all'" disabled>
+<link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.min.css integrity="sha512-1xoFisiGdy9nvho8EgXuXvnpR5GAMSjFwp40gSRE3NwdUdIMIKuPa7bqoUhLD0O/5tPNhteAsE5XyyMi5reQVA==" crossorigin=anonymous media=print onload="this.media='all'">
+<script src=https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js integrity crossorigin=anonymous async></script>
+<link rel=stylesheet href=/css/wowchemy.36d7c79ef70cfd4ede320d3031e72a79.css>
+<link rel=manifest href=/manifest.webmanifest>
+<link rel=icon type=image/png href=/media/icon_huf638f59a6dd2257b0add8e0186347459_300061_32x32_fill_lanczos_center_3.png>
+<link rel=apple-touch-icon type=image/png href=/media/icon_huf638f59a6dd2257b0add8e0186347459_300061_180x180_fill_lanczos_center_3.png>
+<link rel=canonical href=/notes/oiknowledge/data%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/%E7%BA%BF%E6%AE%B5%E6%A0%91/>
+<meta property="twitter:card" content="summary">
+<meta property="og:site_name" content="Senie">
+<meta property="og:url" content="/notes/oiknowledge/data%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/%E7%BA%BF%E6%AE%B5%E6%A0%91/">
+<meta property="og:title" content="线段树 | Senie">
+<meta property="og:description" content="线段树 介绍一下 又是一个倍增思想下奇奇怪怪的东西。 线段树是一种"><meta property="og:image" content="/media/icon_huf638f59a6dd2257b0add8e0186347459_300061_512x512_fill_lanczos_center_3.png">
+<meta property="twitter:image" content="/media/icon_huf638f59a6dd2257b0add8e0186347459_300061_512x512_fill_lanczos_center_3.png"><meta property="og:locale" content="zh">
+<meta property="article:published_time" content="2021-10-17T00:00:00+00:00">
+<meta property="article:modified_time" content="2021-10-17T00:00:00+00:00">
+<title>线段树 | Senie</title>
 </head>
-
-
-<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper   " data-wc-page-id="72b509f600602cea2c603670314c0207" >
-
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  <script src="/js/wowchemy-init.min.2da3b1fa37e894630bf6de39b1b694b3.js"></script>
-
-  
-
-
-<aside class="search-modal" id="search">
-  <div class="container">
-    <section class="search-header">
-
-      <div class="row no-gutters justify-content-between mb-3">
-        <div class="col-6">
-          <h1>搜索</h1>
-        </div>
-        <div class="col-6 col-search-close">
-          <a class="js-search" href="#" aria-label="Close"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
-        </div>
-      </div>
-
-      <div id="search-box">
-        
-        <input name="q" id="search-query" placeholder="搜索..." autocapitalize="off"
-        autocomplete="off" autocorrect="off" spellcheck="false" type="search" class="form-control"
-        aria-label="搜索...">
-        
-      </div>
-
-      
-      
-
-      
-
-    </section>
-    <section class="section-search-results">
-
-      <div id="search-hits">
-        
-      </div>
-
-    </section>
-  </div>
+<body id=top data-spy=scroll data-offset=70 data-target=#TableOfContents class=page-wrapper data-wc-page-id=72b509f600602cea2c603670314c0207>
+<script src=/js/wowchemy-init.min.2da3b1fa37e894630bf6de39b1b694b3.js></script>
+<aside class=search-modal id=search>
+<div class=container>
+<section class=search-header>
+<div class="row no-gutters justify-content-between mb-3">
+<div class=col-6>
+<h1>搜索</h1>
+</div>
+<div class="col-6 col-search-close">
+<a class=js-search href=# aria-label=Close><i class="fas fa-times-circle text-muted" aria-hidden=true></i></a>
+</div>
+</div>
+<div id=search-box>
+<input name=q id=search-query placeholder=搜索... autocapitalize=off autocomplete=off autocorrect=off spellcheck=false type=search class=form-control aria-label=搜索...>
+</div>
+</section>
+<section class=section-search-results>
+<div id=search-hits>
+</div>
+</section>
+</div>
 </aside>
-
-
-
-  <div class="page-header">
-    
-
-
-
-
-
-
-
-
-
-
-
-
-<nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
-  <div class="container-xl">
-
-    
-    <div class="d-none d-lg-inline-flex">
-      <a class="navbar-brand" href="/">Senie</a>
-    </div>
-    
-
-    
-    <button type="button" class="navbar-toggler" data-toggle="collapse"
-            data-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false" aria-label="切换导航">
-    <span><i class="fas fa-bars"></i></span>
-    </button>
-    
-
-    
-    <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
-      <a class="navbar-brand" href="/">Senie</a>
-    </div>
-    
-
-    
-    
-    <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
-
-      
-      <ul class="navbar-nav d-md-inline-flex">
-        
-
-        
-
-        
-        
-        
-          
-        
-
-        
-
-        
-        
-        
-        
-
-        
-          
-            
-            
-          
-          
-        
-
-        <li class="nav-item">
-          <a class="nav-link  active" href="/notes/"><span>OI</span></a>
-        </li>
-
-        
-        
-
-        
-
-        
-        
-        
-          
-        
-
-        
-
-        
-        
-        
-        
-
-        
-          
-            
-            
-          
-          
-        
-
-        <li class="nav-item">
-          <a class="nav-link " href="/courses/"><span>高中</span></a>
-        </li>
-
-        
-        
-
-        
-        <li class="nav-item dropdown">
-          <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"><span>杂七杂八</span><span class="caret"></span>
-          </a>
-          <div class="dropdown-menu">
-            
-              <a class="dropdown-item" href="/category/%e4%b9%90%e4%b9%90%e5%91%b5%e5%91%b5/"><span>乐乐呵呵</span></a>
-            
-              <a class="dropdown-item" href="/category/%e6%8a%80%e6%9c%afblog/"><span>技术blog</span></a>
-            
-          </div>
-        </li>
-
-        
-        
-
-      
-
-        
-      </ul>
-    </div>
-
-    <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
-
-      
-      
-        
-          
-          <li class="nav-item d-none d-lg-inline-flex">
-            <a class="nav-link" href="https://github.com/Xu-Xihe" data-toggle="tooltip" data-placement="bottom" title="在Github上关注我吧！" target="_blank" rel="noopener" aria-label="在Github上关注我吧！">
-              <i class="fab fa-github" aria-hidden="true"></i>
-            </a>
-          </li>
-        
-      
-
-      
-      
-      <li class="nav-item">
-        <a class="nav-link js-search" href="#" aria-label="搜索"><i class="fas fa-search" aria-hidden="true"></i></a>
-      </li>
-      
-
-      
-      
-      <li class="nav-item dropdown theme-dropdown">
-        <a href="#" class="nav-link" data-toggle="dropdown" aria-haspopup="true" aria-label="Display preferences">
-          <i class="fas fa-moon" aria-hidden="true"></i>
-        </a>
-        <div class="dropdown-menu">
-          <a href="#" class="dropdown-item js-set-theme-light">
-            <span>浅色</span>
-          </a>
-          <a href="#" class="dropdown-item js-set-theme-dark">
-            <span>深色</span>
-          </a>
-          <a href="#" class="dropdown-item js-set-theme-auto">
-            <span>自动</span>
-          </a>
-        </div>
-      </li>
-      
-
-      
-      
-
-    </ul>
-
-  </div>
+<div class=page-header>
+<nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id=navbar-main>
+<div class=container-xl>
+<div class="d-none d-lg-inline-flex">
+<a class=navbar-brand href=/>Senie</a>
+</div>
+<button type=button class=navbar-toggler data-toggle=collapse data-target=#navbar-content aria-controls=navbar-content aria-expanded=false aria-label=切换导航>
+<span><i class="fas fa-bars"></i></span>
+</button>
+<div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+<a class=navbar-brand href=/>Senie</a>
+</div>
+<div class="navbar-collapse main-menu-item collapse justify-content-start" id=navbar-content>
+<ul class="navbar-nav d-md-inline-flex">
+<li class=nav-item>
+<a class="nav-link active" href=/notes/><span>OI</span></a>
+</li>
+<li class=nav-item>
+<a class=nav-link href=/courses/><span>高中</span></a>
+</li>
+<li class="nav-item dropdown">
+<a href=# class="nav-link dropdown-toggle" data-toggle=dropdown aria-haspopup=true><span>杂七杂八</span><span class=caret></span>
+</a>
+<div class=dropdown-menu>
+<a class=dropdown-item href=/category/%e4%b9%90%e4%b9%90%e5%91%b5%e5%91%b5/><span>乐乐呵呵</span></a>
+<a class=dropdown-item href=/category/%e6%8a%80%e6%9c%afblog/><span>技术blog</span></a>
+</div>
+</li>
+</ul>
+</div>
+<ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+<li class="nav-item d-none d-lg-inline-flex">
+<a class=nav-link href=https://github.com/Xu-Xihe data-toggle=tooltip data-placement=bottom title=在Github上关注我吧！ target=_blank rel=noopener aria-label=在Github上关注我吧！>
+<i class="fab fa-github" aria-hidden=true></i>
+</a>
+</li>
+<li class=nav-item>
+<a class="nav-link js-search" href=# aria-label=搜索><i class="fas fa-search" aria-hidden=true></i></a>
+</li>
+<li class="nav-item dropdown theme-dropdown">
+<a href=# class=nav-link data-toggle=dropdown aria-haspopup=true aria-label="Display preferences">
+<i class="fas fa-moon" aria-hidden=true></i>
+</a>
+<div class=dropdown-menu>
+<a href=# class="dropdown-item js-set-theme-light">
+<span>浅色</span>
+</a>
+<a href=# class="dropdown-item js-set-theme-dark">
+<span>深色</span>
+</a>
+<a href=# class="dropdown-item js-set-theme-auto">
+<span>自动</span>
+</a>
+</div>
+</li>
+</ul>
+</div>
 </nav>
-
-
-  </div>
-
-  <div class="page-body">
-    <article class="article">
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-  
-  
-  
+</div>
+<div class=page-body>
+<article class=article>
 <div class="article-container pt-3">
-  <h1>线段树</h1>
-
-  
-
-  
-    
-
-
-<div class="article-metadata">
-
-  
-  
-
-  
-  <span class="article-date">
-    
-    
-      
-    
-    2021年10月17日
-  </span>
-  
-
-  
-
-  
-
-  
-  
-  
-  
-  
-  
-
-  
-  
-
+<h1>线段树</h1>
+<div class=article-metadata>
+<span class=article-date>
+2021年10月17日
+</span>
 </div>
-
-    
-
-
-
-
-
-  
 </div>
-
-
-
-  <div class="article-container">
-
-    <div class="article-style">
-      <h1 id="线段树">线段树</h1>
-<h2 id="介绍一下">介绍一下</h2>
-<p>又是一个<a href="">倍增</a>思想下<del>奇奇怪怪</del>的东西。</p>
+<div class=article-container>
+<div class=article-style>
+<h1 id=线段树>线段树</h1>
+<h2 id=介绍一下>介绍一下</h2>
+<p>又是一个<a href>倍增</a>思想下<del>奇奇怪怪</del>的东西。</p>
 <p>线段树是一种高效维护(在手不残的前提下)<strong>区间信息</strong>的数据结构，可以在$O(\log{n})$​​​​时间复杂度内实现单点修改、区间修改、区间查询等(各种稀奇古怪的)操作。树状数组能够解决的问题<strong>理论上</strong>(注意空间复杂度)都可以用线段树解决。<del>就是慢了点，空间占得大了点儿</del></p>
 <p>线段树以树形(满二叉树，二叉搜索树)结构维护着这样一些“线段”(区间)的信息：</p>
 <ul>
 <li>根结点对应一条$1\sim n$​的线段。</li>
-<li>任何线段$(l\sim r)$​​​长度$&gt;1$​​​的结点都有恰好两个子结点，分别对应线段 $l\sim mid$​​​ 与 $mid+1\sim r$​​​，其中 $mid=\lfloor\dfrac{l+r}{2}\rfloor$​​​。</li>
+<li>任何线段$(l\sim r)$​​​长度$>1$​​​的结点都有恰好两个子结点，分别对应线段 $l\sim mid$​​​ 与 $mid+1\sim r$​​​，其中 $mid=\lfloor\dfrac{l+r}{2}\rfloor$​​​。</li>
 </ul>
 <p>线段树上结点的深度每增大 $1$，线段长度就折半，因此线段树深度为 $\log{n}$​​，由此保证了单点修改复杂度为$O(\log{n})$​。</p>
 <p>对于任意区间，都可以在线段树上找到不重叠的至多 $2\times\log{n}$​ 条线段（每种深度至多两条）将其恰好覆盖，这保证了线段树区间操作复杂度为 $O(\log{n})$​。</p>
 <p>规定根结点编号为 $1$​​​​​​，编号为 $i$​​​​​​ 的结点的两个子结点（若存在）编号为 $2i$​ ​​​​​与 $2i+1$ ​​​​​​。这样定义的结点编号最大不会超过 $4n$​​​​​。</p>
-<p>一棵维护最小值的线段树大概长这样：<img src="src=http%253A%252F%252Fimg-blog.csdnimg.cn%252Fimg_convert%252F1809e9bc319190c55e869070f02a058f.png&refer=http%253A%252F%252Fimg-blog.csdnimg.cn&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg" alt="线段树" style="zoom: 40%;" /></p>
-<h2 id="线段树所占空间的计算">线段树所占空间的计算</h2>
+<p>一棵维护最小值的线段树大概长这样：<img src="src=http%253A%252F%252Fimg-blog.csdnimg.cn%252Fimg_convert%252F1809e9bc319190c55e869070f02a058f.png&refer=http%253A%252F%252Fimg-blog.csdnimg.cn&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg" alt=线段树 style=zoom:40%></p>
+<h2 id=线段树所占空间的计算>线段树所占空间的计算</h2>
 <p><del>这一段不看不会也罢</del>，只需要记住开 $4n$​ 个数组就行了。</p>
 <p>关于线段树的空间：如果采用堆式存储(大部分)($2i$​​是 $i$​​的左儿子，$2i+1$​​是 $i$​​的右儿子)，若有 $n$​​ 个叶子结点，则 $d$​​ 数组的范围最大为 $2^{\lceil\log{n}\rceil+1}$​。
 分析：容易知道线段树的深度是 $\lceil\log{n}\rceil$​的，则在堆式储存情况下叶子节点（包括无用的叶子节点）数量为 $2^{\lceil\log{n}\rceil}$​个，又由于其为一棵完全二叉树(补齐未使用节点)，则其总节点个数 $2^{\lceil\log{n}\rceil+1}-1$​。当然如果你懒得计算的话可以直接把数组长度设为 $4n$​，因为 $\dfrac{2^{\lceil\log{n}\rceil+1}-1}{n}$​的最大值在 $n=2^x+1(x\in N_+)$​时取到，此时节点数为 $2^{\lceil\log{n}\rceil+1}-1=2^{x+2}-1=4n-5$​。</p>
-<h2 id="正题来了">正题来了</h2>
+<h2 id=正题来了>正题来了</h2>
 <p>其实，没啥好说的，很好理解，很不好背……</p>
 <p>下面这4个函数，构建了最最最简单的线段树，效果大概可树状数组一样。</p>
 <p>ps：变量名尽量统一，好处多多。</p>
-<h6 id="宏定义">宏定义</h6>
+<h6 id=宏定义>宏定义</h6>
 <p>有效降低代码长度、出错概率以及Debug时间。</p>
 <p>如果你很猛，请跳过这一段……</p>
 <p><del>使用位运算是因为本来线段树就很慢，所以要用快一点的位运算</del></p>
-<pre><code class="language-c++">#define Mid ((l + r) &gt;&gt; 1)    //位运算,相当于(l + r)/2
+<pre><code class=language-c++>#define Mid ((l + r) &gt;&gt; 1)    //位运算,相当于(l + r)/2
 #define Len (r - l + 1)       //区间长度,注意+1
 #define Root 1, 1, n          //根节点调用
 #define Lpos pos &lt;&lt; 1         //左儿子节点编号,相当于pos*2
@@ -677,19 +161,19 @@
 #define Rson Rpos, Mid + 1, r //右儿子调用
 #define This pos, l, r        //当前节点调用
 </code></pre>
-<h6 id="update函数">update函数</h6>
+<h6 id=update函数>update函数</h6>
 <p>更新节点信息</p>
 <p>视维护啥而定</p>
 <p><em>for example:</em></p>
-<pre><code class="language-c++">inline void upd(int pos)
+<pre><code class=language-c++>inline void upd(int pos)
 {
     tree[pos] = tree[Lpos] + tree[Rpos];          //维护区间和
     tree[pos] = std::max(tree[Lpos], tree[Rpos]); //维护区间最大值
 }
 </code></pre>
-<h6 id="build函数">build函数</h6>
+<h6 id=build函数>build函数</h6>
 <p>从原数组构建线段树</p>
-<pre><code class="language-c++">inline void build(int pos, int l, int r)//pos当前节点编号，l区间右端点，r区间左端点
+<pre><code class=language-c++>inline void build(int pos, int l, int r)//pos当前节点编号，l区间右端点，r区间左端点
 {
     if (l == r)//区间长度为1则赋值原数组
         tree[pos] = in[l];//注意是l而不是pos，是区间在原数组中维护的位置而不是节点编号
@@ -701,9 +185,9 @@
     }
 }
 </code></pre>
-<h6 id="change_point函数">change_point函数</h6>
+<h6 id=change_point函数>change_point函数</h6>
 <p>单点修改线段树上某一位的值</p>
-<pre><code class="language-c++">void cpit(int pos, int l, int r, int point, int val) //pos当前节点编号，l右端点，r左端点，point修改目标编号，val修改值
+<pre><code class=language-c++>void cpit(int pos, int l, int r, int point, int val) //pos当前节点编号，l右端点，r左端点，point修改目标编号，val修改值
 {
     if (l == r) //区间长度为1，进行修改，结束递归
     {
@@ -717,9 +201,9 @@
     upd(pos); //更新当前节点信息
 }
 </code></pre>
-<h6 id="check_block函数">check_block函数</h6>
+<h6 id=check_block函数>check_block函数</h6>
 <p>区间(和、最大值等)查询</p>
-<pre><code class="language-c++">inline int fblk(int pos, int l, int r, int L, int R) //pos当前节点编号，l右端点，r左端点，L查询区间左端点，R查询区间右端点
+<pre><code class=language-c++>inline int fblk(int pos, int l, int r, int L, int R) //pos当前节点编号，l右端点，r左端点，L查询区间左端点，R查询区间右端点
 {
     if (L &lt;= l &amp;&amp; R &gt;= r) //当前线段树上的线段被查询区间完全包含，返回当前线段维护的信息
     {
@@ -733,7 +217,7 @@
     return fblk(Lson, L, R) + fblk(Rson, L, R); //左右儿子均含有被查询区间，则同时查找两个儿子
 }
 </code></pre>
-<h3 id="懒标记">“懒”标记</h3>
+<h3 id=懒标记>“懒”标记</h3>
 <p>区间 $[l,r]$时，如果修改所有与 $[l,r]$相关的线段，那么时间复杂度将退化为 $O(n)$​。<del>那还不如不写</del></p>
 <p>线段树通过引入<strong>懒标记</strong>把对整条线段的修改操作<strong>暂存</strong>在结点上，当需要访问子节点时<strong>再</strong>把修改操作应用到子结点上。</p>
 <p><del>真理：人类因懒而进步</del></p>
@@ -741,31 +225,31 @@
 <ul>
 <li>维护多个标记时注意<strong>下放的顺序</strong>，保证先下放的标记不影响后下放的标记。</li>
 </ul>
-<p>​		**例：**同时维护加法标记和乘法标记时，应先下放乘法标记，再下放加法标记。</p>
+<p>​ **例：**同时维护加法标记和乘法标记时，应先下放乘法标记，再下放加法标记。</p>
 <ul>
 <li>标记累加时注意其<strong>正确性</strong>，包括是否要改变<strong>其他标记</strong>。</li>
 </ul>
-<p>​		**例：**乘法标记叠加时，加法标记也应乘相应修改值。</p>
-<h6 id="get_tag函数">get_tag函数</h6>
+<p>​ **例：**乘法标记叠加时，加法标记也应乘相应修改值。</p>
+<h6 id=get_tag函数>get_tag函数</h6>
 <p>打标签</p>
-<pre><code class="language-c++">inline void gtg(int pos, int l, int r, int val) //pos当前节点编号，l右端点，r左端点，val增加量
+<pre><code class=language-c++>inline void gtg(int pos, int l, int r, int val) //pos当前节点编号，l右端点，r左端点，val增加量
 {
     tag[pos] += val;        //标签累加
     tree[pos] += Len * val; //维护区间和，总增加量=单点增加量*区间长度
 }
 </code></pre>
-<h6 id="send_tag函数">send_tag函数</h6>
+<h6 id=send_tag函数>send_tag函数</h6>
 <p>将标签下方给两个儿子</p>
-<pre><code class="language-c++">inline void stg(int pos, int l, int r) //pos当前节点编号，l右端点，r左端点
+<pre><code class=language-c++>inline void stg(int pos, int l, int r) //pos当前节点编号，l右端点，r左端点
 {
     gtg(Lson, tag[pos]); //把标签下放给左儿子
     gtg(Rson, tag[pos]); //把标签下放给右儿子
     tag[pos] = 0;        //将pos位标签置0(标签以下放给儿子)
 }
 </code></pre>
-<h6 id="change_block函数">change_block函数</h6>
+<h6 id=change_block函数>change_block函数</h6>
 <p>区间修改</p>
-<pre><code class="language-c++">inline void cblk(int pos, int l, int r, int L, int R, int val) //pos当前节点编号，l右端点，r左端点，L修改区间左端点，R右端点，val修改值
+<pre><code class=language-c++>inline void cblk(int pos, int l, int r, int L, int R, int val) //pos当前节点编号，l右端点，r左端点，L修改区间左端点，R右端点，val修改值
 {
     if (L &lt;= l &amp;&amp; R &gt;= r) //当前线段树上的线段被查询区间完全包含，打标记
     {
@@ -780,7 +264,7 @@
     upd(pos); //更新当前节点信息
 }
 </code></pre>
-<h2 id="维护一些奇奇怪怪的东西">维护一些奇奇怪怪的东西</h2>
+<h2 id=维护一些奇奇怪怪的东西>维护一些奇奇怪怪的东西</h2>
 <p>单表一些你想也想不到的烂七八糟的用线段树维护的东西。</p>
 <ul>
 <li>
@@ -798,7 +282,7 @@
 </ol>
 </li>
 <li>
-<p><a href="http://faioj.brynhild.online/problem/21002" target="_blank" rel="noopener">序列操作</a></p>
+<p><a href=http://faioj.brynhild.online/problem/21002 target=_blank rel=noopener>序列操作</a></p>
 <ol>
 <li>
 <p>归零标记</p>
@@ -823,388 +307,155 @@
 </ul>
 <p><del>怎么样，意想不到吧</del></p>
 <p>为了方便，毕竟谁也不想写 $5、6$ 个update函数去逐一维护。</p>
-<p>所以，C++的<del>高级</del>语法 <em>bulingbuling</em> 的出现了。&mdash;&mdash;&mdash;&mdash;&mdash;-&gt; struck结构体 + operator运算符重载</p>
+<p>所以，C++的<del>高级</del>语法 <em>bulingbuling</em> 的出现了。&mdash;&mdash;&mdash;&mdash;&mdash;-> struck结构体 + operator运算符重载</p>
 <p>使用结构体记录所有需要维护的信息并通过 <code>operator +</code> 实现合并能够有效降低代码难度：</p>
-<pre><code class="language-c++">
+<pre><code class=language-c++>
 </code></pre>
-<h2 id="空间的一点儿优化动态开点线段树">空间的一点儿优化——动态开点线段树</h2>
-<h6 id="引子">引子</h6>
+<h2 id=空间的一点儿优化动态开点线段树>空间的一点儿优化——动态开点线段树</h2>
+<h6 id=引子>引子</h6>
 <p>还是先搞一个非常形象的小<del>故事</del>吧。</p>
-<p>​      首先，你想象自己是一位古代的帝王；你精力旺盛，辛勤耕耘20余年，终于在后宫三千佳丽的帮助下，成功为人类的繁衍生息做出了巨大的贡献。</p>
-<p>​      那么，问题来了。你的儿子女儿加在一起已经快赶上一个师~~(手动狗头)~~的规模了，而恰好你现在手里没有钱(你并不被允许使用那么多内存)，不可能让你的所有子女都住上气派辉煌的宫殿，其中大部分不受宠的就只能住在一些破旧的偏殿里(你在自己的机器中能申请到内存)。</p>
-<p>​      现在，另一个国家的元首(评测机)来你国访问，你开始炫耀起你对人类所做出的贡献。这时候，正是展现国家经济军事实力、皇帝大臣精神面貌的时候，你当然不能让来访的外国人知道你手里没钱，连自己子女的房子都四处漏风，否则对方就会认为你好欺负，来攻打你(评测机返回MLE，把你的分数打掉)。</p>
-<p>​      所以，你想到了一个损招：当且仅当你要展示第 $i$ 个儿子时，才把他的房子装修一下，搞好一点，装装样子。至于那些对方看不见的，就爱咋咋地。因为对方时间有限，并不会跟着你看很多的子女(然而仅有的几个住在好地方的又不够展现帝国雄风)，走访的并不会太多，因此并不需要改造太多，国家这点钱还是出得起的(你并没有MLE，骗过了评测机，评测机认为你并不好惹，给了你AC)。</p>
-<h6 id="该正经了">该正经了</h6>
+<p>​ 首先，你想象自己是一位古代的帝王；你精力旺盛，辛勤耕耘20余年，终于在后宫三千佳丽的帮助下，成功为人类的繁衍生息做出了巨大的贡献。</p>
+<p>​ 那么，问题来了。你的儿子女儿加在一起已经快赶上一个师~~(手动狗头)~~的规模了，而恰好你现在手里没有钱(你并不被允许使用那么多内存)，不可能让你的所有子女都住上气派辉煌的宫殿，其中大部分不受宠的就只能住在一些破旧的偏殿里(你在自己的机器中能申请到内存)。</p>
+<p>​ 现在，另一个国家的元首(评测机)来你国访问，你开始炫耀起你对人类所做出的贡献。这时候，正是展现国家经济军事实力、皇帝大臣精神面貌的时候，你当然不能让来访的外国人知道你手里没钱，连自己子女的房子都四处漏风，否则对方就会认为你好欺负，来攻打你(评测机返回MLE，把你的分数打掉)。</p>
+<p>​ 所以，你想到了一个损招：当且仅当你要展示第 $i$ 个儿子时，才把他的房子装修一下，搞好一点，装装样子。至于那些对方看不见的，就爱咋咋地。因为对方时间有限，并不会跟着你看很多的子女(然而仅有的几个住在好地方的又不够展现帝国雄风)，走访的并不会太多，因此并不需要改造太多，国家这点钱还是出得起的(你并没有MLE，骗过了评测机，评测机认为你并不好惹，给了你AC)。</p>
+<h6 id=该正经了>该正经了</h6>
 <p>当需要维护的区间很长(如 $n=10^9$)但操作次数有限(如 $m=10^5$​)时，如果建立出完整的线段树，空间复杂度为 $O(n)$，无法接受。</p>
 <p>但可以发现每次操作涉及到的线段数为 $O(\log{n})$级别，完成所有操作涉及到的区间个数级别为 $O(m\space\log{n})$，这是可以接受的空间开销。</p>
 <p>于是我们放弃之前用数组存储线段树上所有结点的做法，而是在访问到未创建结点时为其分配存储位置，这样的线段树叫做<strong>动态开点线段树</strong>。</p>
-<pre><code class="language-c++">
+<pre><code class=language-c++>
 </code></pre>
-<h2 id="线段树上二分">线段树上二分</h2>
+<h2 id=线段树上二分>线段树上二分</h2>
 <p>~~与树状数组上二分类似，~~线段树上也可以进行二分。概括地说，线段树上二分的实质是利用线段树上当前结点及其两个子节点维护的信息快速判断要查找的位置在左右哪个区间中。由于线段树的深度为 $\log{n}$，所以线段树上二分的复杂度为 $O(\log{n})$。</p>
-<h2 id="权值线段树">权值线段树</h2>
+<h2 id=权值线段树>权值线段树</h2>
 <p>与树状数组维护可重集合的 <code>count</code> 数组类似，线段树也可以用来维护可重集合的 <code>count</code> 数组，这样的线段树常被称作<strong>权值线段树</strong>。在使用动态开点线段树实现权值线段树时可以放松对权值值域的限制（权值甚至可以取为负数！），这与处理较大权值时需要事先离散化的树状数组相比具有巨大的优势。</p>
-<h2 id="线段树优化建图">线段树优化建图</h2>
-<h2 id="总结">总结</h2>
+<h2 id=线段树优化建图>线段树优化建图</h2>
+<h2 id=总结>总结</h2>
 <p>在更多更灵活的题目中，线段树等数据结构往往被用来<strong>快速</strong>维护一些区间信息，即一种<strong>优化暴力的手段</strong>。</p>
 <p>这一类问题中，数据结构的维护只是最后一步，难点往往在于想出第一步的 $O(n^2)$或 $O(nm)$的暴力。</p>
 <p>解决这类优化问题时，一般都是在得到暴力解法后，将<strong>要实现的操作</strong>都列出来，再选择合适的数据结构维护这些操作。</p>
 <p><strong>考场上遇到这类题目一定要先写出暴力，拿到尽可能多的分数！！</strong></p>
 <p><del>md要是遇到线段树的题，一首《凉凉》送给头秃的自己</del></p>
-
-    </div>
-
-    
-
-
-
-
-
-
-
-
-<div class="share-box">
-  <ul class="share">
-    
-      
-      
-      
-        
-      
-      
-      
-      <li>
-        <a href="https://twitter.com/intent/tweet?url=https://xuxihe.vercel.app/notes/oiknowledge/data%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/%E7%BA%BF%E6%AE%B5%E6%A0%91/&amp;text=%e7%ba%bf%e6%ae%b5%e6%a0%91" target="_blank" rel="noopener" class="share-btn-twitter" aria-label="twitter">
-          <i class="fab fa-twitter"></i>
-        </a>
-      </li>
-    
-      
-      
-      
-        
-      
-      
-      
-      <li>
-        <a href="https://www.facebook.com/sharer.php?u=https://xuxihe.vercel.app/notes/oiknowledge/data%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/%E7%BA%BF%E6%AE%B5%E6%A0%91/&amp;t=%e7%ba%bf%e6%ae%b5%e6%a0%91" target="_blank" rel="noopener" class="share-btn-facebook" aria-label="facebook">
-          <i class="fab fa-facebook"></i>
-        </a>
-      </li>
-    
-      
-      
-      
-        
-      
-      
-      
-      <li>
-        <a href="mailto:?subject=%e7%ba%bf%e6%ae%b5%e6%a0%91&amp;body=https://xuxihe.vercel.app/notes/oiknowledge/data%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/%E7%BA%BF%E6%AE%B5%E6%A0%91/" target="_blank" rel="noopener" class="share-btn-email" aria-label="envelope">
-          <i class="fas fa-envelope"></i>
-        </a>
-      </li>
-    
-      
-      
-      
-        
-      
-      
-      
-      <li>
-        <a href="https://www.linkedin.com/shareArticle?url=https://xuxihe.vercel.app/notes/oiknowledge/data%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/%E7%BA%BF%E6%AE%B5%E6%A0%91/&amp;title=%e7%ba%bf%e6%ae%b5%e6%a0%91" target="_blank" rel="noopener" class="share-btn-linkedin" aria-label="linkedin-in">
-          <i class="fab fa-linkedin-in"></i>
-        </a>
-      </li>
-    
-      
-      
-      
-        
-      
-      
-      
-      <li>
-        <a href="whatsapp://send?text=%e7%ba%bf%e6%ae%b5%e6%a0%91%20https://xuxihe.vercel.app/notes/oiknowledge/data%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/%E7%BA%BF%E6%AE%B5%E6%A0%91/" target="_blank" rel="noopener" class="share-btn-whatsapp" aria-label="whatsapp">
-          <i class="fab fa-whatsapp"></i>
-        </a>
-      </li>
-    
-      
-      
-      
-        
-      
-      
-      
-      <li>
-        <a href="https://service.weibo.com/share/share.php?url=https://xuxihe.vercel.app/notes/oiknowledge/data%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/%E7%BA%BF%E6%AE%B5%E6%A0%91/&amp;title=%e7%ba%bf%e6%ae%b5%e6%a0%91" target="_blank" rel="noopener" class="share-btn-weibo" aria-label="weibo">
-          <i class="fab fa-weibo"></i>
-        </a>
-      </li>
-    
-  </ul>
 </div>
-
-
-
-
-
-
-
-
-
-
-
-  
-  
-
-
-
-  
-  
-  
-    
-  
-  
-  
-  <div class="media author-card content-widget-hr">
-    
-      
-      <a href="https://xuxihe.vercel.app/"><img class="avatar mr-3 avatar-circle" src="/author/%E6%9B%A6%E6%9B%A6%E5%91%B5%E5%91%B5/avatar_hudb29ded1c25f9d5e935a5b2ce5ff59ff_1255814_270x270_fill_lanczos_center_3.png" alt="曦曦呵呵"></a>
-    
-
-    <div class="media-body">
-      <h5 class="card-title"><a href="https://xuxihe.vercel.app/">曦曦呵呵</a></h5>
-      <h6 class="card-subtitle">一名卑微的OIer。</h6>
-      <p class="card-text">开开心心，蹦蹦跳跳~</p>
-      <ul class="network-icon" aria-hidden="true">
-  
-    
-    
-    
-      
-    
-    
-    
-    
-    
-      
-    
-    <li>
-      <a href="/#contact" >
-        <i class="fas fa-envelope"></i>
-      </a>
-    </li>
-  
-    
-    
-    
-      
-    
-    
-    
-    
-    
-      
-    
-    <li>
-      <a href="https://github.com/Xu-Xihe" target="_blank" rel="noopener">
-        <i class="fab fa-github"></i>
-      </a>
-    </li>
-  
-    
-    
-    
-      
-    
-    
-    
-    
-    
-      
-    
-    <li>
-      <a href="https://qm.qq.com/cgi-bin/qm/qr?k=Wns5qUpuYc9CC616JJSKEyC3vXqZWjrF&amp;noverify=0" target="_blank" rel="noopener">
-        <i class="fab fa-qq"></i>
-      </a>
-    </li>
-  
+<div class=share-box>
+<ul class=share>
+<li>
+<a href="https://twitter.com/intent/tweet?url=/notes/oiknowledge/data%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/%E7%BA%BF%E6%AE%B5%E6%A0%91/&text=%e7%ba%bf%e6%ae%b5%e6%a0%91" target=_blank rel=noopener class=share-btn-twitter aria-label=twitter>
+<i class="fab fa-twitter"></i>
+</a>
+</li>
+<li>
+<a href="https://www.facebook.com/sharer.php?u=/notes/oiknowledge/data%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/%E7%BA%BF%E6%AE%B5%E6%A0%91/&t=%e7%ba%bf%e6%ae%b5%e6%a0%91" target=_blank rel=noopener class=share-btn-facebook aria-label=facebook>
+<i class="fab fa-facebook"></i>
+</a>
+</li>
+<li>
+<a href="mailto:?subject=%e7%ba%bf%e6%ae%b5%e6%a0%91&body=/notes/oiknowledge/data%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/%E7%BA%BF%E6%AE%B5%E6%A0%91/" target=_blank rel=noopener class=share-btn-email aria-label=envelope>
+<i class="fas fa-envelope"></i>
+</a>
+</li>
+<li>
+<a href="https://www.linkedin.com/shareArticle?url=/notes/oiknowledge/data%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/%E7%BA%BF%E6%AE%B5%E6%A0%91/&title=%e7%ba%bf%e6%ae%b5%e6%a0%91" target=_blank rel=noopener class=share-btn-linkedin aria-label=linkedin-in>
+<i class="fab fa-linkedin-in"></i>
+</a>
+</li>
+<li>
+<a href="whatsapp://send?text=%e7%ba%bf%e6%ae%b5%e6%a0%91%20/notes/oiknowledge/data%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/%E7%BA%BF%E6%AE%B5%E6%A0%91/" target=_blank rel=noopener class=share-btn-whatsapp aria-label=whatsapp>
+<i class="fab fa-whatsapp"></i>
+</a>
+</li>
+<li>
+<a href="https://service.weibo.com/share/share.php?url=/notes/oiknowledge/data%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/%E7%BA%BF%E6%AE%B5%E6%A0%91/&title=%e7%ba%bf%e6%ae%b5%e6%a0%91" target=_blank rel=noopener class=share-btn-weibo aria-label=weibo>
+<i class="fab fa-weibo"></i>
+</a>
+</li>
 </ul>
-
-    </div>
-  </div>
-
-
-
-
-
-
-
-
-
-
-
-
-<div class="article-widget">
-  
-<div class="post-nav">
-  
-  
-  
-  <div class="post-nav-item">
-    <div class="meta-nav">下一页</div>
-    <a href="/notes/oiknowledge/data%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/%E6%A0%91%E7%8A%B6%E6%95%B0%E7%BB%84/" rel="next">树状数组</a>
-  </div>
-  
-  
-  
-  <div class="post-nav-item">
-    <div class="meta-nav">上一页</div>
-    <a href="/notes/oiknowledge/data%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/st%E8%A1%A8/" rel="prev">ST表</a>
-  </div>
-  
 </div>
-
+<div class="media author-card content-widget-hr">
+<a href=/><img class="avatar mr-3 avatar-circle" src=/author/%E6%9B%A6%E6%9B%A6%E5%91%B5%E5%91%B5/avatar_hudb29ded1c25f9d5e935a5b2ce5ff59ff_1255814_270x270_fill_lanczos_center_3.png alt=曦曦呵呵></a>
+<div class=media-body>
+<h5 class=card-title><a href=/>曦曦呵呵</a></h5>
+<h6 class=card-subtitle>一名卑微的OIer。</h6>
+<p class=card-text>开开心心，蹦蹦跳跳~</p>
+<ul class=network-icon aria-hidden=true>
+<li>
+<a href=/#contact>
+<i class="fas fa-envelope"></i>
+</a>
+</li>
+<li>
+<a href=https://github.com/Xu-Xihe target=_blank rel=noopener>
+<i class="fab fa-github"></i>
+</a>
+</li>
+<li>
+<a href="https://qm.qq.com/cgi-bin/qm/qr?k=Wns5qUpuYc9CC616JJSKEyC3vXqZWjrF&noverify=0" target=_blank rel=noopener>
+<i class="fab fa-qq"></i>
+</a>
+</li>
+</ul>
 </div>
-
-
-
-
-
-
-
-
-
-  </div>
+</div>
+<div class=article-widget>
+<div class=post-nav>
+<div class=post-nav-item>
+<div class=meta-nav>下一页</div>
+<a href=/notes/oiknowledge/data%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/%E6%A0%91%E7%8A%B6%E6%95%B0%E7%BB%84/ rel=next>树状数组</a>
+</div>
+<div class=post-nav-item>
+<div class=meta-nav>上一页</div>
+<a href=/notes/oiknowledge/data%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/st%E8%A1%A8/ rel=prev>ST表</a>
+</div>
+</div>
+</div>
+</div>
 </article>
-  </div>
-
-  <div class="page-footer">
-    
-    
-    <div class="container">
-      <footer class="site-footer">
-
-  
-
-
-
-  
-
-  
-
-  
-  <p class="powered-by">
-    © 曦曦呵呵
-  </p>
-  
-
-  
-  
-
-
-
-
-
-
-  <p class="powered-by">
-    
-    
-    
-      
-      
-      
-      
-      
-      
-      由<a href="https://wowchemy.com/?utm_campaign=poweredby" target="_blank" rel="noopener">Wowchemy</a>支持发布——免费<a href="https://github.com/wowchemy/wowchemy-hugo-themes" target="_blank" rel="noopener">开源</a>网站，为创作者赋能。
-    
-  </p>
-</footer>
-
-    </div>
-    
-  </div>
-
-  
-<div id="modal" class="modal fade" role="dialog">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title">引用</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <pre><code class="tex hljs"></code></pre>
-      </div>
-      <div class="modal-footer">
-        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
-          <i class="fas fa-copy"></i> 复制
-        </a>
-        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
-          <i class="fas fa-download"></i> 下载
-        </a>
-        <div id="modal-error"></div>
-      </div>
-    </div>
-  </div>
 </div>
-
-      
-
-    
-    <script src="/js/vendor-bundle.min.b73dfaac3b6499dc997741748a7c3fe2.js"></script>
-
-    
-    
-    
-      
-      
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
-      
-
-      
-      
-
-      
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/8.8.4/mermaid.min.js" integrity="sha512-as1BF4+iHZ3BVO6LLDQ7zrbvTXM+c/1iZ1qII/c3c4L8Rn5tHLpFUtpaEtBNS92f+xGsCzsD7b62XP3XYap6oA==" crossorigin="anonymous" title="mermaid"></script>
-      
-
-      
-        
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/highlight.min.js" integrity="sha512-TDKKr+IvoqZnPzc3l35hdjpHD0m+b2EC2SrLEgKDRWpxf2rFCxemkgvJ5kfU48ip+Y+m2XVKyOCD85ybtlZDmw==" crossorigin="anonymous"></script>
-        
-        
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/languages/r.min.js" crossorigin="anonymous"></script>
-        
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/languages/python.min.js" crossorigin="anonymous"></script>
-        
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/languages/latex.min.js" crossorigin="anonymous"></script>
-        
-      
-
-    
-
-    
-    
-    
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.min.js" integrity="sha512-SeiQaaDh73yrb56sTW/RgVdi/mMqNeM2oBwubFHagc5BkixSpP1fvqF47mKzPGWYSSy4RwbBunrJBQ4Co8fRWA==" crossorigin="anonymous"></script>
-    
-
-    
-    
-
-    
-    
-    
-      
-      <script id="search-hit-fuse-template" type="text/x-template">
+<div class=page-footer>
+<div class=container>
+<footer class=site-footer>
+<p class=powered-by>
+© 星梦
+</p>
+<p class=powered-by>
+由<a href="https://wowchemy.com/?utm_campaign=poweredby" target=_blank rel=noopener>Wowchemy</a>支持发布——免费<a href=https://github.com/wowchemy/wowchemy-hugo-themes target=_blank rel=noopener>开源</a>网站，为创作者赋能。
+</p>
+</footer>
+</div>
+</div>
+<div id=modal class="modal fade" role=dialog>
+<div class=modal-dialog>
+<div class=modal-content>
+<div class=modal-header>
+<h5 class=modal-title>引用</h5>
+<button type=button class=close data-dismiss=modal aria-label=Close>
+<span aria-hidden=true>&#215;</span>
+</button>
+</div>
+<div class=modal-body>
+<pre><code class="tex hljs"></code></pre>
+</div>
+<div class=modal-footer>
+<a class="btn btn-outline-primary my-1 js-copy-cite" href=# target=_blank>
+<i class="fas fa-copy"></i> 复制
+</a>
+<a class="btn btn-outline-primary my-1 js-download-cite" href=# target=_blank>
+<i class="fas fa-download"></i> 下载
+</a>
+<div id=modal-error></div>
+</div>
+</div>
+</div>
+</div>
+<script src=/js/vendor-bundle.min.b73dfaac3b6499dc997741748a7c3fe2.js></script>
+<script src=https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin=anonymous></script>
+<script src=https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin=anonymous></script>
+<script src=https://cdnjs.cloudflare.com/ajax/libs/mermaid/8.8.4/mermaid.min.js integrity="sha512-as1BF4+iHZ3BVO6LLDQ7zrbvTXM+c/1iZ1qII/c3c4L8Rn5tHLpFUtpaEtBNS92f+xGsCzsD7b62XP3XYap6oA==" crossorigin=anonymous title=mermaid></script>
+<script src=https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/highlight.min.js integrity="sha512-TDKKr+IvoqZnPzc3l35hdjpHD0m+b2EC2SrLEgKDRWpxf2rFCxemkgvJ5kfU48ip+Y+m2XVKyOCD85ybtlZDmw==" crossorigin=anonymous></script>
+<script src=https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/languages/r.min.js crossorigin=anonymous></script>
+<script src=https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/languages/python.min.js crossorigin=anonymous></script>
+<script src=https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/languages/latex.min.js crossorigin=anonymous></script>
+<script src=https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.min.js integrity="sha512-SeiQaaDh73yrb56sTW/RgVdi/mMqNeM2oBwubFHagc5BkixSpP1fvqF47mKzPGWYSSy4RwbBunrJBQ4Co8fRWA==" crossorigin=anonymous></script>
+<script id=search-hit-fuse-template type=text/x-template>
         <div class="search-hit" id="summary-{{key}}">
           <div class="search-hit-content">
             <div class="search-hit-name">
@@ -1215,51 +466,8 @@
           </div>
         </div>
       </script>
-      
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
-      
-    
-
-    
-    
-
-    
-    
-    
-    
-
-    
-    
-      
-      
-      
-      
-      
-      
-      
-    
-
-    
-    
-    
-    
-    
-    
-    
-    
-      
-      
-    
-    
-    <script src="/zh/js/wowchemy.min.d16321ec6884b061cbaaf961484b65c8.js"></script>
-
-    
-
-
-
-
-
-
+<script src=https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin=anonymous></script>
+<script src=https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin=anonymous></script>
+<script src=/zh/js/wowchemy.min.d16321ec6884b061cbaaf961484b65c8.js></script>
 </body>
 </html>

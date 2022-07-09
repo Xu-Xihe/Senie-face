@@ -1,202 +1,143 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>语文 | Senie</title>
-    <link>https://xuxihe.vercel.app/courses/chinese/</link>
-      <atom:link href="https://xuxihe.vercel.app/courses/chinese/index.xml" rel="self" type="application/rss+xml" />
-    <description>语文</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>zh</language><copyright>© 曦曦呵呵</copyright><lastBuildDate>Mon, 22 Nov 2021 15:04:17 +0800</lastBuildDate>
-    <image>
-      <url>https://xuxihe.vercel.app/media/icon_huf638f59a6dd2257b0add8e0186347459_300061_512x512_fill_lanczos_center_3.png</url>
-      <title>语文</title>
-      <link>https://xuxihe.vercel.app/courses/chinese/</link>
-    </image>
-    
-    <item>
-      <title>作文</title>
-      <link>https://xuxihe.vercel.app/courses/chinese/%E4%BD%9C%E6%96%87/</link>
-      <pubDate>Mon, 22 Nov 2021 15:04:17 +0800</pubDate>
-      <guid>https://xuxihe.vercel.app/courses/chinese/%E4%BD%9C%E6%96%87/</guid>
-      <description>&lt;h3 id=&#34;审题&#34;&gt;审题&lt;/h3&gt;
-&lt;ol&gt;
-&lt;li&gt;寓言故事&lt;/li&gt;
-&lt;li&gt;新闻材料&lt;/li&gt;
-&lt;li&gt;任务驱动（“改其一点，兼顾所有”）&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h3 id=&#34;立意&#34;&gt;立意&lt;/h3&gt;
-&lt;h3 id=&#34;拟题&#34;&gt;拟题&lt;/h3&gt;
-&lt;p&gt;要有文采&lt;/p&gt;
-&lt;h3 id=&#34;论据&#34;&gt;论据&lt;/h3&gt;
-&lt;ol&gt;
-&lt;li&gt;化用材料（必须写）（引子）&lt;/li&gt;
-&lt;li&gt;例证 $3$ 个&lt;/li&gt;
-&lt;li&gt;引证 $3$ 个&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h3 id=&#34;布局谋篇&#34;&gt;布局谋篇&lt;/h3&gt;
-&lt;h4 id=&#34;开篇&#34;&gt;开篇&lt;/h4&gt;
-&lt;ol&gt;
-&lt;li&gt;常式：抄材料、化用材料&lt;/li&gt;
-&lt;li&gt;变式：创作（对比、排比）&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h3 id=&#34;语言风格&#34;&gt;语言风格&lt;/h3&gt;
-&lt;script src=&#39;//unpkg.com/valine/dist/Valine.min.js&#39;&gt;&lt;/script&gt;
-&lt;div id=&#34;vcomments&#34;&gt;&lt;/div&gt;
-&lt;script&gt;
-    new Valine({
-        el: &#39;#vcomments&#39;,
-        appId: &#39;mUFdj80doBeHANJjnbmU89gH-gzGzoHsz&#39;,
-        appKey: &#39;p4p7vzJrQnIYoajXvUjpuiRy&#39;,
-        placeholder: &#39;说点什么叭~ (上一栏选填，开放匿名评论，邮箱仅用于Gravatar头像显示)&#39;,
-        visitor: true,
-        recordIP: true,
-        serverURLs: false,
-        enableQQ: true
-    })
-&lt;/script&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>语言文字运用</title>
-      <link>https://xuxihe.vercel.app/courses/chinese/%E8%AF%AD%E8%A8%80%E6%96%87%E5%AD%97%E8%BF%90%E7%94%A8/</link>
-      <pubDate>Mon, 22 Nov 2021 15:03:36 +0800</pubDate>
-      <guid>https://xuxihe.vercel.app/courses/chinese/%E8%AF%AD%E8%A8%80%E6%96%87%E5%AD%97%E8%BF%90%E7%94%A8/</guid>
-      <description>&lt;h2 id=&#34;题型&#34;&gt;题型&lt;/h2&gt;
-&lt;h3 id=&#34;选择题&#34;&gt;选择题&lt;/h3&gt;
-&lt;h4 id=&#34;选词&#34;&gt;选词&lt;/h4&gt;
-&lt;ol&gt;
-&lt;li&gt;找重要词语切入：从 $4$ 选 $1$ 减少为 $2$ 选 $1$&lt;/li&gt;
-&lt;li&gt;检验代入&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h4 id=&#34;补句&#34;&gt;补句&lt;/h4&gt;
-&lt;p&gt;瞻前顾后（联系上下文）&lt;/p&gt;
-&lt;script src=&#39;//unpkg.com/valine/dist/Valine.min.js&#39;&gt;&lt;/script&gt;
-&lt;div id=&#34;vcomments&#34;&gt;&lt;/div&gt;
-&lt;script&gt;
-    new Valine({
-        el: &#39;#vcomments&#39;,
-        appId: &#39;mUFdj80doBeHANJjnbmU89gH-gzGzoHsz&#39;,
-        appKey: &#39;p4p7vzJrQnIYoajXvUjpuiRy&#39;,
-        placeholder: &#39;说点什么叭~ (上一栏选填，开放匿名评论，邮箱仅用于Gravatar头像显示)&#39;,
-        visitor: true,
-        recordIP: true,
-        serverURLs: false,
-        enableQQ: true
-    })
-&lt;/script&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>古诗文阅读</title>
-      <link>https://xuxihe.vercel.app/courses/chinese/%E5%8F%A4%E8%AF%97%E6%96%87%E9%98%85%E8%AF%BB/</link>
-      <pubDate>Mon, 22 Nov 2021 15:00:53 +0800</pubDate>
-      <guid>https://xuxihe.vercel.app/courses/chinese/%E5%8F%A4%E8%AF%97%E6%96%87%E9%98%85%E8%AF%BB/</guid>
-      <description>&lt;h2 id=&#34;古文&#34;&gt;古文&lt;/h2&gt;
-&lt;h3 id=&#34;题型&#34;&gt;题型&lt;/h3&gt;
-&lt;h4 id=&#34;选择题&#34;&gt;选择题&lt;/h4&gt;
-&lt;p&gt;共 $3$ 道，$3\times3=9$ 分&lt;/p&gt;
-&lt;p&gt;文学常识、内容理解、字词&lt;/p&gt;
-&lt;p&gt;读 $\rightarrow$ 找 $\rightarrow$ 比&lt;/p&gt;
-&lt;h4 id=&#34;翻译句子&#34;&gt;翻译句子&lt;/h4&gt;
-&lt;p&gt;共 $2$ 句，共 $2\times4$ 分&lt;/p&gt;
-&lt;h4 id=&#34;主观题&#34;&gt;主观题&lt;/h4&gt;
-&lt;p&gt;共 $1$ 道，共 $4$ 分&lt;/p&gt;
-&lt;h2 id=&#34;古诗文&#34;&gt;古诗文&lt;/h2&gt;
-&lt;h4 id=&#34;选择题-1&#34;&gt;选择题&lt;/h4&gt;
-&lt;p&gt;共 $3$ 道，$3\times3=9$ 分&lt;/p&gt;
-&lt;p&gt;文学常识、内容理解、字词&lt;/p&gt;
-&lt;p&gt;读 $\rightarrow$ 找 $\rightarrow$ 比&lt;/p&gt;
-&lt;h4 id=&#34;主观题-1&#34;&gt;主观题&lt;/h4&gt;
-&lt;p&gt;共 $1$ 道，共 $6$ 分&lt;/p&gt;
-&lt;h2 id=&#34;默写句子&#34;&gt;默写句子&lt;/h2&gt;
-&lt;p&gt;共 $3$ 句，共 $2\times3=6$ 个分句，共 $6\times1$ 分&lt;/p&gt;
-&lt;script src=&#39;//unpkg.com/valine/dist/Valine.min.js&#39;&gt;&lt;/script&gt;
-&lt;div id=&#34;vcomments&#34;&gt;&lt;/div&gt;
-&lt;script&gt;
-    new Valine({
-        el: &#39;#vcomments&#39;,
-        appId: &#39;mUFdj80doBeHANJjnbmU89gH-gzGzoHsz&#39;,
-        appKey: &#39;p4p7vzJrQnIYoajXvUjpuiRy&#39;,
-        placeholder: &#39;说点什么叭~ (上一栏选填，开放匿名评论，邮箱仅用于Gravatar头像显示)&#39;,
-        visitor: true,
-        recordIP: true,
-        serverURLs: false,
-        enableQQ: true
-    })
-&lt;/script&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>文学类文本阅读</title>
-      <link>https://xuxihe.vercel.app/courses/chinese/%E6%96%87%E5%AD%A6%E7%B1%BB%E6%96%87%E6%9C%AC%E9%98%85%E8%AF%BB/</link>
-      <pubDate>Mon, 22 Nov 2021 14:59:42 +0800</pubDate>
-      <guid>https://xuxihe.vercel.app/courses/chinese/%E6%96%87%E5%AD%A6%E7%B1%BB%E6%96%87%E6%9C%AC%E9%98%85%E8%AF%BB/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>非连续性文本阅读</title>
-      <link>https://xuxihe.vercel.app/courses/chinese/%E9%9D%9E%E8%BF%9E%E7%BB%AD%E6%80%A7%E6%96%87%E6%9C%AC%E9%98%85%E8%AF%BB/</link>
-      <pubDate>Mon, 22 Nov 2021 14:56:05 +0800</pubDate>
-      <guid>https://xuxihe.vercel.app/courses/chinese/%E9%9D%9E%E8%BF%9E%E7%BB%AD%E6%80%A7%E6%96%87%E6%9C%AC%E9%98%85%E8%AF%BB/</guid>
-      <description>&lt;h2 id=&#34;材料&#34;&gt;材料&lt;/h2&gt;
-&lt;p&gt;$2\sim4$ 个选文，以文学类知识为主&lt;/p&gt;
-&lt;h2 id=&#34;题型&#34;&gt;题型&lt;/h2&gt;
-&lt;h3 id=&#34;选择题&#34;&gt;选择题&lt;/h3&gt;
-&lt;p&gt;共 $3$ 道，共 $3\times3=9$ 分&lt;/p&gt;
-&lt;p&gt;注意限定词和修饰词，注意所表述范围是否一致。&lt;/p&gt;
-&lt;p&gt;读 $\rightarrow$ 找 $\rightarrow$ 比&lt;/p&gt;
-&lt;h3 id=&#34;主观题&#34;&gt;主观题&lt;/h3&gt;
-&lt;p&gt;共 $2$ 道，共 $4+6=10$ 分&lt;/p&gt;
-&lt;h4 id=&#34;下定义&#34;&gt;下定义&lt;/h4&gt;
-&lt;p&gt;种差加属&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;议论文是一种以议论为主要表达方式的文章体裁。&lt;/p&gt;
-&lt;p&gt;属性：文章体裁&lt;/p&gt;
-&lt;p&gt;种差：以议论为主要表达方式&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h4 id=&#34;行文脉络行文思路&#34;&gt;行文脉络（行文思路）&lt;/h4&gt;
-&lt;ol&gt;
-&lt;li&gt;答 $3$ 或 $4$ 点&lt;/li&gt;
-&lt;li&gt;首先……然后……最后……&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h4 id=&#34;如何论证论证特色&#34;&gt;如何论证（论证特色）&lt;/h4&gt;
-&lt;ol&gt;
-&lt;li&gt;
-&lt;p&gt;结构：并列、递进、对照、总 — 分、总 — 分 — 总，分 — 总。&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;论证方法：例证、引证、对比论证、比喻论证、假设论证、因果论证&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;语言风格：准确、严密，讲究逻辑。&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;严谨性：&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;用词严谨&lt;/li&gt;
-&lt;li&gt;结构严谨（提出问题 — 分析问题 — 解决问题）&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/blockquote&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;script src=&#39;//unpkg.com/valine/dist/Valine.min.js&#39;&gt;&lt;/script&gt;
-&lt;div id=&#34;vcomments&#34;&gt;&lt;/div&gt;
-&lt;script&gt;
-    new Valine({
-        el: &#39;#vcomments&#39;,
-        appId: &#39;mUFdj80doBeHANJjnbmU89gH-gzGzoHsz&#39;,
-        appKey: &#39;p4p7vzJrQnIYoajXvUjpuiRy&#39;,
-        placeholder: &#39;说点什么叭~ (上一栏选填，开放匿名评论，邮箱仅用于Gravatar头像显示)&#39;,
-        visitor: true,
-        recordIP: true,
-        serverURLs: false,
-        enableQQ: true
-    })
-&lt;/script&gt;
-</description>
-    </item>
-    
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>语文 | Senie</title><link>/courses/chinese/</link><atom:link href="/courses/chinese/index.xml" rel="self" type="application/rss+xml"/><description>语文</description><generator>Wowchemy (https://wowchemy.com)</generator><language>zh</language><copyright>© 星梦</copyright><lastBuildDate>Mon, 22 Nov 2021 15:04:17 +0800</lastBuildDate><image><url>/media/icon_huf638f59a6dd2257b0add8e0186347459_300061_512x512_fill_lanczos_center_3.png</url><title>语文</title><link>/courses/chinese/</link></image><item><title>作文</title><link>/courses/chinese/%E4%BD%9C%E6%96%87/</link><pubDate>Mon, 22 Nov 2021 15:04:17 +0800</pubDate><guid>/courses/chinese/%E4%BD%9C%E6%96%87/</guid><description>&lt;h3 id="审题">审题&lt;/h3>
+&lt;ol>
+&lt;li>寓言故事&lt;/li>
+&lt;li>新闻材料&lt;/li>
+&lt;li>任务驱动（“改其一点，兼顾所有”）&lt;/li>
+&lt;/ol>
+&lt;h3 id="立意">立意&lt;/h3>
+&lt;h3 id="拟题">拟题&lt;/h3>
+&lt;p>要有文采&lt;/p>
+&lt;h3 id="论据">论据&lt;/h3>
+&lt;ol>
+&lt;li>化用材料（必须写）（引子）&lt;/li>
+&lt;li>例证 $3$ 个&lt;/li>
+&lt;li>引证 $3$ 个&lt;/li>
+&lt;/ol>
+&lt;h3 id="布局谋篇">布局谋篇&lt;/h3>
+&lt;h4 id="开篇">开篇&lt;/h4>
+&lt;ol>
+&lt;li>常式：抄材料、化用材料&lt;/li>
+&lt;li>变式：创作（对比、排比）&lt;/li>
+&lt;/ol>
+&lt;h3 id="语言风格">语言风格&lt;/h3>
+&lt;script src='//unpkg.com/valine/dist/Valine.min.js'>&lt;/script>
+&lt;div id="vcomments">&lt;/div>
+&lt;script>
+new Valine({
+el: '#vcomments',
+appId: 'mUFdj80doBeHANJjnbmU89gH-gzGzoHsz',
+appKey: 'p4p7vzJrQnIYoajXvUjpuiRy',
+placeholder: '说点什么叭~ (上一栏选填，开放匿名评论，邮箱仅用于Gravatar头像显示)',
+visitor: true,
+recordIP: true,
+serverURLs: false,
+enableQQ: true
+})
+&lt;/script></description></item><item><title>语言文字运用</title><link>/courses/chinese/%E8%AF%AD%E8%A8%80%E6%96%87%E5%AD%97%E8%BF%90%E7%94%A8/</link><pubDate>Mon, 22 Nov 2021 15:03:36 +0800</pubDate><guid>/courses/chinese/%E8%AF%AD%E8%A8%80%E6%96%87%E5%AD%97%E8%BF%90%E7%94%A8/</guid><description>&lt;h2 id="题型">题型&lt;/h2>
+&lt;h3 id="选择题">选择题&lt;/h3>
+&lt;h4 id="选词">选词&lt;/h4>
+&lt;ol>
+&lt;li>找重要词语切入：从 $4$ 选 $1$ 减少为 $2$ 选 $1$&lt;/li>
+&lt;li>检验代入&lt;/li>
+&lt;/ol>
+&lt;h4 id="补句">补句&lt;/h4>
+&lt;p>瞻前顾后（联系上下文）&lt;/p>
+&lt;script src='//unpkg.com/valine/dist/Valine.min.js'>&lt;/script>
+&lt;div id="vcomments">&lt;/div>
+&lt;script>
+new Valine({
+el: '#vcomments',
+appId: 'mUFdj80doBeHANJjnbmU89gH-gzGzoHsz',
+appKey: 'p4p7vzJrQnIYoajXvUjpuiRy',
+placeholder: '说点什么叭~ (上一栏选填，开放匿名评论，邮箱仅用于Gravatar头像显示)',
+visitor: true,
+recordIP: true,
+serverURLs: false,
+enableQQ: true
+})
+&lt;/script></description></item><item><title>古诗文阅读</title><link>/courses/chinese/%E5%8F%A4%E8%AF%97%E6%96%87%E9%98%85%E8%AF%BB/</link><pubDate>Mon, 22 Nov 2021 15:00:53 +0800</pubDate><guid>/courses/chinese/%E5%8F%A4%E8%AF%97%E6%96%87%E9%98%85%E8%AF%BB/</guid><description>&lt;h2 id="古文">古文&lt;/h2>
+&lt;h3 id="题型">题型&lt;/h3>
+&lt;h4 id="选择题">选择题&lt;/h4>
+&lt;p>共 $3$ 道，$3\times3=9$ 分&lt;/p>
+&lt;p>文学常识、内容理解、字词&lt;/p>
+&lt;p>读 $\rightarrow$ 找 $\rightarrow$ 比&lt;/p>
+&lt;h4 id="翻译句子">翻译句子&lt;/h4>
+&lt;p>共 $2$ 句，共 $2\times4$ 分&lt;/p>
+&lt;h4 id="主观题">主观题&lt;/h4>
+&lt;p>共 $1$ 道，共 $4$ 分&lt;/p>
+&lt;h2 id="古诗文">古诗文&lt;/h2>
+&lt;h4 id="选择题-1">选择题&lt;/h4>
+&lt;p>共 $3$ 道，$3\times3=9$ 分&lt;/p>
+&lt;p>文学常识、内容理解、字词&lt;/p>
+&lt;p>读 $\rightarrow$ 找 $\rightarrow$ 比&lt;/p>
+&lt;h4 id="主观题-1">主观题&lt;/h4>
+&lt;p>共 $1$ 道，共 $6$ 分&lt;/p>
+&lt;h2 id="默写句子">默写句子&lt;/h2>
+&lt;p>共 $3$ 句，共 $2\times3=6$ 个分句，共 $6\times1$ 分&lt;/p>
+&lt;script src='//unpkg.com/valine/dist/Valine.min.js'>&lt;/script>
+&lt;div id="vcomments">&lt;/div>
+&lt;script>
+new Valine({
+el: '#vcomments',
+appId: 'mUFdj80doBeHANJjnbmU89gH-gzGzoHsz',
+appKey: 'p4p7vzJrQnIYoajXvUjpuiRy',
+placeholder: '说点什么叭~ (上一栏选填，开放匿名评论，邮箱仅用于Gravatar头像显示)',
+visitor: true,
+recordIP: true,
+serverURLs: false,
+enableQQ: true
+})
+&lt;/script></description></item><item><title>文学类文本阅读</title><link>/courses/chinese/%E6%96%87%E5%AD%A6%E7%B1%BB%E6%96%87%E6%9C%AC%E9%98%85%E8%AF%BB/</link><pubDate>Mon, 22 Nov 2021 14:59:42 +0800</pubDate><guid>/courses/chinese/%E6%96%87%E5%AD%A6%E7%B1%BB%E6%96%87%E6%9C%AC%E9%98%85%E8%AF%BB/</guid><description/></item><item><title>非连续性文本阅读</title><link>/courses/chinese/%E9%9D%9E%E8%BF%9E%E7%BB%AD%E6%80%A7%E6%96%87%E6%9C%AC%E9%98%85%E8%AF%BB/</link><pubDate>Mon, 22 Nov 2021 14:56:05 +0800</pubDate><guid>/courses/chinese/%E9%9D%9E%E8%BF%9E%E7%BB%AD%E6%80%A7%E6%96%87%E6%9C%AC%E9%98%85%E8%AF%BB/</guid><description>&lt;h2 id="材料">材料&lt;/h2>
+&lt;p>$2\sim4$ 个选文，以文学类知识为主&lt;/p>
+&lt;h2 id="题型">题型&lt;/h2>
+&lt;h3 id="选择题">选择题&lt;/h3>
+&lt;p>共 $3$ 道，共 $3\times3=9$ 分&lt;/p>
+&lt;p>注意限定词和修饰词，注意所表述范围是否一致。&lt;/p>
+&lt;p>读 $\rightarrow$ 找 $\rightarrow$ 比&lt;/p>
+&lt;h3 id="主观题">主观题&lt;/h3>
+&lt;p>共 $2$ 道，共 $4+6=10$ 分&lt;/p>
+&lt;h4 id="下定义">下定义&lt;/h4>
+&lt;p>种差加属&lt;/p>
+&lt;blockquote>
+&lt;p>议论文是一种以议论为主要表达方式的文章体裁。&lt;/p>
+&lt;p>属性：文章体裁&lt;/p>
+&lt;p>种差：以议论为主要表达方式&lt;/p>
+&lt;/blockquote>
+&lt;h4 id="行文脉络行文思路">行文脉络（行文思路）&lt;/h4>
+&lt;ol>
+&lt;li>答 $3$ 或 $4$ 点&lt;/li>
+&lt;li>首先……然后……最后……&lt;/li>
+&lt;/ol>
+&lt;h4 id="如何论证论证特色">如何论证（论证特色）&lt;/h4>
+&lt;ol>
+&lt;li>
+&lt;p>结构：并列、递进、对照、总 — 分、总 — 分 — 总，分 — 总。&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>论证方法：例证、引证、对比论证、比喻论证、假设论证、因果论证&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>语言风格：准确、严密，讲究逻辑。&lt;/p>
+&lt;blockquote>
+&lt;p>严谨性：&lt;/p>
+&lt;ol>
+&lt;li>用词严谨&lt;/li>
+&lt;li>结构严谨（提出问题 — 分析问题 — 解决问题）&lt;/li>
+&lt;/ol>
+&lt;/blockquote>
+&lt;/li>
+&lt;/ol>
+&lt;script src='//unpkg.com/valine/dist/Valine.min.js'>&lt;/script>
+&lt;div id="vcomments">&lt;/div>
+&lt;script>
+new Valine({
+el: '#vcomments',
+appId: 'mUFdj80doBeHANJjnbmU89gH-gzGzoHsz',
+appKey: 'p4p7vzJrQnIYoajXvUjpuiRy',
+placeholder: '说点什么叭~ (上一栏选填，开放匿名评论，邮箱仅用于Gravatar头像显示)',
+visitor: true,
+recordIP: true,
+serverURLs: false,
+enableQQ: true
+})
+&lt;/script></description></item></channel></rss>
