@@ -24,7 +24,7 @@ enableQQ: true
 &lt;/ol>
 &lt;h3 id="基因突变不一定使性状改变">基因突变不一定使性状改变&lt;/h3>
 &lt;ol>
-&lt;li>突变前后，经转录形成的密码子所决定的氨基酸相同&lt;/li>
+&lt;li>简并性：突变前后，经转录形成的密码子所决定的氨基酸相同&lt;/li>
 &lt;li>显性纯合子突变为杂合子：$\ce{AA\rightarrow Aa}$&lt;/li>
 &lt;li>内含子发生碱基突变&lt;/li>
 &lt;/ol>
@@ -399,7 +399,7 @@ enableQQ: true
 &lt;ol>
 &lt;li>蓝细菌：色球蓝细菌、颤蓝细菌、念珠蓝细菌、&lt;strong>发菜&lt;/strong>（蓝细菌群体的集合）&lt;/li>
 &lt;li>大肠杆菌（球状、弧状、链状……）&lt;/li>
-&lt;li>乳酸菌&lt;/li>
+&lt;li>&lt;font color=red>&lt;strong>乳酸菌&lt;/strong>&lt;/font>&lt;/li>
 &lt;li>硝化细菌&lt;/li>
 &lt;li>支原体（目前发现的最小细胞）&lt;/li>
 &lt;li>衣原体&lt;/li>
@@ -420,7 +420,7 @@ enableQQ: true
 &lt;/ul>
 &lt;/li>
 &lt;li>
-&lt;p>酵母菌&lt;/p>
+&lt;p>&lt;font color=red>&lt;strong>酵母菌&lt;/strong>&lt;/font>&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>原生动物（单细胞生物）：草履虫、眼虫、衣藻、变形虫&lt;/p>
@@ -467,7 +467,7 @@ enableQQ: true
 &lt;p>$\pu{50 \sim 60 ^\circ C}$ 水浴加热 $\pu{2 min}$&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>现象：砖红色沉淀&lt;/p>
+&lt;p>现象：&lt;font color=darkred>砖红色&lt;/font>沉淀&lt;/p>
 &lt;/li>
 &lt;/ol>
 &lt;/li>
